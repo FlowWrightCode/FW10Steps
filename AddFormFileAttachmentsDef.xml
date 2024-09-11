@@ -1,0 +1,417 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="3d36e477-9d15-4d26-b244-605b4fd9fb91">
+  <figures>
+    <figure
+      id="80d51461-c23c-4dfa-bff4-7ab5de74a03d"
+      name="start"
+      type="start"
+      x="-100"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[fileAttachPath:String|fileName:String|formID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="5d48883d-da93-4f6b-00b6-069998a0bea5"
+      name="Add file attachments"
+      type="addformfileattachments"
+      x="250"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Add file attachments]]></property>
+        <property
+          name="type"><![CDATA[addformfileattachments]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Add file attachments]]></property>
+        <property
+          name="itemDescription"><![CDATA[addFormFileAttachments]]></property>
+        <property
+          name="formInstanceID"><![CDATA[Variable.formID]]></property>
+        <property
+          name="formDefID"><![CDATA[c9a983db-d547-4483-98e6-3a2c40aac2cd]]></property>
+        <property
+          name="filefieldMappings"><![CDATA[file1~C:\FlowWright\wwwroot\TempFiles\VerifyFileAttachment.pdf]]></property>
+        <property
+          name="logMessage"><![CDATA[Add file attachments to form instance directly]]></property>
+        <property
+          name="documentation"><![CDATA[addFormFileAttachments - Variable.initiatorName]]></property>
+        <property
+          name="ignoreNotFoundFiles"><![CDATA[yes]]></property>
+        <property
+          name="LogMessage"><![CDATA[addFormFileAttachments - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Form Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="877af502-997b-280e-b89b-c4ae28eed4a7"
+      name="Route Form for file attachments"
+      type="routeform"
+      x="60"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Route Form for file attachments]]></property>
+        <property
+          name="type"><![CDATA[routeform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Route Form for file attachments]]></property>
+        <property
+          name="itemDescription"><![CDATA[routeform]]></property>
+        <property
+          name="taskName"><![CDATA[Addform - Variable.instanceID]]></property>
+        <property
+          name="taskDesc"><![CDATA[Addform - Variable.instanceID]]></property>
+        <property
+          name="routeTo"><![CDATA[Variable.initiatorID]]></property>
+        <property
+          name="routeToRoles"><![CDATA[]]></property>
+        <property
+          name="formDefinition"><![CDATA[c9a983db-d547-4483-98e6-3a2c40aac2cd]]></property>
+        <property
+          name="formInstanceID"><![CDATA[Variable.formID]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="daysToComplete"><![CDATA[1]]></property>
+        <property
+          name="expireType"><![CDATA[hours]]></property>
+        <property
+          name="includeWeekends"><![CDATA[0]]></property>
+        <property
+          name="taskRoutingRules"><![CDATA[0]]></property>
+        <property
+          name="taskReminder"><![CDATA[]]></property>
+        <property
+          name="sendEmailNotification"><![CDATA[no]]></property>
+        <property
+          name="emailSubject"><![CDATA[]]></property>
+        <property
+          name="emailBody"><![CDATA[]]></property>
+        <property
+          name="hideReadOnlyFields"><![CDATA[3a33d890-8259-475f-8775-6f510cfa02b3~file1^false^false|fileattachmentlistlite1^false^false|formapproval1btnCompleteTask^false^false|formapproval1btnRejectTask^false^false|formapproval1form^false^false|label2^false^false|submitform1btnSave^false^false|submitform1form^false^false]]></property>
+        <property
+          name="hideReadOnlySubForms"><![CDATA[]]></property>
+        <property
+          name="emailAddresses"><![CDATA[]]></property>
+        <property
+          name="userCanReAssign"><![CDATA[no]]></property>
+        <property
+          name="logMessage"><![CDATA[Route Form to user to add file attachments]]></property>
+        <property
+          name="documentation"><![CDATA[routeform - Variable.initiatorName]]></property>
+        <property
+          name="emailCCList"><![CDATA[]]></property>
+        <property
+          name="waitForAll"><![CDATA[no]]></property>
+        <property
+          name="sendSeparateEmails"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[routeform - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Form Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="bc63aa9d-b57b-0897-3a17-c089f14a09d8"
+      name="Get file attachments"
+      type="getfileattachments"
+      x="450"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get file attachments]]></property>
+        <property
+          name="type"><![CDATA[getfileattachments]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get file attachments]]></property>
+        <property
+          name="itemDescription"><![CDATA[getFileAttachments]]></property>
+        <property
+          name="formInstanceID"><![CDATA[Variable.formID]]></property>
+        <property
+          name="filefieldMappings"><![CDATA[file1]]></property>
+        <property
+          name="formID"><![CDATA[c9a983db-d547-4483-98e6-3a2c40aac2cd]]></property>
+        <property
+          name="fileAttachmentsPath"><![CDATA[variable.fileAttachPath]]></property>
+        <property
+          name="fileAttachmentsFileName"><![CDATA[variable.fileName]]></property>
+        <property
+          name="fileAttachmentsFormat"><![CDATA[XML]]></property>
+        <property
+          name="logMessage"><![CDATA[Get all the file attachments from this form instance]]></property>
+        <property
+          name="documentation"><![CDATA[getFileAttachments - Variable.initiatorName]]></property>
+        <property
+          name="LogMessage"><![CDATA[getFileAttachments - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Form Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6c259366-7afe-a881-de61-bb93b431e979"
+      name="Route Form to view file attachments"
+      type="routeform"
+      x="640"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Route Form to view file attachments]]></property>
+        <property
+          name="type"><![CDATA[routeform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Route Form to view file attachments]]></property>
+        <property
+          name="itemDescription"><![CDATA[routeform]]></property>
+        <property
+          name="taskName"><![CDATA[Addform - Variable.instanceID]]></property>
+        <property
+          name="taskDesc"><![CDATA[Addform - Variable.instanceID]]></property>
+        <property
+          name="routeTo"><![CDATA[Variable.initiatorID]]></property>
+        <property
+          name="routeToRoles"><![CDATA[]]></property>
+        <property
+          name="formDefinition"><![CDATA[c9a983db-d547-4483-98e6-3a2c40aac2cd]]></property>
+        <property
+          name="formInstanceID"><![CDATA[Variable.formID]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="daysToComplete"><![CDATA[1]]></property>
+        <property
+          name="expireType"><![CDATA[hours]]></property>
+        <property
+          name="includeWeekends"><![CDATA[0]]></property>
+        <property
+          name="taskRoutingRules"><![CDATA[0]]></property>
+        <property
+          name="taskReminder"><![CDATA[]]></property>
+        <property
+          name="sendEmailNotification"><![CDATA[no]]></property>
+        <property
+          name="emailSubject"><![CDATA[]]></property>
+        <property
+          name="emailBody"><![CDATA[]]></property>
+        <property
+          name="hideReadOnlyFields"><![CDATA[3a33d890-8259-475f-8775-6f510cfa02b3~file1^false^false|fileattachmentlistlite1^false^false|formapproval1btnCompleteTask^false^false|formapproval1btnRejectTask^false^false|formapproval1form^false^false|label2^false^false|submitform1btnSave^false^false|submitform1form^false^false]]></property>
+        <property
+          name="hideReadOnlySubForms"><![CDATA[]]></property>
+        <property
+          name="emailAddresses"><![CDATA[]]></property>
+        <property
+          name="userCanReAssign"><![CDATA[no]]></property>
+        <property
+          name="logMessage"><![CDATA[Route Form to user to add file attachments]]></property>
+        <property
+          name="documentation"><![CDATA[routeform - Variable.initiatorName]]></property>
+        <property
+          name="emailCCList"><![CDATA[]]></property>
+        <property
+          name="waitForAll"><![CDATA[no]]></property>
+        <property
+          name="sendSeparateEmails"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[routeform - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Form Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="2f3ee845-5c09-997a-9104-ede6f8aabf76"
+      label=""
+      size="3"
+      type=""
+      srcParentID="bc63aa9d-b57b-0897-3a17-c089f14a09d8"
+      srcParentType="getfileattachments"
+      trgParentID="6c259366-7afe-a881-de61-bb93b431e979"
+      trgParentType="routeform"
+      router="junction"
+      color="0000ff"
+      lblx="565"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="490"
+          y="140" />
+        <point
+          x="640"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="dd1d2484-2681-a7ca-5f89-a95554f548fc"
+      label=""
+      size="3"
+      type=""
+      srcParentID="877af502-997b-280e-b89b-c4ae28eed4a7"
+      srcParentType="routeform"
+      trgParentID="5d48883d-da93-4f6b-00b6-069998a0bea5"
+      trgParentType="addformfileattachments"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="175"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="100"
+          y="140" />
+        <point
+          x="250"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="9e46449a-f971-6a7f-e6df-fe6ce5496421"
+      label=""
+      size="3"
+      type=""
+      srcParentID="5d48883d-da93-4f6b-00b6-069998a0bea5"
+      srcParentType="addformfileattachments"
+      trgParentID="bc63aa9d-b57b-0897-3a17-c089f14a09d8"
+      trgParentType="getfileattachments"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="370"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="140" />
+        <point
+          x="450"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="241b1dad-da4d-5d78-fb06-81ca6ae62dd4"
+      label=""
+      size="3"
+      type=""
+      srcParentID="80d51461-c23c-4dfa-bff4-7ab5de74a03d"
+      srcParentType="start"
+      trgParentID="877af502-997b-280e-b89b-c4ae28eed4a7"
+      trgParentType="routeform"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="0"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="-60"
+          y="140" />
+        <point
+          x="60"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
