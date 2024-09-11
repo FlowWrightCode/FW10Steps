@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="f4f05421-49a1-4dff-bd0a-d359917fc3f9">
+  <figures>
+    <figure
+      id="9c766637-0731-43e6-b57d-418dba5a436e"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[result:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="f37f8999-79e0-01a7-701c-62bc67aa93fc"
+      name="Get File"
+      type="boxgetfile"
+      x="270"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Get File]]></property>
+        <property
+          name="type"><![CDATA[boxgetfile]]></property>
+        <property
+          name="itemName"><![CDATA[Get File]]></property>
+        <property
+          name="itemDescription"><![CDATA[boxGetFile]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[e32edbf5-420f-4c3a-a782-d9c23256c1a3]]></property>
+        <property
+          name="fileName"><![CDATA[//FlowWright/textfile.txt]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[C:\Temp\]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.result]]></property>
+        <property
+          name="LogMessage"><![CDATA[boxGetFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[boxGetFile - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Box Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="76603c63-2611-446d-edac-ff2357dc4ab4"
+      label=""
+      size="3"
+      type=""
+      srcParentID="9c766637-0731-43e6-b57d-418dba5a436e"
+      srcParentType="start"
+      trgParentID="f37f8999-79e0-01a7-701c-62bc67aa93fc"
+      trgParentType="boxgetfile"
+      router="junction"
+      color="0000ff"
+      lblx="175"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="270"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
