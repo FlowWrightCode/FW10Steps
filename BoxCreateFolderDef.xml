@@ -1,0 +1,119 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="3302411f-fa52-4732-963c-81fc813bbf7f">
+  <figures>
+    <figure
+      id="0cc61a0a-6b2f-4a0c-b105-93a74aafac14"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[store:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="7755a7b6-3c16-5f7d-b2f1-69a3e4894d9a"
+      name="Create Folder"
+      type="boxcreatefolder"
+      x="250"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Create Folder]]></property>
+        <property
+          name="type"><![CDATA[boxcreatefolder]]></property>
+        <property
+          name="itemName"><![CDATA[Create Folder]]></property>
+        <property
+          name="itemDescription"><![CDATA[boxCreateFolder]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[e32edbf5-420f-4c3a-a782-d9c23256c1a3]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[//FlowWright/BoxFolder/New]]></property>
+        <property
+          name="parentFolderID"><![CDATA[//FlowWright/BoxFolder]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.store]]></property>
+        <property
+          name="LogMessage"><![CDATA[boxCreateFolder - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[boxCreateFolder - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Box Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="964354e3-c06d-d18a-960d-2ddf3afe31ab"
+      label=""
+      size="5"
+      type=""
+      srcParentID="0cc61a0a-6b2f-4a0c-b105-93a74aafac14"
+      srcParentType="start"
+      trgParentID="7755a7b6-3c16-5f7d-b2f1-69a3e4894d9a"
+      trgParentType="boxcreatefolder"
+      router="junction"
+      color="0000ff"
+      lblx="165"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="250"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
