@@ -1,0 +1,183 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="02bc9181-4f8d-45d4-b7b7-ad022cd963d5">
+  <figures>
+    <figure
+      id="d8cba78f-e8d9-48e3-8b16-1805046d27a7"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[routedUserList:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="46bf7899-fa22-652d-9c74-f59ddefccc3e"
+      name="Check List Task"
+      type="checklisttask"
+      x="240"
+      y="40"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Check List Task]]></property>
+        <property
+          name="type"><![CDATA[checklisttask]]></property>
+        <property
+          name="itemName"><![CDATA[Check List Task]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="routeTo"><![CDATA[Variable.initiatorID]]></property>
+        <property
+          name="routeToRoles"><![CDATA[]]></property>
+        <property
+          name="checklistitem"><![CDATA[<checklistItems percentCompleted="" isAllowedExtendItems="false"><item  id="6d962c1d-e06f-43ee-a1b6-ff5ee99d4e7b" name="Knowledge Transfer" required="true"></item><item  id="0555e998-58b7-4a23-8e78-1e88597ebf40" name="Documentation" required="false"></item><item  id="7d0af5ba-7e6a-4a28-9b8c-6af40279c25a" name="Verification" required="false"></item></checklistItems>]]></property>
+        <property
+          name="taskDesc"><![CDATA[Check List Task]]></property>
+        <property
+          name="taskBody"><![CDATA[Check List Task Detail Description]]></property>
+        <property
+          name="routedItem"><![CDATA[Check List Task Detail Description]]></property>
+        <property
+          name="showURL"><![CDATA[https://www.flowwright.com/]]></property>
+        <property
+          name="emailAddresses"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Normal]]></property>
+        <property
+          name="daysToComplete"><![CDATA[2]]></property>
+        <property
+          name="expireType"><![CDATA[hours]]></property>
+        <property
+          name="includeWeekends"><![CDATA[1]]></property>
+        <property
+          name="useFullDuration"><![CDATA[yes]]></property>
+        <property
+          name="taskRoutingRules"><![CDATA[0]]></property>
+        <property
+          name="taskReminder"><![CDATA[]]></property>
+        <property
+          name="waitForAll"><![CDATA[yes]]></property>
+        <property
+          name="storeRouteToUsers"><![CDATA[variable.routedUserList]]></property>
+        <property
+          name="sendEmailNotification"><![CDATA[yes]]></property>
+        <property
+          name="fromEmail"><![CDATA[]]></property>
+        <property
+          name="emailSubject"><![CDATA[Sample Task - Email]]></property>
+        <property
+          name="emailBody"><![CDATA[<p><span style="font-size: 12pt;">Hi. This Task&nbsp;$TASKID meets the compliance check.&nbsp;</span></p><p><span style="font-size: 12pt;">$LINK</span></p><p><span style="font-size: 12pt;">Variable.initiatorName</span></p><p><span style="font-size: 12pt;">$APPROVEBUTTON</span></p><p><span style="font-size: 12pt;">$REJECTBUTTON</span><br></p>]]></property>
+        <property
+          name="emailFiles"><![CDATA[]]></property>
+        <property
+          name="emailCCList"><![CDATA[]]></property>
+        <property
+          name="sendExpireEmail"><![CDATA[yes]]></property>
+        <property
+          name="sendSeparateEmails"><![CDATA[no]]></property>
+        <property
+          name="sendAckLink"><![CDATA[yes]]></property>
+        <property
+          name="approveButtonLabel"><![CDATA[OK]]></property>
+        <property
+          name="rejectButtonLabel"><![CDATA[Not OK]]></property>
+        <property
+          name="hideRejectButton"><![CDATA[no]]></property>
+        <property
+          name="userCanReAssign"><![CDATA[yes]]></property>
+        <property
+          name="commentRequired"><![CDATA[yes]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="emailBody_TemplateID"><![CDATA[]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="c2043eb4-87a2-17c4-419e-26a705ea7164"
+      label=""
+      size="3"
+      type=""
+      srcParentID="d8cba78f-e8d9-48e3-8b16-1805046d27a7"
+      srcParentType="start"
+      trgParentID="46bf7899-fa22-652d-9c74-f59ddefccc3e"
+      trgParentType="checklisttask"
+      router="junction"
+      color="0000ff"
+      lblx="160"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="160"
+          y="59" />
+        <point
+          x="160"
+          y="60" />
+        <point
+          x="240"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
