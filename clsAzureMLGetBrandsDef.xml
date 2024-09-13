@@ -1,0 +1,115 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="f7b746d1-15cc-4a06-a2d3-14d05fe42abb">
+  <figures>
+    <figure
+      id="cffebc01-1567-44eb-8607-43a801e23eca"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[result:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="ae14bc3a-61c4-6143-76fc-a63ea3623dc0"
+      name="Brand detection"
+      type="clsazuremlgetbrands"
+      x="280"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Brand detection]]></property>
+        <property
+          name="type"><![CDATA[clsazuremlgetbrands]]></property>
+        <property
+          name="itemName"><![CDATA[Brand detection]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsAzureMLGetBrands]]></property>
+        <property
+          name="imageFilePath"><![CDATA[C:\FlowWright\wwwroot\tempfiles\Popular-Brands-05.jpg]]></property>
+        <property
+          name="varGlobalToStoreValue"><![CDATA[variable.result]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsAzureMLGetBrands - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsAzureMLGetBrands - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Azure Cognitive Service Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="9ab30ed9-9ad7-da62-86af-db4e515c51bb"
+      label=""
+      size="5"
+      type=""
+      srcParentID="cffebc01-1567-44eb-8607-43a801e23eca"
+      srcParentType="start"
+      trgParentID="ae14bc3a-61c4-6143-76fc-a63ea3623dc0"
+      trgParentType="clsazuremlgetbrands"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
