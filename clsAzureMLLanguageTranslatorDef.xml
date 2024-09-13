@@ -1,0 +1,131 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="1fb9e184-e2ba-493c-98a0-5841075bf7f1">
+  <figures>
+    <figure
+      id="004d310a-9efa-4299-bb63-ae4583f76f87"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[resultText:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="1ae74d67-9173-f1f7-bdd5-deb6752cbfb6"
+      name="Translate text"
+      type="clsazuremllanguagetranslator"
+      x="280"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Translate text]]></property>
+        <property
+          name="type"><![CDATA[clsazuremllanguagetranslator]]></property>
+        <property
+          name="itemName"><![CDATA[Translate text]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsAzureMLLanguageTranslator]]></property>
+        <property
+          name="textToTranslate"><![CDATA[Työnkulku on vain YKSI osa liiketoimintaprosessien hallintajärjestelmää (iBPMS).&#xA;&#xA;Mitä FlowWright tarjoaa BPM-ohjelmiston suhteen?  FlowWright tarjoaa kaiken ja enemmän, mitä tarvitset manuaalisten prosessien automatisointiin ja muuntamiseen täysin integroiduiksi digitaalisiksi prosesseiksi. Yllä olevan kaavion perusteella tässä ovat FlowWrightin päämoduulit, jotka kuvastavat BPM:n elinkaarta:]]></property>
+        <property
+          name="selectFromLanguage"><![CDATA[AutoDetect]]></property>
+        <property
+          name="selectToLanguage"><![CDATA[en]]></property>
+        <property
+          name="varGlobalToStoreValue"><![CDATA[variable.resultText]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsAzureMLLanguageTranslator - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsAzureMLLanguageTranslator - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Azure Conginitive Services Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="72fc3913-5fc7-b8b9-cfe0-12c161c1eb53"
+      label=""
+      size="5"
+      type=""
+      srcParentID="004d310a-9efa-4299-bb63-ae4583f76f87"
+      srcParentType="start"
+      trgParentID="1ae74d67-9173-f1f7-bdd5-deb6752cbfb6"
+      trgParentType="clsazuremllanguagetranslator"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
