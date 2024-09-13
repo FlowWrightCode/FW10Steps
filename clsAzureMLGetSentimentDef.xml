@@ -1,0 +1,129 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="6a0c7c23-38be-477a-a804-25bd477fef9d">
+  <figures>
+    <figure
+      id="4975b1a9-da8d-457c-b723-24fb7097dc70"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[resultBad:String|resultScore:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8504b768-c57c-8708-6941-b5c2f86199b5"
+      name="Sentiment Analysis"
+      type="clsazuremlgetsentiment"
+      x="240"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Sentiment Analysis]]></property>
+        <property
+          name="type"><![CDATA[clsazuremlgetsentiment]]></property>
+        <property
+          name="itemName"><![CDATA[Sentiment Analysis]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsAzureMLGetSentiment]]></property>
+        <property
+          name="sentiment"><![CDATA[Shit! I forgot about that.]]></property>
+        <property
+          name="varGlobalToStoreValue"><![CDATA[variable.resultBad]]></property>
+        <property
+          name="varGlobalScore"><![CDATA[variable.resultScore]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsAzureMLGetSentiment - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsAzureMLGetSentiment - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Azure Cognitive Service Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="8e53e55a-32ad-18a4-0b8d-a2a81dcfe0ae"
+      label=""
+      size="5"
+      type=""
+      srcParentID="4975b1a9-da8d-457c-b723-24fb7097dc70"
+      srcParentType="start"
+      trgParentID="8504b768-c57c-8708-6941-b5c2f86199b5"
+      trgParentType="clsazuremlgetsentiment"
+      router="junction"
+      color="0000ff"
+      lblx="160"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="240"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
