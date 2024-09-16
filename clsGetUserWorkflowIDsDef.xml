@@ -1,0 +1,127 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="ae5e7a01-bf98-4400-9f4f-2cae8fe7de7d">
+  <figures>
+    <figure
+      id="0b0f14ab-ed07-4b45-bb3c-37c0b9968dcf"
+      name="start"
+      type="start"
+      x="80"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[WFUserID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a0204627-315e-1dbb-69ba-a389f3e222c0"
+      name="List of user workflow ids"
+      type="clsgetuserworkflowids"
+      x="320"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[List of user workflow ids]]></property>
+        <property
+          name="type"><![CDATA[clsgetuserworkflowids]]></property>
+        <property
+          name="itemName"><![CDATA[List of user workflow ids]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsGetUserWorkflowIDs]]></property>
+        <property
+          name="userNames"><![CDATA[FWAdmin; RegularUser;]]></property>
+        <property
+          name="varGlobalUserIds"><![CDATA[variable.WFUserID]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsGetUserWorkflowIDs - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsGetUserWorkflowIDs - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[User Management Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="1056b1c3-097d-8599-6554-c19d3174dfd3"
+      label=""
+      size="5"
+      type=""
+      srcParentID="0b0f14ab-ed07-4b45-bb3c-37c0b9968dcf"
+      srcParentType="start"
+      trgParentID="a0204627-315e-1dbb-69ba-a389f3e222c0"
+      trgParentType="clsgetuserworkflowids"
+      router="junction"
+      color="0000ff"
+      lblx="220"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="120"
+          y="140" />
+        <point
+          x="320"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
