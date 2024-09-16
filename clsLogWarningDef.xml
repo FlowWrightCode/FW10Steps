@@ -1,0 +1,129 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="f6ca08ef-a08a-44a9-ab9a-d22d47e7fc42">
+  <figures>
+    <figure
+      id="0070c560-5fdc-4deb-bfdb-086a4b9da095"
+      name="start"
+      type="start"
+      x="40"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="69da33e7-93b0-e2f2-5c9b-3d27ada6ec07"
+      name="Log Warning"
+      type="clslogwarning"
+      x="270"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Warning]]></property>
+        <property
+          name="type"><![CDATA[clslogwarning]]></property>
+        <property
+          name="itemName"><![CDATA[Log Warning]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsLogWarning]]></property>
+        <property
+          name="source"><![CDATA[Log Warning]]></property>
+        <property
+          name="messageData"><![CDATA[Task is expiring - created on Variable.createdOn]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsLogWarning - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsLogWarning - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Log State]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="f9afe7c9-f545-31d3-fc41-bf35abd4e26d"
+      label=""
+      size="5"
+      type=""
+      srcParentID="0070c560-5fdc-4deb-bfdb-086a4b9da095"
+      srcParentType="start"
+      trgParentID="69da33e7-93b0-e2f2-5c9b-3d27ada6ec07"
+      trgParentType="clslogwarning"
+      router="junction"
+      color="0000ff"
+      lblx="175"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="140" />
+        <point
+          x="270"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
