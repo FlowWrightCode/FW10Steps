@@ -1,0 +1,12 @@
+<microservice id="1a43851c-62cd-48b2-bdee-000a1b5a11ce" desc="AddTwoNumbers" name="AddTwoNumbers" defID="26192142-121b-44ea-8d0c-65bf9703d718" updatedBy="d5fe11a1-502b-4502-babd-0d99d3804166" updatedOn="9/4/2024 9:25:22 AM">
+  <inputs defID="26192142-121b-44ea-8d0c-65bf9703d718">
+    <input name="num1" desc="num1" varGlobal="Variable.num1" isformbody="false"></input>
+    <input name="num2" desc="num2" varGlobal="Variable.num2" isformbody="false"></input>
+  </inputs>
+  <outputs defID="26192142-121b-44ea-8d0c-65bf9703d718">
+    <output name="Result" varGlobal="Variable.sum"></output>
+  </outputs>
+  <basicAuth on="False" />
+  <logging on="True" />
+  <httpMethod>get</httpMethod>
+</microservice>
