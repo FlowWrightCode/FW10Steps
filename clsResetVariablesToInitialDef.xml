@@ -1,0 +1,192 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="4d22f706-2610-4524-943a-e2633bd9ebaa">
+  <figures>
+    <figure
+      id="9f446cff-2a39-4971-ab6a-f5e9e14e0d57"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[POAmount:Number|PODate:Date|currencyType:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="5d52ea71-f4a5-2aff-db50-ee3c8c093cc9"
+      name="Update Variables"
+      type="updatevariable"
+      x="200"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[updateVariable]]></property>
+        <property
+          name="updateVariables"><![CDATA[Variable.currencyType~Coins|Variable.POAmount~2500|Variable.PODate~9/22/2024 5:23:34 PM]]></property>
+        <property
+          name="variableName"><![CDATA[]]></property>
+        <property
+          name="variableValue"><![CDATA[]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[updateVariable - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[updateVariable - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="cb98c484-a40f-7c9a-1a53-85459f00c0b7"
+      name="Reset Variables"
+      type="clsresetvariablestoinitial"
+      x="360"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Reset Variables]]></property>
+        <property
+          name="type"><![CDATA[clsresetvariablestoinitial]]></property>
+        <property
+          name="itemName"><![CDATA[Reset Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsResetVariablesToInitial]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsResetVariablesToInitial - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsResetVariablesToInitial - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="0657605a-2e6a-c60c-ae45-e1f14a17b3e7"
+      label=""
+      size="5"
+      type=""
+      srcParentID="5d52ea71-f4a5-2aff-db50-ee3c8c093cc9"
+      srcParentType="updatevariable"
+      trgParentID="cb98c484-a40f-7c9a-1a53-85459f00c0b7"
+      trgParentType="clsresetvariablestoinitial"
+      router="junction"
+      color="0000ff"
+      lblx="300"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="59" />
+        <point
+          x="360"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="06c8b5e3-ce57-1d3d-73d6-80542b6c1fe2"
+      label=""
+      size="5"
+      type=""
+      srcParentID="9f446cff-2a39-4971-ab6a-f5e9e14e0d57"
+      srcParentType="start"
+      trgParentID="5d52ea71-f4a5-2aff-db50-ee3c8c093cc9"
+      trgParentType="updatevariable"
+      router="junction"
+      color="0000ff"
+      lblx="140"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="200"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
