@@ -1,0 +1,137 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="ca851df6-7fef-4b40-9ef3-8a44d3a69ac2">
+  <figures>
+    <figure
+      id="ff3ad725-ae80-480d-b198-435e8cdd0e1e"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="16530332-b93f-a1fe-5d8a-c706e0c64265"
+      name="Send Msg"
+      type="clssendrabbitmqmessage"
+      x="280"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Msg]]></property>
+        <property
+          name="type"><![CDATA[clssendrabbitmqmessage]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Send Msg]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsSendRabbitMQMessage]]></property>
+        <property
+          name="RabbitMQ"><![CDATA[73945ea2-46e1-4c0b-92f2-fe65bdfd2116]]></property>
+        <property
+          name="messageData"><![CDATA[Test message from RabbitMQ Service]]></property>
+        <property
+          name="exchange"><![CDATA[E1]]></property>
+        <property
+          name="messageQueue"><![CDATA[Q1]]></property>
+        <property
+          name="routingKey"><![CDATA[]]></property>
+        <property
+          name="messageParms"><![CDATA[Location~BNS]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsSendRabbitMQMessage - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsSendRabbitMQMessage - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[RabbitMQ Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="146b66a4-f447-1a82-fd19-424f5dc75cf4"
+      label=""
+      size="5"
+      type=""
+      srcParentID="ff3ad725-ae80-480d-b198-435e8cdd0e1e"
+      srcParentType="start"
+      trgParentID="16530332-b93f-a1fe-5d8a-c706e0c64265"
+      trgParentType="clssendrabbitmqmessage"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
