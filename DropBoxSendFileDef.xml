@@ -1,0 +1,135 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="cd075e7e-707b-4a69-890b-e14d7550f94b">
+  <figures>
+    <figure
+      id="2e0c3eee-ccb2-4fb5-9474-e6a5015a6e4a"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="20ec8774-2345-7c8a-c1ca-47eb956fffbe"
+      name="Upload File"
+      type="dropboxsendfile"
+      x="280"
+      y="40"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Upload File]]></property>
+        <property
+          name="type"><![CDATA[dropboxsendfile]]></property>
+        <property
+          name="itemName"><![CDATA[Upload File]]></property>
+        <property
+          name="itemDescription"><![CDATA[DropBoxSendFile]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[82ae0685-94cf-48ed-af4d-70a22e50747e]]></property>
+        <property
+          name="sourceFilePath"><![CDATA[C:\Temp\report.txt]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[/FlowWright10]]></property>
+        <property
+          name="LogMessage"><![CDATA[DropBoxSendFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DropBoxSendFile - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DropBox Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="a67123cf-8041-59de-e27b-b4fa3cd6f48c"
+      label=""
+      size="5"
+      type=""
+      srcParentID="2e0c3eee-ccb2-4fb5-9474-e6a5015a6e4a"
+      srcParentType="start"
+      trgParentID="20ec8774-2345-7c8a-c1ca-47eb956fffbe"
+      trgParentType="dropboxsendfile"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="180"
+          y="59" />
+        <point
+          x="180"
+          y="60" />
+        <point
+          x="280"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
