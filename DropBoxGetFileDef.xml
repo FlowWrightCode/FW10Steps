@@ -1,0 +1,114 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="a02e09b8-729a-4e4e-bc58-ce0b476a1452">
+  <figures>
+    <figure
+      id="92cad2dd-1608-4e5d-a604-1f0a01d6f378"
+      name="start"
+      type="start"
+      x="40"
+      y="39">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="717e4f37-94b9-fe6d-8131-63f4ede2f5d1"
+      name="Download file"
+      type="dropboxgetfile"
+      x="280"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Download file]]></property>
+        <property
+          name="type"><![CDATA[dropboxgetfile]]></property>
+        <property
+          name="itemName"><![CDATA[Download file]]></property>
+        <property
+          name="itemDescription"><![CDATA[DropboxGetFile]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[82ae0685-94cf-48ed-af4d-70a22e50747e]]></property>
+        <property
+          name="sourceFilePath"><![CDATA[/FlowWright10/textfile.txt]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[c:\temp]]></property>
+        <property
+          name="LogMessage"><![CDATA[DropboxGetFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DropboxGetFile - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DropBox Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="54905aae-e8fc-b7fe-1815-89e3706c2062"
+      label=""
+      size="5"
+      type=""
+      srcParentID="92cad2dd-1608-4e5d-a604-1f0a01d6f378"
+      srcParentType="start"
+      trgParentID="717e4f37-94b9-fe6d-8131-63f4ede2f5d1"
+      trgParentType="dropboxgetfile"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
