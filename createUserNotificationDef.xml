@@ -1,0 +1,135 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="38e36f86-a45e-4bdf-8a88-ad49e1023190">
+  <figures>
+    <figure
+      id="e711704d-ad03-4223-8182-017f9f4d4021"
+      name="start"
+      type="start"
+      x="120"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="259c4811-c1b3-4fcb-8291-29e49e13fd6d"
+      name="Create user notification"
+      type="createusernotification"
+      x="360"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Create user notification]]></property>
+        <property
+          name="type"><![CDATA[createusernotification]]></property>
+        <property
+          name="itemName"><![CDATA[Create user notification]]></property>
+        <property
+          name="itemDescription"><![CDATA[createUserNotification]]></property>
+        <property
+          name="assignTo"><![CDATA[Variable.initiatorID]]></property>
+        <property
+          name="assignToRoles"><![CDATA[]]></property>
+        <property
+          name="subject"><![CDATA[Privacy Policy and Terms of Use updates.]]></property>
+        <property
+          name="message"><![CDATA[<p><span style="font-size: 14pt;">Hi!</span></p><p><span style="font-size: 14pt;">The Privacy Policy has been changed. Visit the User's Portal for more information.&nbsp;</span></p><p><span style="font-size: 14pt;">Regards.&nbsp;</span></p>]]></property>
+        <property
+          name="emailNotify"><![CDATA[1]]></property>
+        <property
+          name="LogMessage"><![CDATA[createUserNotification - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[createUserNotification - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="message_TemplateID"><![CDATA[]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="95a5a81d-9ce5-3b77-e493-7628387a6f9f"
+      label=""
+      size="5"
+      type=""
+      srcParentID="e711704d-ad03-4223-8182-017f9f4d4021"
+      srcParentType="start"
+      trgParentID="259c4811-c1b3-4fcb-8291-29e49e13fd6d"
+      trgParentType="createusernotification"
+      router="junction"
+      color="0000ff"
+      lblx="260"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="160"
+          y="180" />
+        <point
+          x="360"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
