@@ -1,0 +1,423 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="2431480f-9061-4525-a51b-9382901d8e49">
+  <figures>
+    <figure
+      id="5ecc5875-301f-4e42-8834-864eda447331"
+      name="start"
+      type="start"
+      x="150"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varParam1:String|formID:String|Attachments:String|FileName:String|currentkey:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[glbParam1:String]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="321a3130-2c2c-12a3-ace1-40513926d4ab"
+      name="Update Variables"
+      type="updatevariable"
+      x="310"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[updateVariable]]></property>
+        <property
+          name="updateVariables"><![CDATA[]]></property>
+        <property
+          name="variableName"><![CDATA[variable.varParam1]]></property>
+        <property
+          name="variableValue"><![CDATA[VARIABLE Text From PARENT ]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[updateVariable - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="842768f1-2b74-5bfc-099d-50d54eb83e6c"
+      name="Update Globals"
+      type="updateglobals"
+      x="440"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Globals]]></property>
+        <property
+          name="type"><![CDATA[updateglobals]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Update Globals]]></property>
+        <property
+          name="itemDescription"><![CDATA[updateGlobals]]></property>
+        <property
+          name="updateGlobals"><![CDATA[global.glbParam1~GLOBAL Text From PARENT]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[updateGlobals - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[updateGlobals - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="722c9783-af03-d092-34f0-e2e7fd6118c2"
+      name="Get Attachments"
+      type="getfileattachments"
+      x="590"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get Attachments]]></property>
+        <property
+          name="type"><![CDATA[getfileattachments]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get Attachments]]></property>
+        <property
+          name="itemDescription"><![CDATA[getFileAttachments]]></property>
+        <property
+          name="formInstanceID"><![CDATA[variable.formID]]></property>
+        <property
+          name="filefieldMappings"><![CDATA[file1]]></property>
+        <property
+          name="formID"><![CDATA[524fa94a-e905-45fd-be02-c2e64663273a]]></property>
+        <property
+          name="fileAttachmentsPath"><![CDATA[variable.Attachments]]></property>
+        <property
+          name="fileAttachmentsFileName"><![CDATA[variable.FileName]]></property>
+        <property
+          name="fileAttachmentsFormat"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[getFileAttachments - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[getFileAttachments - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="afbe3839-38f1-2b4c-3ae4-416c7af9666e"
+      name="Dynamic Subworkflow"
+      type="dynamicsubworkflow"
+      x="750"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Dynamic Subworkflow]]></property>
+        <property
+          name="type"><![CDATA[dynamicsubworkflow]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Dynamic Subworkflow]]></property>
+        <property
+          name="itemDescription"><![CDATA[dynamicSubWorkflow]]></property>
+        <property
+          name="definitionID"><![CDATA[887dc7d8-7f18-4144-be37-e317fe0d22e3]]></property>
+        <property
+          name="passVariablesToChild"><![CDATA[yes]]></property>
+        <property
+          name="passVariablesBackToParent"><![CDATA[yes]]></property>
+        <property
+          name="passGlobalsToChild"><![CDATA[yes]]></property>
+        <property
+          name="passGlobalsBackToParent"><![CDATA[yes]]></property>
+        <property
+          name="dynamicKeys"><![CDATA[Variable.FileName]]></property>
+        <property
+          name="childKeyVariableName"><![CDATA[Variable.currentkey]]></property>
+        <property
+          name="isSynched"><![CDATA[yes]]></property>
+        <property
+          name="pcvarmap"><![CDATA[varParam2~Variable.varParam1]]></property>
+        <property
+          name="pcglobalmap"><![CDATA[glbParam2~Global.glbParam1]]></property>
+        <property
+          name="cpvarmap"><![CDATA[varParam2~Variable.varParam1]]></property>
+        <property
+          name="cpglobalmap"><![CDATA[glbParam2~Global.glbParam1]]></property>
+        <property
+          name="LogMessage"><![CDATA[dynamicSubWorkflow - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[dynamicSubWorkflow - Variable.initiatorName]]></property>
+        <property
+          name="sub-def-name"><![CDATA[BooleanDef]]></property>
+        <property
+          name="instState"><![CDATA[Subworkflow Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="dd4dcdb4-1d09-4dad-2fbd-8e8b6ead629a"
+      name="Place Holder"
+      type="placeholder"
+      x="910"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="1a2b3430-6a02-c144-9116-04afffbc35da"
+      label=""
+      size="5"
+      type=""
+      srcParentID="afbe3839-38f1-2b4c-3ae4-416c7af9666e"
+      srcParentType="dynamicsubworkflow"
+      trgParentID="dd4dcdb4-1d09-4dad-2fbd-8e8b6ead629a"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="850"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="790"
+          y="100" />
+        <point
+          x="910"
+          y="100" />
+      </line>
+    </connection>
+    <connection
+      id="9b67d461-038c-68b3-1e96-0c4027228117"
+      label=""
+      size="5"
+      type=""
+      srcParentID="722c9783-af03-d092-34f0-e2e7fd6118c2"
+      srcParentType="getfileattachments"
+      trgParentID="afbe3839-38f1-2b4c-3ae4-416c7af9666e"
+      trgParentType="dynamicsubworkflow"
+      router="junction"
+      color="0000ff"
+      lblx="690"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="630"
+          y="100" />
+        <point
+          x="750"
+          y="100" />
+      </line>
+    </connection>
+    <connection
+      id="ba350a57-9f94-31cd-2602-fc0eb5d44446"
+      label=""
+      size="5"
+      type=""
+      srcParentID="842768f1-2b74-5bfc-099d-50d54eb83e6c"
+      srcParentType="updateglobals"
+      trgParentID="722c9783-af03-d092-34f0-e2e7fd6118c2"
+      trgParentType="getfileattachments"
+      router="junction"
+      color="0000ff"
+      lblx="535"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="480"
+          y="100" />
+        <point
+          x="590"
+          y="100" />
+      </line>
+    </connection>
+    <connection
+      id="615f62a7-8950-12a2-16b8-d473d7b2c72d"
+      label=""
+      size="5"
+      type=""
+      srcParentID="321a3130-2c2c-12a3-ace1-40513926d4ab"
+      srcParentType="updatevariable"
+      trgParentID="842768f1-2b74-5bfc-099d-50d54eb83e6c"
+      trgParentType="updateglobals"
+      router="junction"
+      color="0000ff"
+      lblx="395"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="350"
+          y="100" />
+        <point
+          x="440"
+          y="100" />
+      </line>
+    </connection>
+    <connection
+      id="dfb2ffc8-d808-5911-1b37-bd5ef46e8a1c"
+      label=""
+      size="5"
+      type=""
+      srcParentID="5ecc5875-301f-4e42-8834-864eda447331"
+      srcParentType="start"
+      trgParentID="321a3130-2c2c-12a3-ace1-40513926d4ab"
+      trgParentType="updatevariable"
+      router="junction"
+      color="0000ff"
+      lblx="250"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="190"
+          y="100" />
+        <point
+          x="310"
+          y="100" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
