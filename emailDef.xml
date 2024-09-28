@@ -1,0 +1,147 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="d44a80a1-01a1-45e4-96da-5c5c97fbd95e">
+  <figures>
+    <figure
+      id="70272382-6c31-484f-a9e1-d1e582783e0f"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8e9662cd-f058-44b9-a975-acdb6d226ce4"
+      name="Send Email"
+      type="email"
+      x="250"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Email]]></property>
+        <property
+          name="type"><![CDATA[email]]></property>
+        <property
+          name="itemName"><![CDATA[Send Email]]></property>
+        <property
+          name="itemDescription"><![CDATA[email]]></property>
+        <property
+          name="replyTo"><![CDATA[offshoresupport@flowwright.com]]></property>
+        <property
+          name="fromEmail"><![CDATA[]]></property>
+        <property
+          name="emailTo"><![CDATA[]]></property>
+        <property
+          name="emailToRoles"><![CDATA[]]></property>
+        <property
+          name="emailAddresses"><![CDATA[ext1@test.com; ext2@test.com; ext3@test.com;]]></property>
+        <property
+          name="subject"><![CDATA[Review all proposals]]></property>
+        <property
+          name="body"><![CDATA[]]></property>
+        <property
+          name="cc"><![CDATA[cc1@test.com; cc2@test.com; cc3@test.com;]]></property>
+        <property
+          name="bcc"><![CDATA[bcc1@test.com; bcc2@test.com; bcc3@test.com;]]></property>
+        <property
+          name="fileList"><![CDATA[c:\FlowWright10\wwwroot\tempfiles\proposals.doc]]></property>
+        <property
+          name="sendUsingQueue"><![CDATA[1]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="LogMessage"><![CDATA[email - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Email Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="5e0a09da-485a-9a1c-2c72-15352c732684"
+      label=""
+      size="5"
+      type=""
+      srcParentID="70272382-6c31-484f-a9e1-d1e582783e0f"
+      srcParentType="start"
+      trgParentID="8e9662cd-f058-44b9-a975-acdb6d226ce4"
+      trgParentType="email"
+      router="junction"
+      color="0000ff"
+      lblx="165"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="250"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
