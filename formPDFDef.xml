@@ -1,0 +1,241 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="ad377c67-ef4c-4d4e-9b3c-ef884560e816">
+  <figures>
+    <figure
+      id="dbac2031-60f2-4312-9ffb-900afe74cad0"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[formID:String|PFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="97a8cf57-2873-7efe-5461-9c0dd5cbe680"
+      name="Prepare PDF"
+      type="formpdf"
+      x="400"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Prepare PDF]]></property>
+        <property
+          name="type"><![CDATA[formpdf]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Prepare PDF]]></property>
+        <property
+          name="itemDescription"><![CDATA[formPDF]]></property>
+        <property
+          name="formInstanceID"><![CDATA[variable.formID]]></property>
+        <property
+          name="outputPath"><![CDATA[variable.PFilePath]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[formPDF - Variable.initiatorName]]></property>
+        <property
+          name="outputVirtualPath"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[formPDF - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[PDF Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="0283293a-2270-d89f-33fe-c9f7697dfde2"
+      name="Route Form - Leave Application"
+      type="routeform"
+      x="240"
+      y="40"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Route Form - Leave Application]]></property>
+        <property
+          name="type"><![CDATA[routeform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Route Form - Leave Application]]></property>
+        <property
+          name="itemDescription"><![CDATA[routeForm]]></property>
+        <property
+          name="taskName"><![CDATA[Route Form - Leave Application]]></property>
+        <property
+          name="taskDesc"><![CDATA[Route Form - Leave Application]]></property>
+        <property
+          name="routeTo"><![CDATA[Variable.initiatorID]]></property>
+        <property
+          name="routeToRoles"><![CDATA[]]></property>
+        <property
+          name="formDefinition"><![CDATA[a8799e6a-f628-41ff-af31-7529e3d15f93]]></property>
+        <property
+          name="formInstanceID"><![CDATA[variable.formID]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="daysToComplete"><![CDATA[1]]></property>
+        <property
+          name="expireType"><![CDATA[days]]></property>
+        <property
+          name="includeWeekends"><![CDATA[0]]></property>
+        <property
+          name="taskRoutingRules"><![CDATA[0]]></property>
+        <property
+          name="taskReminder"><![CDATA[]]></property>
+        <property
+          name="sendEmailNotification"><![CDATA[no]]></property>
+        <property
+          name="emailSubject"><![CDATA[]]></property>
+        <property
+          name="emailBody"><![CDATA[]]></property>
+        <property
+          name="emailFiles"><![CDATA[]]></property>
+        <property
+          name="hideReadOnlyFields"><![CDATA[a49a4301-3d9f-4739-a61b-e6ea0e5f02ef~formapproval1btnCompleteTask^false^false|formapproval1btnRejectTask^false^false|formapproval1form^false^false|hr1^false^false|label1^false^false|label2^false^false|label3^false^false|label4^false^false|label5^false^false|lookup1^false^false|lookup2^true^false|lookup3^false^true|lookup4^true^true|lookup5^false^false|radio1^false^false|select1^false^false|submitform1btnSave^false^false|submitform1form^false^false|text1^false^false|text2^false^false|text3^false^false|text4^false^false|text5^false^false]]></property>
+        <property
+          name="hideReadOnlySubForms"><![CDATA[a49a4301-3d9f-4739-a61b-e6ea0e5f02ef~]]></property>
+        <property
+          name="emailAddresses"><![CDATA[]]></property>
+        <property
+          name="userCanReAssign"><![CDATA[no]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[routeForm - Variable.initiatorName]]></property>
+        <property
+          name="emailCCList"><![CDATA[]]></property>
+        <property
+          name="waitForAll"><![CDATA[no]]></property>
+        <property
+          name="sendSeparateEmails"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[routeForm - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Form Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="121dda4d-d31a-f69c-65cc-de26bdb28d7a"
+      label=""
+      size="3"
+      type=""
+      srcParentID="dbac2031-60f2-4312-9ffb-900afe74cad0"
+      srcParentType="start"
+      trgParentID="0283293a-2270-d89f-33fe-c9f7697dfde2"
+      trgParentType="routeform"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="169"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="169"
+          y="59" />
+        <point
+          x="169"
+          y="60" />
+        <point
+          x="240"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="28759ca3-bd59-f610-1e15-e20ca19a549c"
+      label=""
+      size="3"
+      type=""
+      srcParentID="0283293a-2270-d89f-33fe-c9f7697dfde2"
+      srcParentType="routeform"
+      trgParentID="97a8cf57-2873-7efe-5461-9c0dd5cbe680"
+      trgParentType="formpdf"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="340"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="60" />
+        <point
+          x="340"
+          y="60" />
+        <point
+          x="340"
+          y="59" />
+        <point
+          x="400"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
