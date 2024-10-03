@@ -1,0 +1,127 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="4bec6d12-23a4-4c99-b00a-cdd66f747042">
+  <figures>
+    <figure
+      id="08b5d124-ba0a-4a26-bd0e-526f34f68722"
+      name="start"
+      type="start"
+      x="80"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d6400e84-aa16-1af1-3ecf-17cb63b9484d"
+      name="Generate Event"
+      type="generateevent"
+      x="310"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Event]]></property>
+        <property
+          name="type"><![CDATA[generateevent]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Event]]></property>
+        <property
+          name="itemDescription"><![CDATA[generateEvent]]></property>
+        <property
+          name="event"><![CDATA[b8c666cc-1fef-417d-9839-f596de0bd876]]></property>
+        <property
+          name="eventParms"><![CDATA[PONumber~100|POAmount~500]]></property>
+        <property
+          name="LogMessage"><![CDATA[generateEvent - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[generateEvent - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[ESB Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="013837fe-8edf-122e-68c4-ab9af480ef89"
+      label=""
+      size="5"
+      type=""
+      srcParentID="08b5d124-ba0a-4a26-bd0e-526f34f68722"
+      srcParentType="start"
+      trgParentID="d6400e84-aa16-1af1-3ecf-17cb63b9484d"
+      trgParentType="generateevent"
+      router="junction"
+      color="0000ff"
+      lblx="215"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="120"
+          y="140" />
+        <point
+          x="310"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
