@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="9b98aace-1080-449a-9043-be1e1c0b74ba">
+  <figures>
+    <figure
+      id="428d7005-5d98-4cf2-b604-0e3cb8fade49"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[outputFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="75591fce-1a65-4b0a-0d02-b9f384123a98"
+      name="Generate Output Document"
+      type="generateoutputdoc"
+      x="290"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Output Document]]></property>
+        <property
+          name="type"><![CDATA[generateoutputdoc]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Output Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[generateOutputDoc]]></property>
+        <property
+          name="docContent"><![CDATA[<div class="dmNewParagraph u_WorkflowAutomationForEveryTeam" data-element-type="paragraph" data-version="5" id="WorkflowAutomationForEveryTeam" data-anchor="WorkflowAutomationForEveryTeam" style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; max-width: 100%; line-height: 2; -webkit-tap-highlight-color: transparent; color: rgb(76, 74, 74); font-family: Inter, &quot;Inter Fallback&quot;; font-size: 18px; transition: none; margin: 0px 0px 8px !important; padding: 2px 0px !important; float: none !important; top: 0px !important; left: 0px !important; width: calc(100% + 0px) !important; position: relative !important; height: auto !important; min-width: 25px !important;"><h1 class="m-size-24 size-30" style="border: 0px solid rgb(51, 51, 51); font-size: 48px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; font-family: Roboto, &quot;Roboto Fallback&quot;; direction: ltr; text-decoration: inherit; line-height: initial;"><span class="m-font-size-24 font-size-30" style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial; font-size: 30px !important;">Workflow Automation Software For Every Team</span></h1></div><div class="dmNewParagraph" data-element-type="paragraph" data-version="5" id="1616171762" style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; margin: 8px 0px; padding: 2px 0px; max-width: 100%; line-height: 2; -webkit-tap-highlight-color: transparent; color: rgb(76, 74, 74); font-family: Inter, &quot;Inter Fallback&quot;; font-size: 18px;"><p style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; margin-bottom: 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span class="" style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">A huge source of inefficiency ensues when subject matter experts attempt to translate what they need to developers and then resulting implementations fails to embody the requirements.&nbsp;</span></p><p style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; margin-bottom: 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;"><br style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent;"></span></p><p style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; margin-bottom: 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span class="" style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">In FlowWright, Subject Matter Experts (SME's) and Business Analysts are empowered with intuitive and</span>&nbsp;</span><a href="https://www.flowwright.com/the-power-of-html5-in-process-automation" runtime_url="/the-power-of-html5-in-process-automation" type="blog_post" blog_post_id="15026070" style="border: 0px solid rgb(51, 51, 51); vertical-align: initial; -webkit-font-smoothing: antialiased; color: rgb(240, 168, 9); -webkit-tap-highlight-color: transparent; display: initial;">graphical tools</a><span class="" style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">&nbsp;<span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">to:</span></span></p><p style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; margin-bottom: 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;"><br style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent;"></span></p><ul class="defaultList bullet" style="border: 0px solid rgb(51, 51, 51); margin-right: 0px; margin-bottom: 0px; margin-left: 0px; vertical-align: top; -webkit-font-smoothing: antialiased; padding: 0px; counter-reset: list-1 0 list-2 0 list-3 0 list-4 0 list-5 0 list-6 0 list-7 0 list-8 0 list-9 0; -webkit-tap-highlight-color: transparent;"><li style="border: 0px solid rgb(51, 51, 51); vertical-align: top; -webkit-font-smoothing: antialiased; list-style-type: none; text-indent: -1.5em; margin: 0px 1em; margin-inline: 2em 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">Build workflows,</span></li><li style="border: 0px solid rgb(51, 51, 51); vertical-align: top; -webkit-font-smoothing: antialiased; list-style-type: none; text-indent: -1.5em; margin: 0px 1em; margin-inline: 2em 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><a href="https://www.flowwright.com/forms-automation" runtime_url="/forms-automation" type="page" style="border: 0px solid rgb(51, 51, 51); vertical-align: initial; -webkit-font-smoothing: antialiased; color: rgb(240, 168, 9); -webkit-tap-highlight-color: transparent; display: initial;">Create forms</a><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">,</span></li><li style="border: 0px solid rgb(51, 51, 51); vertical-align: top; -webkit-font-smoothing: antialiased; list-style-type: none; text-indent: -1.5em; margin: 0px 1em; margin-inline: 2em 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">Integrate systems,</span></li><li style="border: 0px solid rgb(51, 51, 51); vertical-align: top; -webkit-font-smoothing: antialiased; list-style-type: none; text-indent: -1.5em; margin: 0px 1em; margin-inline: 2em 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">Build decisions logic</span></li><li style="border: 0px solid rgb(51, 51, 51); vertical-align: top; -webkit-font-smoothing: antialiased; list-style-type: none; text-indent: -1.5em; margin: 0px 1em; margin-inline: 2em 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">Build the UI/UX for users and other roles</span></li><li style="border: 0px solid rgb(51, 51, 51); vertical-align: top; -webkit-font-smoothing: antialiased; list-style-type: none; text-indent: -1.5em; margin: 0px 1em; margin-inline: 2em 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">Debug and Validate Logic</span></li></ul><p style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; margin-bottom: 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;"><br style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent;"></span></p><p style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; margin-bottom: 0px; -webkit-tap-highlight-color: transparent; font-size: 16px; line-height: 1.08;"><span style="border: 0px solid rgb(51, 51, 51); -webkit-font-smoothing: antialiased; -webkit-tap-highlight-color: transparent; display: initial;">The result of empowering SMEs is rapid development of applications that do exactly what the experts intend them to do.</span></p></div>]]></property>
+        <property
+          name="fileVariable"><![CDATA[variable.outputFilePath]]></property>
+        <property
+          name="templatefilePath"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[generateOutputDoc - Variable.initiatorName]]></property>
+        <property
+          name="docContent_TemplateID"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[generateOutputDoc - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Forms Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="f81dac38-8fb7-7af3-44ad-fba0b150bc32"
+      label=""
+      size="3"
+      type=""
+      srcParentID="428d7005-5d98-4cf2-b604-0e3cb8fade49"
+      srcParentType="start"
+      trgParentID="75591fce-1a65-4b0a-0d02-b9f384123a98"
+      trgParentType="generateoutputdoc"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="129ce4"
+      lblx="194"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="290"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
