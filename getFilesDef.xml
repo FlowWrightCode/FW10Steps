@@ -1,0 +1,139 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="76b27a30-c902-43f3-9f7c-07c377ab41c8">
+  <figures>
+    <figure
+      id="c73c5d7d-25e6-428a-b9c0-851da120bfa8"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[storeXML:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="ad627f08-ef70-07ef-ca54-4ffb93e8ca4c"
+      name="Get Filelist"
+      type="getfiles"
+      x="290"
+      y="40"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get Filelist]]></property>
+        <property
+          name="type"><![CDATA[getfiles]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get Filelist]]></property>
+        <property
+          name="itemDescription"><![CDATA[getFiles]]></property>
+        <property
+          name="folderPath"><![CDATA[C:\FlowWright\wwwroot\TempFiles]]></property>
+        <property
+          name="fileScope"><![CDATA[*.pdf]]></property>
+        <property
+          name="selectSubFolders"><![CDATA[yes]]></property>
+        <property
+          name="variableToStore"><![CDATA[variable.storeXML]]></property>
+        <property
+          name="LogMessage"><![CDATA[getFiles - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[getFiles - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[File System Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="51084375-ec14-bb41-c375-4810963282dd"
+      label=""
+      size="5"
+      type=""
+      srcParentID="c73c5d7d-25e6-428a-b9c0-851da120bfa8"
+      srcParentType="start"
+      trgParentID="ad627f08-ef70-07ef-ca54-4ffb93e8ca4c"
+      trgParentType="getfiles"
+      router="junction"
+      color="0000ff"
+      lblx="185"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="185"
+          y="59" />
+        <point
+          x="185"
+          y="60" />
+        <point
+          x="290"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
