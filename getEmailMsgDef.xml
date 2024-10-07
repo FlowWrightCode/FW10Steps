@@ -1,0 +1,131 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="d2a83524-f119-4e08-b468-0adfc160547f">
+  <figures>
+    <figure
+      id="ac9089b2-29da-4c6f-905f-0de71a747b80"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[FileAttachments:String|ToEmail:String|emailBody:String|emailSubject:String|fromEmail:String|messageID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="3a5c44f9-d49c-8fd8-28cf-459bfd4810d9"
+      name="Get Email Message"
+      type="getemailmsg"
+      x="240"
+      y="40"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get Email Message]]></property>
+        <property
+          name="type"><![CDATA[getemailmsg]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get Email Message]]></property>
+        <property
+          name="itemDescription"><![CDATA[getEmailMsg]]></property>
+        <property
+          name="msgIDVariable"><![CDATA[Variable.messageID]]></property>
+        <property
+          name="varToStoreFromAddress"><![CDATA[variable.fromEmail]]></property>
+        <property
+          name="varToStoreToAddress"><![CDATA[variable.ToEmail]]></property>
+        <property
+          name="varToStoreSubject"><![CDATA[variable.emailSubject]]></property>
+        <property
+          name="varToStoreBody"><![CDATA[variable.emailBody]]></property>
+        <property
+          name="varToStoreFileList"><![CDATA[variable.FileAttachments]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[getEmailMsg - Variable.initiatorName]]></property>
+        <property
+          name="LogMessage"><![CDATA[getEmailMsg - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="f5bbe217-739d-b2f3-804e-1d33ac83dee6"
+      label=""
+      size="3"
+      type=""
+      srcParentID="ac9089b2-29da-4c6f-905f-0de71a747b80"
+      srcParentType="start"
+      trgParentID="3a5c44f9-d49c-8fd8-28cf-459bfd4810d9"
+      trgParentType="getemailmsg"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="4a86e8"
+      lblx="169"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="169"
+          y="59" />
+        <point
+          x="169"
+          y="60" />
+        <point
+          x="240"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
