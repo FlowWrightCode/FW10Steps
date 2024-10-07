@@ -1,0 +1,127 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="9eb55e0a-f654-4af0-a216-764b88760746">
+  <figures>
+    <figure
+      id="e6bfdacd-63e8-4c45-9196-1a77193533f5"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[emailData:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="aa02082b-c65b-e14d-e881-7f85ae962188"
+      name="Get Email Template"
+      type="getemailtemplatedata"
+      x="290"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Get Email Template]]></property>
+        <property
+          name="type"><![CDATA[getemailtemplatedata]]></property>
+        <property
+          name="itemName"><![CDATA[Get Email Template]]></property>
+        <property
+          name="itemDescription"><![CDATA[getEmailTemplateData]]></property>
+        <property
+          name="templateID"><![CDATA[daf894d6-6e3c-42d7-9b43-a3b0462a2c1a]]></property>
+        <property
+          name="varToStoreEmailTemplate"><![CDATA[variable.emailData]]></property>
+        <property
+          name="LogMessage"><![CDATA[getEmailTemplateData - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[getEmailTemplateData - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="336c8aaf-7f60-9380-0a5b-80ccf0951a09"
+      label=""
+      size="5"
+      type=""
+      srcParentID="e6bfdacd-63e8-4c45-9196-1a77193533f5"
+      srcParentType="start"
+      trgParentID="aa02082b-c65b-e14d-e881-7f85ae962188"
+      trgParentType="getemailtemplatedata"
+      router="junction"
+      color="0000ff"
+      lblx="185"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="290"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
