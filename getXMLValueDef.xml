@@ -1,0 +1,199 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="e2a3e05b-7930-44de-b805-c4583eb5768f">
+  <figures>
+    <figure
+      id="44c3cae2-0b3e-4007-ad11-acac42a0c559"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[Qty:String|XMLValue:String|loopVal:String|nodeValue:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d1621372-5415-157f-c7ec-1f3a1fb2050c"
+      name="Update Variables"
+      type="updatevariable"
+      x="200"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[updateVariable]]></property>
+        <property
+          name="updateVariables"><![CDATA[]]></property>
+        <property
+          name="variableName"><![CDATA[variable.XMLValue]]></property>
+        <property
+          name="variableValue"><![CDATA[<bookstore><book category="cooking">  <title lang="en">Everyday Italian</title>  <author>Giada De Laurentiis</author>  <year>2005</year>  <price>30.00</price></book><book category="children">  <title lang="en">Harry Potter</title>  <author>J K. Rowling</author>  <year>2005</year>  <price>29.99</price></book><book category="web">  <title lang="en">XQuery Kick Start</title>  <author>James McGovern</author>  <author>Per Bothner</author>  <author>Kurt Cagle</author>  <author>James Linn</author>  <author>Vaidyanathan Nagarajan</author>  <year>2003</year>  <price>49.99</price></book><book category="web">  <title lang="en">Learning XML</title>  <author>Erik T. Ray</author>  <year>2003</year>  <price>39.95</price></book></bookstore>]]></property>
+        <property
+          name="hasExpression"><![CDATA[yes]]></property>
+        <property
+          name="LogMessage"><![CDATA[updateVariable - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[updateVariable - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[50]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="0e6a5017-f2dd-e0b9-f8ec-a5fed1a04a49"
+      name="Get XML Value"
+      type="getxmlnode"
+      x="340"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get XML Value]]></property>
+        <property
+          name="type"><![CDATA[getxmlnode]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get XML Value]]></property>
+        <property
+          name="itemDescription"><![CDATA[getXMLNode]]></property>
+        <property
+          name="xPath"><![CDATA[/bookstore/book[1]]]></property>
+        <property
+          name="variableName"><![CDATA[variable.nodeValue]]></property>
+        <property
+          name="xmlNodeToGet"><![CDATA[author]]></property>
+        <property
+          name="loopVariable"><![CDATA[variable.loopVal]]></property>
+        <property
+          name="xmlVariable"><![CDATA[variable.XMLValue]]></property>
+        <property
+          name="xmlNodesToVariables"><![CDATA[Quantity~variable.Qty]]></property>
+        <property
+          name="LogMessage"><![CDATA[getXMLNode - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[getXMLNode - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="94968fd8-4cd7-01d1-1a77-0b04f8f95236"
+      label=""
+      size="5"
+      type=""
+      srcParentID="d1621372-5415-157f-c7ec-1f3a1fb2050c"
+      srcParentType="updatevariable"
+      trgParentID="0e6a5017-f2dd-e0b9-f8ec-a5fed1a04a49"
+      trgParentType="getxmlnode"
+      router="junction"
+      color="3c78d8"
+      lblx="290"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="59" />
+        <point
+          x="340"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="db5cb5fc-558a-baef-49da-cf78a6a5c4a2"
+      label=""
+      size="5"
+      type=""
+      srcParentID="44c3cae2-0b3e-4007-ad11-acac42a0c559"
+      srcParentType="start"
+      trgParentID="d1621372-5415-157f-c7ec-1f3a1fb2050c"
+      trgParentType="updatevariable"
+      router="junction"
+      color="3c78d8"
+      lblx="149"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="200"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
