@@ -1,0 +1,117 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="ad1aa24f-d54f-4c94-92bf-79f63146d972">
+  <figures>
+    <figure
+      id="c0628198-9b26-4928-a17c-2c0d83768dd2"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8d895ceb-7fb2-ae09-57fb-06421d30a41f"
+      name="Delete Folder"
+      type="onedrivedeletefolder"
+      x="310"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Delete Folder]]></property>
+        <property
+          name="type"><![CDATA[onedrivedeletefolder]]></property>
+        <property
+          name="itemName"><![CDATA[Delete Folder]]></property>
+        <property
+          name="itemDescription"><![CDATA[OneDriveDeleteFolder]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[441fb558-c3f8-4a65-8304-26f7114c1301]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[/FlowWright/DiscardThisFolder]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[OneDriveDeleteFolder - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[OneDriveDeleteFolder - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[OneDrive Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="8cfa77bb-2629-0fdc-0eb1-0fb74a9f1744"
+      label=""
+      size="5"
+      type=""
+      srcParentID="c0628198-9b26-4928-a17c-2c0d83768dd2"
+      srcParentType="start"
+      trgParentID="8d895ceb-7fb2-ae09-57fb-06421d30a41f"
+      trgParentType="onedrivedeletefolder"
+      router="junction"
+      color="0000ff"
+      lblx="195"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="310"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
