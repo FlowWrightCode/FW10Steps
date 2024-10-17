@@ -1,0 +1,131 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="412e151b-b0ec-419f-9458-953e3f7aaad6">
+  <figures>
+    <figure
+      id="ac7dff41-3321-4a93-a1ca-eb4f68c4eca1"
+      name="start"
+      type="start"
+      x="40"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[summaryResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="0b0c97e6-85e3-e84c-4ae1-5e6c0c53e18f"
+      name="Summarize PDF document"
+      type="openaisummarizepdf"
+      x="300"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Summarize PDF document]]></property>
+        <property
+          name="type"><![CDATA[openaisummarizepdf]]></property>
+        <property
+          name="itemName"><![CDATA[Summarize PDF document]]></property>
+        <property
+          name="itemDescription"><![CDATA[OpenAISummarizePDF]]></property>
+        <property
+          name="actas"><![CDATA[Business User]]></property>
+        <property
+          name="model"><![CDATA[gpt-4o]]></property>
+        <property
+          name="pdfFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Google_Terms_Of_Service_EN_IN.pdf]]></property>
+        <property
+          name="varGlobalStoreResult"><![CDATA[variable.summaryResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[OpenAISummarizePDF - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[OpenAISummarizePDF - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[OpenAI Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="ff9529e1-71c2-adc3-d813-beed121032e5"
+      label=""
+      size="5"
+      type=""
+      srcParentID="ac7dff41-3321-4a93-a1ca-eb4f68c4eca1"
+      srcParentType="start"
+      trgParentID="0b0c97e6-85e3-e84c-4ae1-5e6c0c53e18f"
+      trgParentType="openaisummarizepdf"
+      router="junction"
+      color="0000ff"
+      lblx="190"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="180" />
+        <point
+          x="300"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
