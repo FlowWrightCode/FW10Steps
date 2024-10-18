@@ -1,0 +1,119 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="28446520-d832-43d4-b5ff-e504de22945e">
+  <figures>
+    <figure
+      id="f579121e-9e40-425f-9edf-36c172729092"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="595355a8-289b-2092-c43c-35dab1d6640d"
+      name="Upload File"
+      type="onedrivesendfile"
+      x="280"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Upload File]]></property>
+        <property
+          name="type"><![CDATA[onedrivesendfile]]></property>
+        <property
+          name="itemName"><![CDATA[Upload File]]></property>
+        <property
+          name="itemDescription"><![CDATA[OneDriveSendFile]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[441fb558-c3f8-4a65-8304-26f7114c1301]]></property>
+        <property
+          name="sourceFilePath"><![CDATA[C:\FlowWright\Reports.pdf]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[/FlowWright/Reports]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[OneDriveSendFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[OneDriveSendFile - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Onedrive Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="e01445a4-3be9-16cd-bc2c-b5660e378000"
+      label=""
+      size="5"
+      type=""
+      srcParentID="f579121e-9e40-425f-9edf-36c172729092"
+      srcParentType="start"
+      trgParentID="595355a8-289b-2092-c43c-35dab1d6640d"
+      trgParentType="onedrivesendfile"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
