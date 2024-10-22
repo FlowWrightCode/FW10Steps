@@ -1,0 +1,125 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="9bbb0142-638a-43b0-bd69-5facf4d8d822">
+  <figures>
+    <figure
+      id="d4a4228b-181b-44c4-9fce-3ecf2b135b2d"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a33cb440-3651-5386-84cd-6d8146ac280b"
+      name="Remove File"
+      type="removefile"
+      x="300"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Remove File]]></property>
+        <property
+          name="type"><![CDATA[removefile]]></property>
+        <property
+          name="itemName"><![CDATA[Remove File]]></property>
+        <property
+          name="itemDescription"><![CDATA[removeFile]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\tempfiles\DeleteThisReport.pdf]]></property>
+        <property
+          name="LogMessage"><![CDATA[removeFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[removeFile - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[File Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="16ee4ba5-abcf-01da-1b4e-3e8d25e9117c"
+      label=""
+      size="5"
+      type=""
+      srcParentID="d4a4228b-181b-44c4-9fce-3ecf2b135b2d"
+      srcParentType="start"
+      trgParentID="a33cb440-3651-5386-84cd-6d8146ac280b"
+      trgParentType="removefile"
+      router="junction"
+      color="0000ff"
+      lblx="190"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="300"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
