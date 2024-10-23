@@ -1,0 +1,127 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="a83798d9-f0e3-497d-9cc9-664b25454b54">
+  <figures>
+    <figure
+      id="f92a37d5-475c-41bc-b659-fe4c4c6dd85c"
+      name="start"
+      type="start"
+      x="40"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="293e770e-c2f9-965e-2f90-e3ea19ed1f38"
+      name="Remove Process Instances"
+      type="removeinstances"
+      x="280"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Remove Process Instances]]></property>
+        <property
+          name="type"><![CDATA[removeinstances]]></property>
+        <property
+          name="itemName"><![CDATA[Remove Process Instances]]></property>
+        <property
+          name="itemDescription"><![CDATA[removeInstances]]></property>
+        <property
+          name="olderThan"><![CDATA[2]]></property>
+        <property
+          name="expireType"><![CDATA[months]]></property>
+        <property
+          name="LogMessage"><![CDATA[removeInstances - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[removeInstances - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="d9c4f945-2c1c-367d-8ab5-95e501de69d2"
+      label=""
+      size="5"
+      type=""
+      srcParentID="f92a37d5-475c-41bc-b659-fe4c4c6dd85c"
+      srcParentType="start"
+      trgParentID="293e770e-c2f9-965e-2f90-e3ea19ed1f38"
+      trgParentType="removeinstances"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="180" />
+        <point
+          x="280"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
