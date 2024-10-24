@@ -1,0 +1,112 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="0436cf6d-1c43-49e9-9208-19bed8c1c6dd">
+  <figures>
+    <figure
+      id="fe31b552-8145-4226-8a52-1e8a25737675"
+      name="start"
+      type="start"
+      x="50"
+      y="120">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="7b5e0493-0af4-f7b1-4975-98ad3c5e8bd6"
+      name="Rename Directory"
+      type="renamedirectory"
+      x="310"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Rename Directory]]></property>
+        <property
+          name="type"><![CDATA[renamedirectory]]></property>
+        <property
+          name="itemName"><![CDATA[Rename Directory]]></property>
+        <property
+          name="itemDescription"><![CDATA[renameDirectory]]></property>
+        <property
+          name="newDirectoryName"><![CDATA[Archive-Oct2024]]></property>
+        <property
+          name="directoryPath"><![CDATA[C:\FlowWright\wwwroot\Reports\Archive]]></property>
+        <property
+          name="LogMessage"><![CDATA[renameDirectory - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[renameDirectory - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[File Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="725d91e1-a995-d0d4-2d2d-84fd7ec5ba2a"
+      label=""
+      size="5"
+      type=""
+      srcParentID="fe31b552-8145-4226-8a52-1e8a25737675"
+      srcParentType="start"
+      trgParentID="7b5e0493-0af4-f7b1-4975-98ad3c5e8bd6"
+      trgParentType="renamedirectory"
+      router="junction"
+      color="0000ff"
+      lblx="200"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="90"
+          y="140" />
+        <point
+          x="310"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
