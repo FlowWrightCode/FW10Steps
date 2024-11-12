@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="a0985e77-329a-4b13-9d52-7323a86592bc">
+  <figures>
+    <figure
+      id="bb3e0e04-fa65-4ada-b9e6-a5c24b269ceb"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[oFilePath:String|vFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6430902d-9835-5a51-2602-a0dd37df2ef9"
+      name="Pdf Remove Blank Pages"
+      type="pdfremoveblankpages"
+      x="280"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Pdf Remove Blank Pages]]></property>
+        <property
+          name="type"><![CDATA[pdfremoveblankpages]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Pdf Remove Blank Pages]]></property>
+        <property
+          name="itemDescription"><![CDATA[pdfRemoveBlankPages]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\TempFiles\PDF Files\FW-Naukri_XXYY[10y_0m].pdf]]></property>
+        <property
+          name="outputFilePath"><![CDATA[variable.oFilePath]]></property>
+        <property
+          name="pdfVirtualPath"><![CDATA[variable.vFilePath]]></property>
+        <property
+          name="LogMessage"><![CDATA[pdfRemoveBlankPages - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[pdfRemoveBlankPages - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[PDF Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="pages"><![CDATA[]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="56e6b569-0eb1-d6b0-1690-d7769b519152"
+      label=""
+      size="5"
+      type=""
+      srcParentID="bb3e0e04-fa65-4ada-b9e6-a5c24b269ceb"
+      srcParentType="start"
+      trgParentID="6430902d-9835-5a51-2602-a0dd37df2ef9"
+      trgParentType="pdfremoveblankpages"
+      router="junction"
+      color="0000ff"
+      lblx="189"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
