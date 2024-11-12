@@ -1,0 +1,133 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="ec5fc967-2b8d-41e8-9193-4daecfd57bd6">
+  <figures>
+    <figure
+      id="713db35f-4a58-4c84-988f-1a70249126bd"
+      name="start"
+      type="start"
+      x="80"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[deUserID:String|deCulture:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c0bf143c-52de-4e23-12e6-c8de14364dd2"
+      name="Eval sentence with db value"
+      type="evalkeyworddbdecisiontable"
+      x="300"
+      y="120"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[Eval sentence with db value]]></property>
+        <property
+          name="type"><![CDATA[evalkeyworddbdecisiontable]]></property>
+        <property
+          name="itemName"><![CDATA[Eval sentence with db value]]></property>
+        <property
+          name="itemDescription"><![CDATA[evalKeywordDBDecisionTable]]></property>
+        <property
+          name="tableName"><![CDATA[deUsers]]></property>
+        <property
+          name="searchText"><![CDATA[Eastern Time Zone]]></property>
+        <property
+          name="inputDBCol"><![CDATA[timeZone]]></property>
+        <property
+          name="outputDBCols"><![CDATA[deUserID~variable.deUserID|culture~variable.deCulture]]></property>
+        <property
+          name="defaultValues"><![CDATA[deUserID~NoUserIDs|culture~NoCulture]]></property>
+        <property
+          name="LogMessage"><![CDATA[evalKeywordDBDecisionTable - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[evalKeywordDBDecisionTable - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Decisions Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="b98ede9e-dfe9-119c-4b5b-0cb8a81baaab"
+      label=""
+      size="5"
+      type=""
+      srcParentID="713db35f-4a58-4c84-988f-1a70249126bd"
+      srcParentType="start"
+      trgParentID="c0bf143c-52de-4e23-12e6-c8de14364dd2"
+      trgParentType="evalkeyworddbdecisiontable"
+      router="junction"
+      color="0000ff"
+      lblx="210"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="120"
+          y="140" />
+        <point
+          x="300"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
