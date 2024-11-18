@@ -138,7 +138,7 @@
         <property
           name="itemDescription"><![CDATA[clsInputCSV]]></property>
         <property
-          name="filePath"><![CDATA[variable.varInputFilePath]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
         <property
           name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
         <property
@@ -187,7 +187,7 @@
         <property
           name="itemDescription"><![CDATA[clsOutputCSV]]></property>
         <property
-          name="filePath"><![CDATA[global.glbOutputFilePath]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-RRS-SalesRecords-Oct2024.csv]]></property>
         <property
           name="writeHeaders"><![CDATA[yes]]></property>
         <property
