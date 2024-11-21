@@ -1,0 +1,133 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="9a7078a0-947d-4904-8058-3ff455e4a801">
+  <figures>
+    <figure
+      id="ea51fa11-deee-451a-ad15-9e0a81f9597e"
+      name="start"
+      type="start"
+      x="80"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="56e405ef-608b-d4eb-b93e-413b795ba12c"
+      name="Send Msg"
+      type="sendmessagetoslack"
+      x="320"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Msg]]></property>
+        <property
+          name="type"><![CDATA[sendmessagetoslack]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Msg]]></property>
+        <property
+          name="itemDescription"><![CDATA[sendMessageToSlack]]></property>
+        <property
+          name="message"><![CDATA[Greetings from the FlowWright Team!]]></property>
+        <property
+          name="channel"><![CDATA[#General]]></property>
+        <property
+          name="LogMessage"><![CDATA[sendMessageToSlackDef - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[sendMessageToSlackDef - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Slack Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="87adbac0-6e9b-b509-77b5-65123bd64ca7"
+      label=""
+      size="5"
+      type=""
+      srcParentID="ea51fa11-deee-451a-ad15-9e0a81f9597e"
+      srcParentType="start"
+      trgParentID="56e405ef-608b-d4eb-b93e-413b795ba12c"
+      trgParentType="sendmessagetoslack"
+      router="junction"
+      color="0000ff"
+      lblx="220"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="120"
+          y="180" />
+        <point
+          x="320"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
