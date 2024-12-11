@@ -1,0 +1,199 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="07ba7212-742f-4822-b05c-6d8c4f134ee9">
+  <figures>
+    <figure
+      id="4c51250e-cc64-1090-9189-1ff66bf6e6a6"
+      name="MSSQL Input file"
+      type="clsinputmssqldb"
+      x="40"
+      y="80"
+      isValid="true"
+      isLocked="False"
+      inConnections="0"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[MSSQL Input file]]></property>
+        <property
+          name="type"><![CDATA[clsinputmssqldb]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[0]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[MSSQL Input file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsInputMSSQLDB]]></property>
+        <property
+          name="connectionID"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
+        <property
+          name="sqlStatement"><![CDATA[select Region, Country, Item_Type, Sales_Channel, Order_ID FROM [FlowWright10].[dbo].[RRS-SalesRecords-Oct2024] order by Region, Country, Item_Type, Sales_Channel&#xA;]]></property>
+        <property
+          name="colSchema"><![CDATA[b9102162-3b0e-4d90-bf3a-7dd7231254be]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsInputMSSQLDB - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsInputMSSQLDB - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="714b345f-1ca0-66a2-dafa-beb045390cb7"
+      name="Transform text case"
+      type="clstransformcase"
+      x="240"
+      y="80"
+      isValid="true"
+      isLocked="False"
+      inConnections="1"
+      outConnections="1">
+      <properties>
+        <property
+          name="label"><![CDATA[Transform text case]]></property>
+        <property
+          name="type"><![CDATA[clstransformcase]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[1]]></property>
+        <property
+          name="itemName"><![CDATA[Transform text case]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsTransformCase]]></property>
+        <property
+          name="transforms"><![CDATA[Country~UpperCase|Item_Type~UpperCase|Region~UpperCase|Sales_Channel~UpperCase]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsTransformCase - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsTransformCase - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9ee386c5-85f9-d24c-3cf7-60d30ff3254e"
+      name="MSSQL Output file"
+      type="clsoutputmssqldb"
+      x="440"
+      y="80"
+      isValid="true"
+      isLocked="False"
+      inConnections="1"
+      outConnections="0">
+      <properties>
+        <property
+          name="label"><![CDATA[MSSQL Output file]]></property>
+        <property
+          name="type"><![CDATA[clsoutputmssqldb]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[0]]></property>
+        <property
+          name="itemName"><![CDATA[MSSQL Output file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsOutputMSSQLDB]]></property>
+        <property
+          name="connectionID"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
+        <property
+          name="tableName"><![CDATA[RRS_SalesRecords_CaseTransform]]></property>
+        <property
+          name="createTable"><![CDATA[yes]]></property>
+        <property
+          name="primaryKey"><![CDATA[Order_ID]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsOutputMSSQLDB - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsOutputMSSQLDB - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="29aa66bd-b902-4a0a-56d7-600f4785a87d"
+      label=""
+      size="4"
+      type=""
+      srcParentID="714b345f-1ca0-66a2-dafa-beb045390cb7"
+      srcParentType="clstransformcase"
+      trgParentID="9ee386c5-85f9-d24c-3cf7-60d30ff3254e"
+      trgParentType="clsoutputmssqldb"
+      router="junction"
+      color="3c78d8"
+      lblx="360"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="100" />
+        <point
+          x="440"
+          y="100" />
+      </line>
+    </connection>
+    <connection
+      id="ac060a87-e38a-3299-d09f-b18e3bac5b39"
+      label=""
+      size="4"
+      type=""
+      srcParentID="4c51250e-cc64-1090-9189-1ff66bf6e6a6"
+      srcParentType="clsinputmssqldb"
+      trgParentID="714b345f-1ca0-66a2-dafa-beb045390cb7"
+      trgParentType="clstransformcase"
+      router="junction"
+      color="3c78d8"
+      lblx="160"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="100" />
+        <point
+          x="240"
+          y="100" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
