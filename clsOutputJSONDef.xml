@@ -1,0 +1,198 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="27ad137b-5135-4129-980b-edb5be7f48bd">
+  <figures>
+    <figure
+      id="7976f999-7439-44fd-bb41-3a8d0a69c837"
+      name="Excel Input file"
+      type="clsinputexcel"
+      x="0"
+      y="40"
+      isValid="true"
+      isLocked="False"
+      inConnections="0"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Excel Input file]]></property>
+        <property
+          name="type"><![CDATA[clsinputexcel]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[0]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Excel Input file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsInputExcel]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.xlsx]]></property>
+        <property
+          name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
+        <property
+          name="showSchema"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsInputExcel - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsInputExcel - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="variables"><![CDATA[vOPath:String|vEOPath:String]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="3138b165-4a81-46f6-9a20-f71bf0de6575"
+      name="Transform number to string"
+      type="clstransformformatnumbertostring"
+      x="200"
+      y="40"
+      isValid="true"
+      isLocked="False"
+      inConnections="1"
+      outConnections="1">
+      <properties>
+        <property
+          name="label"><![CDATA[Transform number to string]]></property>
+        <property
+          name="type"><![CDATA[clstransformformatnumbertostring]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[1]]></property>
+        <property
+          name="itemName"><![CDATA[Transform number to string]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="transforms"><![CDATA[Unit_Cost~strUnit_Cost|Unit_Price~strUnit_Price|Units_Sold~strUnits_Sold]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="211d6bc0-34a0-9ba2-6930-c6c7397410f0"
+      name="JSON Output file"
+      type="clsoutputjson"
+      x="400"
+      y="40"
+      isValid="true"
+      inConnections="1"
+      outConnections="0">
+      <properties>
+        <property
+          name="label"><![CDATA[JSON Output file]]></property>
+        <property
+          name="type"><![CDATA[clsoutputjson]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[0]]></property>
+        <property
+          name="itemName"><![CDATA[JSON Output file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsOutputJSON]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-JSON-RRS-SalesRecords-Oct2024.json]]></property>
+        <property
+          name="variableOrGlobal"><![CDATA[variable.vOPath]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsOutputJSON - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsOutputJSON - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="f5541da6-ee8c-3412-8db0-c11291ab9232"
+      label=""
+      size="4"
+      type=""
+      srcParentID="3138b165-4a81-46f6-9a20-f71bf0de6575"
+      srcParentType="clstransformformatnumbertostring"
+      trgParentID="211d6bc0-34a0-9ba2-6930-c6c7397410f0"
+      trgParentType="clsoutputjson"
+      router="junction"
+      color="3c78d8"
+      lblx="320"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="60" />
+        <point
+          x="400"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="657385f9-d160-436e-852b-02f867498e3c"
+      label=""
+      size="4"
+      type=""
+      srcParentID="7976f999-7439-44fd-bb41-3a8d0a69c837"
+      srcParentType="clsinputexcel"
+      trgParentID="3138b165-4a81-46f6-9a20-f71bf0de6575"
+      trgParentType="clstransformformatnumbertostring"
+      router="junction"
+      color="3c78d8"
+      lblx="120"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="40"
+          y="60" />
+        <point
+          x="200"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
