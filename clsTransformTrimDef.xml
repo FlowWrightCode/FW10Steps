@@ -1,0 +1,194 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="f87c7a5e-f786-4c5a-baeb-7411575a88a0">
+  <figures>
+    <figure
+      id="247046f2-e28f-ebf6-661e-1eb449d1199d"
+      name="CSV Input file"
+      type="clsinputcsv"
+      x="0"
+      y="120"
+      isValid="true"
+      inConnections="0"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[CSV Input file]]></property>
+        <property
+          name="type"><![CDATA[clsinputcsv]]></property>
+        <property
+          name="inConnections"><![CDATA[0]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[CSV Input file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsInputCSV]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
+        <property
+          name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
+        <property
+          name="showSchema"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsInputCSV - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsInputCSV - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="variables"><![CDATA[vOPath:String]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9aaa9880-d45b-ef2d-adb0-5a399526cb93"
+      name="CSV Output file"
+      type="clsoutputcsv"
+      x="400"
+      y="120"
+      isValid="true"
+      inConnections="1"
+      outConnections="0">
+      <properties>
+        <property
+          name="label"><![CDATA[CSV Output file]]></property>
+        <property
+          name="type"><![CDATA[clsoutputcsv]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[0]]></property>
+        <property
+          name="itemName"><![CDATA[CSV Output file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsOutputCSV]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-RRS-SalesRecords-Oct2024.csv]]></property>
+        <property
+          name="variableOrGlobal"><![CDATA[variable.vOPath]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsOutputCSV - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsOutputCSV - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="ac626cbc-cbb9-9dc6-acfb-60284b9bc65b"
+      name="Transform text trim"
+      type="clstransformtrim"
+      x="210"
+      y="120"
+      isValid="true"
+      inConnections="1"
+      outConnections="1">
+      <properties>
+        <property
+          name="label"><![CDATA[Transform text trim]]></property>
+        <property
+          name="type"><![CDATA[clstransformtrim]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[1]]></property>
+        <property
+          name="itemName"><![CDATA[Transform text trim]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsTransformTrim]]></property>
+        <property
+          name="transforms"><![CDATA[Region~Trim|Country~LTrim|Item_Type~Rtrim|Sales_Channel~RemoveSpecialCharacters|Order_Priority~RemoveControlCharacters]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsTransformTrim - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsTransformTrim - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Text ETL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="a54d2939-5a92-4df5-502d-cae77309863f"
+      label=""
+      size="4"
+      type=""
+      srcParentID="ac626cbc-cbb9-9dc6-acfb-60284b9bc65b"
+      srcParentType="clstransformtrim"
+      trgParentID="9aaa9880-d45b-ef2d-adb0-5a399526cb93"
+      trgParentType="clsoutputcsv"
+      router="junction"
+      color="3c78d8"
+      lblx="325"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="250"
+          y="140" />
+        <point
+          x="400"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="a927b651-6454-ff99-60e4-527a80756b58"
+      label=""
+      size="4"
+      type=""
+      srcParentID="247046f2-e28f-ebf6-661e-1eb449d1199d"
+      srcParentType="clsinputcsv"
+      trgParentID="ac626cbc-cbb9-9dc6-acfb-60284b9bc65b"
+      trgParentType="clstransformtrim"
+      router="junction"
+      color="3c78d8"
+      lblx="125"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="40"
+          y="140" />
+        <point
+          x="210"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
