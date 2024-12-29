@@ -1,0 +1,194 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="beea9da6-a16c-4589-a3ea-86f2de2fb72a">
+  <figures>
+    <figure
+      id="39de1d0a-1491-43db-6905-94bdbffcd745"
+      name="CSV Input file"
+      type="clsinputcsv"
+      x="-40"
+      y="120"
+      isValid="true"
+      inConnections="0"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[CSV Input file]]></property>
+        <property
+          name="type"><![CDATA[clsinputcsv]]></property>
+        <property
+          name="inConnections"><![CDATA[0]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[CSV Input file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsInputCSV]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
+        <property
+          name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
+        <property
+          name="showSchema"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsInputCSV - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsInputCSV - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="variables"><![CDATA[vOPath:String]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="3c275d42-7442-034b-38f6-e5fcc013eb4b"
+      name="CSV Output file"
+      type="clsoutputcsv"
+      x="400"
+      y="120"
+      isValid="true"
+      inConnections="1"
+      outConnections="0">
+      <properties>
+        <property
+          name="label"><![CDATA[CSV Output file]]></property>
+        <property
+          name="type"><![CDATA[clsoutputcsv]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[0]]></property>
+        <property
+          name="itemName"><![CDATA[CSV Output file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsOutputCSV]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-RRS-SalesRecords-Oct2024.csv]]></property>
+        <property
+          name="variableOrGlobal"><![CDATA[variable.vOPath]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsOutputCSV - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsOutputCSV - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="bb748ed8-a165-6f6c-7599-4b0b451d31e6"
+      name="Filter with conditions"
+      type="clsfiltertransformconditions"
+      x="170"
+      y="120"
+      isValid="true"
+      inConnections="1"
+      outConnections="1">
+      <properties>
+        <property
+          name="label"><![CDATA[Filter with conditions]]></property>
+        <property
+          name="type"><![CDATA[clsfiltertransformconditions]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[1]]></property>
+        <property
+          name="itemName"><![CDATA[Filter with conditions]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsFilterTransformConditions]]></property>
+        <property
+          name="transforms"><![CDATA[Country~==~United Kingdom~And~String|Region~==~Europe~And~String]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsFilterTransformConditions - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsFilterTransformConditions - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Utils ETL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="e57db8ca-45f8-d06b-e0d8-4daddfe44469"
+      label=""
+      size="4"
+      type=""
+      srcParentID="bb748ed8-a165-6f6c-7599-4b0b451d31e6"
+      srcParentType="clsfiltertransformconditions"
+      trgParentID="3c275d42-7442-034b-38f6-e5fcc013eb4b"
+      trgParentType="clsoutputcsv"
+      router="junction"
+      color="3c78d8"
+      lblx="305"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="210"
+          y="140" />
+        <point
+          x="400"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="aa3684bc-4626-dcd4-a818-dfe7a387961b"
+      label=""
+      size="4"
+      type=""
+      srcParentID="39de1d0a-1491-43db-6905-94bdbffcd745"
+      srcParentType="clsinputcsv"
+      trgParentID="bb748ed8-a165-6f6c-7599-4b0b451d31e6"
+      trgParentType="clsfiltertransformconditions"
+      router="junction"
+      color="3c78d8"
+      lblx="85"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="0"
+          y="140" />
+        <point
+          x="170"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
