@@ -1,0 +1,151 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="c474264e-bbd8-4e03-8626-63c83e5d8ff4">
+  <figures>
+    <figure
+      id="5f10e2f1-b4fc-49c6-92ff-a010eb87844a"
+      name="start"
+      type="start"
+      x="40"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varMeetID:String|meetURL:String|varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="5e385307-a54d-cd28-eb89-f22ebf4d63ef"
+      name="Create Webex Meeting"
+      type="clswebexmeeting"
+      x="280"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Create Webex Meeting]]></property>
+        <property
+          name="type"><![CDATA[clswebexmeeting]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Create Webex Meeting]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsWebexMeeting]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[9619db2b-7848-44c2-baae-519116b4a2d0]]></property>
+        <property
+          name="meetname"><![CDATA[Year End Sales Review 2024]]></property>
+        <property
+          name="meetpass"><![CDATA[P@ssW0rd!]]></property>
+        <property
+          name="startdatetime"><![CDATA[12/31/2024 12:30 PM]]></property>
+        <property
+          name="duration"><![CDATA[60]]></property>
+        <property
+          name="agenda"><![CDATA[Year End Sales Review 2024]]></property>
+        <property
+          name="timeZone"><![CDATA[Dateline Standard Time]]></property>
+        <property
+          name="emails"><![CDATA[sales@flowwright.com;]]></property>
+        <property
+          name="meetidvar"><![CDATA[variable.varMeetID]]></property>
+        <property
+          name="meeturlvar"><![CDATA[variable.meetURL]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsWebexMeeting - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsWebexMeeting - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Meetings Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="44b799af-cbee-c6e4-9a74-2d8d20c9dc87"
+      label=""
+      size="4"
+      type=""
+      srcParentID="5f10e2f1-b4fc-49c6-92ff-a010eb87844a"
+      srcParentType="start"
+      trgParentID="5e385307-a54d-cd28-eb89-f22ebf4d63ef"
+      trgParentType="clswebexmeeting"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="180" />
+        <point
+          x="280"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
