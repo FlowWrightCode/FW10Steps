@@ -1,0 +1,141 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="3a45ed35-a2a5-4711-bf65-3bea6c3bd93e">
+  <figures>
+    <figure
+      id="90329a95-87f9-4b20-9108-8875c0417ebc"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[oFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="00993897-dcfc-d1a5-9817-d1982db3a3f5"
+      name="Split PDF file by pages"
+      type="pdfsplitpages"
+      x="280"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Split PDF file by pages]]></property>
+        <property
+          name="type"><![CDATA[pdfsplitpages]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Split PDF file by pages]]></property>
+        <property
+          name="itemDescription"><![CDATA[PdfSplitPages]]></property>
+        <property
+          name="pdfFile"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Google_Terms_Of_Service_EN_IN.pdf]]></property>
+        <property
+          name="varGlobal"><![CDATA[variable.oFilePath]]></property>
+        <property
+          name="pageType"><![CDATA[PDF]]></property>
+        <property
+          name="LogMessage"><![CDATA[PdfSplitPages - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[PdfSplitPages - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[PDF Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="c91f497e-d6cd-0831-e7b1-e04de58c84bf"
+      label=""
+      size="4"
+      type=""
+      srcParentID="90329a95-87f9-4b20-9108-8875c0417ebc"
+      srcParentType="start"
+      trgParentID="00993897-dcfc-d1a5-9817-d1982db3a3f5"
+      trgParentType="pdfsplitpages"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="180"
+          y="59" />
+        <point
+          x="180"
+          y="60" />
+        <point
+          x="280"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
