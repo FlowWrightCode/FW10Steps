@@ -106,7 +106,7 @@
         <property
           name="emailSubject"><![CDATA[Route Service Rating Feedback Form - Email]]></property>
         <property
-          name="emailBody"><![CDATA[<p>Route Service Rating Feedback Form </p><p>Please click the link here to access the form.&nbsp;</p><p>$LINK<br></p>]]></property>
+          name="emailBody"><![CDATA[<p><span style="font-size: 14pt;">Route Service Rating Feedback Form </span></p><p><span style="font-size: 14pt;">Please click the link here to access the form.&nbsp;</span></p><p><span style="font-size: 14pt;">$LINK</span><br></p>]]></property>
         <property
           name="emailFiles"><![CDATA[]]></property>
         <property
@@ -135,6 +135,8 @@
           name="instPercent"><![CDATA[100]]></property>
         <property
           name="emailBody_TemplateID"><![CDATA[]]></property>
+        <property
+          name="hideReadOnlyFieldsWithExpression"><![CDATA[[{"FieldNames":["submitform1btnSave"],"DisplayAction":"show","Expression":"1==1","Condition":"and","UserRolesCondition":"in","Roles":["c3a8e9a5-fec0-43f1-aab0-82bf2b0e333c"]},{"FieldNames":["submitform1btnSave"],"DisplayAction":"hide","Expression":"1==1","Condition":"or","UserRolesCondition":"in","Roles":["6c409b1b-85ac-464e-9f3c-aafa4a439802"]}]]]></property>
       </properties>
     </figure>
   </figures>
