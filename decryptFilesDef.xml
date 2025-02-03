@@ -1,0 +1,123 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="ca19bca0-acbc-4412-b6e1-b11c18cac3a3">
+  <figures>
+    <figure
+      id="1933748d-4a85-43dc-96bd-a820b10af42b"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="bca6bcfa-6839-4507-6aeb-e906b4373459"
+      name="Decrypt and store files"
+      type="decryptfiles"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Decrypt and store files]]></property>
+        <property
+          name="type"><![CDATA[decryptfiles]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Decrypt and store files]]></property>
+        <property
+          name="itemDescription"><![CDATA[decryptFiles]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Encrypted_GTOS.pdf]]></property>
+        <property
+          name="outputFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\DeCrypted_GTOS.pdf]]></property>
+        <property
+          name="fileMappings"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[decryptFiles - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[decryptFiles - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[File System Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="13939676-802b-dbf7-be3d-aa947023a640"
+      label=""
+      size="4"
+      type=""
+      srcParentID="1933748d-4a85-43dc-96bd-a820b10af42b"
+      srcParentType="start"
+      trgParentID="bca6bcfa-6839-4507-6aeb-e906b4373459"
+      trgParentType="decryptfiles"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
