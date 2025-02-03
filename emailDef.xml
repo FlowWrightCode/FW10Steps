@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,12 +62,15 @@
       type="email"
       x="250"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Send Email]]></property>
         <property
           name="type"><![CDATA[email]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Send Email]]></property>
         <property
@@ -84,17 +88,17 @@
         <property
           name="subject"><![CDATA[Review all proposals]]></property>
         <property
-          name="body"><![CDATA[]]></property>
+          name="body"><![CDATA[<p><span style="font-size: 14pt;">Hi!</span></p><p><span style="font-size: 14pt;">FlowWright is a highly flexible and </span><span style="font-size: 18.6667px;">high-quality product. We applied it as the centerpiece of a business risk and third-party management product line. The graphical flow designer, powerful step library, and high-performance execution engine provide a simple-to-use</span><span style="font-size: 14pt;">&nbsp;but extremely powerful system.</span></p><p><span style="font-size: 18.6667px;">Business Process APIs &amp; Integrations</span></p><p><span style="font-size: 18.6667px;">Adapt and extend FlowWright iBPMS to your needs.</span></p><p></p><p><span style="font-size: 18.6667px;">Automate operations faster and with less effort with our seamless integration into your existing internal and external systems. A total experience creating team fusions where business professionals and technology professionals drive innovation together.</span></p>]]></property>
         <property
           name="cc"><![CDATA[cc1@test.com; cc2@test.com; cc3@test.com;]]></property>
         <property
           name="bcc"><![CDATA[bcc1@test.com; bcc2@test.com; bcc3@test.com;]]></property>
         <property
-          name="fileList"><![CDATA[c:\FlowWright10\wwwroot\tempfiles\proposals.doc]]></property>
+          name="fileList"><![CDATA[c:\FlowWright10\wwwroot\tempfiles\Greetings-2025.pdf]]></property>
         <property
           name="sendUsingQueue"><![CDATA[1]]></property>
         <property
-          name="priority"><![CDATA[Medium]]></property>
+          name="priority"><![CDATA[0]]></property>
         <property
           name="LogMessage"><![CDATA[email - Variable.createdOn]]></property>
         <property
@@ -104,7 +108,9 @@
         <property
           name="instPercent"><![CDATA[100]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
+          name="body_TemplateID"><![CDATA[]]></property>
+        <property
+          name="encryptBody"><![CDATA[1]]></property>
       </properties>
     </figure>
   </figures>
@@ -122,7 +128,7 @@
       color="0000ff"
       lblx="165"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
