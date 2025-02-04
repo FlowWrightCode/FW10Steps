@@ -1,0 +1,129 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="31728cb9-0b18-433e-ad35-388aa7b1be56">
+  <figures>
+    <figure
+      id="8d6d97f0-a91c-465e-939e-7cc1343d64ac"
+      name="start"
+      type="start"
+      x="-50"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[result:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="e1cf7262-c388-7bce-bbc5-a076ff3133b6"
+      name="Ask question from OpenAI"
+      type="askopenai"
+      x="210"
+      y="120"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Ask question from OpenAI]]></property>
+        <property
+          name="type"><![CDATA[askopenai]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Ask question from OpenAI]]></property>
+        <property
+          name="itemDescription"><![CDATA[AskOpenAI]]></property>
+        <property
+          name="actas"><![CDATA[A software engineer specializing in AI]]></property>
+        <property
+          name="model"><![CDATA[gpt-4o]]></property>
+        <property
+          name="prompt"><![CDATA[Help me understand how neural networks work.]]></property>
+        <property
+          name="imageFiles"><![CDATA[C:\FlowWright\wwwroot\TempFiles\NeuraNetwork-01.jpg, C:\FlowWright\wwwroot\TempFiles\NeuraNetwork-02jpg]]></property>
+        <property
+          name="varGlobalStoreResult"><![CDATA[Variable.result]]></property>
+        <property
+          name="LogMessage"><![CDATA[AskOpenAI - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[AskOpenAI - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[OpenAI]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="f0e3a548-1343-6209-2ef6-5fb6fbacdab1"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8d6d97f0-a91c-465e-939e-7cc1343d64ac"
+      srcParentType="start"
+      trgParentID="e1cf7262-c388-7bce-bbc5-a076ff3133b6"
+      trgParentType="askopenai"
+      router="junction"
+      color="3c78d8"
+      lblx="100"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="-10"
+          y="140" />
+        <point
+          x="210"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
