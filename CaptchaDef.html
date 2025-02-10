@@ -1,0 +1,25 @@
+<formdef data-id="038bac48-acf4-46a9-b889-9decfb6b6463"></formdef><div class="objectx"></div><div class="objecty"></div><div class="objectx" style="display: none;"></div><div class="objecty" style="display: none;"></div><div class="objectx" style="display: none;"></div><div class="objecty" style="display: none;"></div><div class="objectx" style="display: none; left: 956px;"></div><div class="objecty" style="display: none; top: 297px;"></div><div class="objectx" style="display: none; left: 956px;"></div><div class="objecty" style="display: none; top: 297px;"></div><div class="objectx" style="display: none; left: 956px;"></div><div class="objecty" style="display: none; top: 297px;"></div><div class="objectx" style="display: none; left: 956px;"></div>
+                            <div class="objecty" style="display: none; top: 297px;"></div>
+                        <formwidget id="captcha2form" type="captcha" class="ui-draggable ui-draggable-handle formMenu formSelect fwClsTabPanel dragging" style="position: absolute; left: 55px; top: 38px; z-index: 0;">
+    <div>
+        <table>
+            <tbody><tr>
+                <td>
+                    <div>
+                        <canvas id="captcha2Canvas" width="200" height="80" style="border: 1px solid rgb(211, 211, 211); background: url(&quot;/images/grid_10.png&quot;) rgb(255, 255, 255); z-index: 0;" class="" displayctrl="">
+                    </canvas></div>
+                    <div>
+                        <div class="side-by-side">
+                            <input type="text" id="captcha2txt" class="input-medium highlightRequired" requiredctrl="" onblur="validateCaptcha('#captcha2hidden', '#captcha2txt', '#captcha2errormsg')" autocomplete="nope" style="z-index: 0;">
+                        </div>
+                        <div class="side-by-side">
+                            <img src="/images/FormWidgets/captcha.png" id="captcha2regenerate" onclick="generateImg('#captcha2hidden', '#captcha2Canvas')" style="width:25px">
+                        </div>
+                    </div>
+                    <input type="hidden" id="captcha2hidden">
+                    <span id="captcha2errormsg"></span>
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+</formwidget>
