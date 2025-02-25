@@ -1,0 +1,125 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="0be989d8-3de2-49aa-a69e-c23a052adda8">
+  <figures>
+    <figure
+      id="59f41426-0389-40bd-94e1-8f81c915d942"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[oFilePath:String|vFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="88392a54-e891-ca3e-2ecd-2508b298c071"
+      name="PDF Encrypt Secure"
+      type="pdfencryptsecure"
+      x="280"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[PDF Encrypt Secure]]></property>
+        <property
+          name="type"><![CDATA[pdfencryptsecure]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[PDF Encrypt Secure]]></property>
+        <property
+          name="itemDescription"><![CDATA[pdfEncryptSecure]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\TempFiles\PDF Files\FW-About-LUKE.pdf]]></property>
+        <property
+          name="userPassword"><![CDATA[P@ssw0rd]]></property>
+        <property
+          name="ownerPassword"><![CDATA[P@ssw0rd]]></property>
+        <property
+          name="encryptionType"><![CDATA[AESx128]]></property>
+        <property
+          name="outputFilePath"><![CDATA[variable.oFilePath]]></property>
+        <property
+          name="pdfVirtualPath"><![CDATA[variable.vFilePath]]></property>
+        <property
+          name="LogMessage"><![CDATA[pdfEncryptSecure - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[pdfEncryptSecure - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[PDF Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="d259fd91-917c-87f2-b5c0-75aa1ac23239"
+      label=""
+      size="5"
+      type=""
+      srcParentID="59f41426-0389-40bd-94e1-8f81c915d942"
+      srcParentType="start"
+      trgParentID="88392a54-e891-ca3e-2ecd-2508b298c071"
+      trgParentType="pdfencryptsecure"
+      router="junction"
+      color="0000ff"
+      lblx="189"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=18;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
