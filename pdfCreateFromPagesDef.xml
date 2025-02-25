@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="c8866fd8-29cb-42f4-bd66-53caaf77d9fc">
+  <figures>
+    <figure
+      id="918d379e-0e73-482d-9588-493edb194369"
+      name="start"
+      type="start"
+      x="58"
+      y="110"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[oFilePath:String|vFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9227b26c-05f4-a509-114f-11e31e3c5841"
+      name="PDF Create From Pages"
+      type="pdfcreatefrompages"
+      x="300"
+      y="110"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[PDF Create From Pages]]></property>
+        <property
+          name="type"><![CDATA[pdfcreatefrompages]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[PDF Create From Pages]]></property>
+        <property
+          name="itemDescription"><![CDATA[pdfCreateFromPages]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\TempFiles\PDF Files\0599333e-0145-47f2-aadf-0039e40fec26.pdf]]></property>
+        <property
+          name="listOfPageNo"><![CDATA[3|1|2]]></property>
+        <property
+          name="outputFilePath"><![CDATA[variable.oFilePath]]></property>
+        <property
+          name="pdfVirtualPath"><![CDATA[variable.vFilePath]]></property>
+        <property
+          name="LogMessage"><![CDATA[pdfCreateFromPages - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[pdfCreateFromPages - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[PDF Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="49392cf4-9cdc-e924-0ee8-81e5fe2d4aa0"
+      label=""
+      size="5"
+      type=""
+      srcParentID="918d379e-0e73-482d-9588-493edb194369"
+      srcParentType="start"
+      trgParentID="9227b26c-05f4-a509-114f-11e31e3c5841"
+      trgParentType="pdfcreatefrompages"
+      router="junction"
+      color="0000ff"
+      lblx="199"
+      lbly="130"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=18;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="130" />
+        <point
+          x="300"
+          y="130" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
