@@ -1,0 +1,123 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="bb7a01bf-02c4-41a5-aeb2-5bd31a803b77">
+  <figures>
+    <figure
+      id="8da327c4-9b4e-4ae1-9e17-cf88b62c6376"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[oFilePath:String|vFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="be0605c5-5f43-efee-2ca1-818e2af0e502"
+      name="PDF Expire File"
+      type="pdfexpirefile"
+      x="290"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[PDF Expire File]]></property>
+        <property
+          name="type"><![CDATA[pdfexpirefile]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[PDF Expire File]]></property>
+        <property
+          name="itemDescription"><![CDATA[pdfExpireFile]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\DocReport\Pdf\87b1fb25-0fc4-4c11-a2e9-bdc750ee725f.pdf]]></property>
+        <property
+          name="timeZone"><![CDATA[India Standard Time]]></property>
+        <property
+          name="expirationDate"><![CDATA[2024-05-22 12:30:00]]></property>
+        <property
+          name="outputFilePath"><![CDATA[variable.oFilePath]]></property>
+        <property
+          name="pdfVirtualPath"><![CDATA[variable.vFilePath]]></property>
+        <property
+          name="LogMessage"><![CDATA[pdfExpireFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[pdfExpireFilem - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[PDF Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="1688c800-60d9-8347-d0fb-e8a6632ec02f"
+      label=""
+      size="5"
+      type=""
+      srcParentID="8da327c4-9b4e-4ae1-9e17-cf88b62c6376"
+      srcParentType="start"
+      trgParentID="be0605c5-5f43-efee-2ca1-818e2af0e502"
+      trgParentType="pdfexpirefile"
+      router="junction"
+      color="0000ff"
+      lblx="194"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=18;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="290"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
