@@ -1,0 +1,143 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="8112ee0e-c9b8-421b-af29-0ececca145a5">
+  <figures>
+    <figure
+      id="36c1f92a-b98c-4502-81ba-79b926029a7d"
+      name="start"
+      type="start"
+      x="60"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[sendMail:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="dbd07c9b-88d9-8010-b8a6-5bbff8015b46"
+      name="oAuth Rest Call"
+      type="clsoauthrest"
+      x="250"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[oAuth Rest Call]]></property>
+        <property
+          name="type"><![CDATA[clsoauthrest]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[oAuth Rest Call]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsOAuthRest]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[441fb558-c3f8-4a65-8304-26f7114c1301]]></property>
+        <property
+          name="restCallURL"><![CDATA[https://outlook.office.com/api/v1.0/me/sendmail]]></property>
+        <property
+          name="httpMethod"><![CDATA[POST]]></property>
+        <property
+          name="headers"><![CDATA[Content-Type~application/json]]></property>
+        <property
+          name="payLoadType"><![CDATA[JSON]]></property>
+        <property
+          name="payloadData"><![CDATA[{"Message":{&#xA;   {&#xA;    headers: [  # in an array since order matters&#xA;        { name: 'Subject', value: 'An email' },&#xA;        { name: 'Date',    value: 'Thu, 4 Mar 2010 15:35:32 -0800' },&#xA;        { name: 'From',    value: 'george@foo.com' },&#xA;        { name: 'To',      value: 'paul@goo.com' }&#xA;        { name: 'Sender',  value: 'paul@goo.com' }&#xA;        { name: 'Reply-to', value: 'paul@goo.com' }&#xA;    ],&#xA;    from: 'From blah blah...',&#xA;    body: {&#xA;        type: 'multipart/alternative,&#xA;        parts: [&#xA;            {&#xA;                id: 'partid-1',&#xA;                type: 'text/plain',&#xA;                sections: [&#xA;                    {&#xA;                        type: 'greeting',&#xA;                        text: 'Dear Jason,'&#xA;                    },&#xA;                    {&#xA;                        type: 'normal',&#xA;                        text: ["This is an ", {type: 'url', href: 'http://foo.com, text: "URL"}, ", that I have embedded in some text."]&#xA;                    },&#xA;                    {&#xA;                        type: quoted-section,&#xA;                        text: "Something worth quoting."&#xA;                    },&#xA;                    {&#xA;                        type: quoted-section,&#xA;                        body: {&#xA;                            headers: [&#xA;                            { name: 'Subject', value: 'Hey there' },&#xA;                            { name: 'Date', ... } &#xA;                            ],&#xA;                            body: {&#xA;                                type: 'text/plain',&#xA;                                text:  'Hi there'&#xA;                            }&#xA;                        }&#xA;                    },&#xA;                    {&#xA;                        type: 'signature',&#xA;                        text: '...'&#xA;                    }&#xA;                ]&#xA;            },&#xA;            {&#xA;                id: 'id',&#xA;                type: 'text/html'&#xA;                text: '<bold>Dear Jason</bold>, <br/>This is a test.',&#xA;            },&#xA;        ]&#xA;    }&#xA;}}}]]></property>
+        <property
+          name="payloads"><![CDATA[Message~{"Message":{&#xA;   {&#xA;    headers: [  # in an array since order matters&#xA;        { name: 'Subject', value: 'An email' },&#xA;        { name: 'Date',    value: 'Thu, 4 Mar 2010 15:35:32 -0800' },&#xA;        { name: 'From',    value: 'george@foo.com' },&#xA;        { name: 'To',      value: 'paul@goo.com' }&#xA;        { name: 'Sender',  value: 'paul@goo.com' }&#xA;        { name: 'Reply-to', value: 'paul@goo.com' }&#xA;    ],&#xA;    from: 'From blah blah...',&#xA;    body: {&#xA;        type: 'multipart/alternative,&#xA;        parts: [&#xA;            {&#xA;                id: 'partid-1',&#xA;                type: 'text/plain',&#xA;                sections: [&#xA;                    {&#xA;                        type: 'greeting',&#xA;                        text: 'Dear Jason,'&#xA;                    },&#xA;                    {&#xA;                        type: 'normal',&#xA;                        text: ["This is an ", {type: 'url', href: 'http://foo.com, text: "URL"}, ", that I have embedded in some text."]&#xA;                    },&#xA;                    {&#xA;                        type: quoted-section,&#xA;                        text: "Something worth quoting."&#xA;                    },&#xA;                    {&#xA;                        type: quoted-section,&#xA;                        body: {&#xA;                            headers: [&#xA;                            { name: 'Subject', value: 'Hey there' },&#xA;                            { name: 'Date', ... } &#xA;                            ],&#xA;                            body: {&#xA;                                type: 'text/plain',&#xA;                                text:  'Hi there'&#xA;                            }&#xA;                        }&#xA;                    },&#xA;                    {&#xA;                        type: 'signature',&#xA;                        text: '...'&#xA;                    }&#xA;                ]&#xA;            },&#xA;            {&#xA;                id: 'id',&#xA;                type: 'text/html'&#xA;                text: '<bold>Dear Jason</bold>, <br/>This is a test.',&#xA;            },&#xA;        ]&#xA;    }&#xA;}}}]]></property>
+        <property
+          name="sourceFilePath"><![CDATA[]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.sendMail]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsOAuthRest - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsOAuthRest - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[WebServices Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="95ac19c2-bb78-9a37-3f90-03bfdeac8e3a"
+      label=""
+      size="5"
+      type=""
+      srcParentID="36c1f92a-b98c-4502-81ba-79b926029a7d"
+      srcParentType="start"
+      trgParentID="dbd07c9b-88d9-8010-b8a6-5bbff8015b46"
+      trgParentType="clsoauthrest"
+      router="junction"
+      color="0000ff"
+      lblx="175"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="100"
+          y="100" />
+        <point
+          x="250"
+          y="100" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
