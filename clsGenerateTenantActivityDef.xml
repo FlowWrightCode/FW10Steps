@@ -1,0 +1,117 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="2ddd6a9b-6c78-40bd-9314-733da02b8547">
+  <figures>
+    <figure
+      id="93e21cae-8ef3-49dd-aae9-efb38e4c1c07"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="fa989abf-5c7d-4461-6b4c-dec1be42760f"
+      name="Tenant Activity"
+      type="clsgeneratetenantactivity"
+      x="280"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Tenant Activity]]></property>
+        <property
+          name="type"><![CDATA[clsgeneratetenantactivity]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Tenant Activity]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsGenerateTenantActivity]]></property>
+        <property
+          name="tnconnection"><![CDATA[209249d9-38f1-4b4e-829f-cc2f3cc86734]]></property>
+        <property
+          name="varGlobalToStore"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsGenerateTenantActivity - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsGenerateTenantActivity - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Tenants Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="921771d1-5ca4-5c3c-c058-5ee5a8d120c4"
+      label=""
+      size="5"
+      type=""
+      srcParentID="93e21cae-8ef3-49dd-aae9-efb38e4c1c07"
+      srcParentType="start"
+      trgParentID="fa989abf-5c7d-4461-6b4c-dec1be42760f"
+      trgParentType="clsgeneratetenantactivity"
+      router="junction"
+      color="0000ff"
+      lblx="189"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
