@@ -1,0 +1,141 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="86612011-a503-46be-a27d-5b646cee5202">
+  <figures>
+    <figure
+      id="caaac165-27e0-46e4-a089-7291cbc1bd23"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="5fbff568-0855-b90c-e53a-a9cb8416ef28"
+      name="Download File"
+      type="sftpgetfile"
+      x="260"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Download File]]></property>
+        <property
+          name="type"><![CDATA[sftpgetfile]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Download File]]></property>
+        <property
+          name="itemDescription"><![CDATA[sftpGetFile]]></property>
+        <property
+          name="sftpConnection"><![CDATA[f173da47-2845-4dd6-879e-4a855b9eb46b]]></property>
+        <property
+          name="sourceFilePath"><![CDATA[..\TempFiles\OldReports.pdf]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[C:\FW\TempFiles\OldReports\]]></property>
+        <property
+          name="LogMessage"><![CDATA[sftpGetFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[sftpGetFile - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SFTP Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="8ac8482e-e1f5-fe35-a6fc-e338c72c5206"
+      label=""
+      size="4"
+      type=""
+      srcParentID="caaac165-27e0-46e4-a089-7291cbc1bd23"
+      srcParentType="start"
+      trgParentID="5fbff568-0855-b90c-e53a-a9cb8416ef28"
+      trgParentType="sftpgetfile"
+      router="junction"
+      color="3c78d8"
+      lblx="170"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="170"
+          y="59" />
+        <point
+          x="170"
+          y="60" />
+        <point
+          x="260"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
