@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="68c1a697-29f6-4d45-a0cb-fc53b474f492">
+  <figures>
+    <figure
+      id="a54c928c-b3ef-4058-b443-87bb81d0ce1f"
+      name="start"
+      type="start"
+      x="0"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="e36bda0c-596a-c2e8-8e58-87142a292565"
+      name="Remove Single WF Instance"
+      type="removeworkflowinstance"
+      x="190"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Remove Single WF Instance]]></property>
+        <property
+          name="type"><![CDATA[removeworkflowinstance]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Remove Single WF Instance]]></property>
+        <property
+          name="itemDescription"><![CDATA[removeWorkflowInstance]]></property>
+        <property
+          name="instanceID"><![CDATA[Variable.instanceID]]></property>
+        <property
+          name="LogMessage"><![CDATA[removeWorkflowInstance - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[removeWorkflowInstance - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="c513cbca-e484-cfa3-b4b3-da4254135ca1"
+      label=""
+      size="5"
+      type=""
+      srcParentID="a54c928c-b3ef-4058-b443-87bb81d0ce1f"
+      srcParentType="start"
+      trgParentID="e36bda0c-596a-c2e8-8e58-87142a292565"
+      trgParentType="removeworkflowinstance"
+      router="junction"
+      color="3c78d8"
+      lblx="115"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="40"
+          y="100" />
+        <point
+          x="190"
+          y="100" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
