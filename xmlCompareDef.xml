@@ -1,0 +1,226 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="bad07e9a-9f0e-446f-942c-5a380c499b32">
+  <figures>
+    <figure
+      id="f94fad87-8fa6-4880-9391-f319c8b98f87"
+      name="start"
+      type="start"
+      x="90"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varXML1:String|varXML2:String|varXMLNew:String|varXMLRemoved:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="245aed36-d9c9-2db5-9099-5025b85a26e6"
+      name="Update Variables"
+      type="updatevariable"
+      x="240"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="updateVariables"><![CDATA[variable.varXML1~<SQLData>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>20</PROCUREMENTTYPEID>&#xA;    <ROWNO>1</ROWNO>&#xA;    <PROCESSID>eef9a64e-c2bb-4f4f-99df-a5201d841e42</PROCESSID>&#xA;    <RowID>0</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>24</PROCUREMENTTYPEID>&#xA;    <ROWNO>1</ROWNO>&#xA;    <PROCESSID>a3784005-c8d6-43f1-b5bc-05583b9ea617</PROCESSID>&#xA;    <RowID>1</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>36</PROCUREMENTTYPEID>&#xA;    <ROWNO>1</ROWNO>&#xA;    <PROCESSID>617b40af-2a9b-4ae0-8356-73410d2fb22c</PROCESSID>&#xA;    <RowID>2</RowID>&#xA;  </Row>&#xA;</SQLData>|variable.varXML2~<SQLData>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>20</PROCUREMENTTYPEID>&#xA;    <ROWNO>1</ROWNO>&#xA;    <RowID>0</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>20</PROCUREMENTTYPEID>&#xA;    <ROWNO>2</ROWNO>&#xA;    <RowID>1</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>24</PROCUREMENTTYPEID>&#xA;    <ROWNO>1</ROWNO>&#xA;    <RowID>2</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>24</PROCUREMENTTYPEID>&#xA;    <ROWNO>2</ROWNO>&#xA;    <RowID>3</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>36</PROCUREMENTTYPEID>&#xA;    <ROWNO>1</ROWNO>&#xA;    <RowID>4</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>36</PROCUREMENTTYPEID>&#xA;    <ROWNO>2</ROWNO>&#xA;    <RowID>5</RowID>&#xA;  </Row>&#xA;  <Row>&#xA;    <PROJECTID>9268</PROJECTID>&#xA;    <PROCUREMENTTYPEID>38</PROCUREMENTTYPEID>&#xA;    <ROWNO>1</ROWNO>&#xA;    <RowID>6</RowID>&#xA;  </Row>&#xA;</SQLData>]]></property>
+        <property
+          name="variableName"><![CDATA[]]></property>
+        <property
+          name="variableValue"><![CDATA[]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="33a01846-5c1f-e6f5-5fa5-c57b8124ca38"
+      name="Compare XML"
+      type="xmlcompare"
+      x="410"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Compare XML]]></property>
+        <property
+          name="type"><![CDATA[xmlcompare]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Compare XML]]></property>
+        <property
+          name="itemDescription"><![CDATA[xmlCompare]]></property>
+        <property
+          name="xml1"><![CDATA[Variable.varXML1]]></property>
+        <property
+          name="xml2"><![CDATA[Variable.varXML2]]></property>
+        <property
+          name="columnList"><![CDATA[PROJECTID,PROCUREMENTTYPEID,ROWNO,RowID]]></property>
+        <property
+          name="varGlobalXml1NewItems"><![CDATA[variable.varXMLNew]]></property>
+        <property
+          name="varGlobalXml2RemovedItems"><![CDATA[variable.varXMLRemoved]]></property>
+        <property
+          name="LogMessage"><![CDATA[xmlCompare - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[xmlCompare - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Development Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="402d9d23-0679-54c7-f440-f7c0cd89d299"
+      label=""
+      size="4"
+      type=""
+      srcParentID="245aed36-d9c9-2db5-9099-5025b85a26e6"
+      srcParentType="updatevariable"
+      trgParentID="33a01846-5c1f-e6f5-5fa5-c57b8124ca38"
+      trgParentType="xmlcompare"
+      router="junction"
+      color="3c78d8"
+      lblx="345"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="60" />
+        <point
+          x="345"
+          y="60" />
+        <point
+          x="345"
+          y="59" />
+        <point
+          x="410"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="42effe20-215b-904b-cdcb-ed7deec816cd"
+      label=""
+      size="4"
+      type=""
+      srcParentID="f94fad87-8fa6-4880-9391-f319c8b98f87"
+      srcParentType="start"
+      trgParentID="245aed36-d9c9-2db5-9099-5025b85a26e6"
+      trgParentType="updatevariable"
+      router="junction"
+      color="3c78d8"
+      lblx="185"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="130"
+          y="59" />
+        <point
+          x="185"
+          y="59" />
+        <point
+          x="185"
+          y="60" />
+        <point
+          x="240"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
