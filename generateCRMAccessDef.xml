@@ -1,0 +1,168 @@
+<reveDiagram desc="Powered by FlowWright" testMode="false" testModeUserID="" defID="d6c914ea-561c-4cf8-879d-28273a035169">
+  <figures>
+    <figure id="cfb988c4-d0ba-4dd0-b539-90a54a44ceb4" name="start" type="start" x="0" y="80" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[start]]></property>
+        <property name="type"><![CDATA[start]]></property>
+        <property name="itemName"><![CDATA[start]]></property>
+        <property name="itemDescription"><![CDATA[]]></property>
+        <property name="variables"><![CDATA[accessToken:String|RestCallResponseAccounts:String|accountName:String|restCallResponseContacts:String|contactName:String]]></property>
+        <property name="requiredVars"><![CDATA[]]></property>
+        <property name="globals"><![CDATA[]]></property>
+        <property name="requiredGlobals"><![CDATA[]]></property>
+        <property name="useSingleIteration"><![CDATA[0]]></property>
+        <property name="businessObjects"><![CDATA[]]></property>
+        <property name="logMessage"><![CDATA[]]></property>
+        <property name="documentation"><![CDATA[]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure id="8d31ff22-a0ae-9151-3ed1-545f1ca64536" name="Generate Access Token" type="generatecrmaccesstoken" x="200" y="80" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[Generate Access Token]]></property>
+        <property name="type"><![CDATA[generatecrmaccesstoken]]></property>
+        <property name="itemName"><![CDATA[Generate Access Token]]></property>
+        <property name="itemDescription"><![CDATA[generateCRMAccessToken]]></property>
+        <property name="varGlobalAccessToken"><![CDATA[variable.accessToken]]></property>
+        <property name="logMessage"><![CDATA[generateCRMAccessToken - Variable.createdOn]]></property>
+        <property name="documentation"><![CDATA[generateCRMAccessToken - Variable.initiatorName]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure id="9fe33c32-cad3-11d2-735c-b1620f752474" name="Accounts with name &quot;cloud&quot;" type="restcall" x="200" y="240" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[Accounts with name "cloud"]]></property>
+        <property name="type"><![CDATA[restcall]]></property>
+        <property name="itemName"><![CDATA[Accounts with name "cloud"]]></property>
+        <property name="itemDescription"><![CDATA[]]></property>
+        <property name="payLoadType"><![CDATA[XML]]></property>
+        <property name="password"><![CDATA[]]></property>
+        <property name="requestBody"><![CDATA[]]></property>
+        <property name="varToStoreResult"><![CDATA[variable.RestCallResponseAccounts]]></property>
+        <property name="method"><![CDATA[GET]]></property>
+        <property name="restURL"><![CDATA[https://crmserver/api/data/v9.2/accounts?filter=contains(name,'cloud')&$orderBy=name]]></property>
+        <property name="sourceFilePath"><![CDATA[]]></property>
+        <property name="userName"><![CDATA[]]></property>
+        <property name="responseType"><![CDATA[JSON]]></property>
+        <property name="headers"><![CDATA[Accept~application/json|Authorization~Bearer variable.accessToken]]></property>
+        <property name="logMessage"><![CDATA[]]></property>
+        <property name="documentation"><![CDATA[]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure id="d27838b5-e6e2-a19d-122e-4c051e963c37" name="Get Account Name" type="jsonpathgetvalue" x="440" y="240" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[Get Account Name]]></property>
+        <property name="type"><![CDATA[jsonpathgetvalue]]></property>
+        <property name="itemName"><![CDATA[Get Account Name]]></property>
+        <property name="itemDescription"><![CDATA[jsonPathGetValue]]></property>
+        <property name="varGlobalHoldingJson"><![CDATA[variable.restCallResponseAccounts]]></property>
+        <property name="jsonPathExp"><![CDATA[$.value[0].name]]></property>
+        <property name="Mapping"><![CDATA[]]></property>
+        <property name="varGlobalResult"><![CDATA[variable.accountName]]></property>
+        <property name="logMessage"><![CDATA[jsonPathGetValue - Variable.createdOn]]></property>
+        <property name="documentation"><![CDATA[jsonPathGetValue - Variable.initiatorName]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure id="e6e0e1da-8875-6cbc-ba08-d10e76247969" name="Fetch Contacts" type="restcall" x="200" y="400" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[Fetch Contacts]]></property>
+        <property name="type"><![CDATA[restcall]]></property>
+        <property name="itemName"><![CDATA[Fetch Contacts]]></property>
+        <property name="itemDescription"><![CDATA[]]></property>
+        <property name="payLoadType"><![CDATA[XML]]></property>
+        <property name="password"><![CDATA[]]></property>
+        <property name="requestBody"><![CDATA[]]></property>
+        <property name="varToStoreResult"><![CDATA[variable.restCallResponseContacts]]></property>
+        <property name="method"><![CDATA[GET]]></property>
+        <property name="restURL"><![CDATA[https://crmserver/api/data/v9.2/contacts?$filter=_ecr_accountname_value eq (a954aa71-6b06-ec11-94ef-002248830442)&$orderby=fullname]]></property>
+        <property name="sourceFilePath"><![CDATA[]]></property>
+        <property name="userName"><![CDATA[]]></property>
+        <property name="responseType"><![CDATA[JSON]]></property>
+        <property name="headers"><![CDATA[Accept~application.json|Authorization~Bearer variable.accessToken]]></property>
+        <property name="logMessage"><![CDATA[]]></property>
+        <property name="documentation"><![CDATA[]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure id="12b58cb6-dbd8-63f5-fba3-f596f4c3862c" name="Get Contact Name" type="jsonpathgetvalue" x="440" y="400" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[Get Contact Name]]></property>
+        <property name="type"><![CDATA[jsonpathgetvalue]]></property>
+        <property name="itemName"><![CDATA[Get Contact Name]]></property>
+        <property name="itemDescription"><![CDATA[]]></property>
+        <property name="varGlobalHoldingJson"><![CDATA[variable.restCallResponseContacts]]></property>
+        <property name="jsonPathExp"><![CDATA[$.value[0].fullname]]></property>
+        <property name="Mapping"><![CDATA[]]></property>
+        <property name="varGlobalResult"><![CDATA[variable.contactName]]></property>
+        <property name="logMessage"><![CDATA[]]></property>
+        <property name="documentation"><![CDATA[]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection id="218855ca-90c6-136a-ca4b-b0ec089885f7" label="" size="3" type="" srcParentID="cfb988c4-d0ba-4dd0-b539-90a54a44ceb4" srcParentType="start" trgParentID="8d31ff22-a0ae-9151-3ed1-545f1ca64536" trgParentType="generatecrmaccesstoken" router="draw2d.layout.connection.InteractiveManhattanConnectionRouter" color="129ce4" lblx="120" lbly="100" style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=14;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3" srcPortName="eastPort" trgPortName="westPort">
+      <properties>
+        <property name="label"><![CDATA[]]></property>
+        <property name="type"><![CDATA[]]></property>
+        <property name="router"><![CDATA[draw2d.layout.connection.InteractiveManhattanConnectionRouter]]></property>
+        <property name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point x="40" y="100" />
+        <point x="200" y="100" />
+      </line>
+    </connection>
+    <connection id="695a1416-be86-944a-b4e4-42390a6013ee" label="" size="3" type="" srcParentID="8d31ff22-a0ae-9151-3ed1-545f1ca64536" srcParentType="generatecrmaccesstoken" trgParentID="9fe33c32-cad3-11d2-735c-b1620f752474" trgParentType="restcall" router="draw2d.layout.connection.InteractiveManhattanConnectionRouter" color="129ce4" lblx="220" lbly="180" style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=14;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3" srcPortName="southPort" trgPortName="northPort">
+      <properties>
+        <property name="label"><![CDATA[]]></property>
+        <property name="type"><![CDATA[]]></property>
+        <property name="router"><![CDATA[draw2d.layout.connection.InteractiveManhattanConnectionRouter]]></property>
+        <property name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point x="220" y="120" />
+        <point x="220" y="240" />
+      </line>
+    </connection>
+    <connection id="aae34486-9ad6-6a9d-70db-e8cab1fd0e22" label="" size="3" type="" srcParentID="9fe33c32-cad3-11d2-735c-b1620f752474" srcParentType="restcall" trgParentID="d27838b5-e6e2-a19d-122e-4c051e963c37" trgParentType="jsonpathgetvalue" router="draw2d.layout.connection.InteractiveManhattanConnectionRouter" color="129ce4" lblx="340" lbly="260" style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=14;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3" srcPortName="eastPort" trgPortName="westPort">
+      <properties>
+        <property name="label"><![CDATA[]]></property>
+        <property name="type"><![CDATA[]]></property>
+        <property name="router"><![CDATA[draw2d.layout.connection.InteractiveManhattanConnectionRouter]]></property>
+        <property name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point x="240" y="260" />
+        <point x="440" y="260" />
+      </line>
+    </connection>
+    <connection id="ffd40bfd-3b2b-0752-9abe-06b9bbbf75c3" label="" size="3" type="" srcParentID="e6e0e1da-8875-6cbc-ba08-d10e76247969" srcParentType="restcall" trgParentID="12b58cb6-dbd8-63f5-fba3-f596f4c3862c" trgParentType="jsonpathgetvalue" router="draw2d.layout.connection.InteractiveManhattanConnectionRouter" color="129ce4" lblx="340" lbly="420" style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=14;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3" srcPortName="eastPort" trgPortName="westPort">
+      <properties>
+        <property name="label"><![CDATA[]]></property>
+        <property name="type"><![CDATA[]]></property>
+        <property name="router"><![CDATA[draw2d.layout.connection.InteractiveManhattanConnectionRouter]]></property>
+        <property name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point x="240" y="420" />
+        <point x="440" y="420" />
+      </line>
+    </connection>
+    <connection id="5ca674d5-4600-f77b-9d50-0551226eacb9" label="" size="3" type="" srcParentID="9fe33c32-cad3-11d2-735c-b1620f752474" srcParentType="restcall" trgParentID="e6e0e1da-8875-6cbc-ba08-d10e76247969" trgParentType="restcall" router="draw2d.layout.connection.InteractiveManhattanConnectionRouter" color="129ce4" lblx="220" lbly="340" style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=14;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3" srcPortName="southPort" trgPortName="northPort">
+      <properties>
+        <property name="label"><![CDATA[]]></property>
+        <property name="type"><![CDATA[]]></property>
+        <property name="router"><![CDATA[draw2d.layout.connection.InteractiveManhattanConnectionRouter]]></property>
+        <property name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point x="220" y="280" />
+        <point x="220" y="400" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
