@@ -1,0 +1,207 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="5a3ccd25-d1af-48eb-ab80-a517c2879147">
+  <figures>
+    <figure
+      id="66dee482-ce8d-43d0-bb3c-36bae952dacd"
+      name="start"
+      type="start"
+      x="-40"
+      y="190"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[PI:String|varProcInstID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c02dead9-9a06-4325-99a1-974f6a0312da"
+      name="Execute SQL Statement"
+      type="executesql"
+      x="120"
+      y="190"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Execute SQL Statement]]></property>
+        <property
+          name="type"><![CDATA[executesql]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Execute SQL Statement]]></property>
+        <property
+          name="itemDescription"><![CDATA[executeSQL]]></property>
+        <property
+          name="connectionString"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
+        <property
+          name="changeDatabase"><![CDATA[]]></property>
+        <property
+          name="sqlStatement"><![CDATA[select top 1 instanceID from deInstances where parentInstanceID is null and status='completed' order by createdOn asc]]></property>
+        <property
+          name="variableName"><![CDATA[variable.varProcInstID]]></property>
+        <property
+          name="resultFormat"><![CDATA[XML]]></property>
+        <property
+          name="singleResult"><![CDATA[yes]]></property>
+        <property
+          name="commandTimeOut"><![CDATA[]]></property>
+        <property
+          name="params"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[executeSQL - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[executeSQL - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SQL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="40d368f8-56fa-4e82-ae24-b1af6df8a810"
+      name="Archive Process Instance"
+      type="clsarchiveprocessinstance"
+      x="340"
+      y="190"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Archive Process Instance]]></property>
+        <property
+          name="type"><![CDATA[clsarchiveprocessinstance]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Archive Process Instance]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsArchiveProcessInstance]]></property>
+        <property
+          name="instanceID"><![CDATA[Variable.varProcInstID]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsArchiveProcessInstance - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsArchiveProcessInstance - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="c3b6e871-f2f1-4022-b2f7-8784c64b580f"
+      label=""
+      size="5"
+      type=""
+      srcParentID="c02dead9-9a06-4325-99a1-974f6a0312da"
+      srcParentType="executesql"
+      trgParentID="40d368f8-56fa-4e82-ae24-b1af6df8a810"
+      trgParentType="clsarchiveprocessinstance"
+      router="junction"
+      color="0000ff"
+      lblx="250"
+      lbly="210"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="160"
+          y="210" />
+        <point
+          x="340"
+          y="210" />
+      </line>
+    </connection>
+    <connection
+      id="96511d98-42b8-4354-b2ee-1666dc5c2b34"
+      label=""
+      size="5"
+      type=""
+      srcParentID="66dee482-ce8d-43d0-bb3c-36bae952dacd"
+      srcParentType="start"
+      trgParentID="c02dead9-9a06-4325-99a1-974f6a0312da"
+      trgParentType="executesql"
+      router="junction"
+      color="0000ff"
+      lblx="60"
+      lbly="210"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="0"
+          y="210" />
+        <point
+          x="120"
+          y="210" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
