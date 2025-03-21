@@ -382,7 +382,7 @@
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="78"
-      lbly="510"
+      lbly="511"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
