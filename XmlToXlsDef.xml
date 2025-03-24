@@ -1,0 +1,123 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="d7275056-d475-4ac2-91b1-478e12ee258e">
+  <figures>
+    <figure
+      id="c21ad233-b48d-4f79-a55e-d7ef3bc8dd46"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varXML:String|filePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4ce33fc9-40c7-b461-2883-ca020ce3e6c8"
+      name="Write XML to XLS"
+      type="xmltoxls"
+      x="310"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Write XML to XLS]]></property>
+        <property
+          name="type"><![CDATA[xmltoxls]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Write XML to XLS]]></property>
+        <property
+          name="itemDescription"><![CDATA[XMLToXLS]]></property>
+        <property
+          name="xmlVariable"><![CDATA[Variable.varXML]]></property>
+        <property
+          name="xlsFilePath"><![CDATA[variable.filePath]]></property>
+        <property
+          name="workSheetName"><![CDATA[TestSample]]></property>
+        <property
+          name="writeColHeadings"><![CDATA[1]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[XMLToXLS - Variable.initiatorName]]></property>
+        <property
+          name="xmlNodeName"><![CDATA[node]]></property>
+        <property
+          name="LogMessage"><![CDATA[XMLToXLS - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[XML Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="7c9eeb1e-f8d4-05f5-9616-70037714fad9"
+      label=""
+      size="3"
+      type=""
+      srcParentID="c21ad233-b48d-4f79-a55e-d7ef3bc8dd46"
+      srcParentType="start"
+      trgParentID="4ce33fc9-40c7-b461-2883-ca020ce3e6c8"
+      trgParentType="xmltoxls"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="204"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="310"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
