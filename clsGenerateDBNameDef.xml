@@ -1,0 +1,125 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="fbbf66a4-909d-4cfe-88e1-640fcdec1a4b">
+  <figures>
+    <figure
+      id="b18176f7-51b0-4d45-8e7f-d275a57b30e8"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varDBName:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="abaae07f-b965-01f0-c23d-9aa54380bd9a"
+      name="Generate DB name"
+      type="clsgeneratedbname"
+      x="280"
+      y="40"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate DB name]]></property>
+        <property
+          name="type"><![CDATA[clsgeneratedbname]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Generate DB name]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsGenerateDBName]]></property>
+        <property
+          name="tnconnection"><![CDATA[209249d9-38f1-4b4e-829f-cc2f3cc86734]]></property>
+        <property
+          name="dbName"><![CDATA[TestDB - Variable.initiatorID]]></property>
+        <property
+          name="dbNameVarGlobal"><![CDATA[variable.varDBName]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsGenerateDBName - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsGenerateDBName - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Tenants Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="5b39f0cf-5e8d-0022-5cb3-f0be647e5d47"
+      label=""
+      size="5"
+      type=""
+      srcParentID="b18176f7-51b0-4d45-8e7f-d275a57b30e8"
+      srcParentType="start"
+      trgParentID="abaae07f-b965-01f0-c23d-9aa54380bd9a"
+      trgParentType="clsgeneratedbname"
+      router="junction"
+      color="0000ff"
+      lblx="189"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="189"
+          y="59" />
+        <point
+          x="189"
+          y="60" />
+        <point
+          x="280"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
