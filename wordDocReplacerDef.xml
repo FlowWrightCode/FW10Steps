@@ -1,0 +1,83 @@
+<reveDiagram desc="Powered by FlowWright" testMode="false" testModeUserID="" defID="93519106-3a89-41ec-b122-073ed0ff5fd7">
+  <figures>
+    <figure id="c5443097-a7e0-4c6f-b955-c1fef4f98e23" name="start" type="start" x="-90" y="39" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[start]]></property>
+        <property name="type"><![CDATA[start]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+        <property name="itemName"><![CDATA[start]]></property>
+        <property name="itemDescription"><![CDATA[]]></property>
+        <property name="variables"><![CDATA[dtLastLoginUI:Date|varEmail:String|varOutput:String|varUserID:String|varUserName:String]]></property>
+        <property name="requiredVars"><![CDATA[]]></property>
+        <property name="globals"><![CDATA[]]></property>
+        <property name="requiredGlobals"><![CDATA[]]></property>
+        <property name="useSingleIteration"><![CDATA[0]]></property>
+        <property name="businessObjects"><![CDATA[]]></property>
+        <property name="logMessage"><![CDATA[]]></property>
+        <property name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure id="2883d60a-4ff0-e511-56bc-daf8982727ce" name="Doc Replacer" type="worddocreplacer" x="370" y="39" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[Doc Replacer]]></property>
+        <property name="type"><![CDATA[worddocreplacer]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+        <property name="itemName"><![CDATA[Doc Replacer]]></property>
+        <property name="itemDescription"><![CDATA[]]></property>
+        <property name="templateName"><![CDATA[wordDocReplacer-Template.docx]]></property>
+        <property name="outputFileName"><![CDATA[FW-Variable.varUserName-Variable.createdOn.docx]]></property>
+        <property name="varName"><![CDATA[variable.varOutput]]></property>
+        <property name="logMessage"><![CDATA[]]></property>
+        <property name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure id="8d0ef6c8-27b5-b052-d52d-b93683afce13" name="Update variables from SQL" type="updatevariableswithsql" x="100" y="39" isValid="true">
+      <properties>
+        <property name="label"><![CDATA[Update variables from SQL]]></property>
+        <property name="type"><![CDATA[updatevariableswithsql]]></property>
+        <property name="itemName"><![CDATA[Update variables from SQL]]></property>
+        <property name="itemDescription"><![CDATA[]]></property>
+        <property name="VariablesToUpdate"><![CDATA[Variable.varUserName~deExternalUserName|Variable.varEmail~deEmail|Variable.dtLastLoginUI~lastUILogin]]></property>
+        <property name="connectionString"><![CDATA[Dev Server]]></property>
+        <property name="changeDatabase"><![CDATA[]]></property>
+        <property name="SqlStatement"><![CDATA[select deExternalUserName, deEmail, lastUILogin from deUsers where deUserID = 'Variable.initiatorID'&#xA;&#xA;]]></property>
+        <property name="logMessage"><![CDATA[]]></property>
+        <property name="documentation"><![CDATA[]]></property>
+        <property name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection id="bf440bb2-d789-c31e-58bf-0b070f39dd28" label="" size="3" type="" srcParentID="8d0ef6c8-27b5-b052-d52d-b93683afce13" srcParentType="updatevariableswithsql" trgParentID="2883d60a-4ff0-e511-56bc-daf8982727ce" trgParentType="worddocreplacer" router="draw2d.layout.connection.InteractiveManhattanConnectionRouter" color="129ce4" lblx="255" lbly="59" style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=14;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;" srcPortName="eastPort" trgPortName="westPort">
+      <properties>
+        <property name="label"><![CDATA[]]></property>
+        <property name="type"><![CDATA[]]></property>
+        <property name="router"><![CDATA[draw2d.layout.connection.InteractiveManhattanConnectionRouter]]></property>
+        <property name="linkPriority"><![CDATA[0]]></property>
+        <property name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point x="140" y="59" />
+        <point x="370" y="59" />
+      </line>
+    </connection>
+    <connection id="6d9eb6d2-cb7b-dd59-cef5-418e92d0b705" label="" size="3" type="" srcParentID="c5443097-a7e0-4c6f-b955-c1fef4f98e23" srcParentType="start" trgParentID="8d0ef6c8-27b5-b052-d52d-b93683afce13" trgParentType="updatevariableswithsql" router="draw2d.layout.connection.InteractiveManhattanConnectionRouter" color="129ce4" lblx="25" lbly="59" style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=14;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175" srcPortName="eastPort" trgPortName="westPort">
+      <properties>
+        <property name="label"><![CDATA[]]></property>
+        <property name="type"><![CDATA[]]></property>
+        <property name="router"><![CDATA[draw2d.layout.connection.InteractiveManhattanConnectionRouter]]></property>
+        <property name="linkPriority"><![CDATA[0]]></property>
+        <property name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point x="-50" y="59" />
+        <point x="100" y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments>
+    <comment text="Fetch UserName, Email, Last Login Date&#xA;from the Users table&#xA;for the user who has initiated this process" x="-20" y="-80" w="280" h="90" id="c482d568-6890-beae-be24-b0bb660e8491" fontColor="#FFFFFF" bgColor="#5B5B5B" style="shape=label;perimeter=rectanglePerimeter;fontSize=14;fontFamily=&quot;Segoe UI&quot;, Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
+    <comment text="Replace the process variables or globals &#xA;with values and generate a DOCX file" x="310" y="110" w="270" h="60" id="745592de-3c70-f803-5633-2145beb0abee" fontColor="#FFFFFF" bgColor="#5B5B5B" style="shape=label;perimeter=rectanglePerimeter;fontSize=14;fontFamily=&quot;Segoe UI&quot;, Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
+    <comment text="Map SQL columns to process variables" x="10" y="125" w="260" h="30" id="17bb0d17-3f53-c782-b098-963f8e4fe548" fontColor="#FFFFFF" bgColor="#5B5B5B" style="shape=label;perimeter=rectanglePerimeter;fontSize=14;fontFamily=&quot;Segoe UI&quot;, Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;strokeColor=none;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;gradientColor=none;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0" />
+  </comments>
+</reveDiagram>
