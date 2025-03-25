@@ -1,0 +1,145 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="48adfbae-65fc-4196-acd3-4ac89b0678e1">
+  <figures>
+    <figure
+      id="aad783e4-5e3a-462f-bcd5-7e7ff4e5e6f6"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[vcard:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[MasterGlobal:String]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="1a09952b-2290-064c-e931-22b35b61544d"
+      name="Create vCard"
+      type="vcardgenerator"
+      x="250"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Create vCard]]></property>
+        <property
+          name="type"><![CDATA[vcardgenerator]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Create vCard]]></property>
+        <property
+          name="itemDescription"><![CDATA[vCardGenerator]]></property>
+        <property
+          name="firstName"><![CDATA[Dileepa]]></property>
+        <property
+          name="lastName"><![CDATA[Wijayanayake]]></property>
+        <property
+          name="jobTitle"><![CDATA[Chief Architect, CTO, Founder]]></property>
+        <property
+          name="organization"><![CDATA[Innovative Process Solutions]]></property>
+        <property
+          name="street"><![CDATA[307, Waverley Oaks Road]]></property>
+        <property
+          name="city"><![CDATA[Waltham, MA]]></property>
+        <property
+          name="zip"><![CDATA[02452]]></property>
+        <property
+          name="country"><![CDATA[USA]]></property>
+        <property
+          name="homePhone"><![CDATA[844.200.1900]]></property>
+        <property
+          name="cellPhone"><![CDATA[844.200.1900]]></property>
+        <property
+          name="workPhone"><![CDATA[844.200.1900]]></property>
+        <property
+          name="notes"><![CDATA[]]></property>
+        <property
+          name="fax"><![CDATA[844.200.1900]]></property>
+        <property
+          name="email"><![CDATA[info@flowwright.com]]></property>
+        <property
+          name="website"><![CDATA[www.flowwright.com]]></property>
+        <property
+          name="varName"><![CDATA[variable.vcard]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[vCardGenerator - Variable.initiatorName]]></property>
+        <property
+          name="LogMessage"><![CDATA[vCardGenerator - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="16a24332-8b2a-bb89-33ec-35307c4a43f5"
+      label=""
+      size="3"
+      type=""
+      srcParentID="aad783e4-5e3a-462f-bcd5-7e7ff4e5e6f6"
+      srcParentType="start"
+      trgParentID="1a09952b-2290-064c-e931-22b35b61544d"
+      trgParentType="vcardgenerator"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="174"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="250"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
