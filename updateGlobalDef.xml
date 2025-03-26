@@ -1,0 +1,133 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="6ebcb4ba-48ad-4753-ab05-910c8b35c2d8">
+  <figures>
+    <figure
+      id="62758e81-5d68-4527-b96f-ab32f11b7aba"
+      name="start"
+      type="start"
+      x="40"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[data:String|invoiceAmount:Number|strDOJ:String|dtSixDaysFromNow:Date|blResponse:Boolean]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="09bc802a-5838-9c2f-70fc-7e9926fb7013"
+      name="Update Globals"
+      type="updateglobals"
+      x="230"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Globals]]></property>
+        <property
+          name="type"><![CDATA[updateglobals]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Globals]]></property>
+        <property
+          name="itemDescription"><![CDATA[updateGlobals]]></property>
+        <property
+          name="updateGlobals"><![CDATA[global.data~Hello World!|global.invoiceAmount~54321|global.strDOJ~"08-Oct-2020"|global.dtSixDaysFromNow~ADD_DAYS(TODAY(),6)|global.blResponse~ISEVEN(7)]]></property>
+        <property
+          name="hasExpression"><![CDATA[yes]]></property>
+        <property
+          name="LogMessage"><![CDATA[updateGlobals - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[updateGlobals - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="a73ff751-b439-6cc1-65f4-b69d417a5b30"
+      label=""
+      size="4"
+      type=""
+      srcParentID="62758e81-5d68-4527-b96f-ab32f11b7aba"
+      srcParentType="start"
+      trgParentID="09bc802a-5838-9c2f-70fc-7e9926fb7013"
+      trgParentType="updateglobals"
+      router="junction"
+      color="3c78d8"
+      lblx="155"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="180" />
+        <point
+          x="230"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
