@@ -1,0 +1,123 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="976ef394-3637-46a9-befb-60843f467191">
+  <figures>
+    <figure
+      id="b08e5859-a70f-4df9-8cd7-639792974e59"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4daf6ae7-cb3b-b65d-003b-7153814b4de8"
+      name="Set Document Properties"
+      type="spsetdocproperties"
+      x="240"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Set Document Properties]]></property>
+        <property
+          name="type"><![CDATA[spsetdocproperties]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Set Document Properties]]></property>
+        <property
+          name="itemDescription"><![CDATA[spSetDocProperties]]></property>
+        <property
+          name="BaseURL"><![CDATA[https://cdecv.sharepoint.com]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[29457c34-207a-410c-a568-51d244ad3d42]]></property>
+        <property
+          name="documentfilepath"><![CDATA[/SharedDocuments/FlowWright]]></property>
+        <property
+          name="payloadData"><![CDATA[{&#xA;"Name":"Testing.xml",&#xA;"Title":"Testing"&#xA;}]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[spSetDocProperties - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[spSetDocProperties - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SharePoint Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="b9af15db-a4a2-3486-ebce-e5c74575be51"
+      label=""
+      size="5"
+      type=""
+      srcParentID="b08e5859-a70f-4df9-8cd7-639792974e59"
+      srcParentType="start"
+      trgParentID="4daf6ae7-cb3b-b65d-003b-7153814b4de8"
+      trgParentType="spsetdocproperties"
+      router="junction"
+      color="4a86e8"
+      lblx="160"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="240"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
