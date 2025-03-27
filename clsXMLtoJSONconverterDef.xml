@@ -1,0 +1,133 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="06ef50a6-e337-41af-89a8-a31d4360ea41">
+  <figures>
+    <figure
+      id="9f78bf31-de99-4b2d-b9bb-89bdf4086596"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varJSON:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="89d107d1-d8e9-6690-f0f6-b8c3432c3c18"
+      name="Convert XML to JSON Format"
+      type="clsxmltojsonconverter"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Convert XML to JSON Format]]></property>
+        <property
+          name="type"><![CDATA[clsxmltojsonconverter]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Convert XML to JSON Format]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsXMLtoJSONconverter]]></property>
+        <property
+          name="inputXml"><![CDATA[<widget>&#xA;    <debug>on</debug>&#xA;    <window title="Sample Konfabulator Widget">&#xA;        <name>main_window</name>&#xA;        <width>500</width>&#xA;        <height>500</height>&#xA;    </window>&#xA;    <image src="Images/Sun.png" name="sun1">&#xA;        <hOffset>250</hOffset>&#xA;        <vOffset>250</vOffset>&#xA;        <alignment>center</alignment>&#xA;    </image>&#xA;    <text data="Click Here" size="36" style="bold">&#xA;        <name>text1</name>&#xA;        <hOffset>250</hOffset>&#xA;        <vOffset>100</vOffset>&#xA;        <alignment>center</alignment>&#xA;        <onMouseUp>&#xA;            sun1.opacity = (sun1.opacity / 100) * 90;&#xA;        </onMouseUp>&#xA;    </text>&#xA;</widget>]]></property>
+        <property
+          name="jsonOutputVar"><![CDATA[variable.varJSON]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsXMLtoJSONconvertern - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsXMLtoJSONconverter - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Development Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="e3de4771-fcb9-b159-1b39-ebe0902f29b4"
+      label=""
+      size="4"
+      type=""
+      srcParentID="9f78bf31-de99-4b2d-b9bb-89bdf4086596"
+      srcParentType="start"
+      trgParentID="89d107d1-d8e9-6690-f0f6-b8c3432c3c18"
+      trgParentType="clsxmltojsonconverter"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
