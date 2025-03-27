@@ -1,0 +1,149 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="020929c9-2181-49a8-9f81-48101cc77795">
+  <figures>
+    <figure
+      id="03d348d8-4617-4101-b3e5-43c6eee1059b"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varEventID:String|varMeetLink:String|varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="877e7c00-2a8e-e2dd-9fd8-5978caf81be2"
+      name="Create Google Meet Event"
+      type="clsgooglemeet"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Create Google Meet Event]]></property>
+        <property
+          name="type"><![CDATA[clsgooglemeet]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Create Google Meet Event]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsGoogleMeet]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[068576db-dd8c-46d3-87c6-64060938462e]]></property>
+        <property
+          name="eventName"><![CDATA[Product - Status Updates]]></property>
+        <property
+          name="startdatetime"><![CDATA[03/27/2025 5:30 PM]]></property>
+        <property
+          name="duration"><![CDATA[60]]></property>
+        <property
+          name="timeZone"><![CDATA[Dateline Standard Time]]></property>
+        <property
+          name="description"><![CDATA[Hi! &#xA;&#xA;Recurring meeting to sync-up with status updates.]]></property>
+        <property
+          name="emails"><![CDATA[support@flowwright.com]]></property>
+        <property
+          name="eventIdVar"><![CDATA[variable.varEventID]]></property>
+        <property
+          name="meetLinkVar"><![CDATA[variable.varMeetLink]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsGoogleMeet - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsGoogleMeet - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Meetings Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="5fb9cd60-2105-f5ee-9968-9bb7d3fa29ab"
+      label=""
+      size="4"
+      type=""
+      srcParentID="03d348d8-4617-4101-b3e5-43c6eee1059b"
+      srcParentType="start"
+      trgParentID="877e7c00-2a8e-e2dd-9fd8-5978caf81be2"
+      trgParentType="clsgooglemeet"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
