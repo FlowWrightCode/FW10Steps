@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="54d2880a-81c8-44a3-84d8-52d9c7c39eef">
+  <figures>
+    <figure
+      id="fb2341f8-6bfd-4089-bc12-1bc954861379"
+      name="start"
+      type="start"
+      x="40"
+      y="160"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varGetHttpURL:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="dc68c6ee-8908-769d-ab74-3a13f7b8d84a"
+      name="Get SharePoint URL"
+      type="spgethttpurl"
+      x="250"
+      y="160"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get SharePoint URL]]></property>
+        <property
+          name="type"><![CDATA[spgethttpurl]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get SharePoint URL]]></property>
+        <property
+          name="itemDescription"><![CDATA[spGetHttpURL]]></property>
+        <property
+          name="BaseURL"><![CDATA[https://cdevc.sharepoint.com]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[29457c34-207a-410c-a568-51d244ad3d42]]></property>
+        <property
+          name="spTitleName"><![CDATA[Documents]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varGetHttpURL]]></property>
+        <property
+          name="LogMessage"><![CDATA[spGetHttpURL - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[spGetHttpURL - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SharePoint Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="1ace8c24-0aa7-b5c6-c4bd-7779eabbd8e8"
+      label=""
+      size="5"
+      type=""
+      srcParentID="fb2341f8-6bfd-4089-bc12-1bc954861379"
+      srcParentType="start"
+      trgParentID="dc68c6ee-8908-769d-ab74-3a13f7b8d84a"
+      trgParentType="spgethttpurl"
+      router="junction"
+      color="4a86e8"
+      lblx="165"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="180" />
+        <point
+          x="250"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
