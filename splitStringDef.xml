@@ -1,0 +1,119 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="b0e83bff-c3f2-4603-a3ef-9cbff5d084b7">
+  <figures>
+    <figure
+      id="b4ef4883-a054-46a0-a9bd-44fb338b40ae"
+      name="start"
+      type="start"
+      x="58"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="330a6604-c78b-d0fa-dafe-1f737d12fc3a"
+      name="Split String"
+      type="splitstring"
+      x="280"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Split String]]></property>
+        <property
+          name="type"><![CDATA[splitstring]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Split String]]></property>
+        <property
+          name="itemDescription"><![CDATA[splitString]]></property>
+        <property
+          name="stringVal"><![CDATA[ThisIsATest;ToSplitTheString;AtTheSemiColon;Delimiter]]></property>
+        <property
+          name="delimiter"><![CDATA[;]]></property>
+        <property
+          name="valueVariable"><![CDATA[variable.varResult]]></property>
+        <property
+          name="logMessage"><![CDATA[splitstring - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[splitString - Variable.initiatorName]]></property>
+        <property
+          name="LogMessage"><![CDATA[splitString - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="d5b6aa61-58b0-933a-c10f-6a1d3f177f27"
+      label=""
+      size="3"
+      type=""
+      srcParentID="b4ef4883-a054-46a0-a9bd-44fb338b40ae"
+      srcParentType="start"
+      trgParentID="330a6604-c78b-d0fa-dafe-1f737d12fc3a"
+      trgParentType="splitstring"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="189"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
