@@ -1,0 +1,133 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="1fd009d8-360c-44ab-8010-b87037d173e0">
+  <figures>
+    <figure
+      id="56985594-5de2-45fd-9a80-25b9ae053dfe"
+      name="start"
+      type="start"
+      x="80"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
+      name="Create Folder"
+      type="spcreatefolder"
+      x="280"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Create Folder]]></property>
+        <property
+          name="type"><![CDATA[spcreatefolder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Create Folder]]></property>
+        <property
+          name="itemDescription"><![CDATA[spCreateFolder]]></property>
+        <property
+          name="BaseURL"><![CDATA[https://cdevc.sharepoint.com]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[29457c34-207a-410c-a568-51d244ad3d42]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[/Shared Documents/Revision History]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[spCreateFolder - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[spCreateFolder - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SharePoint Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="85ca5d2f-4841-8a9a-46fa-e00727307814"
+      label=""
+      size="5"
+      type=""
+      srcParentID="56985594-5de2-45fd-9a80-25b9ae053dfe"
+      srcParentType="start"
+      trgParentID="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
+      trgParentType="spcreatefolder"
+      router="junction"
+      color="4a86e8"
+      lblx="200"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="120"
+          y="140" />
+        <point
+          x="280"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
