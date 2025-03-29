@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="b7472a4b-5141-4415-ab1d-a61c63f5bb5a">
+  <figures>
+    <figure
+      id="9820f4f8-0f21-44c4-b444-85d20db2f66f"
+      name="start"
+      type="start"
+      x="40"
+      y="160"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varResult:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="005f735d-13fb-7971-87b2-ef2cf22b779e"
+      name="Delete Folder Document"
+      type="spdeletedocument"
+      x="250"
+      y="160"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Delete Folder Document]]></property>
+        <property
+          name="type"><![CDATA[spdeletedocument]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Delete Folder Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[spDeleteDocument]]></property>
+        <property
+          name="BaseURL"><![CDATA[https://cdevc.sharepoint.com]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[29457c34-207a-410c-a568-51d244ad3d42]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[/SharedDocuments/OldHelpDocs/UserManual-v97.pdf]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[spDeleteDocument - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[spDeleteDocument - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SharePoint Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="f98b4b99-2ee2-0f51-4e23-91298c74b055"
+      label=""
+      size="5"
+      type=""
+      srcParentID="9820f4f8-0f21-44c4-b444-85d20db2f66f"
+      srcParentType="start"
+      trgParentID="005f735d-13fb-7971-87b2-ef2cf22b779e"
+      trgParentType="spdeletedocument"
+      router="junction"
+      color="4a86e8"
+      lblx="165"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="180" />
+        <point
+          x="250"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
