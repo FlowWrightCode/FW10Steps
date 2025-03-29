@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="7e2b9e50-e067-467b-9708-329849d2757a">
+  <figures>
+    <figure
+      id="2154fc84-c5fc-4bcd-93e1-9a560ff06c08"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varDocProperties:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="07e4b4d0-6f86-3a05-c2d9-57514f96df47"
+      name="Get Document Properties"
+      type="spgetdocproperties"
+      x="240"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get Document Properties]]></property>
+        <property
+          name="type"><![CDATA[spgetdocproperties]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get Document Properties]]></property>
+        <property
+          name="itemDescription"><![CDATA[spGetDocProperties]]></property>
+        <property
+          name="BaseURL"><![CDATA[https://cdevc.sharepoint.com]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[29457c34-207a-410c-a568-51d244ad3d42]]></property>
+        <property
+          name="documentfilepath"><![CDATA[/SharedDocuments/Help/UserManual.pdf]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varDocProperties]]></property>
+        <property
+          name="LogMessage"><![CDATA[spGetDocProperties - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[spGetDocProperties - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SharePoint Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="39b85af2-aa99-a5b8-3b91-15d776be1d58"
+      label=""
+      size="5"
+      type=""
+      srcParentID="2154fc84-c5fc-4bcd-93e1-9a560ff06c08"
+      srcParentType="start"
+      trgParentID="07e4b4d0-6f86-3a05-c2d9-57514f96df47"
+      trgParentType="spgetdocproperties"
+      router="junction"
+      color="4a86e8"
+      lblx="160"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="240"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
