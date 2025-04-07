@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,12 +62,15 @@
       type="getworkflowuserid"
       x="200"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get workflows User ID]]></property>
         <property
           name="type"><![CDATA[getworkflowuserid]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Get workflows User ID]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -93,16 +95,19 @@
       type="clssetproperties"
       x="380"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Set Item Properties]]></property>
         <property
           name="type"><![CDATA[clssetproperties]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Set Item Properties]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[clsSetProperties]]></property>
         <property
           name="itemID"><![CDATA[variable.userID]]></property>
         <property
@@ -110,15 +115,13 @@
         <property
           name="propsToSet"><![CDATA[deEmail~offshoreSupport@flowwright.com]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[clsSetProperties - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[clsSetProperties - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Engine Steps]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
     <figure
@@ -127,16 +130,19 @@
       type="clsgetproperties"
       x="560"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get Item Properties]]></property>
         <property
           name="type"><![CDATA[clsgetproperties]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get Item Properties]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[clsGetProperties]]></property>
         <property
           name="itemID"><![CDATA[Variable.userID]]></property>
         <property
@@ -144,15 +150,13 @@
         <property
           name="propsToGet"><![CDATA[deEmail~variable.email]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[clsGetProperties - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[clsGetProperties - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Engine Steps]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
   </figures>
@@ -170,7 +174,7 @@
       color="0000ff"
       lblx="490"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -203,7 +207,7 @@
       color="0000ff"
       lblx="310"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -236,7 +240,7 @@
       color="0000ff"
       lblx="140"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
