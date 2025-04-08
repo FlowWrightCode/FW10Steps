@@ -9,14 +9,17 @@
       id="f651eb9e-164e-4750-ae4d-b025092efd63"
       name="start"
       type="start"
-      x="80"
-      y="120"
-      isValid="true">
+      x="90"
+      y="60"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,38 +54,37 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="3e172495-7959-1620-159d-8569a2cee1e1"
       name="Log Msg"
       type="clsloggly"
-      x="290"
-      y="120"
-      isValid="true">
+      x="300"
+      y="60"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Log Msg]]></property>
         <property
           name="type"><![CDATA[clsloggly]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Log Msg]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[clsLoggly]]></property>
         <property
           name="messageData"><![CDATA[True~12th July|QA 12th July Test~Verification Loggly]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[clsLoggly - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[clsLoggly - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Loggly Steps]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
   </figures>
@@ -98,9 +100,9 @@
       trgParentType="clsloggly"
       router="junction"
       color="0000ff"
-      lblx="205"
-      lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="215"
+      lbly="80"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -113,11 +115,11 @@
       </properties>
       <line>
         <point
-          x="120"
-          y="140" />
+          x="130"
+          y="80" />
         <point
-          x="290"
-          y="140" />
+          x="300"
+          y="80" />
       </line>
     </connection>
   </connections>
