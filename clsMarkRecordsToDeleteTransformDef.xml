@@ -1,0 +1,271 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="9e761b94-4b4b-4366-a072-5de3338b4817">
+  <figures>
+    <figure
+      id="7b1b1064-aaa5-c759-0e08-49153496f0b1"
+      name="CSV Input file"
+      type="clsinputcsv"
+      x="-40"
+      y="40"
+      isValid="true"
+      isLocked="False"
+      inConnections="0"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[CSV Input file]]></property>
+        <property
+          name="type"><![CDATA[clsinputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[0]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[CSV Input file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsInputCSV]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
+        <property
+          name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
+        <property
+          name="showSchema"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsInputCSV - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsInputCSV - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="variables"><![CDATA[vOPath:String]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="69d8bf6c-893a-cf5b-74d9-8bf12c31eb83"
+      name="Transform text case"
+      type="clstransformcase"
+      x="130"
+      y="40"
+      isValid="true"
+      isLocked="False"
+      inConnections="1"
+      outConnections="1">
+      <properties>
+        <property
+          name="label"><![CDATA[Transform text case]]></property>
+        <property
+          name="type"><![CDATA[clstransformcase]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[1]]></property>
+        <property
+          name="itemName"><![CDATA[Transform text case]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsTransformCase]]></property>
+        <property
+          name="transforms"><![CDATA[Region~UpperCase]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsTransformCase - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsTransformCase - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[ETL Text Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9c342a41-1594-6c83-a9ea-4988b42c0c1b"
+      name="Mark records to delete"
+      type="clsmarkrecordstodeletetransform"
+      x="320"
+      y="40"
+      isValid="true"
+      isLocked="False"
+      inConnections="1"
+      outConnections="1">
+      <properties>
+        <property
+          name="label"><![CDATA[Mark records to delete]]></property>
+        <property
+          name="type"><![CDATA[clsmarkrecordstodeletetransform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[1]]></property>
+        <property
+          name="itemName"><![CDATA[Mark records to delete]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsMarkRecordsToDeleteTransform]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsMarkRecordsToDeleteTransform - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsMarkRecordsToDeleteTransform - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Utils Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="25ee7c0c-84b1-5c2a-5b29-33ac9c9b89e2"
+      name="MSSQL Output file"
+      type="clsoutputmssqldb"
+      x="510"
+      y="40"
+      isValid="true"
+      isLocked="False"
+      inConnections="1"
+      outConnections="0">
+      <properties>
+        <property
+          name="label"><![CDATA[MSSQL Output file]]></property>
+        <property
+          name="type"><![CDATA[clsoutputmssqldb]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[0]]></property>
+        <property
+          name="itemName"><![CDATA[MSSQL Output file]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsOutputMSSQLDB]]></property>
+        <property
+          name="connectionID"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
+        <property
+          name="tableName"><![CDATA[RRS-SalesRecords-CaseTransform]]></property>
+        <property
+          name="createTable"><![CDATA[yes]]></property>
+        <property
+          name="primaryKey"><![CDATA[Order_ID]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsOutputMSSQLDB - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsOutputMSSQLDB - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Dataset ETL Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="operationMode"><![CDATA[InsertsAndUpdates]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="34d3368f-8990-e17b-fcc7-eb297b3297fd"
+      label=""
+      size="4"
+      type=""
+      srcParentID="9c342a41-1594-6c83-a9ea-4988b42c0c1b"
+      srcParentType="clsmarkrecordstodeletetransform"
+      trgParentID="25ee7c0c-84b1-5c2a-5b29-33ac9c9b89e2"
+      trgParentType="clsoutputmssqldb"
+      router="junction"
+      color="3c78d8"
+      lblx="435"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="360"
+          y="60" />
+        <point
+          x="510"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="84fb732c-316b-fc70-67d5-70fa02f90821"
+      label=""
+      size="4"
+      type=""
+      srcParentID="69d8bf6c-893a-cf5b-74d9-8bf12c31eb83"
+      srcParentType="clstransformcase"
+      trgParentID="9c342a41-1594-6c83-a9ea-4988b42c0c1b"
+      trgParentType="clsmarkrecordstodeletetransform"
+      router="junction"
+      color="3c78d8"
+      lblx="245"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="170"
+          y="60" />
+        <point
+          x="320"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="7afea05c-9e8a-935b-d2f9-666d9e905820"
+      label=""
+      size="4"
+      type=""
+      srcParentID="7b1b1064-aaa5-c759-0e08-49153496f0b1"
+      srcParentType="clsinputcsv"
+      trgParentID="69d8bf6c-893a-cf5b-74d9-8bf12c31eb83"
+      trgParentType="clstransformcase"
+      router="junction"
+      color="3c78d8"
+      lblx="65"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="0"
+          y="60" />
+        <point
+          x="130"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
