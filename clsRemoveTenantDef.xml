@@ -10,13 +10,16 @@
       name="start"
       type="start"
       x="80"
-      y="160"
-      isValid="true">
+      y="100"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -60,13 +61,16 @@
       name="Remove Tenant"
       type="clsremovetenant"
       x="280"
-      y="160"
-      isValid="true">
+      y="100"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Remove Tenant]]></property>
         <property
           name="type"><![CDATA[clsremovetenant]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Remove Tenant]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Tenant Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -101,8 +103,8 @@
       router="junction"
       color="0000ff"
       lblx="200"
-      lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -116,10 +118,10 @@
       <line>
         <point
           x="120"
-          y="180" />
+          y="120" />
         <point
           x="280"
-          y="180" />
+          y="120" />
       </line>
     </connection>
   </connections>
