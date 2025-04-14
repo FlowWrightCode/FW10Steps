@@ -9,14 +9,17 @@
       id="651975b3-5084-4ad5-9676-df5dfc58d207"
       name="start"
       type="start"
-      x="80"
-      y="160"
-      isValid="true">
+      x="50"
+      y="220"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,22 +54,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="a55b7652-c70f-0a7a-408c-b6d9062013a3"
       name="Publish Msg Text"
       type="clspublishmsmq"
-      x="320"
-      y="160"
-      isValid="true">
+      x="290"
+      y="220"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Publish Msg Text]]></property>
         <property
           name="type"><![CDATA[clspublishmsmq]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Publish Msg Text]]></property>
         <property
@@ -76,7 +80,7 @@
         <property
           name="queueName"><![CDATA[FlowWright]]></property>
         <property
-          name="isPublic"><![CDATA[no]]></property>
+          name="isPublic"><![CDATA[yes]]></property>
         <property
           name="messageLabel"><![CDATA[Test MSMQ]]></property>
         <property
@@ -89,8 +93,6 @@
           name="instState"><![CDATA[MSMQ Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -106,9 +108,9 @@
       trgParentType="clspublishmsmq"
       router="junction"
       color="0000ff"
-      lblx="220"
-      lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="190"
+      lbly="240"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -121,11 +123,11 @@
       </properties>
       <line>
         <point
-          x="120"
-          y="180" />
+          x="90"
+          y="240" />
         <point
-          x="320"
-          y="180" />
+          x="290"
+          y="240" />
       </line>
     </connection>
   </connections>
