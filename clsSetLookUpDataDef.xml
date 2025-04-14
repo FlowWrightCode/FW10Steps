@@ -52,7 +52,7 @@
       id="ac47f343-1b27-c18b-38b7-293ac16dc0cc"
       name="Set Lookup Data"
       type="clssetlookupdata"
-      x="300"
+      x="260"
       y="39"
       isValid="true"
       isLocked="False">
@@ -98,9 +98,9 @@
       trgParentType="clssetlookupdata"
       router="junction"
       color="129ce4"
-      lblx="199"
+      lblx="179"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -118,7 +118,7 @@
           x="98"
           y="59" />
         <point
-          x="300"
+          x="260"
           y="59" />
       </line>
     </connection>
