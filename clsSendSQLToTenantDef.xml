@@ -10,12 +10,16 @@
       name="start"
       type="start"
       x="40"
-      y="39">
+      y="39"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -44,14 +48,17 @@
       id="e16696de-de06-6cd5-0fd5-c2d0154e121e"
       name="Send SQL Statement"
       type="clssendsqltotenantdb"
-      x="240"
+      x="280"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Send SQL Statement]]></property>
         <property
           name="type"><![CDATA[clssendsqltotenantdb]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Send SQL Statement]]></property>
         <property
@@ -70,8 +77,6 @@
           name="instState"><![CDATA[Tenant Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -87,9 +92,9 @@
       trgParentType="clssendsqltotenantdb"
       router="junction"
       color="0000ff"
-      lblx="160"
+      lblx="180"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -105,7 +110,7 @@
           x="80"
           y="59" />
         <point
-          x="240"
+          x="280"
           y="59" />
       </line>
     </connection>
