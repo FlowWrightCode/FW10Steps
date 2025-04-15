@@ -11,22 +11,25 @@
       type="start"
       x="40"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[start]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[]]></property>
+          name="variables"><![CDATA[varValue:String|varInstanceID:String]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
-          name="globals"><![CDATA[]]></property>
+          name="globals"><![CDATA[glbValue:String]]></property>
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,12 +62,15 @@
       type="createexecuteinstance"
       x="280"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Create Execute Process Instance]]></property>
         <property
           name="type"><![CDATA[createexecuteinstance]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Create Execute Process Instance]]></property>
         <property
@@ -78,31 +82,29 @@
         <property
           name="passGlobals"><![CDATA[yes]]></property>
         <property
-          name="variablesToPass"><![CDATA[]]></property>
+          name="variablesToPass"><![CDATA[varValue]]></property>
         <property
           name="executionPriority"><![CDATA[Medium]]></property>
         <property
-          name="globalsToPass"><![CDATA[]]></property>
+          name="globalsToPass"><![CDATA[glbValue]]></property>
         <property
           name="executeIntervalType"><![CDATA[minutes]]></property>
         <property
-          name="instanceName"><![CDATA[LFS165Boolean-July2023]]></property>
+          name="instanceName"><![CDATA[LFS165Boolean-15Apr2025]]></property>
         <property
-          name="executeInterval"><![CDATA[5]]></property>
+          name="executeInterval"><![CDATA[1]]></property>
         <property
           name="variableToStoreID"><![CDATA[variable.varInstanceID]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[createExecuteInstance - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[createExecuteInstance - Variable.initiatorName]]></property>
         <property
           name="sub-def-name"><![CDATA[LFS-165-Boolean]]></property>
         <property
           name="instState"><![CDATA[Engine Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -120,7 +122,7 @@
       color="0000ff"
       lblx="180"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
