@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,20 +62,23 @@
       type="copyfile"
       x="250"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Copy File]]></property>
         <property
           name="type"><![CDATA[copyfile]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Copy File]]></property>
         <property
           name="itemDescription"><![CDATA[copyFile]]></property>
         <property
-          name="copyToDirectory"><![CDATA[c:\FlowWright\wwwroot\tempfiles\23Jan2024]]></property>
+          name="copyToDirectory"><![CDATA[c:\FlowWright\wwwroot\tempfiles\15Apr2025]]></property>
         <property
-          name="filePath"><![CDATA[c:\FlowWright\wwwroot\tempfiles\addFormFilesAttachments.jpg]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\54a00684-f648-46e4-846c-4ca4dfed96fb.jpg]]></property>
         <property
           name="newFilePathVarGlobal"><![CDATA[variable.newFilePath]]></property>
         <property
@@ -85,8 +89,6 @@
           name="instState"><![CDATA[File System Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -104,7 +106,7 @@
       color="0000ff"
       lblx="165"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
