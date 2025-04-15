@@ -11,12 +11,15 @@
       type="start"
       x="80"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,20 +62,23 @@
       type="convertexceltocsv"
       x="290"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Convert Excel to CSV]]></property>
         <property
           name="type"><![CDATA[convertexceltocsv]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Convert Excel to CSV]]></property>
         <property
           name="itemDescription"><![CDATA[convertExcelToCSV]]></property>
         <property
-          name="inputFilePath"><![CDATA[c:\FlowWright\wwwroot\tempfiles\FWv10.xlsx]]></property>
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\AddressBook.xlsx]]></property>
         <property
-          name="outputFilePath"><![CDATA[c:\FlowWright\wwwroot\tempfiles\FWv10.csv]]></property>
+          name="outputFilePath"><![CDATA[c:\FlowWright\wwwroot\tempfiles\AddressBook-Converted.csv]]></property>
         <property
           name="LogMessage"><![CDATA[convertExcelToCSV - Variable.createdOn]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Development Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -102,7 +104,7 @@
       color="0000ff"
       lblx="205"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
