@@ -11,18 +11,21 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[start]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[]]></property>
+          name="variables"><![CDATA[result:String]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,20 +62,23 @@
       type="containsinfile"
       x="240"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Contains in File]]></property>
         <property
           name="type"><![CDATA[containsinfile]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Contains in File]]></property>
         <property
           name="itemDescription"><![CDATA[containsInFile]]></property>
         <property
-          name="inputFilePath"><![CDATA[c:\FlowWright\wwwroot\tempFiles\Compiler.txt]]></property>
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\AboutFW.txt]]></property>
         <property
-          name="searchTerms"><![CDATA[Workflows]]></property>
+          name="searchTerms"><![CDATA[management]]></property>
         <property
           name="variableToStoreValue"><![CDATA[variable.result]]></property>
         <property
@@ -85,8 +89,6 @@
           name="instState"><![CDATA[Engine]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -104,7 +106,7 @@
       color="0000ff"
       lblx="160"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
