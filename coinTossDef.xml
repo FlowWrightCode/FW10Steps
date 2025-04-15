@@ -75,7 +75,7 @@
     </figure>
     <figure
       id="f9c744c1-ac67-0f48-6fd6-990ec15f848a"
-      name="setwfstate"
+      name="setWFState - Heads"
       type="setwfstate"
       x="40"
       y="320"
@@ -83,13 +83,13 @@
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[setwfstate]]></property>
+          name="label"><![CDATA[setWFState - Heads]]></property>
         <property
           name="type"><![CDATA[setwfstate]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[setwfstate]]></property>
+          name="itemName"><![CDATA[setWFState - Heads]]></property>
         <property
           name="itemDescription"><![CDATA[setWFState]]></property>
         <property
@@ -108,7 +108,7 @@
     </figure>
     <figure
       id="a024357b-ebc5-55b7-01ea-59bcbfade743"
-      name="setwfstate"
+      name="setWFState - Tails"
       type="setwfstate"
       x="400"
       y="320"
@@ -116,13 +116,13 @@
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[setwfstate]]></property>
+          name="label"><![CDATA[setWFState - Tails]]></property>
         <property
           name="type"><![CDATA[setwfstate]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[setwfstate]]></property>
+          name="itemName"><![CDATA[setWFState - Tails]]></property>
         <property
           name="itemDescription"><![CDATA[setWFState]]></property>
         <property
@@ -154,7 +154,7 @@
       color="0000ff"
       lblx="230"
       lbly="145"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -187,7 +187,7 @@
       color="0000ff"
       lblx="385"
       lbly="220"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
@@ -225,7 +225,7 @@
       color="0000ff"
       lblx="85"
       lbly="220"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="westPort"
       trgPortName="northPort">
       <properties>
@@ -256,21 +256,21 @@
       text="Set workflow state as Heads"
       x="-30"
       y="390"
-      w="230"
+      w="190"
       h="30"
       id="2c340f46-87a5-8873-d104-bb83ba6377d1"
       fontColor="#FFFFFF"
       bgColor="#5B5B5B"
-      style="shape=label;perimeter=rectanglePerimeter;fontSize=15;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
+      style="shape=label;perimeter=rectanglePerimeter;fontSize=12;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
     <comment
       text="Set workflow state as Tails"
       x="310"
       y="390"
-      w="220"
+      w="180"
       h="30"
       id="f38f2a38-162a-1c9a-b749-c8eef3fdc3c3"
       fontColor="#FFFFFF"
       bgColor="#5B5B5B"
-      style="shape=label;perimeter=rectanglePerimeter;fontSize=15;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
+      style="shape=label;perimeter=rectanglePerimeter;fontSize=12;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
   </comments>
 </reveDiagram>
