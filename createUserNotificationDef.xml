@@ -11,12 +11,15 @@
       type="start"
       x="120"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,20 +62,23 @@
       type="createusernotification"
       x="360"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Create user notification]]></property>
         <property
           name="type"><![CDATA[createusernotification]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Create user notification]]></property>
         <property
           name="itemDescription"><![CDATA[createUserNotification]]></property>
         <property
-          name="assignTo"><![CDATA[Variable.initiatorID]]></property>
+          name="assignTo"><![CDATA[9461be43-90dc-4fc5-bac7-3de633148879;]]></property>
         <property
-          name="assignToRoles"><![CDATA[]]></property>
+          name="assignToRoles"><![CDATA[b320260b-0146-4993-9080-24e155b9a6be;]]></property>
         <property
           name="subject"><![CDATA[Privacy Policy and Terms of Use updates.]]></property>
         <property
@@ -89,8 +93,6 @@
           name="instState"><![CDATA[Engine Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
         <property
           name="message_TemplateID"><![CDATA[]]></property>
       </properties>
@@ -110,7 +112,7 @@
       color="0000ff"
       lblx="260"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
