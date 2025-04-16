@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,28 +54,29 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="e12e0527-eddf-11b2-3ddc-fb13e61e3b19"
       name="Delete User Records"
       type="deletedbrecordsbycreateduser"
-      x="280"
+      x="260"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Delete User Records]]></property>
         <property
           name="type"><![CDATA[deletedbrecordsbycreateduser]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Delete User Records]]></property>
         <property
           name="itemDescription"><![CDATA[deleteDBRecordsByCreatedUser]]></property>
         <property
-          name="CreatedUsers"><![CDATA[dd46ecf0-729a-446c-aa14-ac05c683ffaa;]]></property>
+          name="CreatedUsers"><![CDATA[9461be43-90dc-4fc5-bac7-3de633148879;]]></property>
         <property
           name="LogMessage"><![CDATA[deleteDBRecordsByCreatedUser - Variable.createdOn]]></property>
         <property
@@ -81,8 +85,6 @@
           name="instState"><![CDATA[Database Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -98,9 +100,9 @@
       trgParentType="deletedbrecordsbycreateduser"
       router="junction"
       color="0000ff"
-      lblx="180"
+      lblx="170"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -116,7 +118,7 @@
           x="80"
           y="59" />
         <point
-          x="280"
+          x="260"
           y="59" />
       </line>
     </connection>
