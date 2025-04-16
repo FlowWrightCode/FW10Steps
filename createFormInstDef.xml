@@ -11,12 +11,15 @@
       type="start"
       x="-60"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,16 +62,19 @@
       type="createforminst"
       x="280"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Create Form Instance]]></property>
         <property
           name="type"><![CDATA[createforminst]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Create Form Instance]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[createFormInst]]></property>
         <property
           name="sourceFormInstID"><![CDATA[variable.formID]]></property>
         <property
@@ -78,15 +82,13 @@
         <property
           name="formInstanceName"><![CDATA[Form Instance - Variable.createdOn]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[createFormInst - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[createFormInst - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Engine Step]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
     <figure
@@ -95,12 +97,15 @@
       type="routeform"
       x="110"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Route Form - OLD]]></property>
         <property
           name="type"><![CDATA[routeform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Route Form - OLD]]></property>
         <property
@@ -118,7 +123,7 @@
         <property
           name="formInstanceID"><![CDATA[variable.formID]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
         <property
           name="daysToComplete"><![CDATA[1]]></property>
         <property
@@ -159,8 +164,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -169,12 +172,15 @@
       type="routeform"
       x="480"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Route Form - New]]></property>
         <property
           name="type"><![CDATA[routeform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Route Form - New]]></property>
         <property
@@ -233,8 +239,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -252,7 +256,7 @@
       color="0000ff"
       lblx="400"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -285,7 +289,7 @@
       color="0000ff"
       lblx="215"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -320,7 +324,7 @@
       color="0000ff"
       lblx="45"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
