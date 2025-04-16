@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,22 +54,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="20ec8774-2345-7c8a-c1ca-47eb956fffbe"
       name="Upload File"
       type="dropboxsendfile"
-      x="280"
-      y="40"
-      isValid="true">
+      x="270"
+      y="39"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Upload File]]></property>
         <property
           name="type"><![CDATA[dropboxsendfile]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Upload File]]></property>
         <property
@@ -85,8 +89,6 @@
           name="instState"><![CDATA[DropBox Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -102,9 +104,9 @@
       trgParentType="dropboxsendfile"
       router="junction"
       color="0000ff"
-      lblx="180"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="175"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -120,14 +122,8 @@
           x="80"
           y="59" />
         <point
-          x="180"
+          x="270"
           y="59" />
-        <point
-          x="180"
-          y="60" />
-        <point
-          x="280"
-          y="60" />
       </line>
     </connection>
   </connections>
