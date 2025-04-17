@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,22 +54,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="0f0b7311-8623-8dd0-fed1-1d24393d2c24"
       name="Decision table"
       type="evaldecisiontable"
-      x="250"
+      x="290"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Decision table]]></property>
         <property
           name="type"><![CDATA[evaldecisiontable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Decision table]]></property>
         <property
@@ -87,8 +91,6 @@
           name="instState"><![CDATA[Decision Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -104,9 +106,9 @@
       trgParentType="evaldecisiontable"
       router="junction"
       color="0000ff"
-      lblx="165"
+      lblx="185"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -122,7 +124,7 @@
           x="80"
           y="59" />
         <point
-          x="250"
+          x="290"
           y="59" />
       </line>
     </connection>
