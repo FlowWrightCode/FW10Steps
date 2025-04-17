@@ -25,7 +25,7 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[formID:String|PFilePath:String]]></property>
+          name="variables"><![CDATA[formID:String|PFilePath:String|vOPath:String]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
@@ -70,7 +70,7 @@
         <property
           name="documentation"><![CDATA[formPDF - Variable.initiatorName]]></property>
         <property
-          name="outputVirtualPath"><![CDATA[]]></property>
+          name="outputVirtualPath"><![CDATA[variable.vOPath]]></property>
         <property
           name="LogMessage"><![CDATA[formPDF - Variable.createdOn]]></property>
         <property
@@ -171,7 +171,7 @@
       color="0000ff"
       lblx="169"
       lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -210,7 +210,7 @@
       color="0000ff"
       lblx="340"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
