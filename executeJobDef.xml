@@ -9,7 +9,7 @@
       id="ebc29613-f702-4a38-b921-d7410aa5b082"
       name="start"
       type="start"
-      x="58"
+      x="90"
       y="39"
       isValid="true"
       isLocked="False">
@@ -40,13 +40,29 @@
           name="logMessage"><![CDATA[]]></property>
         <property
           name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="50c527e3-d511-753e-38c5-b61634f785a8"
       name="executejob"
       type="executejob"
-      x="280"
+      x="290"
       y="39"
       isValid="true"
       isLocked="False">
@@ -62,7 +78,7 @@
         <property
           name="itemDescription"><![CDATA[executeJob]]></property>
         <property
-          name="connectionString"><![CDATA[6e414153-6354-44a5-ac69-fbe12ef0a858]]></property>
+          name="connectionString"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
         <property
           name="jobName"><![CDATA[FWJob]]></property>
         <property
@@ -90,9 +106,9 @@
       trgParentType="executejob"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="4a86e8"
-      lblx="189"
+      lblx="210"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -105,10 +121,10 @@
       </properties>
       <line>
         <point
-          x="98"
+          x="130"
           y="59" />
         <point
-          x="280"
+          x="290"
           y="59" />
       </line>
     </connection>
