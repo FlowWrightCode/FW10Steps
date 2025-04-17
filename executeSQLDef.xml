@@ -25,7 +25,7 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[result:String]]></property>
+          name="variables"><![CDATA[result:String|result3:String|result2:String]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
@@ -68,11 +68,11 @@
         <property
           name="itemName"><![CDATA[Execute SQL Statement with Parameters]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[executeSQL]]></property>
         <property
-          name="connectionString"><![CDATA[e5aeb9bd-a510-479e-bba6-29fcde4a5c67]]></property>
+          name="connectionString"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
         <property
-          name="changeDatabase"><![CDATA[]]></property>
+          name="changeDatabase"><![CDATA[BackupDB]]></property>
         <property
           name="sqlStatement"><![CDATA[select deExternalUserName from deUsers where deEMail=? and deUserID=?]]></property>
         <property
@@ -88,13 +88,13 @@
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[executeSQL - Variable.initiatorName]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[executeSQL - Variable.createdOn]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[SQL Steps]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
     <figure
@@ -117,13 +117,13 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="connectionString"><![CDATA[6e414153-6354-44a5-ac69-fbe12ef0a858]]></property>
+          name="connectionString"><![CDATA[e5aeb9bd-a510-479e-bba6-29fcde4a5c67]]></property>
         <property
           name="changeDatabase"><![CDATA[]]></property>
         <property
           name="sqlStatement"><![CDATA[exec spGetExternalUserFullName &#xA;? , ?]]></property>
         <property
-          name="variableName"><![CDATA[variable.result]]></property>
+          name="variableName"><![CDATA[variable.result3]]></property>
         <property
           name="resultFormat"><![CDATA[XML]]></property>
         <property
@@ -164,13 +164,13 @@
         <property
           name="itemDescription"><![CDATA[executeSQL]]></property>
         <property
-          name="connectionString"><![CDATA[6e414153-6354-44a5-ac69-fbe12ef0a858]]></property>
+          name="connectionString"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
         <property
           name="changeDatabase"><![CDATA[]]></property>
         <property
           name="sqlStatement"><![CDATA[select deUserID, deExternalUserName, deExternalUserFullName, deEmail, dePassword, lastUILogin, lastRESTAPILogin&#xA;  FROM [FlowWright10].[dbo].[deUsers]&#xA;]]></property>
         <property
-          name="variableName"><![CDATA[variable.result]]></property>
+          name="variableName"><![CDATA[variable.result2]]></property>
         <property
           name="resultFormat"><![CDATA[XML]]></property>
         <property
@@ -206,7 +206,7 @@
       color="0000ff"
       lblx="78"
       lbly="150"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -239,7 +239,7 @@
       color="0000ff"
       lblx="169"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -272,7 +272,7 @@
       color="0000ff"
       lblx="-6"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="westPort"
       trgPortName="eastPort">
       <properties>
