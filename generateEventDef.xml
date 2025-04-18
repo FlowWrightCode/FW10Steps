@@ -11,12 +11,15 @@
       type="start"
       x="80"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,28 +54,29 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="d6400e84-aa16-1af1-3ecf-17cb63b9484d"
       name="Generate Event"
       type="generateevent"
-      x="310"
+      x="300"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Generate Event]]></property>
         <property
           name="type"><![CDATA[generateevent]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Generate Event]]></property>
         <property
           name="itemDescription"><![CDATA[generateEvent]]></property>
         <property
-          name="event"><![CDATA[b8c666cc-1fef-417d-9839-f596de0bd876]]></property>
+          name="event"><![CDATA[8989dcd2-9ad9-4d71-b51a-c51d71b95783]]></property>
         <property
           name="eventParms"><![CDATA[PONumber~100|POAmount~500]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[ESB Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -100,9 +102,9 @@
       trgParentType="generateevent"
       router="junction"
       color="0000ff"
-      lblx="215"
+      lblx="210"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -118,7 +120,7 @@
           x="120"
           y="140" />
         <point
-          x="310"
+          x="300"
           y="140" />
       </line>
     </connection>
