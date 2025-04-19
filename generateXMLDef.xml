@@ -52,7 +52,7 @@
       id="49d9b3c2-2fa7-6f44-2ca1-5a8ce7400eef"
       name="Generate XML"
       type="generatexml"
-      x="290"
+      x="310"
       y="39"
       isValid="true"
       isLocked="False">
@@ -96,9 +96,9 @@
       trgParentType="generatexml"
       router="junction"
       color="3c78d8"
-      lblx="205"
+      lblx="215"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -114,7 +114,7 @@
           x="120"
           y="59" />
         <point
-          x="290"
+          x="310"
           y="59" />
       </line>
     </connection>
