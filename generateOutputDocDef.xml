@@ -46,7 +46,7 @@
       id="75591fce-1a65-4b0a-0d02-b9f384123a98"
       name="Generate Output Document"
       type="generateoutputdoc"
-      x="290"
+      x="280"
       y="39"
       isValid="true"
       isLocked="False">
@@ -66,7 +66,7 @@
         <property
           name="fileVariable"><![CDATA[variable.outputFilePath]]></property>
         <property
-          name="templatefilePath"><![CDATA[]]></property>
+          name="templatefilePath"><![CDATA[c:\FlowWright10\wwwroot\tempFiles\UseThisTemplate.docx]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
@@ -84,19 +84,19 @@
   </figures>
   <connections>
     <connection
-      id="f81dac38-8fb7-7af3-44ad-fba0b150bc32"
+      id="07cac1a3-9dc2-c750-f7eb-c894137d7267"
       label=""
-      size="3"
+      size="4"
       type=""
       srcParentID="428d7005-5d98-4cf2-b604-0e3cb8fade49"
       srcParentType="start"
       trgParentID="75591fce-1a65-4b0a-0d02-b9f384123a98"
       trgParentType="generateoutputdoc"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="129ce4"
-      lblx="194"
+      router="junction"
+      color="3c78d8"
+      lblx="189"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -112,7 +112,7 @@
           x="98"
           y="59" />
         <point
-          x="290"
+          x="280"
           y="59" />
       </line>
     </connection>
