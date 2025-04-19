@@ -11,12 +11,15 @@
       type="start"
       x="80"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,28 +54,29 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="0f6d27db-0920-5401-dc57-f7266be3ff82"
       name="Get barcode text"
       type="getbarcodetext"
-      x="310"
+      x="290"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get barcode text]]></property>
         <property
           name="type"><![CDATA[getbarcodetext]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get barcode text]]></property>
         <property
           name="itemDescription"><![CDATA[getBarCodeText]]></property>
         <property
-          name="barcodeFilePath"><![CDATA[C:\FlowWright10\wwwroot\tempfiles\BarCode.jpeg]]></property>
+          name="barcodeFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Barcode-Sample.jpeg]]></property>
         <property
           name="textVarGlobal"><![CDATA[variable.varText]]></property>
         <property
@@ -85,8 +89,6 @@
           name="instState"><![CDATA[Barcodes Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -102,9 +104,9 @@
       trgParentType="getbarcodetext"
       router="junction"
       color="0000ff"
-      lblx="215"
+      lblx="205"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -120,7 +122,7 @@
           x="120"
           y="140" />
         <point
-          x="310"
+          x="290"
           y="140" />
       </line>
     </connection>
