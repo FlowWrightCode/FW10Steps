@@ -46,8 +46,8 @@
       id="3a5c44f9-d49c-8fd8-28cf-459bfd4810d9"
       name="Get Email Message"
       type="getemailmsg"
-      x="240"
-      y="40"
+      x="280"
+      y="39"
       isValid="true"
       isLocked="False">
       <properties>
@@ -98,9 +98,9 @@
       trgParentType="getemailmsg"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="4a86e8"
-      lblx="169"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      lblx="189"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -116,14 +116,8 @@
           x="98"
           y="59" />
         <point
-          x="169"
+          x="280"
           y="59" />
-        <point
-          x="169"
-          y="60" />
-        <point
-          x="240"
-          y="60" />
       </line>
     </connection>
   </connections>
