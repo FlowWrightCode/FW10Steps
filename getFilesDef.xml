@@ -60,8 +60,8 @@
       id="ad627f08-ef70-07ef-ca54-4ffb93e8ca4c"
       name="Get Filelist"
       type="getfiles"
-      x="290"
-      y="40"
+      x="250"
+      y="39"
       isValid="true"
       isLocked="False">
       <properties>
@@ -101,14 +101,16 @@
       size="5"
       type=""
       srcParentID="c73c5d7d-25e6-428a-b9c0-851da120bfa8"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="ad627f08-ef70-07ef-ca54-4ffb93e8ca4c"
+      trgParentName="Get Filelist"
       trgParentType="getfiles"
       router="junction"
       color="0000ff"
-      lblx="185"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lblx="165"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -124,14 +126,8 @@
           x="80"
           y="59" />
         <point
-          x="185"
+          x="250"
           y="59" />
-        <point
-          x="185"
-          y="60" />
-        <point
-          x="290"
-          y="60" />
       </line>
     </connection>
   </connections>
