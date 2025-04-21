@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,28 +54,29 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="aa02082b-c65b-e14d-e881-7f85ae962188"
       name="Get Email Template"
       type="getemailtemplatedata"
-      x="290"
+      x="250"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get Email Template]]></property>
         <property
           name="type"><![CDATA[getemailtemplatedata]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get Email Template]]></property>
         <property
           name="itemDescription"><![CDATA[getEmailTemplateData]]></property>
         <property
-          name="templateID"><![CDATA[daf894d6-6e3c-42d7-9b43-a3b0462a2c1a]]></property>
+          name="templateID"><![CDATA[7ba57888-b003-4643-9c66-73696eaee58c]]></property>
         <property
           name="varToStoreEmailTemplate"><![CDATA[variable.emailData]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Engine Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -100,9 +102,9 @@
       trgParentType="getemailtemplatedata"
       router="junction"
       color="0000ff"
-      lblx="185"
+      lblx="165"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -118,7 +120,7 @@
           x="80"
           y="59" />
         <point
-          x="290"
+          x="250"
           y="59" />
       </line>
     </connection>
