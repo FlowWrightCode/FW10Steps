@@ -11,12 +11,15 @@
       type="start"
       x="130"
       y="80"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,18 +62,21 @@
       type="getworkflowuserid"
       x="350"
       y="80"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get workflows User ID]]></property>
         <property
           name="type"><![CDATA[getworkflowuserid]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get workflows User ID]]></property>
         <property
           name="itemDescription"><![CDATA[getWorkFlowUserid]]></property>
         <property
-          name="userName"><![CDATA[Alpha-TestUser-2]]></property>
+          name="userName"><![CDATA[Alpha-TestUser-1]]></property>
         <property
           name="varGlobalForID"><![CDATA[variable.varUserID]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Users Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -95,14 +97,16 @@
       size="5"
       type=""
       srcParentID="ee297446-7049-4e50-89fb-5e39f4b75470"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="0dff9d29-3cea-2572-1d14-70fdf33b1ba7"
+      trgParentName="Get workflows User ID"
       trgParentType="getworkflowuserid"
       router="junction"
       color="0000ff"
       lblx="260"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
