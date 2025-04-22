@@ -68,7 +68,7 @@
         <property
           name="itemDescription"><![CDATA[getUsersForRole]]></property>
         <property
-          name="roleID"><![CDATA[4dc668f5-801e-491b-932a-19c7a7aa221d;]]></property>
+          name="roleID"><![CDATA[4dc668f5-801e-491b-932a-19c7a7aa221d;a45712cb-a0ae-419b-91ab-d48783f7ae1c;]]></property>
         <property
           name="variableToStoreValue"><![CDATA[variable.usersList]]></property>
         <property
@@ -89,14 +89,16 @@
       size="5"
       type=""
       srcParentID="2dcbaacc-9df2-4169-b4ca-c442b8b5ca83"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="f28f3e1f-699a-7b8a-c13d-9f8d5b3f3fc3"
+      trgParentName="Get Users by Role"
       trgParentType="getusersforrole"
       router="junction"
       color="3c78d8"
       lblx="190"
       lbly="99"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
