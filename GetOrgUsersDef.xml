@@ -11,12 +11,15 @@
       type="start"
       x="200"
       y="-30"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,12 +62,15 @@
       type="getworkflowuserid"
       x="200"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get workflows User ID]]></property>
         <property
           name="type"><![CDATA[getworkflowuserid]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Get workflows User ID]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Users Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -93,16 +95,19 @@
       type="getorgusers"
       x="20"
       y="280"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get Organization Structure (Managers)]]></property>
         <property
           name="type"><![CDATA[getorgusers]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get Organization Structure (Managers)]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[getOrgUsers (Managers)]]></property>
         <property
           name="workflowUserID"><![CDATA[variable.userID]]></property>
         <property
@@ -110,15 +115,13 @@
         <property
           name="varGlobalForID"><![CDATA[variable.WFManagerID]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[getOrgUsers - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[getOrgUsers - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Users Step]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
     <figure
@@ -127,16 +130,19 @@
       type="getorgusers"
       x="400"
       y="280"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get Organization Structure (Reports To Me)]]></property>
         <property
           name="type"><![CDATA[getorgusers]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get Organization Structure (Reports To Me)]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[getOrgUsers (Reports To Me)]]></property>
         <property
           name="workflowUserID"><![CDATA[variable.userID]]></property>
         <property
@@ -144,15 +150,13 @@
         <property
           name="varGlobalForID"><![CDATA[variable.WFUserID]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[getOrgUsers - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[getOrgUsers - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Users Step]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
   </figures>
@@ -163,14 +167,16 @@
       size="5"
       type=""
       srcParentID="214f5c7e-f2ff-039e-0fd5-97b357389dbb"
+      srcParentName="Get workflows User ID"
       srcParentType="getworkflowuserid"
       trgParentID="5d25302a-719e-f79e-599c-2c7edbd693cc"
+      trgParentName="Get Organization Structure (Reports To Me)"
       trgParentType="getorgusers"
       router="junction"
       color="0000ff"
       lblx="400"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
@@ -199,14 +205,16 @@
       size="5"
       type=""
       srcParentID="214f5c7e-f2ff-039e-0fd5-97b357389dbb"
+      srcParentName="Get workflows User ID"
       srcParentType="getworkflowuserid"
       trgParentID="925e9b4a-3a27-fced-8205-62e14003c274"
+      trgParentName="Get Organization Structure (Managers)"
       trgParentType="getorgusers"
       router="junction"
       color="0000ff"
       lblx="50"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="westPort"
       trgPortName="northPort">
       <properties>
@@ -235,14 +243,16 @@
       size="5"
       type=""
       srcParentID="ba5e2742-a003-480d-a37f-6a4c1a3b7bd6"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="214f5c7e-f2ff-039e-0fd5-97b357389dbb"
+      trgParentName="Get workflows User ID"
       trgParentType="getworkflowuserid"
       router="junction"
       color="0000ff"
       lblx="220"
       lbly="65"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
