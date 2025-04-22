@@ -11,12 +11,15 @@
       type="start"
       x="120"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,18 +62,21 @@
       type="getusersfullnames"
       x="340"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get users full names]]></property>
         <property
           name="type"><![CDATA[getusersfullnames]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get users full names]]></property>
         <property
           name="itemDescription"><![CDATA[getUsersFullnames]]></property>
         <property
-          name="userNameOrIDs"><![CDATA[4eabecdd-4f24-418b-b770-272030a339f2]]></property>
+          name="userNameOrIDs"><![CDATA[840cc4d8-54ff-4d6d-828a-01d3e430b776; ec1fe172-5f2f-4d78-838d-061f83066a64;]]></property>
         <property
           name="varGlobalForNames"><![CDATA[variable.varUserName]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Users Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -95,14 +97,16 @@
       size="5"
       type=""
       srcParentID="5dacecf5-0408-4873-8324-e9bb5791d68f"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="ae505700-0f90-3f13-73f8-1128f3b321d7"
+      trgParentName="Get users full names"
       trgParentType="getusersfullnames"
       router="junction"
       color="0000ff"
       lblx="250"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
