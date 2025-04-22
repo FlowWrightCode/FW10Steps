@@ -11,12 +11,15 @@
       type="start"
       x="80"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,22 +54,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="9ff49506-69a8-d49a-b0e2-de569c23eec1"
       name="Delete Folder"
       type="googledrivedeletefolder"
-      x="330"
+      x="300"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Delete Folder]]></property>
         <property
           name="type"><![CDATA[googledrivedeletefolder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Delete Folder]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Google Drive Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -95,14 +97,16 @@
       size="5"
       type=""
       srcParentID="1ddff1af-8133-4850-b719-a225242c9ec2"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="9ff49506-69a8-d49a-b0e2-de569c23eec1"
+      trgParentName="Delete Folder"
       trgParentType="googledrivedeletefolder"
       router="junction"
       color="0000ff"
-      lblx="225"
+      lblx="210"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -118,7 +122,7 @@
           x="120"
           y="180" />
         <point
-          x="330"
+          x="300"
           y="180" />
       </line>
     </connection>
