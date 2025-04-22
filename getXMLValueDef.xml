@@ -52,7 +52,7 @@
       id="d1621372-5415-157f-c7ec-1f3a1fb2050c"
       name="Update Variables"
       type="updatevariable"
-      x="200"
+      x="220"
       y="39"
       isValid="true"
       isLocked="False">
@@ -89,7 +89,7 @@
       id="0e6a5017-f2dd-e0b9-f8ec-a5fed1a04a49"
       name="Get XML Value"
       type="getxmlnode"
-      x="340"
+      x="360"
       y="39"
       isValid="true"
       isLocked="False">
@@ -134,14 +134,16 @@
       size="5"
       type=""
       srcParentID="d1621372-5415-157f-c7ec-1f3a1fb2050c"
+      srcParentName="Update Variables"
       srcParentType="updatevariable"
       trgParentID="0e6a5017-f2dd-e0b9-f8ec-a5fed1a04a49"
+      trgParentName="Get XML Value"
       trgParentType="getxmlnode"
       router="junction"
       color="3c78d8"
-      lblx="290"
+      lblx="310"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -154,10 +156,10 @@
       </properties>
       <line>
         <point
-          x="240"
+          x="260"
           y="59" />
         <point
-          x="340"
+          x="360"
           y="59" />
       </line>
     </connection>
@@ -167,14 +169,16 @@
       size="5"
       type=""
       srcParentID="44c3cae2-0b3e-4007-ad11-acac42a0c559"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="d1621372-5415-157f-c7ec-1f3a1fb2050c"
+      trgParentName="Update Variables"
       trgParentType="updatevariable"
       router="junction"
       color="3c78d8"
-      lblx="149"
+      lblx="159"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -190,7 +194,7 @@
           x="98"
           y="59" />
         <point
-          x="200"
+          x="220"
           y="59" />
       </line>
     </connection>
