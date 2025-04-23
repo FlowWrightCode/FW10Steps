@@ -25,11 +25,11 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[10510:Number|testcase:String|15:Boolean]]></property>
+          name="variables"><![CDATA[]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
-          name="globals"><![CDATA[16:Boolean]]></property>
+          name="globals"><![CDATA[]]></property>
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
@@ -44,7 +44,7 @@
     </figure>
     <figure
       id="5cea71dc-12dc-7884-f76a-a5778ab502f2"
-      name="task"
+      name="Regular Task"
       type="task"
       x="-20"
       y="400"
@@ -52,23 +52,23 @@
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[task]]></property>
+          name="label"><![CDATA[Regular Task]]></property>
         <property
           name="type"><![CDATA[task]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[task]]></property>
+          name="itemName"><![CDATA[Regular Task]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="routeTo"><![CDATA[f4996fc4-b941-40cf-b851-6c3cf1cbef6e;]]></property>
+          name="routeTo"><![CDATA[Variable.initiatorID]]></property>
         <property
           name="routeToRoles"><![CDATA[]]></property>
         <property
-          name="taskDesc"><![CDATA[istestmode]]></property>
+          name="taskDesc"><![CDATA[Regular Task - In Test Mode]]></property>
         <property
-          name="taskBody"><![CDATA[]]></property>
+          name="taskBody"><![CDATA[Regular Task - In Test Mode]]></property>
         <property
           name="routedItem"><![CDATA[]]></property>
         <property
@@ -78,9 +78,9 @@
         <property
           name="priority"><![CDATA[Low]]></property>
         <property
-          name="daysToComplete"><![CDATA[]]></property>
+          name="daysToComplete"><![CDATA[1]]></property>
         <property
-          name="expireType"><![CDATA[days]]></property>
+          name="expireType"><![CDATA[hours]]></property>
         <property
           name="includeWeekends"><![CDATA[0]]></property>
         <property
@@ -120,7 +120,7 @@
         <property
           name="emailCCList"><![CDATA[]]></property>
         <property
-          name="useFullDuration"><![CDATA[no]]></property>
+          name="useFullDuration"><![CDATA[yes]]></property>
         <property
           name="commentRequired"><![CDATA[no]]></property>
         <property
@@ -164,7 +164,7 @@
     </figure>
     <figure
       id="a232af5b-cf4c-a9bc-ce9d-38e915a6e765"
-      name="Abort instance"
+      name="Abort Instance"
       type="abortinstance"
       x="180"
       y="400"
@@ -172,39 +172,119 @@
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Abort instance]]></property>
+          name="label"><![CDATA[Abort Instance]]></property>
         <property
           name="type"><![CDATA[abortinstance]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[Abort instance]]></property>
+          name="itemName"><![CDATA[Abort Instance]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[abortInstance]]></property>
         <property
           name="instanceID"><![CDATA[]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
+          name="documentation"><![CDATA[abortInstance - Variable.initiatorName]]></property>
+        <property
+          name="LogMessage"><![CDATA[abortInstance - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d0ee6a6f-c0c2-faba-564d-489232df4646"
+      name="Place Holder"
+      type="placeholder"
+      x="-20"
+      y="550"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
           name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
+    <connection
+      id="f791aadc-bf90-ab1e-aac0-16eda611639e"
+      label="timeout"
+      size="4"
+      type=""
+      srcParentID="5cea71dc-12dc-7884-f76a-a5778ab502f2"
+      srcParentName="Regular Task"
+      srcParentType="task"
+      trgParentID="d0ee6a6f-c0c2-faba-564d-489232df4646"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="0"
+      lbly="495"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[timeout]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[timeout]]></property>
+      </properties>
+      <line>
+        <point
+          x="0"
+          y="440" />
+        <point
+          x="0"
+          y="550" />
+      </line>
+    </connection>
     <connection
       id="ccb461f3-94ba-bc35-2922-6ca6161ad64d"
       label=""
       size="3"
       type=""
       srcParentID="e90f77b1-de0d-4e88-ba28-86630dc4740f"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="5828b221-d779-9aa3-ab1a-2ae8210398d6"
+      trgParentName="isTestMode"
       trgParentType="istestmode"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="100"
       lbly="200"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -226,27 +306,31 @@
     </connection>
     <connection
       id="3c0c6962-5f34-6c66-07c2-489be1f42b13"
-      label=""
+      label="True"
       size="3"
       type=""
       srcParentID="5828b221-d779-9aa3-ab1a-2ae8210398d6"
+      srcParentName="isTestMode"
       srcParentType="istestmode"
       trgParentID="5cea71dc-12dc-7884-f76a-a5778ab502f2"
+      trgParentName="Regular Task"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="0000ff"
+      color="00ff00"
       lblx="0"
       lbly="290"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="westPort"
       trgPortName="northPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[True]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
       </properties>
       <line>
         <point
@@ -262,27 +346,31 @@
     </connection>
     <connection
       id="b8dd4b93-47f2-5d81-b735-d780f6b5a536"
-      label=""
+      label="False"
       size="3"
       type=""
       srcParentID="5828b221-d779-9aa3-ab1a-2ae8210398d6"
+      srcParentName="isTestMode"
       srcParentType="istestmode"
       trgParentID="a232af5b-cf4c-a9bc-ce9d-38e915a6e765"
+      trgParentName="Abort Instance"
       trgParentType="abortinstance"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="0000ff"
+      color="ff0000"
       lblx="200"
       lbly="290"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[False]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
       </properties>
       <line>
         <point
