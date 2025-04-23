@@ -11,12 +11,15 @@
       type="start"
       x="90"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,22 +54,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="47a94518-7f18-c0dd-a3a7-aa708b4f52b7"
       name="Upload File"
       type="googledrivesendfile"
-      x="350"
+      x="330"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Upload File]]></property>
         <property
           name="type"><![CDATA[googledrivesendfile]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Upload File]]></property>
         <property
@@ -87,8 +91,6 @@
           name="instState"><![CDATA[Google Drive Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -99,14 +101,16 @@
       size="5"
       type=""
       srcParentID="1d03ea5b-3c75-4b3a-ac5e-3d5ae4a0a021"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="47a94518-7f18-c0dd-a3a7-aa708b4f52b7"
+      trgParentName="Upload File"
       trgParentType="googledrivesendfile"
       router="junction"
       color="0000ff"
-      lblx="240"
+      lblx="230"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -122,7 +126,7 @@
           x="130"
           y="180" />
         <point
-          x="350"
+          x="330"
           y="180" />
       </line>
     </connection>
