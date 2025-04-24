@@ -52,7 +52,7 @@
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[makeuseractiveinactive]]></property>
+          name="label"><![CDATA[makeUserActiveInActive]]></property>
         <property
           name="type"><![CDATA[makeuseractiveinactive]]></property>
         <property
@@ -62,7 +62,7 @@
         <property
           name="itemDescription"><![CDATA[makeUserActiveInActive]]></property>
         <property
-          name="workflowUserID"><![CDATA[variable.userID]]></property>
+          name="workflowUserID"><![CDATA[2d89fe63-7569-42cd-9055-0016a5d9e599]]></property>
         <property
           name="markActive"><![CDATA[yes]]></property>
         <property
@@ -87,7 +87,7 @@
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[getworkflowuserid]]></property>
+          name="label"><![CDATA[getWorkflowUserID]]></property>
         <property
           name="type"><![CDATA[getworkflowuserid]]></property>
         <property
@@ -97,7 +97,7 @@
         <property
           name="itemDescription"><![CDATA[getWorkflowUserID]]></property>
         <property
-          name="userName"><![CDATA[variable.username]]></property>
+          name="userName"><![CDATA[reguser_rohit_4]]></property>
         <property
           name="varGlobalForID"><![CDATA[variable.userID]]></property>
         <property
@@ -120,14 +120,16 @@
       size="3"
       type=""
       srcParentID="0ad328b6-13b2-4f47-94e3-266edbc9ff8e"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="2c55b7a0-a214-3e9d-28bb-620f751cf983"
+      trgParentName="getWorkflowUserID"
       trgParentType="getworkflowuserid"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="45"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -153,14 +155,16 @@
       size="3"
       type=""
       srcParentID="2c55b7a0-a214-3e9d-28bb-620f751cf983"
+      srcParentName="getWorkflowUserID"
       srcParentType="getworkflowuserid"
       trgParentID="75f9aa4b-0cb3-fadf-c37a-db0fdea0ddca"
+      trgParentName="makeUserActiveInActive"
       trgParentType="makeuseractiveinactive"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="215"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
