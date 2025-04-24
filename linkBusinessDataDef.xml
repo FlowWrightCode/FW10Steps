@@ -52,7 +52,7 @@
       id="6b885ccc-4180-a4e8-bea8-5997f0859a78"
       name="Link Business Data"
       type="linkbusinessdata"
-      x="320"
+      x="290"
       y="39"
       isValid="true"
       isLocked="False">
@@ -87,14 +87,16 @@
       size="5"
       type=""
       srcParentID="5a2338e5-bfde-42b1-be24-94a8e5c1f9e8"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="6b885ccc-4180-a4e8-bea8-5997f0859a78"
+      trgParentName="Link Business Data"
       trgParentType="linkbusinessdata"
       router="junction"
       color="3c78d8"
-      lblx="209"
+      lblx="194"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -110,7 +112,7 @@
           x="98"
           y="59" />
         <point
-          x="320"
+          x="290"
           y="59" />
       </line>
     </connection>
