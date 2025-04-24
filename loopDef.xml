@@ -11,12 +11,15 @@
       type="start"
       x="200"
       y="40"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,18 +62,21 @@
       type="loop"
       x="200"
       y="240"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[For Loop]]></property>
         <property
           name="type"><![CDATA[loop]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[For Loop]]></property>
         <property
           name="itemDescription"><![CDATA[Loop]]></property>
         <property
-          name="loopCounter"><![CDATA[3]]></property>
+          name="loopCounter"><![CDATA[4]]></property>
         <property
           name="variableName"><![CDATA[variable.LoopVar]]></property>
         <property
@@ -83,40 +87,6 @@
           name="instState"><![CDATA[Engine Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
-      </properties>
-    </figure>
-    <figure
-      id="2f063748-e834-acfe-ab1c-8be4899ad3dd"
-      name="Expression"
-      type="evalexpression"
-      x="0"
-      y="400"
-      isValid="true">
-      <properties>
-        <property
-          name="label"><![CDATA[Expression]]></property>
-        <property
-          name="type"><![CDATA[evalexpression]]></property>
-        <property
-          name="itemName"><![CDATA[Expression]]></property>
-        <property
-          name="itemDescription"><![CDATA[evalexpression]]></property>
-        <property
-          name="variableName"><![CDATA[variable.dataValue]]></property>
-        <property
-          name="expression"><![CDATA[variable.dataValue + 1]]></property>
-        <property
-          name="LogMessage"><![CDATA[evalexpression - Variable.createdOn]]></property>
-        <property
-          name="documentation"><![CDATA[evalexpression - Variable.initiatorName]]></property>
-        <property
-          name="instState"><![CDATA[Engine Step]]></property>
-        <property
-          name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -125,12 +95,15 @@
       type="updatevariable"
       x="440"
       y="240"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Update Variables]]></property>
         <property
           name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Update Variables]]></property>
         <property
@@ -151,6 +124,42 @@
           name="instState"><![CDATA[Engine Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="7a893f4e-6ef2-9e43-3024-7a0b2dced387"
+      name="Expression"
+      type="evalexpression"
+      x="0"
+      y="400"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Expression]]></property>
+        <property
+          name="type"><![CDATA[evalexpression]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Expression]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variableName"><![CDATA[Variable.dataValue]]></property>
+        <property
+          name="expression"><![CDATA[Variable.dataValue + 1]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -159,29 +168,31 @@
   <connections>
     <connection
       id="5ad7d0d0-4c3d-f69d-23fb-f291be62c304"
-      label="True"
+      label=""
       size="5"
       type=""
-      srcParentID="2f063748-e834-acfe-ab1c-8be4899ad3dd"
+      srcParentID="7a893f4e-6ef2-9e43-3024-7a0b2dced387"
+      srcParentName="Expression"
       srcParentType="evalexpression"
       trgParentID="ede56d26-7c2b-5d78-90ad-0c25926ba10f"
+      trgParentName="For Loop"
       trgParentType="loop"
       router="junction"
-      color="00ff00"
+      color="0000ff"
       lblx="40"
       lbly="260"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
       trgPortName="westPort">
       <properties>
         <property
-          name="label"><![CDATA[True]]></property>
+          name="label"><![CDATA[]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[True]]></property>
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
@@ -201,14 +212,16 @@
       size="5"
       type=""
       srcParentID="ede56d26-7c2b-5d78-90ad-0c25926ba10f"
+      srcParentName="For Loop"
       srcParentType="loop"
-      trgParentID="2f063748-e834-acfe-ab1c-8be4899ad3dd"
+      trgParentID="7a893f4e-6ef2-9e43-3024-7a0b2dced387"
+      trgParentName="Expression"
       trgParentType="evalexpression"
       router="junction"
       color="129ce4"
       lblx="205"
       lbly="430"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="southPort"
       trgPortName="eastPort">
       <properties>
@@ -239,14 +252,16 @@
       size="5"
       type=""
       srcParentID="ede56d26-7c2b-5d78-90ad-0c25926ba10f"
+      srcParentName="For Loop"
       srcParentType="loop"
       trgParentID="34ba1fc8-e963-8024-f244-fbc049ffd4d3"
+      trgParentName="Update Variables"
       trgParentType="updatevariable"
       router="junction"
       color="129ce4"
       lblx="340"
       lbly="260"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -274,14 +289,16 @@
       size="5"
       type=""
       srcParentID="29c6f76d-9f67-4321-a7c3-1a509da14aa0"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="ede56d26-7c2b-5d78-90ad-0c25926ba10f"
+      trgParentName="For Loop"
       trgParentType="loop"
       router="junction"
       color="0000ff"
       lblx="220"
       lbly="160"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
