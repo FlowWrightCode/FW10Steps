@@ -151,7 +151,7 @@
         <property
           name="itemDescription"><![CDATA[Milestone]]></property>
         <property
-          name="waitDateTime"><![CDATA[2024-10-19 14:00:00]]></property>
+          name="waitDateTime"><![CDATA[04/30/2025 2:30 PM]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
@@ -174,14 +174,16 @@
       size="3"
       type=""
       srcParentID="e55857a7-ea05-491c-b7c2-6fa4dd650e41"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="41a11908-6ad9-cc78-116c-7f16b909cbfc"
+      trgParentName="Milestone Step"
       trgParentType="milestone"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="4a86e8"
       lblx="169"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -207,14 +209,16 @@
       size="3"
       type=""
       srcParentID="41a11908-6ad9-cc78-116c-7f16b909cbfc"
+      srcParentName="Milestone Step"
       srcParentType="milestone"
       trgParentID="1ee2ea72-88f3-8aef-421e-ff92f5285c6c"
+      trgParentName="Milestone Task"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="4a86e8"
       lblx="340"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
