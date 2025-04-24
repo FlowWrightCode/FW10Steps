@@ -11,12 +11,15 @@
       type="start"
       x="-40"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,12 +62,15 @@
       type="moveformdata"
       x="480"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Move Data - Route Form 1 to Route Form 2]]></property>
         <property
           name="type"><![CDATA[moveformdata]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Move Data - Route Form 1 to Route Form 2]]></property>
         <property
@@ -89,8 +93,6 @@
           name="instState"><![CDATA[Form Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -99,12 +101,15 @@
       type="routeform"
       x="130"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Route Form 1]]></property>
         <property
           name="type"><![CDATA[routeform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Route Form 1]]></property>
         <property
@@ -163,8 +168,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -173,12 +176,15 @@
       type="routeform"
       x="280"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Route Form 2]]></property>
         <property
           name="type"><![CDATA[routeform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Route Form 2]]></property>
         <property
@@ -237,8 +243,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -249,14 +253,16 @@
       size="5"
       type=""
       srcParentID="ae182afc-696f-7e5a-1041-fc44b9d24eae"
+      srcParentName="Route Form 2"
       srcParentType="routeform"
       trgParentID="f9da9051-efc3-f869-f6ce-629ff500c115"
+      trgParentName="Move Data - Route Form 1 to Route Form 2"
       trgParentType="moveformdata"
       router="junction"
       color="0000ff"
       lblx="400"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -284,14 +290,16 @@
       size="5"
       type=""
       srcParentID="5d43c15e-ca52-4ce8-93b7-2141b028c818"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="8d23db82-1477-2103-9312-2a702d8fcc08"
+      trgParentName="Route Form 1"
       trgParentType="routeform"
       router="junction"
       color="0000ff"
       lblx="65"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -317,14 +325,16 @@
       size="5"
       type=""
       srcParentID="8d23db82-1477-2103-9312-2a702d8fcc08"
+      srcParentName="Route Form 1"
       srcParentType="routeform"
       trgParentID="ae182afc-696f-7e5a-1041-fc44b9d24eae"
+      trgParentName="Route Form 2"
       trgParentType="routeform"
       router="junction"
       color="0000ff"
       lblx="225"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
