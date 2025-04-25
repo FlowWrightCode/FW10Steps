@@ -48,7 +48,7 @@
       id="6cf8e804-5e58-4c0e-b7e6-36a89aa60ab5"
       name="Query Results To File"
       type="querytofile"
-      x="310"
+      x="260"
       y="39"
       isValid="true"
       isLocked="False">
@@ -64,13 +64,13 @@
         <property
           name="itemDescription"><![CDATA[queryToFile]]></property>
         <property
-          name="connectionString"><![CDATA[6e414153-6354-44a5-ac69-fbe12ef0a858]]></property>
+          name="connectionString"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
         <property
           name="changeDatabase"><![CDATA[]]></property>
         <property
           name="sqlQuery"><![CDATA[select top 10 deUserID, dePassword, timeZone from deUsers]]></property>
         <property
-          name="resultFileFormat"><![CDATA[Excel]]></property>
+          name="resultFileFormat"><![CDATA[CSV]]></property>
         <property
           name="varGlobalFilePath"><![CDATA[Variable.filepath]]></property>
         <property
@@ -91,14 +91,16 @@
       size="5"
       type=""
       srcParentID="93d8f202-656f-4207-80f9-d136340acb64"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="6cf8e804-5e58-4c0e-b7e6-36a89aa60ab5"
+      trgParentName="Query Results To File"
       trgParentType="querytofile"
       router="junction"
       color="3c78d8"
-      lblx="204"
+      lblx="179"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -116,7 +118,7 @@
           x="98"
           y="59" />
         <point
-          x="310"
+          x="260"
           y="59" />
       </line>
     </connection>
