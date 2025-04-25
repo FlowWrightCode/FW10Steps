@@ -11,12 +11,15 @@
       type="start"
       x="120"
       y="80"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,18 +62,21 @@
       type="getworkflowuserid"
       x="300"
       y="80"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Get workflows User ID]]></property>
         <property
           name="type"><![CDATA[getworkflowuserid]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Get workflows User ID]]></property>
         <property
           name="itemDescription"><![CDATA[getWorkflowUserID]]></property>
         <property
-          name="userName"><![CDATA[Alpha-TestUser-5]]></property>
+          name="userName"><![CDATA[Alpha-TestUser-6]]></property>
         <property
           name="varGlobalForID"><![CDATA[variable.varUserID]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[User Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -93,12 +95,15 @@
       type="removeuser"
       x="480"
       y="80"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Remove User]]></property>
         <property
           name="type"><![CDATA[removeuser]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Remove User]]></property>
         <property
@@ -113,8 +118,6 @@
           name="instState"><![CDATA[User Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -125,14 +128,16 @@
       size="5"
       type=""
       srcParentID="22814df8-f80b-3d4f-6d79-84ae48149e6b"
+      srcParentName="Get workflows User ID"
       srcParentType="getworkflowuserid"
       trgParentID="fdb582e7-5892-25ce-c8ca-5640f3fd894d"
+      trgParentName="Remove User"
       trgParentType="removeuser"
       router="junction"
       color="0000ff"
       lblx="410"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -158,14 +163,16 @@
       size="5"
       type=""
       srcParentID="0f99d011-0269-4ef0-81a9-3e418f135200"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="22814df8-f80b-3d4f-6d79-84ae48149e6b"
+      trgParentName="Get workflows User ID"
       trgParentType="getworkflowuserid"
       router="junction"
       color="0000ff"
       lblx="230"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
