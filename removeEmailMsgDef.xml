@@ -10,7 +10,7 @@
       name="start"
       type="start"
       x="-50"
-      y="160"
+      y="90"
       isValid="true"
       isLocked="False">
       <properties>
@@ -49,7 +49,7 @@
       name="Remove Email Msg"
       type="removeemailmsg"
       x="520"
-      y="160"
+      y="90"
       isValid="true"
       isLocked="False">
       <properties>
@@ -80,7 +80,7 @@
       name="Execute SQL Statement"
       type="executesql"
       x="130"
-      y="160"
+      y="90"
       isValid="true"
       isLocked="False">
       <properties>
@@ -95,7 +95,7 @@
         <property
           name="itemDescription"><![CDATA[executeSQL]]></property>
         <property
-          name="connectionString"><![CDATA[6e414153-6354-44a5-ac69-fbe12ef0a858]]></property>
+          name="connectionString"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
         <property
           name="changeDatabase"><![CDATA[]]></property>
         <property
@@ -125,7 +125,7 @@
       name="Get Email Msg"
       type="getemailmsg"
       x="320"
-      y="160"
+      y="90"
       isValid="true"
       isLocked="False">
       <properties>
@@ -169,14 +169,16 @@
       size="5"
       type=""
       srcParentID="bd22d6c2-aebb-4d54-8a37-a663c6f8ecb2"
+      srcParentName="Get Email Msg"
       srcParentType="getemailmsg"
       trgParentID="71e1deff-ee30-4b01-92ca-4a14ca961ec5"
+      trgParentName="Remove Email Msg"
       trgParentType="removeemailmsg"
       router="junction"
       color="1c4587"
       lblx="440"
-      lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#1c4587;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lbly="110"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#1c4587;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -192,10 +194,10 @@
       <line>
         <point
           x="360"
-          y="180" />
+          y="110" />
         <point
           x="520"
-          y="180" />
+          y="110" />
       </line>
     </connection>
     <connection
@@ -204,14 +206,16 @@
       size="5"
       type=""
       srcParentID="10dfe185-a148-4f74-be56-f5328965557a"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="df294155-c79f-4995-b471-5832101143b1"
+      trgParentName="Execute SQL Statement"
       trgParentType="executesql"
       router="junction"
       color="1c4587"
       lblx="60"
-      lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#1c4587;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lbly="110"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#1c4587;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -225,10 +229,10 @@
       <line>
         <point
           x="-10"
-          y="180" />
+          y="110" />
         <point
           x="130"
-          y="180" />
+          y="110" />
       </line>
     </connection>
     <connection
@@ -237,14 +241,16 @@
       size="5"
       type=""
       srcParentID="df294155-c79f-4995-b471-5832101143b1"
+      srcParentName="Execute SQL Statement"
       srcParentType="executesql"
       trgParentID="bd22d6c2-aebb-4d54-8a37-a663c6f8ecb2"
+      trgParentName="Get Email Msg"
       trgParentType="getemailmsg"
       router="junction"
       color="1c4587"
       lblx="245"
-      lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#1c4587;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lbly="110"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#1c4587;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -260,10 +266,10 @@
       <line>
         <point
           x="170"
-          y="180" />
+          y="110" />
         <point
           x="320"
-          y="180" />
+          y="110" />
       </line>
     </connection>
   </connections>
