@@ -10,13 +10,16 @@
       name="start"
       type="start"
       x="40"
-      y="39"
-      isValid="true">
+      y="0"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -39,8 +42,6 @@
           name="documentation"><![CDATA[]]></property>
         <property
           name="priority"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -48,13 +49,16 @@
       name="Decision"
       type="decision"
       x="360"
-      y="120"
-      isValid="true">
+      y="81"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Decision]]></property>
         <property
           name="type"><![CDATA[decision]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Decision]]></property>
         <property
@@ -69,24 +73,25 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="af607dec-a727-28c8-1709-a50dd5a28dc5"
-      name="Place Holder"
+      name="Place Holder B"
       type="placeholder"
       x="560"
-      y="240"
-      isValid="true">
+      y="201"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Place Holder]]></property>
+          name="label"><![CDATA[Place Holder B]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
-          name="itemName"><![CDATA[Place Holder]]></property>
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder B]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -97,24 +102,25 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="d1a315df-10df-3fa1-4d83-91fe105c7384"
-      name="Place Holder"
+      name="Place Holder A"
       type="placeholder"
       x="280"
-      y="240"
-      isValid="true">
+      y="201"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Place Holder]]></property>
+          name="label"><![CDATA[Place Holder A]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
-          name="itemName"><![CDATA[Place Holder]]></property>
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder A]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -125,24 +131,25 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="8bbfad64-e413-5706-4f51-d62f59d59d33"
-      name="Place Holder"
+      name="Place Holder C"
       type="placeholder"
       x="560"
-      y="360"
-      isValid="true">
+      y="321"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Place Holder]]></property>
+          name="label"><![CDATA[Place Holder C]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
-          name="itemName"><![CDATA[Place Holder]]></property>
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder C]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -153,8 +160,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -162,13 +167,16 @@
       name="Synchronize"
       type="synchronize"
       x="40"
-      y="500"
-      isValid="true">
+      y="461"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Synchronize]]></property>
         <property
           name="type"><![CDATA[synchronize]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Synchronize]]></property>
         <property
@@ -181,8 +189,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -190,13 +196,16 @@
       name="Wait 5 secs"
       type="wait"
       x="-80"
-      y="280"
-      isValid="true">
+      y="241"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Wait 5 secs]]></property>
         <property
           name="type"><![CDATA[wait]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Wait 5 secs]]></property>
         <property
@@ -219,6 +228,38 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6fd08979-c7d4-5b06-adcd-dd18b43f455c"
+      name="Place Holder D"
+      type="placeholder"
+      x="40"
+      y="601"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder D]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder D]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -226,19 +267,56 @@
   </figures>
   <connections>
     <connection
+      id="183f690b-db01-7aa7-1806-4a050d167133"
+      label=""
+      size="4"
+      type=""
+      srcParentID="94b5f010-b456-85bf-9f38-569717f95fd6"
+      srcParentName="Synchronize"
+      srcParentType="synchronize"
+      trgParentID="6fd08979-c7d4-5b06-adcd-dd18b43f455c"
+      trgParentName="Place Holder D"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="60"
+      lbly="551"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="60"
+          y="501" />
+        <point
+          x="60"
+          y="601" />
+      </line>
+    </connection>
+    <connection
       id="3a258373-2c23-b644-69b8-cafc7cf8538c"
       label=""
       size="5"
       type=""
       srcParentID="d1a315df-10df-3fa1-4d83-91fe105c7384"
+      srcParentName="Place Holder A"
       srcParentType="placeholder"
       trgParentID="8bbfad64-e413-5706-4f51-d62f59d59d33"
+      trgParentName="Place Holder C"
       trgParentType="placeholder"
       router="junction"
       color="0000ff"
       lblx="380"
-      lbly="380"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lbly="341"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="southPort"
       trgPortName="westPort">
       <properties>
@@ -254,13 +332,13 @@
       <line>
         <point
           x="300"
-          y="280" />
+          y="241" />
         <point
           x="300"
-          y="380" />
+          y="341" />
         <point
           x="560"
-          y="380" />
+          y="341" />
       </line>
     </connection>
     <connection
@@ -269,14 +347,16 @@
       size="5"
       type=""
       srcParentID="8bbfad64-e413-5706-4f51-d62f59d59d33"
+      srcParentName="Place Holder C"
       srcParentType="placeholder"
       trgParentID="94b5f010-b456-85bf-9f38-569717f95fd6"
+      trgParentName="Synchronize"
       trgParentType="synchronize"
       router="junction"
       color="0000ff"
       lblx="390"
-      lbly="520"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lbly="481"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="southPort"
       trgPortName="eastPort">
       <properties>
@@ -292,13 +372,13 @@
       <line>
         <point
           x="580"
-          y="400" />
+          y="361" />
         <point
           x="580"
-          y="520" />
+          y="481" />
         <point
           x="80"
-          y="520" />
+          y="481" />
       </line>
     </connection>
     <connection
@@ -307,14 +387,16 @@
       size="5"
       type=""
       srcParentID="92f5b781-6226-4480-d10b-de46320b5008"
+      srcParentName="Wait 5 secs"
       srcParentType="wait"
       trgParentID="94b5f010-b456-85bf-9f38-569717f95fd6"
+      trgParentName="Synchronize"
       trgParentType="synchronize"
       router="junction"
       color="0000ff"
       lblx="-60"
-      lbly="470"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lbly="431"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="southPort"
       trgPortName="westPort">
       <properties>
@@ -330,13 +412,13 @@
       <line>
         <point
           x="-60"
-          y="320" />
+          y="281" />
         <point
           x="-60"
-          y="520" />
+          y="481" />
         <point
           x="40"
-          y="520" />
+          y="481" />
       </line>
     </connection>
     <connection
@@ -345,14 +427,16 @@
       size="5"
       type=""
       srcParentID="af607dec-a727-28c8-1709-a50dd5a28dc5"
+      srcParentName="Place Holder B"
       srcParentType="placeholder"
       trgParentID="8bbfad64-e413-5706-4f51-d62f59d59d33"
+      trgParentName="Place Holder C"
       trgParentType="placeholder"
       router="junction"
       color="0000ff"
       lblx="580"
-      lbly="320"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lbly="281"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -366,10 +450,10 @@
       <line>
         <point
           x="580"
-          y="280" />
+          y="241" />
         <point
           x="580"
-          y="360" />
+          y="321" />
       </line>
     </connection>
     <connection
@@ -378,14 +462,16 @@
       size="5"
       type=""
       srcParentID="1adb6cd1-3dc8-d921-c036-17364dce301a"
+      srcParentName="Decision"
       srcParentType="decision"
       trgParentID="d1a315df-10df-3fa1-4d83-91fe105c7384"
+      trgParentName="Place Holder A"
       trgParentType="placeholder"
       router="junction"
       color="ff0000"
       lblx="300"
-      lbly="160"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      lbly="121"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="westPort"
       trgPortName="northPort">
       <properties>
@@ -401,13 +487,13 @@
       <line>
         <point
           x="360"
-          y="140" />
+          y="101" />
         <point
           x="300"
-          y="140" />
+          y="101" />
         <point
           x="300"
-          y="240" />
+          y="201" />
       </line>
     </connection>
     <connection
@@ -416,14 +502,16 @@
       size="5"
       type=""
       srcParentID="1adb6cd1-3dc8-d921-c036-17364dce301a"
+      srcParentName="Decision"
       srcParentType="decision"
       trgParentID="af607dec-a727-28c8-1709-a50dd5a28dc5"
+      trgParentName="Place Holder B"
       trgParentType="placeholder"
       router="junction"
       color="00ff00"
       lblx="540"
-      lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      lbly="101"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
@@ -439,13 +527,13 @@
       <line>
         <point
           x="400"
-          y="140" />
+          y="101" />
         <point
           x="580"
-          y="140" />
+          y="101" />
         <point
           x="580"
-          y="240" />
+          y="201" />
       </line>
     </connection>
     <connection
@@ -454,14 +542,16 @@
       size="5"
       type=""
       srcParentID="d75a4f6b-8d8f-4367-88d4-8266bd142f61"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="92f5b781-6226-4480-d10b-de46320b5008"
+      trgParentName="Wait 5 secs"
       trgParentType="wait"
       router="junction"
       color="0000ff"
       lblx="-60"
-      lbly="120"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lbly="81"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="westPort"
       trgPortName="northPort">
       <properties>
@@ -475,13 +565,13 @@
       <line>
         <point
           x="40"
-          y="59" />
+          y="20" />
         <point
           x="-60"
-          y="59" />
+          y="20" />
         <point
           x="-60"
-          y="280" />
+          y="241" />
       </line>
     </connection>
     <connection
@@ -490,14 +580,16 @@
       size="5"
       type=""
       srcParentID="d75a4f6b-8d8f-4367-88d4-8266bd142f61"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="1adb6cd1-3dc8-d921-c036-17364dce301a"
+      trgParentName="Decision"
       trgParentType="decision"
       router="junction"
       color="0000ff"
       lblx="261"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lbly="20"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
@@ -511,13 +603,13 @@
       <line>
         <point
           x="80"
-          y="59" />
+          y="20" />
         <point
           x="380"
-          y="59" />
+          y="20" />
         <point
           x="380"
-          y="120" />
+          y="81" />
       </line>
     </connection>
   </connections>
