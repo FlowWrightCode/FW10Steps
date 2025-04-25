@@ -9,14 +9,17 @@
       id="d4a4228b-181b-44c4-9fce-3ecf2b135b2d"
       name="start"
       type="start"
-      x="40"
-      y="39"
-      isValid="true">
+      x="30"
+      y="-30"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,28 +54,29 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="a33cb440-3651-5386-84cd-6d8146ac280b"
       name="Remove File"
       type="removefile"
-      x="300"
-      y="39"
-      isValid="true">
+      x="250"
+      y="-30"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Remove File]]></property>
         <property
           name="type"><![CDATA[removefile]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Remove File]]></property>
         <property
           name="itemDescription"><![CDATA[removeFile]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\tempfiles\DeleteThisReport.pdf]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\4c3117e8-4349-4162-b110-30f0a513ff27.txt]]></property>
         <property
           name="LogMessage"><![CDATA[removeFile - Variable.createdOn]]></property>
         <property
@@ -81,8 +85,6 @@
           name="instState"><![CDATA[File Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -93,14 +95,16 @@
       size="5"
       type=""
       srcParentID="d4a4228b-181b-44c4-9fce-3ecf2b135b2d"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="a33cb440-3651-5386-84cd-6d8146ac280b"
+      trgParentName="Remove File"
       trgParentType="removefile"
       router="junction"
       color="0000ff"
-      lblx="190"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="160"
+      lbly="-10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -113,11 +117,11 @@
       </properties>
       <line>
         <point
-          x="80"
-          y="59" />
+          x="70"
+          y="-10" />
         <point
-          x="300"
-          y="59" />
+          x="250"
+          y="-10" />
       </line>
     </connection>
   </connections>
