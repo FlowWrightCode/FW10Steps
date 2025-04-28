@@ -9,14 +9,17 @@
       id="fe3d79fe-20a3-450c-99c3-fd9c645d7a80"
       name="start"
       type="start"
-      x="40"
-      y="39"
-      isValid="true">
+      x="-20"
+      y="-40"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -39,22 +42,23 @@
           name="documentation"><![CDATA[]]></property>
         <property
           name="priority"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="68945951-89d1-37ac-2b54-74ab8c139630"
       name="Route Form to Task Queue"
       type="routeformtoqueue"
-      x="270"
-      y="39"
-      isValid="true">
+      x="210"
+      y="-40"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Route Form to Task Queue]]></property>
         <property
           name="type"><![CDATA[routeformtoqueue]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Route Form to Task Queue]]></property>
         <property
@@ -91,8 +95,6 @@
           name="instState"><![CDATA[Form Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -103,14 +105,16 @@
       size="5"
       type=""
       srcParentID="fe3d79fe-20a3-450c-99c3-fd9c645d7a80"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="68945951-89d1-37ac-2b54-74ab8c139630"
+      trgParentName="Route Form to Task Queue"
       trgParentType="routeformtoqueue"
       router="junction"
       color="0000ff"
-      lblx="175"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="115"
+      lbly="-20"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -123,11 +127,11 @@
       </properties>
       <line>
         <point
-          x="80"
-          y="59" />
+          x="20"
+          y="-20" />
         <point
-          x="270"
-          y="59" />
+          x="210"
+          y="-20" />
       </line>
     </connection>
   </connections>
