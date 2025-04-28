@@ -9,8 +9,8 @@
       id="b5759c1a-9dd8-480b-9dc3-2c9fbbaa7159"
       name="start"
       type="start"
-      x="58"
-      y="39"
+      x="0"
+      y="-130"
       isValid="true"
       isLocked="False">
       <properties>
@@ -48,8 +48,8 @@
       id="773eb844-208a-4855-9e56-9d187386f85e"
       name="Run Report"
       type="runreport"
-      x="270"
-      y="40"
+      x="242"
+      y="-130"
       isValid="true"
       isLocked="False">
       <properties>
@@ -89,14 +89,16 @@
       size="5"
       type=""
       srcParentID="b5759c1a-9dd8-480b-9dc3-2c9fbbaa7159"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="773eb844-208a-4855-9e56-9d187386f85e"
+      trgParentName="Run Report"
       trgParentType="runreport"
       router="junction"
       color="0000ff"
-      lblx="184"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      lblx="141"
+      lbly="-110"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -109,17 +111,11 @@
       </properties>
       <line>
         <point
-          x="98"
-          y="59" />
+          x="40"
+          y="-110" />
         <point
-          x="184"
-          y="59" />
-        <point
-          x="184"
-          y="60" />
-        <point
-          x="270"
-          y="60" />
+          x="242"
+          y="-110" />
       </line>
     </connection>
   </connections>
