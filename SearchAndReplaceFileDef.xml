@@ -1,0 +1,347 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="8f95e1a0-d887-422e-b296-dcff63927156">
+  <figures>
+    <figure
+      id="93ca69fc-2986-44ab-9014-ebcc23e181b3"
+      name="start"
+      type="start"
+      x="-70"
+      y="30"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[fileContent:String|oFilePath:String|replacedFilePath:String|inputFilePath:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="2e9229eb-3387-7745-4772-686143a14089"
+      name="Writes content to TXT File"
+      type="writefile"
+      x="230"
+      y="30"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Writes content to TXT File]]></property>
+        <property
+          name="type"><![CDATA[writefile]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Writes content to TXT File]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="contentVariable"><![CDATA[variable.fileContent]]></property>
+        <property
+          name="txtVarGlobalFilePath"><![CDATA[variable.oFilePath]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d7b80b1c-6cfd-92da-50de-4f0cffafe633"
+      name="Update Variables One"
+      type="updatevariable"
+      x="60"
+      y="30"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables One]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables One]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="updateVariables"><![CDATA[variable.fileContent~This is a sample story about the dog and the bone.]]></property>
+        <property
+          name="variableName"><![CDATA[]]></property>
+        <property
+          name="variableValue"><![CDATA[]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8eed92cc-1cb8-c247-2ea3-da3ca9bf7126"
+      name="Search replace in File"
+      type="searchandreplacefile"
+      x="550"
+      y="30"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Search replace in File]]></property>
+        <property
+          name="type"><![CDATA[searchandreplacefile]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Search replace in File]]></property>
+        <property
+          name="itemDescription"><![CDATA[searchAndReplaceFile]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\TempFiles\80c6e492-3a14-4b70-af9a-b215966be649.txt]]></property>
+        <property
+          name="outputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\TempFiles\Update-80c6e492-3a14-4b70-af9a-b215966be649.txt]]></property>
+        <property
+          name="mappingString"><![CDATA[dog~cat|bone~fishy fish]]></property>
+        <property
+          name="LogMessage"><![CDATA[searchAndReplaceFile - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[searchAndReplaceFile - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Development Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="1a4c9139-d887-a3a4-456a-9eda2bf05bee"
+      name="Update Variables Two"
+      type="updatevariable"
+      x="390"
+      y="30"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables Two]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables Two]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="updateVariables"><![CDATA[variable.inputFilePath~C:\FlowWright\wwwroot\Variable.oFilePath]]></property>
+        <property
+          name="variableName"><![CDATA[]]></property>
+        <property
+          name="variableValue"><![CDATA[]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="9cb94d20-1e2e-aef7-b77a-59ec6bc41cea"
+      label=""
+      size="5"
+      type=""
+      srcParentID="93ca69fc-2986-44ab-9014-ebcc23e181b3"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="d7b80b1c-6cfd-92da-50de-4f0cffafe633"
+      trgParentName="Update Variables One"
+      trgParentType="updatevariable"
+      router="junction"
+      color="0000ff"
+      lblx="15"
+      lbly="50"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="-30"
+          y="50" />
+        <point
+          x="60"
+          y="50" />
+      </line>
+    </connection>
+    <connection
+      id="b5df4240-1457-eef5-04bb-8c37f266af47"
+      label=""
+      size="5"
+      type=""
+      srcParentID="1a4c9139-d887-a3a4-456a-9eda2bf05bee"
+      srcParentName="Update Variables Two"
+      srcParentType="updatevariable"
+      trgParentID="8eed92cc-1cb8-c247-2ea3-da3ca9bf7126"
+      trgParentName="Search replace in File"
+      trgParentType="searchandreplacefile"
+      router="junction"
+      color="0000ff"
+      lblx="490"
+      lbly="50"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="430"
+          y="50" />
+        <point
+          x="550"
+          y="50" />
+      </line>
+    </connection>
+    <connection
+      id="04dec19a-c932-2cc8-e1c9-1636b9d431ee"
+      label=""
+      size="5"
+      type=""
+      srcParentID="d7b80b1c-6cfd-92da-50de-4f0cffafe633"
+      srcParentName="Update Variables One"
+      srcParentType="updatevariable"
+      trgParentID="2e9229eb-3387-7745-4772-686143a14089"
+      trgParentName="Writes content to TXT File"
+      trgParentType="writefile"
+      router="junction"
+      color="0000ff"
+      lblx="165"
+      lbly="50"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="100"
+          y="50" />
+        <point
+          x="230"
+          y="50" />
+      </line>
+    </connection>
+    <connection
+      id="836f0cb4-7747-202c-c387-8a002bcb7edb"
+      label=""
+      size="5"
+      type=""
+      srcParentID="2e9229eb-3387-7745-4772-686143a14089"
+      srcParentName="Writes content to TXT File"
+      srcParentType="writefile"
+      trgParentID="1a4c9139-d887-a3a4-456a-9eda2bf05bee"
+      trgParentName="Update Variables Two"
+      trgParentType="updatevariable"
+      router="junction"
+      color="0000ff"
+      lblx="330"
+      lbly="50"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="50" />
+        <point
+          x="390"
+          y="50" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
