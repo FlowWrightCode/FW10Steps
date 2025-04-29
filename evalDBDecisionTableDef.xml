@@ -9,14 +9,17 @@
       id="40e3d073-3811-41ee-a46b-ac822cedd7de"
       name="start"
       type="start"
-      x="20"
-      y="120"
-      isValid="true">
+      x="-80"
+      y="40"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,22 +54,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="dd93ec1f-3dd4-a1f5-8230-ae871b764572"
       name="DB Decision table"
       type="evaldbdecisiontable"
-      x="350"
-      y="120"
-      isValid="true">
+      x="250"
+      y="40"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[DB Decision table]]></property>
         <property
           name="type"><![CDATA[evaldbdecisiontable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[DB Decision table]]></property>
         <property
@@ -87,26 +91,27 @@
           name="instState"><![CDATA[Decisions Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="aa77b906-bc52-edb2-f18b-33d59826daa0"
       name="Update Variables"
       type="updatevariable"
-      x="170"
-      y="120"
-      isValid="true">
+      x="100"
+      y="40"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Update Variables]]></property>
         <property
           name="type"><![CDATA[updatevariable]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Update Variables]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[updateVariable]]></property>
         <property
           name="updateVariables"><![CDATA[]]></property>
         <property
@@ -116,15 +121,13 @@
         <property
           name="hasExpression"><![CDATA[no]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[updateVariable - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[updateVariable - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Engine Step]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
   </figures>
@@ -135,14 +138,16 @@
       size="5"
       type=""
       srcParentID="aa77b906-bc52-edb2-f18b-33d59826daa0"
+      srcParentName="Update Variables"
       srcParentType="updatevariable"
       trgParentID="dd93ec1f-3dd4-a1f5-8230-ae871b764572"
+      trgParentName="DB Decision table"
       trgParentType="evaldbdecisiontable"
       router="junction"
       color="0000ff"
-      lblx="280"
-      lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="195"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -157,11 +162,11 @@
       </properties>
       <line>
         <point
-          x="210"
-          y="140" />
+          x="140"
+          y="60" />
         <point
-          x="350"
-          y="140" />
+          x="250"
+          y="60" />
       </line>
     </connection>
     <connection
@@ -170,14 +175,16 @@
       size="5"
       type=""
       srcParentID="40e3d073-3811-41ee-a46b-ac822cedd7de"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="aa77b906-bc52-edb2-f18b-33d59826daa0"
+      trgParentName="Update Variables"
       trgParentType="updatevariable"
       router="junction"
       color="0000ff"
-      lblx="115"
-      lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="30"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -190,11 +197,11 @@
       </properties>
       <line>
         <point
-          x="60"
-          y="140" />
+          x="-40"
+          y="60" />
         <point
-          x="170"
-          y="140" />
+          x="100"
+          y="60" />
       </line>
     </connection>
   </connections>
