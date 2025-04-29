@@ -9,14 +9,17 @@
       id="9d08d843-0d38-4c90-96db-899adbd4f0a1"
       name="start"
       type="start"
-      x="40"
-      y="39"
-      isValid="true">
+      x="0"
+      y="-30"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,22 +54,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="f8ad2d3b-decc-d987-3466-4b97655f2f12"
       name="Set dynamic properties"
       type="setbodynamicproperties"
-      x="270"
-      y="39"
-      isValid="true">
+      x="250"
+      y="-30"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Set dynamic properties]]></property>
         <property
           name="type"><![CDATA[setbodynamicproperties]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Set dynamic properties]]></property>
         <property
@@ -83,8 +87,6 @@
           name="instState"><![CDATA[Business Objects Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -95,14 +97,16 @@
       size="5"
       type=""
       srcParentID="9d08d843-0d38-4c90-96db-899adbd4f0a1"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="f8ad2d3b-decc-d987-3466-4b97655f2f12"
+      trgParentName="Set dynamic properties"
       trgParentType="setbodynamicproperties"
       router="junction"
       color="0000ff"
-      lblx="175"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="145"
+      lbly="-10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -115,11 +119,11 @@
       </properties>
       <line>
         <point
-          x="80"
-          y="59" />
+          x="40"
+          y="-10" />
         <point
-          x="270"
-          y="59" />
+          x="250"
+          y="-10" />
       </line>
     </connection>
   </connections>
