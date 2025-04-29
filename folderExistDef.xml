@@ -9,14 +9,17 @@
       id="97f0c688-9662-40da-a32a-a0bb4c312cae"
       name="start"
       type="start"
-      x="40"
-      y="39"
-      isValid="true">
+      x="-30"
+      y="60"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -39,22 +42,23 @@
           name="documentation"><![CDATA[]]></property>
         <property
           name="priority"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="ccf6f7e8-4ad7-a542-af2f-8e3cf153f4e4"
       name="Check if folder exist"
       type="folderexist"
-      x="270"
-      y="39"
-      isValid="true">
+      x="200"
+      y="60"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Check if folder exist]]></property>
         <property
           name="type"><![CDATA[folderexist]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Check if folder exist]]></property>
         <property
@@ -69,22 +73,23 @@
           name="instState"><![CDATA[File System Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="316c630b-9964-9354-a27b-2ea44af06716"
       name="Folder exists"
       type="placeholder"
-      x="450"
-      y="39"
-      isValid="true">
+      x="390"
+      y="60"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Folder Exists]]></property>
+          name="label"><![CDATA[Folder exists]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Folder exists]]></property>
         <property
@@ -97,22 +102,23 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="7d91372e-bee9-8e9b-e00e-090c044cdd30"
       name="Folder does not exist"
       type="placeholder"
-      x="270"
-      y="240"
-      isValid="true">
+      x="200"
+      y="270"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Folder does not exist]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Folder does not exist]]></property>
         <property
@@ -125,8 +131,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -137,14 +141,16 @@
       size="5"
       type=""
       srcParentID="ccf6f7e8-4ad7-a542-af2f-8e3cf153f4e4"
+      srcParentName="Check if folder exist"
       srcParentType="folderexist"
       trgParentID="316c630b-9964-9354-a27b-2ea44af06716"
+      trgParentName="Folder exists"
       trgParentType="placeholder"
       router="junction"
       color="00ff00"
-      lblx="380"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      lblx="315"
+      lbly="80"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -159,11 +165,11 @@
       </properties>
       <line>
         <point
-          x="310"
-          y="59" />
+          x="240"
+          y="80" />
         <point
-          x="450"
-          y="59" />
+          x="390"
+          y="80" />
       </line>
     </connection>
     <connection
@@ -172,14 +178,16 @@
       size="5"
       type=""
       srcParentID="ccf6f7e8-4ad7-a542-af2f-8e3cf153f4e4"
+      srcParentName="Check if folder exist"
       srcParentType="folderexist"
       trgParentID="7d91372e-bee9-8e9b-e00e-090c044cdd30"
+      trgParentName="Folder does not exist"
       trgParentType="placeholder"
       router="junction"
       color="ff0000"
-      lblx="290"
-      lbly="160"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      lblx="220"
+      lbly="185"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -194,11 +202,11 @@
       </properties>
       <line>
         <point
-          x="290"
-          y="79" />
+          x="220"
+          y="100" />
         <point
-          x="290"
-          y="240" />
+          x="220"
+          y="270" />
       </line>
     </connection>
     <connection
@@ -207,14 +215,16 @@
       size="5"
       type=""
       srcParentID="97f0c688-9662-40da-a32a-a0bb4c312cae"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="ccf6f7e8-4ad7-a542-af2f-8e3cf153f4e4"
+      trgParentName="Check if folder exist"
       trgParentType="folderexist"
       router="junction"
       color="0000ff"
-      lblx="175"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="105"
+      lbly="80"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -227,11 +237,11 @@
       </properties>
       <line>
         <point
-          x="80"
-          y="59" />
+          x="10"
+          y="80" />
         <point
-          x="270"
-          y="59" />
+          x="200"
+          y="80" />
       </line>
     </connection>
   </connections>
