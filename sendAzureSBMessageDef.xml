@@ -10,12 +10,16 @@
       name="start"
       type="start"
       x="40"
-      y="39">
+      y="39"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -44,14 +48,17 @@
       id="c48dbdc4-43e6-6ae7-7c1c-1d27fff9c412"
       name="Send Msg to Service Bus"
       type="sendazuresbmessage"
-      x="290"
+      x="250"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Send Msg to Service Bus]]></property>
         <property
           name="type"><![CDATA[sendazuresbmessage]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[Send Msg to Service Bus]]></property>
         <property
@@ -72,8 +79,6 @@
           name="instState"><![CDATA[Box Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -84,14 +89,16 @@
       size="5"
       type=""
       srcParentID="0fa40fe5-eb86-4bcb-9958-2b51bc608c86"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="c48dbdc4-43e6-6ae7-7c1c-1d27fff9c412"
+      trgParentName="Send Msg to Service Bus"
       trgParentType="sendazuresbmessage"
       router="junction"
       color="0000ff"
-      lblx="185"
+      lblx="165"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -107,7 +114,7 @@
           x="80"
           y="59" />
         <point
-          x="290"
+          x="250"
           y="59" />
       </line>
     </connection>
