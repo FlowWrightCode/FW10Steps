@@ -42,7 +42,7 @@
       id="d83b4aa8-2505-49a7-a50e-1194cf63cbac"
       name="Route to Customers Support Queue"
       type="routetoqueue"
-      x="350"
+      x="310"
       y="100"
       isValid="true"
       isLocked="False">
@@ -95,14 +95,16 @@
       size="5"
       type=""
       srcParentID="eaf4178c-71a1-4f4f-8fe8-a761ca1e003e"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="d83b4aa8-2505-49a7-a50e-1194cf63cbac"
+      trgParentName="Route to Customers Support Queue"
       trgParentType="routetoqueue"
       router="junction"
       color="3c78d8"
-      lblx="245"
+      lblx="225"
       lbly="120"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -120,7 +122,7 @@
           x="140"
           y="120" />
         <point
-          x="350"
+          x="310"
           y="120" />
       </line>
     </connection>
