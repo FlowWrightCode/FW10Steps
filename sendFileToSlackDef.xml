@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -61,20 +62,23 @@
       type="sendfiletoslack"
       x="260"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[Send File]]></property>
         <property
           name="type"><![CDATA[sendfiletoslack]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[Send File]]></property>
         <property
           name="itemDescription"><![CDATA[sendFileToSlack]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\TempFiles\Agenda.msg]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\Richa\Greetings-2025.txt]]></property>
         <property
-          name="channel"><![CDATA[#General]]></property>
+          name="channel"><![CDATA[General]]></property>
         <property
           name="LogMessage"><![CDATA[sendFileToSlack - Variable.createdOn]]></property>
         <property
@@ -83,26 +87,26 @@
           name="instState"><![CDATA[Slack Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
     <connection
-      id="ab9af911-6e98-ffee-7548-79fad74e833b"
+      id="bb56a8d8-6802-300e-0807-d6490ef9b690"
       label=""
-      size="5"
+      size="4"
       type=""
       srcParentID="41a53a4e-e60d-45ab-ac66-596faff1e453"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="6a211d3d-24fd-55e8-54cf-bc6c07178e44"
+      trgParentName="Send File"
       trgParentType="sendfiletoslack"
       router="junction"
-      color="0000ff"
+      color="3c78d8"
       lblx="170"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
