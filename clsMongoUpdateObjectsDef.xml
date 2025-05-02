@@ -9,8 +9,8 @@
       id="5064ef9f-6a88-479d-9dd6-a5d73ec9e755"
       name="start"
       type="start"
-      x="-60"
-      y="39"
+      x="-80"
+      y="59"
       isValid="true"
       isLocked="False">
       <properties>
@@ -60,8 +60,8 @@
       id="e58619bb-f8b7-bcb6-8ffb-61db2f544bef"
       name="Update JSON objects in MongoDB"
       type="clsmongoupdateobjects"
-      x="310"
-      y="39"
+      x="290"
+      y="59"
       isValid="true"
       isLocked="False"
       inConnections="2"
@@ -103,17 +103,17 @@
     </figure>
     <figure
       id="3b880d9f-d03e-2f21-3566-aed31fd9c5ad"
-      name="Get a list of objects using a JSON filter condition"
+      name="Get a list of objects using a JSON filter condition B"
       type="clsmongogetobjects"
-      x="530"
-      y="39"
+      x="510"
+      y="59"
       isValid="true"
       isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Get a list of objects using a JSON filter condition]]></property>
+          name="label"><![CDATA[Get a list of objects using a JSON filter condition B]]></property>
         <property
           name="type"><![CDATA[clsmongogetobjects]]></property>
         <property
@@ -123,7 +123,7 @@
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Get a list of objects using a JSON filter condition]]></property>
+          name="itemName"><![CDATA[Get a list of objects using a JSON filter condition B]]></property>
         <property
           name="itemDescription"><![CDATA[clsMongoGetObjects]]></property>
         <property
@@ -148,17 +148,17 @@
     </figure>
     <figure
       id="010e916a-9e1f-d689-3f0d-31c7d1d107b8"
-      name="Get a list of objects using a JSON filter condition"
+      name="Get a list of objects using a JSON filter condition A"
       type="clsmongogetobjects"
-      x="100"
-      y="39"
+      x="80"
+      y="59"
       isValid="true"
       isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Get a list of objects using a JSON filter condition]]></property>
+          name="label"><![CDATA[Get a list of objects using a JSON filter condition A]]></property>
         <property
           name="type"><![CDATA[clsmongogetobjects]]></property>
         <property
@@ -168,7 +168,7 @@
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Get a list of objects using a JSON filter condition]]></property>
+          name="itemName"><![CDATA[Get a list of objects using a JSON filter condition A]]></property>
         <property
           name="itemDescription"><![CDATA[clsMongoGetObjects]]></property>
         <property
@@ -199,14 +199,16 @@
       size="5"
       type=""
       srcParentID="010e916a-9e1f-d689-3f0d-31c7d1d107b8"
+      srcParentName="Get a list of objects using a JSON filter condition A"
       srcParentType="clsmongogetobjects"
       trgParentID="e58619bb-f8b7-bcb6-8ffb-61db2f544bef"
+      trgParentName="Update JSON objects in MongoDB"
       trgParentType="clsmongoupdateobjects"
       router="junction"
       color="0000ff"
-      lblx="225"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      lblx="205"
+      lbly="79"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -219,11 +221,11 @@
       </properties>
       <line>
         <point
-          x="140"
-          y="59" />
+          x="120"
+          y="79" />
         <point
-          x="310"
-          y="59" />
+          x="290"
+          y="79" />
       </line>
     </connection>
     <connection
@@ -232,14 +234,16 @@
       size="5"
       type=""
       srcParentID="e58619bb-f8b7-bcb6-8ffb-61db2f544bef"
+      srcParentName="Update JSON objects in MongoDB"
       srcParentType="clsmongoupdateobjects"
       trgParentID="3b880d9f-d03e-2f21-3566-aed31fd9c5ad"
+      trgParentName="Get a list of objects using a JSON filter condition B"
       trgParentType="clsmongogetobjects"
       router="junction"
       color="0000ff"
-      lblx="440"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lblx="420"
+      lbly="79"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -252,11 +256,11 @@
       </properties>
       <line>
         <point
-          x="350"
-          y="59" />
+          x="330"
+          y="79" />
         <point
-          x="530"
-          y="59" />
+          x="510"
+          y="79" />
       </line>
     </connection>
     <connection
@@ -265,14 +269,16 @@
       size="5"
       type=""
       srcParentID="5064ef9f-6a88-479d-9dd6-a5d73ec9e755"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="010e916a-9e1f-d689-3f0d-31c7d1d107b8"
+      trgParentName="Get a list of objects using a JSON filter condition A"
       trgParentType="clsmongogetobjects"
       router="junction"
       color="0000ff"
-      lblx="40"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lblx="20"
+      lbly="79"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -285,34 +291,34 @@
       </properties>
       <line>
         <point
-          x="-20"
-          y="59" />
+          x="-40"
+          y="79" />
         <point
-          x="100"
-          y="59" />
+          x="80"
+          y="79" />
       </line>
     </connection>
   </connections>
   <comments>
     <comment
       text="Before update"
-      x="40"
-      y="-20"
-      w="130"
+      x="20"
+      y="0"
+      w="110"
       h="30"
       id="b2f73b17-de4a-3b2e-3654-a197014770e6"
       fontColor="#FFFFFF"
       bgColor="#5B5B5B"
-      style="shape=label;perimeter=rectanglePerimeter;fontSize=15;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
+      style="shape=label;perimeter=rectanglePerimeter;fontSize=12;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
     <comment
       text="After update"
-      x="490"
-      y="-20"
-      w="120"
+      x="470"
+      y="0"
+      w="100"
       h="30"
       id="465c1848-8189-a6c5-dcaf-ac07f4a7fe97"
       fontColor="#FFFFFF"
       bgColor="#5B5B5B"
-      style="shape=label;perimeter=rectanglePerimeter;fontSize=15;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
+      style="shape=label;perimeter=rectanglePerimeter;fontSize=12;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
   </comments>
 </reveDiagram>
