@@ -11,12 +11,15 @@
       type="start"
       x="50"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,17 +54,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="5e3250c6-8fe9-d4d0-da3a-4a80cd6dd13b"
       name="Set properties"
       type="setboproperties"
-      x="300"
+      x="280"
       y="160"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -70,27 +72,27 @@
         <property
           name="type"><![CDATA[setboproperties]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
           name="itemName"><![CDATA[Set properties]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[setBOProperties]]></property>
         <property
           name="boName"><![CDATA[cDevBO.Person]]></property>
         <property
           name="boProps"><![CDATA[name~FlowWright|URL~https://www.flowwright.com/]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[setBOProperties - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[setBOProperties - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[BO Steps]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
   </figures>
@@ -101,14 +103,16 @@
       size="5"
       type=""
       srcParentID="4ece3f1d-157b-4d8a-9849-6ab68f4ef580"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="5e3250c6-8fe9-d4d0-da3a-4a80cd6dd13b"
+      trgParentName="Set properties"
       trgParentType="setboproperties"
       router="junction"
       color="0000ff"
-      lblx="195"
+      lblx="185"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -124,7 +128,7 @@
           x="90"
           y="180" />
         <point
-          x="300"
+          x="280"
           y="180" />
       </line>
     </connection>
