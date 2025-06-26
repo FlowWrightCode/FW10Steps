@@ -1,0 +1,207 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="9e9f9bcf-f847-404d-826b-3f163c7a654a">
+  <figures>
+    <figure
+      id="T0IRs7RkP4"
+      name="start"
+      type="start"
+      x="170"
+      y="100"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[xmlVar:String|cellValue:String]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="bdZUSHLpRN"
+      name="set Matrix Value"
+      type="setmatrixvalue"
+      x="330"
+      y="100"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[set Matrix Value]]></property>
+        <property
+          name="type"><![CDATA[setmatrixvalue]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[set Matrix Value]]></property>
+        <property
+          name="itemDescription"><![CDATA[setMatrixValue]]></property>
+        <property
+          name="xmlVariable"><![CDATA[Variable.xmlVar]]></property>
+        <property
+          name="columnName"><![CDATA[matrix]]></property>
+        <property
+          name="valueToAssign"><![CDATA[]]></property>
+        <property
+          name="rowIndex"><![CDATA[]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[setMatrixValue - Variable.initiatorName]]></property>
+        <property
+          name="LogMessage"><![CDATA[setMatrixValue - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="setMatrixValues"><![CDATA[1~element~Red|2~element~Blue|3~element~Green|4~element~Yellow]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="sb4G8pautc"
+      name="get Matrix Value"
+      type="getmatrixvalue"
+      x="490"
+      y="100"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[get Matrix Value]]></property>
+        <property
+          name="type"><![CDATA[getmatrixvalue]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[get Matrix Value]]></property>
+        <property
+          name="itemDescription"><![CDATA[getMatrixValue]]></property>
+        <property
+          name="columnName"><![CDATA[element]]></property>
+        <property
+          name="rowIndex"><![CDATA[3]]></property>
+        <property
+          name="valueVariable"><![CDATA[variable.cellValue]]></property>
+        <property
+          name="xmlVariable"><![CDATA[Variable.xmlVar]]></property>
+        <property
+          name="logMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[getMatrixValuen - Variable.initiatorName]]></property>
+        <property
+          name="LogMessage"><![CDATA[getMatrixValue - Variable.createdOn]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="d0b8178d-9c70-bd15-de58-4983cdca0366"
+      label=""
+      size="4"
+      type=""
+      srcParentID="bdZUSHLpRN"
+      srcParentName="set Matrix Value"
+      srcParentType="setmatrixvalue"
+      trgParentID="sb4G8pautc"
+      trgParentName="get Matrix Value"
+      trgParentType="getmatrixvalue"
+      router="junction"
+      color="3c78d8"
+      lblx="430"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="370"
+          y="120" />
+        <point
+          x="490"
+          y="120" />
+      </line>
+    </connection>
+    <connection
+      id="33baa697-0306-07dd-4140-8b4bb718d3bd"
+      label=""
+      size="4"
+      type=""
+      srcParentID="T0IRs7RkP4"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="bdZUSHLpRN"
+      trgParentName="set Matrix Value"
+      trgParentType="setmatrixvalue"
+      router="junction"
+      color="3c78d8"
+      lblx="270"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="210"
+          y="120" />
+        <point
+          x="330"
+          y="120" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
