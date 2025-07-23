@@ -63,6 +63,7 @@
       x="240"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -70,6 +71,8 @@
           name="label"><![CDATA[Manager 1 Approval]]></property>
         <property
           name="type"><![CDATA[task]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -146,30 +149,31 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="4ec71069-64da-c3a6-b852-488c583c76ad"
-      name="Update Variables"
+      name="Update Variables Completed"
       type="updatevariable"
       x="440"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Update Variables]]></property>
+          name="label"><![CDATA[Update Variables Completed]]></property>
         <property
           name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Update Variables]]></property>
+          name="itemName"><![CDATA[Update Variables Completed]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -188,30 +192,31 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="4cb1e14c-8f28-cfc1-e75f-84bf630c1af4"
-      name="Update Variables"
+      name="Update Variables Rejected"
       type="updatevariable"
       x="240"
       y="320"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Update Variables]]></property>
+          name="label"><![CDATA[Update Variables Rejected]]></property>
         <property
           name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Update Variables]]></property>
+          name="itemName"><![CDATA[Update Variables Rejected]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -230,8 +235,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -242,14 +245,16 @@
       size="4"
       type=""
       srcParentID="5384eebc-e617-f6e5-38e6-2d800089a59b"
+      srcParentName="Manager 1 Approval"
       srcParentType="task"
       trgParentID="4ec71069-64da-c3a6-b852-488c583c76ad"
+      trgParentName="Update Variables Completed"
       trgParentType="updatevariable"
       router="junction"
       color="129ce4"
       lblx="360"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -277,14 +282,16 @@
       size="4"
       type=""
       srcParentID="5384eebc-e617-f6e5-38e6-2d800089a59b"
+      srcParentName="Manager 1 Approval"
       srcParentType="task"
       trgParentID="4cb1e14c-8f28-cfc1-e75f-84bf630c1af4"
+      trgParentName="Update Variables Rejected"
       trgParentType="updatevariable"
       router="junction"
       color="129ce4"
       lblx="260"
       lbly="240"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -312,14 +319,16 @@
       size="4"
       type=""
       srcParentID="e14790a2-d063-461a-99d0-04fab1e6b651"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="5384eebc-e617-f6e5-38e6-2d800089a59b"
+      trgParentName="Manager 1 Approval"
       trgParentType="task"
       router="junction"
       color="3c78d8"
       lblx="160"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
