@@ -1,0 +1,145 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="979bee00-c29f-40bf-a58d-386968d0092c">
+  <figures>
+    <figure
+      id="79ccea2d-6832-4ff5-9c6c-506246e9193a"
+      name="start"
+      type="start"
+      x="40"
+      y="80"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varFileName:String|varFileExtn:String|varFileNameOnly:String|varFilePath:String|varFileSizeBytes:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="eeb4fcbb-7d54-00fb-e2af-daa46fc343ab"
+      name="Get file information"
+      type="getfileinfo"
+      x="240"
+      y="80"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Get file information]]></property>
+        <property
+          name="type"><![CDATA[getfileinfo]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Get file information]]></property>
+        <property
+          name="itemDescription"><![CDATA[getFileInfo]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\TempFiles\PDF Files\FW-Solutions-About-Business.pdf]]></property>
+        <property
+          name="varGlobalFileName"><![CDATA[variable.varFileName]]></property>
+        <property
+          name="varGlobalFileExt"><![CDATA[variable.varFileExtn]]></property>
+        <property
+          name="varGlobalNameOnly"><![CDATA[variable.varFileNameOnly]]></property>
+        <property
+          name="varGlobalFilePath"><![CDATA[variable.varFilePath]]></property>
+        <property
+          name="varGlobalFileSize"><![CDATA[variable.varFileSizeBytes]]></property>
+        <property
+          name="LogMessage"><![CDATA[getFileInfo - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[getFileInfo - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[File System Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="d26fcdf8-0393-e0e5-a5b9-352b0836fee7"
+      label=""
+      size="4"
+      type=""
+      srcParentID="79ccea2d-6832-4ff5-9c6c-506246e9193a"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="eeb4fcbb-7d54-00fb-e2af-daa46fc343ab"
+      trgParentName="Get file information"
+      trgParentType="getfileinfo"
+      router="junction"
+      color="3c78d8"
+      lblx="160"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="100" />
+        <point
+          x="240"
+          y="100" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
