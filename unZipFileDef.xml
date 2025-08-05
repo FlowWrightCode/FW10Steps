@@ -103,15 +103,15 @@
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[zipfile - Variable.initiatorName]]></property>
         <property
           name="zipFileVarGlobal"><![CDATA[Variable.zipFilePath]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[zipfile - Variable.createdOn]]></property>
         <property
           name="instState"><![CDATA[Engine Steps]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
   </figures>
@@ -122,14 +122,16 @@
       size="4"
       type=""
       srcParentID="71b127e7-168f-4cba-8cd6-920d731ac9e9"
+      srcParentName="ZipFile"
       srcParentType="zipfile"
       trgParentID="33cf2401-e8fc-41f2-b9e3-7c5d5b0821b1"
+      trgParentName="UnZipFile"
       trgParentType="unzipfile"
       router="junction"
       color="3c78d8"
       lblx="225"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -155,14 +157,16 @@
       size="4"
       type=""
       srcParentID="7d5996d6-ce63-42bc-a9ba-4144977d81a9"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="71b127e7-168f-4cba-8cd6-920d731ac9e9"
+      trgParentName="ZipFile"
       trgParentType="zipfile"
       router="junction"
       color="3c78d8"
       lblx="65"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
