@@ -1,0 +1,214 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="82ab4118-b88d-4be3-a750-beb2f8d39c84">
+  <figures>
+    <figure
+      id="769c9bfa-1d8b-45a4-95b9-b19cf640e20c"
+      name="start"
+      type="start"
+      x="0"
+      y="160"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varString:String|avgRatio:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="18bb97a5-3249-94b2-b434-790f37424f68"
+      name="Update Variables"
+      type="updatevariable"
+      x="200"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="updateVariables"><![CDATA[]]></property>
+        <property
+          name="variableName"><![CDATA[variable.varString]]></property>
+        <property
+          name="variableValue"><![CDATA[Apple]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c55c4960-3ed7-793e-27ba-8acd310be79d"
+      name="Compare strings using Fuzzy compare"
+      type="fuzzystringcompare"
+      x="430"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Compare strings using Fuzzy compare]]></property>
+        <property
+          name="type"><![CDATA[fuzzystringcompare]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Compare strings using Fuzzy compare]]></property>
+        <property
+          name="itemDescription"><![CDATA[fuzzyStringCompare]]></property>
+        <property
+          name="stringList"><![CDATA[Way Up High in an Apple Tree|Have Well|Apply|Aspel|Apple|People]]></property>
+        <property
+          name="ratio"><![CDATA[100]]></property>
+        <property
+          name="varGlobalStoreRatio"><![CDATA[variable.avgRatio]]></property>
+        <property
+          name="LogMessage"><![CDATA[fuzzyStringCompare - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[fuzzyStringCompare - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Fuzzy Logic Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="5f1a7587-0ffd-e280-f336-60c9b8984704"
+      label=""
+      size="4"
+      type=""
+      srcParentID="18bb97a5-3249-94b2-b434-790f37424f68"
+      srcParentName="Update Variables"
+      srcParentType="updatevariable"
+      trgParentID="c55c4960-3ed7-793e-27ba-8acd310be79d"
+      trgParentName="Compare strings using Fuzzy compare"
+      trgParentType="fuzzystringcompare"
+      router="junction"
+      color="3c78d8"
+      lblx="335"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="180" />
+        <point
+          x="430"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="50a7f965-1743-a889-0627-7e7ebaa15710"
+      label=""
+      size="4"
+      type=""
+      srcParentID="769c9bfa-1d8b-45a4-95b9-b19cf640e20c"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="18bb97a5-3249-94b2-b434-790f37424f68"
+      trgParentName="Update Variables"
+      trgParentType="updatevariable"
+      router="junction"
+      color="3c78d8"
+      lblx="120"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="40"
+          y="180" />
+        <point
+          x="200"
+          y="180" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
