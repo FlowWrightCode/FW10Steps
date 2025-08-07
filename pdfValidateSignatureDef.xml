@@ -1,0 +1,121 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="bc4dc7d9-32fc-4eff-a0e6-3da935881d08">
+  <figures>
+    <figure
+      id="6724c81e-6f31-4878-8be4-cec394bf62f5"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="672ce18a-7aca-8559-00e0-7eab7575a97e"
+      name="PDF Validate Signature"
+      type="pdfvalidatesignature"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[PDF Validate Signature]]></property>
+        <property
+          name="type"><![CDATA[pdfvalidatesignature]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[PDF Validate Signature]]></property>
+        <property
+          name="itemDescription"><![CDATA[pdfValidateSignature]]></property>
+        <property
+          name="inputFilePath"><![CDATA[C:\Temp\sample01new.pdf]]></property>
+        <property
+          name="LogMessage"><![CDATA[pdfValidateSignature - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[pdfValidateSignature - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[PDF Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="515e1e3a-314a-d86a-f2ac-9d462e5aa541"
+      label=""
+      size="4"
+      type=""
+      srcParentID="6724c81e-6f31-4878-8be4-cec394bf62f5"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="672ce18a-7aca-8559-00e0-7eab7575a97e"
+      trgParentName="PDF Validate Signature"
+      trgParentType="pdfvalidatesignature"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
