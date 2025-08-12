@@ -23,19 +23,19 @@
         <property
           name="itemName"><![CDATA[Contains]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[Contains]]></property>
         <property
           name="stringText"><![CDATA[@gmail.com]]></property>
         <property
           name="listOfStrings"><![CDATA[test@gmail.com]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[Contains - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[Contains - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Engine]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
     <figure
@@ -56,7 +56,7 @@
         <property
           name="itemName"><![CDATA[Route to Marketing]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[task]]></property>
         <property
           name="routeTo"><![CDATA[Variable.initiatorID]]></property>
         <property
@@ -114,13 +114,17 @@
         <property
           name="userCanReAssign"><![CDATA[no]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[task - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[task - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Task Step]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="useFullDuration"><![CDATA[]]></property>
+        <property
+          name="commentRequired"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
@@ -141,17 +145,17 @@
         <property
           name="itemName"><![CDATA[Abort instance]]></property>
         <property
-          name="itemDescription"><![CDATA[]]></property>
+          name="itemDescription"><![CDATA[abortInstance]]></property>
         <property
           name="instanceID"><![CDATA[]]></property>
         <property
-          name="LogMessage"><![CDATA[]]></property>
+          name="LogMessage"><![CDATA[abortInstance - Variable.createdOn]]></property>
         <property
-          name="documentation"><![CDATA[]]></property>
+          name="documentation"><![CDATA[abortInstance - Variable.initiatorName]]></property>
         <property
-          name="instState"><![CDATA[]]></property>
+          name="instState"><![CDATA[Engine Steps]]></property>
         <property
-          name="instPercent"><![CDATA[]]></property>
+          name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
     <figure
@@ -219,14 +223,16 @@
       size="5"
       type=""
       srcParentID="3eead952-33eb-60d5-4789-cf2848aaa4a5"
+      srcParentName="Contains"
       srcParentType="contains"
       trgParentID="7c7daea7-f997-6131-2bd8-6cb43e58f605"
+      trgParentName="Abort instance"
       trgParentType="abortinstance"
       router="junction"
       color="ff0000"
       lblx="260"
-      lbly="159"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
+      lbly="160"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -254,14 +260,16 @@
       size="5"
       type=""
       srcParentID="3eead952-33eb-60d5-4789-cf2848aaa4a5"
+      srcParentName="Contains"
       srcParentType="contains"
       trgParentID="efd3578f-79b6-1d74-7017-ac1853f41117"
+      trgParentName="Route to Marketing"
       trgParentType="task"
       router="junction"
       color="00ff00"
       lblx="345"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -289,14 +297,16 @@
       size="5"
       type=""
       srcParentID="3ee2bf0a-4164-400d-8e76-49f5c48f39b0"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="3eead952-33eb-60d5-4789-cf2848aaa4a5"
+      trgParentName="Contains"
       trgParentType="contains"
       router="junction"
       color="0000ff"
       lblx="169"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
