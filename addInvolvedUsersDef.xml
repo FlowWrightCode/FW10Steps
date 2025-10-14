@@ -97,6 +97,10 @@
           name="roles"><![CDATA[c3a8e9a5-fec0-43f1-aab0-82bf2b0e333c;]]></property>
         <property
           name="users"><![CDATA[a2b747b3-8823-4874-b3d5-b75deca6e3ce;]]></property>
+        <property
+          name="itemType"><![CDATA[WorkflowInstance]]></property>
+        <property
+          name="itemId"><![CDATA[Variable.instanceID]]></property>
       </properties>
     </figure>
     <figure
