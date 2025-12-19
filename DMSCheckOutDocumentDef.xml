@@ -1,0 +1,221 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="de8c5b79-6280-414a-81a7-8c953b18b471">
+  <figures>
+    <figure
+      id="b79d0620-9dbb-4560-b8d3-a988a9a5412c"
+      name="start"
+      type="start"
+      x="60"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varDocID:String|varRevisionDocID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a3818fbc-9895-fc6d-e8c2-1c46ed48d0b7"
+      name="Create Document"
+      type="dmscreatedocument"
+      x="250"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Create Document]]></property>
+        <property
+          name="type"><![CDATA[dmscreatedocument]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Create Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSCreateDocument]]></property>
+        <property
+          name="DMSFolderID"><![CDATA[Selection~7d859dc3-3aef-4965-b7d6-97358810ed7b~94d6319b-d3ea-464c-b5fe-6e15f04258c4]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\DocReport\output\BusinessDocumentRequirement-Citizen.docx]]></property>
+        <property
+          name="documentID"><![CDATA[variable.varDocID]]></property>
+        <property
+          name="documentName"><![CDATA[BDR-Citizen]]></property>
+        <property
+          name="description"><![CDATA[Business Document Requirement - Citizen]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSCreateDocument - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSCreateDocument - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="7778a051-a096-675c-8303-533bb1f53aac"
+      name="Checkout Document"
+      type="dmscheckoutdocument"
+      x="430"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Checkout Document]]></property>
+        <property
+          name="type"><![CDATA[dmscheckoutdocument]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Checkout Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSCheckOutDocument]]></property>
+        <property
+          name="documentID"><![CDATA[Variable.varDocID]]></property>
+        <property
+          name="docRevisionID"><![CDATA[variable.varRevisionDocID]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSCheckOutDocument - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSCheckOutDocument - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="fd0e2053-855f-5c30-e56b-5aa478d875aa"
+      label=""
+      size="4"
+      type=""
+      srcParentID="b79d0620-9dbb-4560-b8d3-a988a9a5412c"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="a3818fbc-9895-fc6d-e8c2-1c46ed48d0b7"
+      trgParentName="Create Document"
+      trgParentType="dmscreatedocument"
+      router="junction"
+      color="3c78d8"
+      lblx="175"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="100"
+          y="59" />
+        <point
+          x="250"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="b9edcbad-e8b4-0351-2210-e0325b39fc19"
+      label=""
+      size="4"
+      type=""
+      srcParentID="a3818fbc-9895-fc6d-e8c2-1c46ed48d0b7"
+      srcParentName="Create Document"
+      srcParentType="dmscreatedocument"
+      trgParentID="7778a051-a096-675c-8303-533bb1f53aac"
+      trgParentName="Checkout Document"
+      trgParentType="dmscheckoutdocument"
+      router="junction"
+      color="3c78d8"
+      lblx="360"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="59" />
+        <point
+          x="430"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
