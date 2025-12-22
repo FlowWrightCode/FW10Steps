@@ -1,0 +1,287 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="35eb9776-3dce-4b40-8fd1-d63fe2c03cfc">
+  <figures>
+    <figure
+      id="0a31a5cb-0f99-4af2-9846-02eb4e5d4850"
+      name="start"
+      type="start"
+      x="40"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varFolderID:String|varFolderLink:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d6c64ac9-1f77-5126-2ff8-dc51060c3a2d"
+      name="Check if folder exist"
+      type="dmsfolderexist"
+      x="240"
+      y="120"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Check if folder exist]]></property>
+        <property
+          name="type"><![CDATA[dmsfolderexist]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Check if folder exist]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSFolderExist]]></property>
+        <property
+          name="DMSFolderID"><![CDATA[Selection~7d859dc3-3aef-4965-b7d6-97358810ed7b~8012b2c9-de33-44c9-a77d-72cb4efa3b31]]></property>
+        <property
+          name="FolderName"><![CDATA[New England]]></property>
+        <property
+          name="existingFolderId"><![CDATA[variable.varFolderID]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSFolderExist - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSFolderExist - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="daad04cb-eacf-6c13-7798-d7fc9bb98a9a"
+      name="Get Folder Link"
+      type="dmsgetfolderlink"
+      x="440"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Get Folder Link]]></property>
+        <property
+          name="type"><![CDATA[dmsgetfolderlink]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Get Folder Link]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSGetFolderLink]]></property>
+        <property
+          name="selectedFolder"><![CDATA[VarGlobal~~variable.varFolderID]]></property>
+        <property
+          name="varGlobalLink"><![CDATA[variable.varFolderLink]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSGetFolderLink - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSGetFolderLink - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4c19331c-92c3-fb43-46f0-a232d7b88795"
+      name="Place Holder"
+      type="placeholder"
+      x="240"
+      y="280"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="07f86c55-11d6-4405-fd80-87c6183709cd"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="d6c64ac9-1f77-5126-2ff8-dc51060c3a2d"
+      srcParentName="Check if folder exist"
+      srcParentType="dmsfolderexist"
+      trgParentID="daad04cb-eacf-6c13-7798-d7fc9bb98a9a"
+      trgParentName="Get Folder Link"
+      trgParentType="dmsgetfolderlink"
+      router="junction"
+      color="00ff00"
+      lblx="360"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="140" />
+        <point
+          x="440"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="1134d460-9e18-91c2-f3c8-f2f2b010e95b"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="d6c64ac9-1f77-5126-2ff8-dc51060c3a2d"
+      srcParentName="Check if folder exist"
+      srcParentType="dmsfolderexist"
+      trgParentID="4c19331c-92c3-fb43-46f0-a232d7b88795"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="260"
+      lbly="220"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
+          y="160" />
+        <point
+          x="260"
+          y="280" />
+      </line>
+    </connection>
+    <connection
+      id="9dfbc493-3114-d049-8ab7-c353fdf21d25"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0a31a5cb-0f99-4af2-9846-02eb4e5d4850"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="d6c64ac9-1f77-5126-2ff8-dc51060c3a2d"
+      trgParentName="Check if folder exist"
+      trgParentType="dmsfolderexist"
+      router="junction"
+      color="3c78d8"
+      lblx="160"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="140" />
+        <point
+          x="240"
+          y="140" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
