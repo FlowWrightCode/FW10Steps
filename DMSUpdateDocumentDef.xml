@@ -1,0 +1,380 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="e8ad2ba9-bb91-42cf-96d8-0bafae5703b5">
+  <figures>
+    <figure
+      id="b79d0620-9dbb-4560-b8d3-a988a9a5412c"
+      name="start"
+      type="start"
+      x="-60"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varDocID:String|varRevisionDocID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="599c950d-c0a6-51e5-6101-e1bc667d19b7"
+      name="Checkin Document"
+      type="dmscheckindocument"
+      x="660"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Checkin Document]]></property>
+        <property
+          name="type"><![CDATA[dmscheckindocument]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Checkin Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSCheckInDocument]]></property>
+        <property
+          name="documentID"><![CDATA[Variable.varDocID]]></property>
+        <property
+          name="comment"><![CDATA[Document Updated with New One]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSCheckInDocument - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSCheckInDocument - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="7778a051-a096-675c-8303-533bb1f53aac"
+      name="Checkout Document"
+      type="dmscheckoutdocument"
+      x="280"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Checkout Document]]></property>
+        <property
+          name="type"><![CDATA[dmscheckoutdocument]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Checkout Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSCheckOutDocument]]></property>
+        <property
+          name="documentID"><![CDATA[Variable.varDocID]]></property>
+        <property
+          name="docRevisionID"><![CDATA[variable.varRevisionDocID]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSCheckOutDocument - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSCheckOutDocument - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="804a461e-0cf1-f82f-39b9-16af5d365b33"
+      name="Update Variables"
+      type="updatevariable"
+      x="90"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variableName"><![CDATA[Variable.varDocID]]></property>
+        <property
+          name="variableValue"><![CDATA[a4a20650-0c5d-4ca4-ab44-0b5aff7da7ec]]></property>
+        <property
+          name="updateVariables"><![CDATA[]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c2c5d5a6-bc2f-68b9-d00e-5d22242a9fb4"
+      name="Update Document"
+      type="dmsupdatedocument"
+      x="460"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Document]]></property>
+        <property
+          name="type"><![CDATA[dmsupdatedocument]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSUpdateDocument]]></property>
+        <property
+          name="documentID"><![CDATA[Variable.varDocID]]></property>
+        <property
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\DocReport\output\BusinessDocumentRequirement-CRISIL-NEW.docx]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSUpdateDocument - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSUpdateDocument - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="fd0e2053-855f-5c30-e56b-5aa478d875aa"
+      label=""
+      size="4"
+      type=""
+      srcParentID="b79d0620-9dbb-4560-b8d3-a988a9a5412c"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="804a461e-0cf1-f82f-39b9-16af5d365b33"
+      trgParentName="Update Variables"
+      trgParentType="updatevariable"
+      router="junction"
+      color="3c78d8"
+      lblx="35"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="-20"
+          y="59" />
+        <point
+          x="90"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="7ce86f9f-7ab6-ba73-7340-5dedec10384e"
+      label=""
+      size="4"
+      type=""
+      srcParentID="c2c5d5a6-bc2f-68b9-d00e-5d22242a9fb4"
+      srcParentName="Update Document"
+      srcParentType="dmsupdatedocument"
+      trgParentID="599c950d-c0a6-51e5-6101-e1bc667d19b7"
+      trgParentName="Checkin Document"
+      trgParentType="dmscheckindocument"
+      router="junction"
+      color="0000ff"
+      lblx="580"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="500"
+          y="59" />
+        <point
+          x="660"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="b9edcbad-e8b4-0351-2210-e0325b39fc19"
+      label=""
+      size="4"
+      type=""
+      srcParentID="804a461e-0cf1-f82f-39b9-16af5d365b33"
+      srcParentName="Update Variables"
+      srcParentType="updatevariable"
+      trgParentID="7778a051-a096-675c-8303-533bb1f53aac"
+      trgParentName="Checkout Document"
+      trgParentType="dmscheckoutdocument"
+      router="junction"
+      color="3c78d8"
+      lblx="205"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="130"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="ab643313-dfd6-406d-e932-191b5af98e36"
+      label=""
+      size="4"
+      type=""
+      srcParentID="7778a051-a096-675c-8303-533bb1f53aac"
+      srcParentName="Checkout Document"
+      srcParentType="dmscheckoutdocument"
+      trgParentID="c2c5d5a6-bc2f-68b9-d00e-5d22242a9fb4"
+      trgParentName="Update Document"
+      trgParentType="dmsupdatedocument"
+      router="junction"
+      color="3c78d8"
+      lblx="390"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="320"
+          y="59" />
+        <point
+          x="460"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments>
+    <comment
+      text="Replace the old with a new document."
+      x="355"
+      y="-30"
+      w="250"
+      h="30"
+      id="eb25df2b-f396-4b21-4b7b-95547d5b2dfe"
+      fontColor="#FFFFFF"
+      bgColor="#5B5B5B"
+      style="shape=label;perimeter=rectanglePerimeter;fontSize=12;fontFamily=Poppins;align=left;verticalAlign=top;fillColor=#5B5B5B;fontColor=#FFFFFF;resizable=0;spacing=2;spacingLeft=5;spacingBottom=3;spacingTop=2;spacingRight=0;rounded=1;labelPosition=center;verticalLabelPosition=middle;perimeterSpacing=3;editable=0;html=1;aspect=fixed;whiteSpace=wrapresizable=0;points=[];autosize=1;connectable=0;gradientColor=none;strokeColor=none" />
+  </comments>
+</reveDiagram>
