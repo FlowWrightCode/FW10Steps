@@ -1,0 +1,125 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="ed6d570f-f13a-4792-acdb-3eb9d058c9be">
+  <figures>
+    <figure
+      id="d4c4dc8e-c2a6-4ce0-aa72-389deaccf22e"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varDocList:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9743ce4d-f737-5344-2ff7-d02bfb591d37"
+      name="Get Documents"
+      type="dmsgetdocuments"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Get Documents]]></property>
+        <property
+          name="type"><![CDATA[dmsgetdocuments]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Get Documents]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSGetDocuments]]></property>
+        <property
+          name="DMSFolderID"><![CDATA[Selection~7d859dc3-3aef-4965-b7d6-97358810ed7b~94d6319b-d3ea-464c-b5fe-6e15f04258c4]]></property>
+        <property
+          name="documentsList"><![CDATA[variable.varDocList]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSGetDocuments - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSGetDocuments - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="153c4d0f-ecf6-9957-fa9f-d989f37b3235"
+      label=""
+      size="4"
+      type=""
+      srcParentID="d4c4dc8e-c2a6-4ce0-aa72-389deaccf22e"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="9743ce4d-f737-5344-2ff7-d02bfb591d37"
+      trgParentName="Get Documents"
+      trgParentType="dmsgetdocuments"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
