@@ -1,0 +1,206 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="45bdcfd5-74db-406e-b6e8-afeba326e006">
+  <figures>
+    <figure
+      id="e4fc8385-cdd0-4f04-a467-2aa104d51428"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varDocumentID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="27997819-8a44-43d8-a625-1d0bae314291"
+      name="Update Variables"
+      type="updatevariable"
+      x="240"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[updateVariable]]></property>
+        <property
+          name="variableName"><![CDATA[Variable.varDocumentID]]></property>
+        <property
+          name="variableValue"><![CDATA[24f8ea50-d10f-41f7-ae82-02590a6711ca]]></property>
+        <property
+          name="updateVariables"><![CDATA[]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[updateVariable - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[updateVariable - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="229628a7-1caa-8e44-5575-c6595f52f01f"
+      name="Set Document Permissions"
+      type="dmssetdocumentpermissions"
+      x="440"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Set Document Permissions]]></property>
+        <property
+          name="type"><![CDATA[dmssetdocumentpermissions]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Set Document Permissions]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSSetDocumentPermissions]]></property>
+        <property
+          name="documentID"><![CDATA[Variable.varDocumentID]]></property>
+        <property
+          name="DMSPermissions"><![CDATA[{&#xA;    "Users": [&#xA;        {&#xA;            "Id": "9461be43-90dc-4fc5-bac7-3de633148879",&#xA;            "Name": "Alpha-TestUser-1",&#xA;            "Permissions": {&#xA;                "PermID": null,&#xA;                "View": true,&#xA;                "Download": false,&#xA;                "Remove": false,&#xA;                "Update": false,&#xA;                "Archive": false,&#xA;                "Permission": false&#xA;            }&#xA;        }&#xA;    ],&#xA;    "Roles": [&#xA;        {&#xA;            "Id": "c3a8e9a5-fec0-43f1-aab0-82bf2b0e333c",&#xA;            "Name": "Alpha User Roles",&#xA;            "Permissions": {&#xA;                "PermID": null,&#xA;                "View": true,&#xA;                "Download": false,&#xA;                "Remove": false,&#xA;                "Update": false,&#xA;                "Archive": false,&#xA;                "Permission": true&#xA;            }&#xA;        }&#xA;    ]&#xA;}]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSSetDocumentPermissions - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSSetDocumentPermissions - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="74b93acb-b14d-147e-b08c-476915d6cb7b"
+      label=""
+      size="4"
+      type=""
+      srcParentID="27997819-8a44-43d8-a625-1d0bae314291"
+      srcParentName="Update Variables"
+      srcParentType="updatevariable"
+      trgParentID="229628a7-1caa-8e44-5575-c6595f52f01f"
+      trgParentName="Set Document Permissions"
+      trgParentType="dmssetdocumentpermissions"
+      router="junction"
+      color="3c78d8"
+      lblx="360"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="59" />
+        <point
+          x="440"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="6d886003-af0e-c694-abcb-3373ebb777e5"
+      label=""
+      size="4"
+      type=""
+      srcParentID="e4fc8385-cdd0-4f04-a467-2aa104d51428"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="27997819-8a44-43d8-a625-1d0bae314291"
+      trgParentName="Update Variables"
+      trgParentType="updatevariable"
+      router="junction"
+      color="3c78d8"
+      lblx="160"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="240"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
