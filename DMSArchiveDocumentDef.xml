@@ -1,0 +1,204 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="4691d756-bb48-4292-95f7-26924c0e36ac">
+  <figures>
+    <figure
+      id="22dad094-7634-4148-8423-e58c8c69f31b"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varDocumentID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a642f7c5-a755-13eb-cb78-2eabe65e6890"
+      name="Archive Document"
+      type="dmsarchivedocument"
+      x="420"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Archive Document]]></property>
+        <property
+          name="type"><![CDATA[dmsarchivedocument]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Archive Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[DMSArchiveDocument]]></property>
+        <property
+          name="documentID"><![CDATA[Variable.varDocumentID]]></property>
+        <property
+          name="LogMessage"><![CDATA[DMSArchiveDocument - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DMSArchiveDocument - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DMS Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="45f1194d-269f-61ec-eb0e-509806cb399b"
+      name="Update Variables"
+      type="updatevariable"
+      x="230"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[updatevariable]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[updateVariable]]></property>
+        <property
+          name="variableName"><![CDATA[Variable.varDocumentID]]></property>
+        <property
+          name="variableValue"><![CDATA[e7426ef4-92f0-4789-a9ba-251aec5778ea]]></property>
+        <property
+          name="updateVariables"><![CDATA[]]></property>
+        <property
+          name="hasExpression"><![CDATA[no]]></property>
+        <property
+          name="LogMessage"><![CDATA[updateVariable - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[updateVariable - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="31dbcbb1-e20e-58fc-0d83-8585eaa3fa60"
+      label=""
+      size="4"
+      type=""
+      srcParentID="45f1194d-269f-61ec-eb0e-509806cb399b"
+      srcParentName="Update Variables"
+      srcParentType="updatevariable"
+      trgParentID="a642f7c5-a755-13eb-cb78-2eabe65e6890"
+      trgParentName="Archive Document"
+      trgParentType="dmsarchivedocument"
+      router="junction"
+      color="3c78d8"
+      lblx="345"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="59" />
+        <point
+          x="420"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="05890ae3-899a-de1d-d19f-fcd8190d9d4d"
+      label=""
+      size="4"
+      type=""
+      srcParentID="22dad094-7634-4148-8423-e58c8c69f31b"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="45f1194d-269f-61ec-eb0e-509806cb399b"
+      trgParentName="Update Variables"
+      trgParentType="updatevariable"
+      router="junction"
+      color="3c78d8"
+      lblx="155"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="230"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
