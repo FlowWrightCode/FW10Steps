@@ -213,6 +213,8 @@
           name="completeDef"><![CDATA[]]></property>
         <property
           name="completedef"><![CDATA[]]></property>
+        <property
+          name="defaultProcessUser"><![CDATA[35635c17-06b5-455b-a1e6-51507c1e971f;]]></property>
       </properties>
     </figure>
   </figures>
