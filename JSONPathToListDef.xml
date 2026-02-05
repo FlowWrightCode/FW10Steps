@@ -1,0 +1,219 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="db968ac8-cb48-4a36-bb03-0a4ef13b199f">
+  <figures>
+    <figure
+      id="a58cadbc-bb2b-4e59-a4d1-0e4df9e2fa4c"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[json:String|list:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="eab5cb28-2fa0-33d5-875c-ccd774d4016b"
+      name="Execute SQL Statement"
+      type="executesql"
+      x="240"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Execute SQL Statement]]></property>
+        <property
+          name="type"><![CDATA[executesql]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Execute SQL Statement]]></property>
+        <property
+          name="itemDescription"><![CDATA[ExecuteSQL]]></property>
+        <property
+          name="connectionString"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
+        <property
+          name="changeDatabase"><![CDATA[]]></property>
+        <property
+          name="sqlStatement"><![CDATA[select top 10 deUserID, deExternalUserFullName from deUsers where deAdmin = 1 and deExternalUserFullName like '%adm%']]></property>
+        <property
+          name="variableName"><![CDATA[Variable.json]]></property>
+        <property
+          name="resultFormat"><![CDATA[JSON]]></property>
+        <property
+          name="singleResult"><![CDATA[no]]></property>
+        <property
+          name="commandTimeOut"><![CDATA[]]></property>
+        <property
+          name="params"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[ExecuteSQL - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[ExecuteSQL - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SQL Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c68b5331-138f-7d33-1c70-3c37957550f5"
+      name="JSON items to list"
+      type="jsonpathtolist"
+      x="440"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[JSON items to list]]></property>
+        <property
+          name="type"><![CDATA[jsonpathtolist]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[JSON items to list]]></property>
+        <property
+          name="itemDescription"><![CDATA[JSONPathToList]]></property>
+        <property
+          name="varGlobalHoldingJson"><![CDATA[Variable.json]]></property>
+        <property
+          name="jsonPathExp"><![CDATA[$.Row[*].DEUSERID]]></property>
+        <property
+          name="separator"><![CDATA[]]></property>
+        <property
+          name="varGlobalToStoreList"><![CDATA[Variable.list]]></property>
+        <property
+          name="LogMessage"><![CDATA[JSONPathToList - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[JSONPathToList - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[WebServices Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="d31674a0-9048-9eb9-c9e9-a569da97d576"
+      label=""
+      size="3"
+      type=""
+      srcParentID="eab5cb28-2fa0-33d5-875c-ccd774d4016b"
+      srcParentName="Execute SQL Statement"
+      srcParentType="executesql"
+      trgParentID="c68b5331-138f-7d33-1c70-3c37957550f5"
+      trgParentName="JSON items to list"
+      trgParentType="jsonpathtolist"
+      router="junction"
+      color="129ce4"
+      lblx="360"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="59" />
+        <point
+          x="440"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="717f0d4c-b90e-0d55-4e2c-db88eba02d8a"
+      label=""
+      size="3"
+      type=""
+      srcParentID="a58cadbc-bb2b-4e59-a4d1-0e4df9e2fa4c"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="eab5cb28-2fa0-33d5-875c-ccd774d4016b"
+      trgParentName="Execute SQL Statement"
+      trgParentType="executesql"
+      router="junction"
+      color="129ce4"
+      lblx="160"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="240"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
