@@ -1,0 +1,129 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="4f1e0278-cfd9-4345-850e-94ee2a9d55c6">
+  <figures>
+    <figure
+      id="0e8cf4de-94e2-4849-a1e6-4d5299ac236a"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8da53856-ebc0-57e1-ca8e-a961dd2173df"
+      name="Create Group"
+      type="clscreateadgroup"
+      x="250"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Create Group]]></property>
+        <property
+          name="type"><![CDATA[clscreateadgroup]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Create Group]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsCreateADGroup]]></property>
+        <property
+          name="ldapConn"><![CDATA[46b49f7e-8fb0-446c-8f03-15e557cbbc4e]]></property>
+        <property
+          name="groupName"><![CDATA[Prototype Demo]]></property>
+        <property
+          name="description"><![CDATA[Prototype Demo]]></property>
+        <property
+          name="parentGroupName"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsCreateADGroup - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsCreateADGroup - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Active Directory Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="ab32b685-eed8-352a-fef9-695a9550c137"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0e8cf4de-94e2-4849-a1e6-4d5299ac236a"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="8da53856-ebc0-57e1-ca8e-a961dd2173df"
+      trgParentName="Create Group"
+      trgParentType="clscreateadgroup"
+      router="junction"
+      color="3c78d8"
+      lblx="165"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="250"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
