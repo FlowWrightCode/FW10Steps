@@ -60,7 +60,7 @@
       id="e1bf2be1-89ca-ad7d-0bf3-c29eed306138"
       name="Generate barcode"
       type="generatebarcode"
-      x="260"
+      x="290"
       y="39"
       isValid="true"
       isLocked="False">
@@ -76,13 +76,13 @@
         <property
           name="itemDescription"><![CDATA[generateBarCode]]></property>
         <property
-          name="barcodeText"><![CDATA[Sample]]></property>
+          name="barcodeText"><![CDATA[https://www.flowwright.com/]]></property>
         <property
           name="barcodeType"><![CDATA[QR]]></property>
         <property
           name="fileFormat"><![CDATA[Jpeg]]></property>
         <property
-          name="textLocation"><![CDATA[Above]]></property>
+          name="textLocation"><![CDATA[Below]]></property>
         <property
           name="height"><![CDATA[300]]></property>
         <property
@@ -99,24 +99,32 @@
           name="instState"><![CDATA[Barcodes Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="barcodeLabel"><![CDATA[FlowWright Website]]></property>
+        <property
+          name="barcodeColor"><![CDATA[#ff0000]]></property>
+        <property
+          name="barcodeTextColor"><![CDATA[#000000]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
     <connection
-      id="cccce6eb-07f6-cffb-0d5d-2224e182572f"
+      id="3c7f3f54-9767-31e7-57a9-cd8f97f31c35"
       label=""
-      size="5"
+      size="4"
       type=""
       srcParentID="a4d74b84-7fcd-4314-82a8-b67584a941d5"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="e1bf2be1-89ca-ad7d-0bf3-c29eed306138"
+      trgParentName="Generate barcode"
       trgParentType="generatebarcode"
       router="junction"
-      color="0000ff"
-      lblx="170"
+      color="3c78d8"
+      lblx="185"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -132,7 +140,7 @@
           x="80"
           y="59" />
         <point
-          x="260"
+          x="290"
           y="59" />
       </line>
     </connection>
