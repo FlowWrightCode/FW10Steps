@@ -74,7 +74,7 @@
         <property
           name="userName"><![CDATA[FWDemoUser-01]]></property>
         <property
-          name="groupNames"><![CDATA[Prototype Demo]]></property>
+          name="groupNames"><![CDATA[Prototype Demo|Alpha Prototype|Beta Prototype|DFM and Refinement|Pilot Phase|Production Setup]]></property>
         <property
           name="LogMessage"><![CDATA[clsAddADUserToGroups - Variable.createdOn]]></property>
         <property
