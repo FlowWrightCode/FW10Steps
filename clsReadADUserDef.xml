@@ -1,0 +1,127 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="411e7558-8f3b-42cb-970c-f3e787672ad8">
+  <figures>
+    <figure
+      id="6d462a72-fe1e-4eb7-b555-d79b4366f8a3"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varName:String|varEmail:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="17e4bc3e-8ef5-ea9a-3953-f359765af154"
+      name="Read User"
+      type="clsreadaduser"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Read User]]></property>
+        <property
+          name="type"><![CDATA[clsreadaduser]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Read User]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsReadADUser]]></property>
+        <property
+          name="ldapConn"><![CDATA[46b49f7e-8fb0-446c-8f03-15e557cbbc4e]]></property>
+        <property
+          name="userName"><![CDATA[FWDemoUser-06]]></property>
+        <property
+          name="userAttributes"><![CDATA[variable.varName~givenName|variable.varEmail~mail]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsReadADUser - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsReadADUser - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Active Directory Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="be707ce7-7f80-f395-0ace-1dc9891e3bd5"
+      label=""
+      size="4"
+      type=""
+      srcParentID="6d462a72-fe1e-4eb7-b555-d79b4366f8a3"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="17e4bc3e-8ef5-ea9a-3953-f359765af154"
+      trgParentName="Read User"
+      trgParentType="clsreadaduser"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
