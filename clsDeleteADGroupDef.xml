@@ -1,0 +1,137 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="a6eec7d6-6f79-47a2-8db7-90006e57dda8">
+  <figures>
+    <figure
+      id="94592faf-6607-4330-98c1-fefbbf4ffe4e"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="2d5a1367-04fd-7e7f-9b00-5a53e534a541"
+      name="Delete Group"
+      type="clsdeleteadgroup"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Delete Group]]></property>
+        <property
+          name="type"><![CDATA[clsdeleteadgroup]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Delete Group]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsDeleteADGroup]]></property>
+        <property
+          name="ldapConn"><![CDATA[46b49f7e-8fb0-446c-8f03-15e557cbbc4e]]></property>
+        <property
+          name="groupName"><![CDATA[Remove This Group]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsDeleteADGroup - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsDeleteADGroup - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Active Directory Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="e63c7a20-9a52-5ad9-3cdb-3ae79ca5ae88"
+      label=""
+      size="4"
+      type=""
+      srcParentID="94592faf-6607-4330-98c1-fefbbf4ffe4e"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="2d5a1367-04fd-7e7f-9b00-5a53e534a541"
+      trgParentName="Delete Group"
+      trgParentType="clsdeleteadgroup"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
