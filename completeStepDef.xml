@@ -25,11 +25,11 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[datevariable:Date|returnValue:String]]></property>
+          name="variables"><![CDATA[]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
-          name="globals"><![CDATA[dateglobal:Date]]></property>
+          name="globals"><![CDATA[]]></property>
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
@@ -78,9 +78,9 @@
         <property
           name="priority"><![CDATA[Low]]></property>
         <property
-          name="daysToComplete"><![CDATA[1]]></property>
+          name="daysToComplete"><![CDATA[10]]></property>
         <property
-          name="expireType"><![CDATA[days]]></property>
+          name="expireType"><![CDATA[minutes]]></property>
         <property
           name="includeWeekends"><![CDATA[0]]></property>
         <property
@@ -120,9 +120,9 @@
         <property
           name="emailCCList"><![CDATA[]]></property>
         <property
-          name="useFullDuration"><![CDATA[]]></property>
+          name="useFullDuration"><![CDATA[yes]]></property>
         <property
-          name="commentRequired"><![CDATA[]]></property>
+          name="commentRequired"><![CDATA[no]]></property>
         <property
           name="LogMessage"><![CDATA[Task - Variable.createdOn]]></property>
         <property
@@ -153,7 +153,7 @@
         <property
           name="completeStepID"><![CDATA[1210966e-38ff-3829-21ca-d4d3547372a9]]></property>
         <property
-          name="retValue"><![CDATA[variable.returnValue]]></property>
+          name="retValue"><![CDATA[completed]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
@@ -219,11 +219,11 @@
         <property
           name="itemDescription"><![CDATA[Wait]]></property>
         <property
-          name="startDate"><![CDATA[]]></property>
+          name="startDate"><![CDATA[04/15/2025 12:30 PM]]></property>
         <property
           name="waitNum"><![CDATA[2]]></property>
         <property
-          name="includeWeekends"><![CDATA[0]]></property>
+          name="includeWeekends"><![CDATA[1]]></property>
         <property
           name="waitType"><![CDATA[minutes]]></property>
         <property
@@ -231,7 +231,7 @@
         <property
           name="documentation"><![CDATA[Wait - Variable.initiatorName]]></property>
         <property
-          name="timeZone"><![CDATA[]]></property>
+          name="timeZone"><![CDATA[Dateline Standard Time]]></property>
         <property
           name="LogMessage"><![CDATA[Wait - Variable.createdOn]]></property>
         <property
@@ -240,22 +240,92 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="2a1cba29-ad65-0020-2d00-780ae8f276a2"
+      name="Place Holder"
+      type="placeholder"
+      x="58"
+      y="320"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="f693349c-c9e7-bc31-bd1f-f00cb9b29fc1"
+      label="timeout"
+      size="4"
+      type=""
+      srcParentID="1210966e-38ff-3829-21ca-d4d3547372a9"
+      srcParentName="Complete Step Task"
+      srcParentType="task"
+      trgParentID="2a1cba29-ad65-0020-2d00-780ae8f276a2"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="78"
+      lbly="275"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[timeout]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[timeout]]></property>
+      </properties>
+      <line>
+        <point
+          x="78"
+          y="230" />
+        <point
+          x="78"
+          y="320" />
+      </line>
+    </connection>
     <connection
       id="6b378a15-7b5c-241e-ea07-77056c2cebf0"
       label=""
       size="3"
       type=""
       srcParentID="b61bf8a0-acc7-4311-8e81-1b5c8c0aafaf"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="cce90842-a984-25e8-cb57-a9f6193f6684"
+      trgParentName="Wait 2 Mins"
       trgParentType="wait"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="154"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -281,14 +351,16 @@
       size="3"
       type=""
       srcParentID="cce90842-a984-25e8-cb57-a9f6193f6684"
+      srcParentName="Wait 2 Mins"
       srcParentType="wait"
       trgParentID="ad38b28a-9bff-d76b-f4a3-a70bd1df078e"
+      trgParentName="1==1"
       trgParentType="decision"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="300"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -314,14 +386,16 @@
       size="3"
       type=""
       srcParentID="ad38b28a-9bff-d76b-f4a3-a70bd1df078e"
+      srcParentName="1==1"
       srcParentType="decision"
       trgParentID="08799d91-d07a-3863-9998-87abc324d684"
+      trgParentName="completeStep"
       trgParentType="completestep"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="435"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -347,14 +421,16 @@
       size="3"
       type=""
       srcParentID="b61bf8a0-acc7-4311-8e81-1b5c8c0aafaf"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="1210966e-38ff-3829-21ca-d4d3547372a9"
+      trgParentName="Complete Step Task"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="78"
       lbly="135"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
