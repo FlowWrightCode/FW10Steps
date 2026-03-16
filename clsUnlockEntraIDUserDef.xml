@@ -1,0 +1,133 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="fbd0e43d-24a9-4c5b-be25-17589a53783a">
+  <figures>
+    <figure
+      id="e4c0777f-43da-44d6-acda-8957c704c7ac"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="31543958-dd61-bfc9-a9d7-cb9670759b89"
+      name="Unlock User"
+      type="clsunlockentraiduser"
+      x="280"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Unlock User]]></property>
+        <property
+          name="type"><![CDATA[clsunlockentraiduser]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Unlock User]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsUnlockEntraIDUser]]></property>
+        <property
+          name="entraIDConn"><![CDATA[3f5891e3-8fe4-4b86-8f1a-2905119f0d98]]></property>
+        <property
+          name="userName"><![CDATA[FWTestUser-Jan2026]]></property>
+        <property
+          name="temporaryPassword"><![CDATA[P@ssw0rd!]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsUnlockEntraIDUser - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsUnlockEntraIDUser - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Azure EntraID Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="03791a45-6d49-d753-05bd-e6970a116792"
+      label=""
+      size="4"
+      type=""
+      srcParentID="e4c0777f-43da-44d6-acda-8957c704c7ac"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="31543958-dd61-bfc9-a9d7-cb9670759b89"
+      trgParentName="Unlock User"
+      trgParentType="clsunlockentraiduser"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="180"
+          y="59" />
+        <point
+          x="180"
+          y="60" />
+        <point
+          x="280"
+          y="60" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
