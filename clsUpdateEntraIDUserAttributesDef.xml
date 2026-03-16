@@ -1,0 +1,127 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="e2abc0ae-962b-4115-9a59-c34720f195f6">
+  <figures>
+    <figure
+      id="963ad3a7-3932-498f-8ced-990ac2b4a9ab"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4ee2bce7-1201-0b08-15f6-5dbebd8474db"
+      name="Update User Attributes"
+      type="clsupdateentraiduserattributes"
+      x="260"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update User Attributes]]></property>
+        <property
+          name="type"><![CDATA[clsupdateentraiduserattributes]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update User Attributes]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsUpdateEntraIDUserAttributes]]></property>
+        <property
+          name="entraIDConn"><![CDATA[3f5891e3-8fe4-4b86-8f1a-2905119f0d98]]></property>
+        <property
+          name="userName"><![CDATA[FWTestUser-Jan2026]]></property>
+        <property
+          name="userAttributes"><![CDATA[displayName~FWTestUser-Jan2026-ForDemo|mail~FWTestUser-Jan2026-ForDemo@test.com]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsUpdateEntraIDUserAttributes - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsUpdateEntraIDUserAttributes - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Azure EntraID Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="7bb7ea82-c698-d812-989d-919fce9bdd88"
+      label=""
+      size="4"
+      type=""
+      srcParentID="963ad3a7-3932-498f-8ced-990ac2b4a9ab"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="4ee2bce7-1201-0b08-15f6-5dbebd8474db"
+      trgParentName="Update User Attributes"
+      trgParentType="clsupdateentraiduserattributes"
+      router="junction"
+      color="3c78d8"
+      lblx="170"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="260"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
