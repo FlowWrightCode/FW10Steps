@@ -1,0 +1,123 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="87c68f79-2e57-4cb1-954b-198af74aab4c">
+  <figures>
+    <figure
+      id="cccd01a6-8166-40ce-9dbc-b5a0d0440bf4"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varGroupsInfo:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="cb3e7dbd-d3c6-915e-158e-1aa40c90d408"
+      name="List All Groups"
+      type="clslistallentraidgroups"
+      x="280"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[List All Groups]]></property>
+        <property
+          name="type"><![CDATA[clslistallentraidgroups]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[List All Groups]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsListAllEntraIDGroups]]></property>
+        <property
+          name="entraIDConn"><![CDATA[e08995a3-e864-4cfd-8df7-a715bbed1271]]></property>
+        <property
+          name="outputVariable"><![CDATA[variable.varGroupsInfo]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsListAllEntraIDGroups - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsListAllEntraIDGroups - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Azure EntralID Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="5bc542bb-3d42-bbfb-7cde-7379285a9788"
+      label=""
+      size="4"
+      type=""
+      srcParentID="cccd01a6-8166-40ce-9dbc-b5a0d0440bf4"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="cb3e7dbd-d3c6-915e-158e-1aa40c90d408"
+      trgParentName="List All Groups"
+      trgParentType="clslistallentraidgroups"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
