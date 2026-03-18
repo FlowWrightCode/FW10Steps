@@ -1,0 +1,131 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="4eda7667-7412-4caf-8082-0daf18a34cd3">
+  <figures>
+    <figure
+      id="ba6dee4d-6f07-4a71-aea2-045121c91ba7"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="True"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[True]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="edaf80c3-3a02-dc1f-b9d8-de4d6b188049"
+      name="Create User"
+      type="clscreateentraiduser"
+      x="280"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Create User]]></property>
+        <property
+          name="type"><![CDATA[clscreateentraiduser]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Create User]]></property>
+        <property
+          name="itemDescription"><![CDATA[clsCreateEntraIDUser]]></property>
+        <property
+          name="entraIDConn"><![CDATA[3f5891e3-8fe4-4b86-8f1a-2905119f0d98]]></property>
+        <property
+          name="userName"><![CDATA[FWTestUser-Jan2026]]></property>
+        <property
+          name="firstName"><![CDATA[FWTestUser-Jan2026]]></property>
+        <property
+          name="lastName"><![CDATA[FWTestUser-Jan2026]]></property>
+        <property
+          name="email"><![CDATA[FWTestUser-Jan2026@test.com]]></property>
+        <property
+          name="LogMessage"><![CDATA[clsCreateEntraIDUser - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[clsCreateEntraIDUser - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Azure EntraID Steps]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="190636ac-41c0-61f2-a93c-414e3c010ecc"
+      label=""
+      size="4"
+      type=""
+      srcParentID="ba6dee4d-6f07-4a71-aea2-045121c91ba7"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="edaf80c3-3a02-dc1f-b9d8-de4d6b188049"
+      trgParentName="Create User"
+      trgParentType="clscreateentraiduser"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="280"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
