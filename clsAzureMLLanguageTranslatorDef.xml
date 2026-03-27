@@ -25,7 +25,7 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[resultText:String]]></property>
+          name="variables"><![CDATA[varResult:String]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
@@ -82,7 +82,7 @@
         <property
           name="selectToLanguage"><![CDATA[en]]></property>
         <property
-          name="varGlobalToStoreValue"><![CDATA[variable.resultText]]></property>
+          name="varGlobalToStoreValue"><![CDATA[variable.varResult]]></property>
         <property
           name="LogMessage"><![CDATA[clsAzureMLLanguageTranslator - Variable.createdOn]]></property>
         <property
@@ -101,14 +101,16 @@
       size="5"
       type=""
       srcParentID="004d310a-9efa-4299-bb63-ae4583f76f87"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="1ae74d67-9173-f1f7-bdd5-deb6752cbfb6"
+      trgParentName="Translate text"
       trgParentType="clsazuremllanguagetranslator"
       router="junction"
       color="0000ff"
       lblx="180"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
