@@ -25,7 +25,7 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[resultText:String]]></property>
+          name="variables"><![CDATA[varResult:String]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
@@ -76,9 +76,9 @@
         <property
           name="itemDescription"><![CDATA[clsAzureMLReceiptRecognizer]]></property>
         <property
-          name="receiptFormPath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Receipt.jpg]]></property>
+          name="receiptFormPath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\sample_receipt_template.png]]></property>
         <property
-          name="varGlobalToStoreValue"><![CDATA[variable.resultText]]></property>
+          name="varGlobalToStoreValue"><![CDATA[variable.varResult]]></property>
         <property
           name="LogMessage"><![CDATA[clsAzureMLReceiptRecognizer - Variable.createdOn]]></property>
         <property
@@ -97,14 +97,16 @@
       size="5"
       type=""
       srcParentID="460d277a-84e0-4467-a777-7161839a4afb"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="62b4dc50-7b41-a099-bbe5-8b44138149fe"
+      trgParentName="Get Text from Receipt"
       trgParentType="clsazuremlreceiptrecognizer"
       router="junction"
       color="0000ff"
       lblx="170"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
