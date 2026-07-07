@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -39,17 +42,16 @@
           name="documentation"><![CDATA[]]></property>
         <property
           name="priority"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="a27cea15-19c1-46ef-a96e-72ce70bc1562"
       name="Remove Users From Group"
       type="clsremoveusersfromentraidgroup"
-      x="280"
-      y="40"
+      x="400"
+      y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -57,6 +59,8 @@
           name="label"><![CDATA[Remove Users From Group]]></property>
         <property
           name="type"><![CDATA[clsremoveusersfromentraidgroup]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -79,6 +83,72 @@
           name="instState"><![CDATA[Aure EntraID Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="17df9f1c-5446-4a92-8d6a-a42b09bcf81a"
+      name="Department Transfer"
+      type="placeholder"
+      x="210"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Department Transfer]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Department Transfer]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="35fb2e11-c379-bac8-3220-a7f6f0ac8d9d"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="560"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -86,21 +156,95 @@
   </figures>
   <connections>
     <connection
+      id="4de1face-370f-ce9d-6486-1db5d6fd98b5"
+      label=""
+      size="4"
+      type=""
+      srcParentID="a27cea15-19c1-46ef-a96e-72ce70bc1562"
+      srcParentName="Remove Users From Group"
+      srcParentType="clsremoveusersfromentraidgroup"
+      trgParentID="35fb2e11-c379-bac8-3220-a7f6f0ac8d9d"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="500"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="440"
+          y="59" />
+        <point
+          x="560"
+          y="59" />
+      </line>
+    </connection>
+    <connection
       id="f9077dee-2366-bd86-021d-2a7fc4dca35f"
+      label=""
+      size="4"
+      type=""
+      srcParentID="17df9f1c-5446-4a92-8d6a-a42b09bcf81a"
+      srcParentName="Department Transfer"
+      srcParentType="placeholder"
+      trgParentID="a27cea15-19c1-46ef-a96e-72ce70bc1562"
+      trgParentName="Remove Users From Group"
+      trgParentType="clsremoveusersfromentraidgroup"
+      router="junction"
+      color="3c78d8"
+      lblx="325"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="250"
+          y="59" />
+        <point
+          x="400"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="a7d4a16b-c4c8-8b1d-fd07-47deb8405022"
       label=""
       size="4"
       type=""
       srcParentID="eeeb9bc7-e804-4e51-8bab-11b3333a40b6"
       srcParentName="start"
       srcParentType="start"
-      trgParentID="a27cea15-19c1-46ef-a96e-72ce70bc1562"
-      trgParentName="Remove Users From Group"
-      trgParentType="clsremoveusersfromentraidgroup"
+      trgParentID="17df9f1c-5446-4a92-8d6a-a42b09bcf81a"
+      trgParentName="Department Transfer"
+      trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="180"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      lblx="145"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -118,14 +262,8 @@
           x="80"
           y="59" />
         <point
-          x="180"
+          x="210"
           y="59" />
-        <point
-          x="180"
-          y="60" />
-        <point
-          x="280"
-          y="60" />
       </line>
     </connection>
   </connections>
