@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -39,17 +42,16 @@
           name="documentation"><![CDATA[]]></property>
         <property
           name="priority"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="31543958-dd61-bfc9-a9d7-cb9670759b89"
       name="Unlock User"
       type="clsunlockentraiduser"
-      x="280"
-      y="40"
+      x="360"
+      y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -57,6 +59,8 @@
           name="label"><![CDATA[Unlock User]]></property>
         <property
           name="type"><![CDATA[clsunlockentraiduser]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -79,6 +83,73 @@
           name="instState"><![CDATA[Azure EntraID Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="aedeac8d-f47e-1f3d-e85f-91033d55564f"
+      name="Verify User Identity"
+      type="placeholder"
+      x="190"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Verify User Identity]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Verify User Identity]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a7ce5630-b747-503e-ade1-7887f7df221b"
+      name="Notify User.."
+      type="placeholder"
+      x="510"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify User..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify User..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -86,21 +157,95 @@
   </figures>
   <connections>
     <connection
+      id="2e367832-0e3c-09b9-d3a9-387b43a825d4"
+      label=""
+      size="4"
+      type=""
+      srcParentID="31543958-dd61-bfc9-a9d7-cb9670759b89"
+      srcParentName="Unlock User"
+      srcParentType="clsunlockentraiduser"
+      trgParentID="a7ce5630-b747-503e-ade1-7887f7df221b"
+      trgParentName="Notify User.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="455"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="400"
+          y="59" />
+        <point
+          x="510"
+          y="59" />
+      </line>
+    </connection>
+    <connection
       id="03791a45-6d49-d753-05bd-e6970a116792"
+      label=""
+      size="4"
+      type=""
+      srcParentID="aedeac8d-f47e-1f3d-e85f-91033d55564f"
+      srcParentName="Verify User Identity"
+      srcParentType="placeholder"
+      trgParentID="31543958-dd61-bfc9-a9d7-cb9670759b89"
+      trgParentName="Unlock User"
+      trgParentType="clsunlockentraiduser"
+      router="junction"
+      color="3c78d8"
+      lblx="295"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="230"
+          y="59" />
+        <point
+          x="360"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="725d0f71-c850-af5d-fea2-4bcdb83c49f4"
       label=""
       size="4"
       type=""
       srcParentID="e4c0777f-43da-44d6-acda-8957c704c7ac"
       srcParentName="start"
       srcParentType="start"
-      trgParentID="31543958-dd61-bfc9-a9d7-cb9670759b89"
-      trgParentName="Unlock User"
-      trgParentType="clsunlockentraiduser"
+      trgParentID="aedeac8d-f47e-1f3d-e85f-91033d55564f"
+      trgParentName="Verify User Identity"
+      trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="180"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      lblx="135"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -118,14 +263,8 @@
           x="80"
           y="59" />
         <point
-          x="180"
+          x="190"
           y="59" />
-        <point
-          x="180"
-          y="60" />
-        <point
-          x="280"
-          y="60" />
       </line>
     </connection>
   </connections>
