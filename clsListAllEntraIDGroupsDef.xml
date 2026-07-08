@@ -11,12 +11,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -39,17 +42,16 @@
           name="documentation"><![CDATA[]]></property>
         <property
           name="priority"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="cb3e7dbd-d3c6-915e-158e-1aa40c90d408"
       name="List All Groups"
       type="clslistallentraidgroups"
-      x="280"
+      x="220"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -57,6 +59,8 @@
           name="label"><![CDATA[List All Groups]]></property>
         <property
           name="type"><![CDATA[clslistallentraidgroups]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -77,12 +81,117 @@
           name="instState"><![CDATA[Azure EntralID Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="83dbd63d-c54b-ec06-65c4-fd83e7da1e55"
+      name="Process Group Collection"
+      type="placeholder"
+      x="390"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Process Group Collection]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Process Group Collection]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="427dbbfb-0c44-3952-ff7e-152069e2b2ff"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="550"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
+    <connection
+      id="6900a5ec-6270-5dcc-3e5c-7a9791f59b4b"
+      label=""
+      size="4"
+      type=""
+      srcParentID="cb3e7dbd-d3c6-915e-158e-1aa40c90d408"
+      srcParentName="List All Groups"
+      srcParentType="clslistallentraidgroups"
+      trgParentID="83dbd63d-c54b-ec06-65c4-fd83e7da1e55"
+      trgParentName="Process Group Collection"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="325"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
+          y="59" />
+        <point
+          x="390"
+          y="59" />
+      </line>
+    </connection>
     <connection
       id="5bc542bb-3d42-bbfb-7cde-7379285a9788"
       label=""
@@ -96,9 +205,9 @@
       trgParentType="clslistallentraidgroups"
       router="junction"
       color="3c78d8"
-      lblx="180"
+      lblx="150"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -114,7 +223,44 @@
           x="80"
           y="59" />
         <point
-          x="280"
+          x="220"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="914b44ad-0617-b7e6-416f-cdef99c64cc1"
+      label=""
+      size="4"
+      type=""
+      srcParentID="83dbd63d-c54b-ec06-65c4-fd83e7da1e55"
+      srcParentName="Process Group Collection"
+      srcParentType="placeholder"
+      trgParentID="427dbbfb-0c44-3952-ff7e-152069e2b2ff"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="490"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="430"
+          y="59" />
+        <point
+          x="550"
           y="59" />
       </line>
     </connection>
