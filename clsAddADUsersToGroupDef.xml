@@ -9,14 +9,17 @@
       id="8c1fb5f8-abae-4518-97e1-29562bbe7734"
       name="start"
       type="start"
-      x="40"
+      x="0"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -30,7 +33,7 @@
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
-          name="useSingleIteration"><![CDATA[]]></property>
+          name="useSingleIteration"><![CDATA[0]]></property>
         <property
           name="businessObjects"><![CDATA[]]></property>
         <property
@@ -38,18 +41,29 @@
         <property
           name="documentation"><![CDATA[]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="78d88591-90e3-58ee-0516-4a5abfa587a9"
       name="Add Users To Group"
       type="clsaddaduserstogroup"
-      x="280"
+      x="290"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -57,6 +71,8 @@
           name="label"><![CDATA[Add Users To Group]]></property>
         <property
           name="type"><![CDATA[clsaddaduserstogroup]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -68,7 +84,7 @@
         <property
           name="ldapConn"><![CDATA[46b49f7e-8fb0-446c-8f03-15e557cbbc4e]]></property>
         <property
-          name="groupName"><![CDATA[Prototype Demo]]></property>
+          name="groupName"><![CDATA[Alpha Prototype]]></property>
         <property
           name="users"><![CDATA[FWDemoUser-01|FWDemoUser-02|FWDemoUser-03|FWDemoUser-04|FWDemoUser-05|FWDemoUser-06]]></property>
         <property
@@ -79,6 +95,72 @@
           name="instState"><![CDATA[Active Directory Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="116fda7b-738b-27b6-4f87-b99092834ab6"
+      name="Create User"
+      type="placeholder"
+      x="160"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Create User]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Create User]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6889d995-e171-ce09-e0aa-b8036aad1863"
+      name="Send Welcome Notification"
+      type="placeholder"
+      x="420"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Welcome Notification]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Welcome Notification]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -86,19 +168,19 @@
   </figures>
   <connections>
     <connection
-      id="c1117656-4079-4076-9226-38c6c41c42f1"
+      id="285acf54-9962-22bc-097a-483479dbabd6"
       label=""
       size="4"
       type=""
-      srcParentID="8c1fb5f8-abae-4518-97e1-29562bbe7734"
-      srcParentName="start"
-      srcParentType="start"
-      trgParentID="78d88591-90e3-58ee-0516-4a5abfa587a9"
-      trgParentName="Add Users To Group"
-      trgParentType="clsaddaduserstogroup"
+      srcParentID="78d88591-90e3-58ee-0516-4a5abfa587a9"
+      srcParentName="Add Users To Group"
+      srcParentType="clsaddaduserstogroup"
+      trgParentID="6889d995-e171-ce09-e0aa-b8036aad1863"
+      trgParentName="Send Welcome Notification"
+      trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="180"
+      lblx="375"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
@@ -115,10 +197,84 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="330"
           y="59" />
         <point
-          x="280"
+          x="420"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="c1117656-4079-4076-9226-38c6c41c42f1"
+      label=""
+      size="4"
+      type=""
+      srcParentID="116fda7b-738b-27b6-4f87-b99092834ab6"
+      srcParentName="Create User"
+      srcParentType="placeholder"
+      trgParentID="78d88591-90e3-58ee-0516-4a5abfa587a9"
+      trgParentName="Add Users To Group"
+      trgParentType="clsaddaduserstogroup"
+      router="junction"
+      color="3c78d8"
+      lblx="245"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="200"
+          y="59" />
+        <point
+          x="290"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="4a3eb9e1-c2f0-065c-5128-f353db668600"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8c1fb5f8-abae-4518-97e1-29562bbe7734"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="116fda7b-738b-27b6-4f87-b99092834ab6"
+      trgParentName="Create User"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="100"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="40"
+          y="59" />
+        <point
+          x="160"
           y="59" />
       </line>
     </connection>
