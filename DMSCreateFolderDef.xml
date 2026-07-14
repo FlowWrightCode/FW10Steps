@@ -9,7 +9,7 @@
       id="7cb491ab-9979-4845-ace6-0fc1ce85add5"
       name="start"
       type="start"
-      x="40"
+      x="-100"
       y="50"
       isValid="true"
       isLocked="False">
@@ -33,7 +33,7 @@
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
-          name="useSingleIteration"><![CDATA[]]></property>
+          name="useSingleIteration"><![CDATA[0]]></property>
         <property
           name="businessObjects"><![CDATA[]]></property>
         <property
@@ -41,14 +41,26 @@
         <property
           name="documentation"><![CDATA[]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="24ecae30-deae-74f9-7815-ef7b0b2c8bd3"
       name="Update Variables"
       type="updatevariable"
-      x="210"
+      x="40"
       y="50"
       isValid="true"
       isLocked="False"
@@ -72,7 +84,7 @@
         <property
           name="variableName"><![CDATA[variable.varFolderID]]></property>
         <property
-          name="variableValue"><![CDATA[04dbbb83-4790-4372-9db7-b331e63cc4a6]]></property>
+          name="variableValue"><![CDATA[7d859dc3-3aef-4965-b7d6-97358810ed7b]]></property>
         <property
           name="updateVariables"><![CDATA[]]></property>
         <property
@@ -91,7 +103,7 @@
       id="1bc2a3a7-6b7d-ba59-4af6-60840dac7882"
       name="Create DMS Folder"
       type="dmscreatefolder"
-      x="390"
+      x="180"
       y="50"
       isValid="true"
       isLocked="False"
@@ -128,24 +140,160 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="e03f0bb6-a55a-fed5-0217-bfacff8dc451"
+      name="Set Folder Permissions"
+      type="placeholder"
+      x="330"
+      y="50"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Set Folder Permissions]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Set Folder Permissions]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a909da25-62be-f91a-6d93-1ed1d2c0214e"
+      name="Upload Documents"
+      type="placeholder"
+      x="480"
+      y="50"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Upload Documents]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Upload Documents]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="465656d2-c789-3975-02e7-b639ff76ddbe"
+      name="Add History to Folder"
+      type="placeholder"
+      x="630"
+      y="50"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Add History to Folder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Add History to Folder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6e291cf1-c28f-967f-9334-a4222346579b"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="770"
+      y="50"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="da925d96-6e2b-9c0c-6f34-e4af6841d4eb"
+      id="82ffda2e-cae4-8412-3c0a-a54da90aee70"
       label=""
       size="4"
       type=""
-      srcParentID="24ecae30-deae-74f9-7815-ef7b0b2c8bd3"
-      srcParentName="Update Variables"
-      srcParentType="updatevariable"
-      trgParentID="1bc2a3a7-6b7d-ba59-4af6-60840dac7882"
-      trgParentName="Create DMS Folder"
-      trgParentType="dmscreatefolder"
+      srcParentID="465656d2-c789-3975-02e7-b639ff76ddbe"
+      srcParentName="Add History to Folder"
+      srcParentType="placeholder"
+      trgParentID="6e291cf1-c28f-967f-9334-a4222346579b"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="320"
+      lblx="720"
       lbly="70"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -160,27 +308,138 @@
       </properties>
       <line>
         <point
-          x="250"
+          x="670"
           y="70" />
         <point
-          x="390"
+          x="770"
           y="70" />
       </line>
     </connection>
     <connection
-      id="40eb4987-7e62-15ad-c7c3-02f9834baffc"
+      id="5843fa2b-9027-f4f1-3e4b-a7c69e79c10d"
       label=""
       size="4"
       type=""
-      srcParentID="7cb491ab-9979-4845-ace6-0fc1ce85add5"
-      srcParentName="start"
-      srcParentType="start"
-      trgParentID="24ecae30-deae-74f9-7815-ef7b0b2c8bd3"
-      trgParentName="Update Variables"
-      trgParentType="updatevariable"
+      srcParentID="a909da25-62be-f91a-6d93-1ed1d2c0214e"
+      srcParentName="Upload Documents"
+      srcParentType="placeholder"
+      trgParentID="465656d2-c789-3975-02e7-b639ff76ddbe"
+      trgParentName="Add History to Folder"
+      trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="145"
+      lblx="575"
+      lbly="70"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="520"
+          y="70" />
+        <point
+          x="630"
+          y="70" />
+      </line>
+    </connection>
+    <connection
+      id="f741df61-a7c9-ff8f-cc32-1aee79a72b9f"
+      label=""
+      size="4"
+      type=""
+      srcParentID="e03f0bb6-a55a-fed5-0217-bfacff8dc451"
+      srcParentName="Set Folder Permissions"
+      srcParentType="placeholder"
+      trgParentID="a909da25-62be-f91a-6d93-1ed1d2c0214e"
+      trgParentName="Upload Documents"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="425"
+      lbly="70"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="370"
+          y="70" />
+        <point
+          x="480"
+          y="70" />
+      </line>
+    </connection>
+    <connection
+      id="f66be260-f9c5-1695-efe4-9ecf1b882f06"
+      label=""
+      size="4"
+      type=""
+      srcParentID="1bc2a3a7-6b7d-ba59-4af6-60840dac7882"
+      srcParentName="Create DMS Folder"
+      srcParentType="dmscreatefolder"
+      trgParentID="e03f0bb6-a55a-fed5-0217-bfacff8dc451"
+      trgParentName="Set Folder Permissions"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="275"
+      lbly="70"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="220"
+          y="70" />
+        <point
+          x="330"
+          y="70" />
+      </line>
+    </connection>
+    <connection
+      id="da925d96-6e2b-9c0c-6f34-e4af6841d4eb"
+      label=""
+      size="4"
+      type=""
+      srcParentID="24ecae30-deae-74f9-7815-ef7b0b2c8bd3"
+      srcParentName="Update Variables"
+      srcParentType="updatevariable"
+      trgParentID="1bc2a3a7-6b7d-ba59-4af6-60840dac7882"
+      trgParentName="Create DMS Folder"
+      trgParentType="dmscreatefolder"
+      router="junction"
+      color="3c78d8"
+      lblx="130"
       lbly="70"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -200,7 +459,44 @@
           x="80"
           y="70" />
         <point
-          x="210"
+          x="180"
+          y="70" />
+      </line>
+    </connection>
+    <connection
+      id="79da1435-e069-2f5e-498f-d18ee2024094"
+      label=""
+      size="4"
+      type=""
+      srcParentID="7cb491ab-9979-4845-ace6-0fc1ce85add5"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="24ecae30-deae-74f9-7815-ef7b0b2c8bd3"
+      trgParentName="Update Variables"
+      trgParentType="updatevariable"
+      router="junction"
+      color="3c78d8"
+      lblx="-10"
+      lbly="70"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="-60"
+          y="70" />
+        <point
+          x="40"
           y="70" />
       </line>
     </connection>
