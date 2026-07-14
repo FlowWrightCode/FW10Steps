@@ -31,7 +31,7 @@
         <property
           name="itemDescription"><![CDATA[clsInputCSV]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\Richa\RRS-SalesRecords-Oct2024 1.csv]]></property>
         <property
           name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
         <property
@@ -74,7 +74,7 @@
         <property
           name="itemDescription"><![CDATA[clsOutputCSV]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-RRS-SalesRecords-Aug2025.csv]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\Richa\Output-RRS-SalesRecords-Aug2025.csv]]></property>
         <property
           name="variableOrGlobal"><![CDATA[variable.vOPath]]></property>
         <property
@@ -131,6 +131,7 @@
       x="90"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="1">
       <properties>
@@ -138,6 +139,8 @@
           name="label"><![CDATA[Set Guid identity column]]></property>
         <property
           name="type"><![CDATA[clsguididentity]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -156,8 +159,6 @@
           name="instState"><![CDATA[ETL Identity Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -259,6 +260,8 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
