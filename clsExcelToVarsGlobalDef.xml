@@ -48,7 +48,7 @@
       id="797657e3-1851-a3a8-e01a-17bf35786070"
       name="Map Excel cells to variables"
       type="clsexceltovarsglobal"
-      x="240"
+      x="170"
       y="39"
       isValid="true"
       isLocked="False"
@@ -85,8 +85,292 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="19abdd82-cd4e-7996-d2d5-f1d73569a1a9"
+      name="Update Variables"
+      type="placeholder"
+      x="300"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update Variables]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="788bf91c-79cf-440b-5dbf-403565344679"
+      name="Generate Document"
+      type="placeholder"
+      x="440"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Document]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="21579851-9408-9ad0-7484-b6d168dd83a5"
+      name="Send Email"
+      type="placeholder"
+      x="560"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Email]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Email]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6e94437b-edd4-ab31-a8bd-54f6df6c93a8"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="680"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="be8d87da-9d6f-8ddc-e8d5-69321b23d3e6"
+      label=""
+      size="4"
+      type=""
+      srcParentID="21579851-9408-9ad0-7484-b6d168dd83a5"
+      srcParentName="Send Email"
+      srcParentType="placeholder"
+      trgParentID="6e94437b-edd4-ab31-a8bd-54f6df6c93a8"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="640"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="600"
+          y="59" />
+        <point
+          x="680"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="bc6c11be-c98f-33c4-bec3-63d3a80b1cd2"
+      label=""
+      size="4"
+      type=""
+      srcParentID="788bf91c-79cf-440b-5dbf-403565344679"
+      srcParentName="Generate Document"
+      srcParentType="placeholder"
+      trgParentID="21579851-9408-9ad0-7484-b6d168dd83a5"
+      trgParentName="Send Email"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="520"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="480"
+          y="59" />
+        <point
+          x="560"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="cf93e0e4-f87d-cbbd-b555-206394ef5ffd"
+      label=""
+      size="4"
+      type=""
+      srcParentID="19abdd82-cd4e-7996-d2d5-f1d73569a1a9"
+      srcParentName="Update Variables"
+      srcParentType="placeholder"
+      trgParentID="788bf91c-79cf-440b-5dbf-403565344679"
+      trgParentName="Generate Document"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="390"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="340"
+          y="59" />
+        <point
+          x="440"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="d0c8d04c-3b3c-f8d5-9246-a205ce7ac134"
+      label=""
+      size="4"
+      type=""
+      srcParentID="797657e3-1851-a3a8-e01a-17bf35786070"
+      srcParentName="Map Excel cells to variables"
+      srcParentType="clsexceltovarsglobal"
+      trgParentID="19abdd82-cd4e-7996-d2d5-f1d73569a1a9"
+      trgParentName="Update Variables"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="255"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="210"
+          y="59" />
+        <point
+          x="300"
+          y="59" />
+      </line>
+    </connection>
     <connection
       id="00634dfc-a243-4347-c077-0545e470f19d"
       label=""
@@ -100,7 +384,7 @@
       trgParentType="clsexceltovarsglobal"
       router="junction"
       color="3c78d8"
-      lblx="160"
+      lblx="125"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -118,7 +402,7 @@
           x="80"
           y="59" />
         <point
-          x="240"
+          x="170"
           y="59" />
       </line>
     </connection>
