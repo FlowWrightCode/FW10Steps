@@ -9,7 +9,7 @@
       id="e4fc8385-cdd0-4f04-a467-2aa104d51428"
       name="start"
       type="start"
-      x="40"
+      x="-20"
       y="39"
       isValid="true"
       isLocked="False">
@@ -33,7 +33,7 @@
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
-          name="useSingleIteration"><![CDATA[]]></property>
+          name="useSingleIteration"><![CDATA[0]]></property>
         <property
           name="businessObjects"><![CDATA[]]></property>
         <property
@@ -41,7 +41,19 @@
         <property
           name="documentation"><![CDATA[]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
@@ -91,9 +103,10 @@
       id="cce090ae-98d1-70c7-85e8-57755584aaa0"
       name="Remove Folder Permissions"
       type="dmsremovefolderpermissions"
-      x="440"
+      x="360"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -101,6 +114,8 @@
           name="label"><![CDATA[Remove Folder Permissions]]></property>
         <property
           name="type"><![CDATA[dmsremovefolderpermissions]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -121,12 +136,261 @@
           name="instState"><![CDATA[DMS Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a13002f1-897b-bb3d-f07f-afcea749fe5c"
+      name="Complete Project"
+      type="placeholder"
+      x="100"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Complete Project]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Complete Project]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4fe31a56-46ae-f394-e967-d67ba8ae3744"
+      name="Archive Folder"
+      type="placeholder"
+      x="500"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Archive Folder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Archive Folder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c99151b9-731d-225d-985d-4d0693fd3491"
+      name="Notify Administrators"
+      type="placeholder"
+      x="640"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrators]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrators]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="39cc1ab5-9eec-8821-1bfe-d678ff2d869e"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="780"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
+    <connection
+      id="423084c3-0546-8f68-1241-be35b7a127f4"
+      label=""
+      size="4"
+      type=""
+      srcParentID="c99151b9-731d-225d-985d-4d0693fd3491"
+      srcParentName="Notify Administrators"
+      srcParentType="placeholder"
+      trgParentID="39cc1ab5-9eec-8821-1bfe-d678ff2d869e"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="730"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="680"
+          y="59" />
+        <point
+          x="780"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="08e3346c-865e-3003-41b3-93b6b5f8dc5e"
+      label=""
+      size="4"
+      type=""
+      srcParentID="4fe31a56-46ae-f394-e967-d67ba8ae3744"
+      srcParentName="Archive Folder"
+      srcParentType="placeholder"
+      trgParentID="c99151b9-731d-225d-985d-4d0693fd3491"
+      trgParentName="Notify Administrators"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="590"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="540"
+          y="59" />
+        <point
+          x="640"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="0e155711-7dc9-3eb0-06fb-ffdc9f7f1033"
+      label=""
+      size="4"
+      type=""
+      srcParentID="cce090ae-98d1-70c7-85e8-57755584aaa0"
+      srcParentName="Remove Folder Permissions"
+      srcParentType="dmsremovefolderpermissions"
+      trgParentID="4fe31a56-46ae-f394-e967-d67ba8ae3744"
+      trgParentName="Archive Folder"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="450"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="400"
+          y="59" />
+        <point
+          x="500"
+          y="59" />
+      </line>
+    </connection>
     <connection
       id="74b93acb-b14d-147e-b08c-476915d6cb7b"
       label=""
@@ -140,7 +404,7 @@
       trgParentType="dmsremovefolderpermissions"
       router="junction"
       color="3c78d8"
-      lblx="360"
+      lblx="320"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -160,7 +424,7 @@
           x="280"
           y="59" />
         <point
-          x="440"
+          x="360"
           y="59" />
       </line>
     </connection>
@@ -169,15 +433,15 @@
       label=""
       size="4"
       type=""
-      srcParentID="e4fc8385-cdd0-4f04-a467-2aa104d51428"
-      srcParentName="start"
-      srcParentType="start"
+      srcParentID="a13002f1-897b-bb3d-f07f-afcea749fe5c"
+      srcParentName="Complete Project"
+      srcParentType="placeholder"
       trgParentID="27997819-8a44-43d8-a625-1d0bae314291"
       trgParentName="Update Variables"
       trgParentType="updatevariable"
       router="junction"
       color="3c78d8"
-      lblx="160"
+      lblx="190"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -194,10 +458,47 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="140"
           y="59" />
         <point
           x="240"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="c15c6ac6-e28e-99dd-a276-094761cff690"
+      label=""
+      size="4"
+      type=""
+      srcParentID="e4fc8385-cdd0-4f04-a467-2aa104d51428"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="a13002f1-897b-bb3d-f07f-afcea749fe5c"
+      trgParentName="Complete Project"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="60"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="20"
+          y="59" />
+        <point
+          x="100"
           y="59" />
       </line>
     </connection>
