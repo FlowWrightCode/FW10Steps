@@ -72,13 +72,13 @@
         <property
           name="host"><![CDATA[20.198.69.132]]></property>
         <property
-          name="port"><![CDATA[3389]]></property>
+          name="port"><![CDATA[2220]]></property>
         <property
-          name="username"><![CDATA[xxx]]></property>
+          name="username"><![CDATA[Canarys\Richa]]></property>
         <property
-          name="pass"><![CDATA[xxx]]></property>
+          name="pass"><![CDATA[Canarys@123]]></property>
         <property
-          name="command"><![CDATA["System Boot Time"]]></property>
+          name="command"><![CDATA[whoami]]></property>
         <property
           name="varGlobal"><![CDATA[variable.varResult]]></property>
         <property
@@ -93,17 +93,17 @@
     </figure>
     <figure
       id="ec0a56aa-a8ea-dc3c-8912-c2ef6c12a4a1"
-      name="Success"
+      name="Evaluate Command Output"
       type="placeholder"
-      x="360"
-      y="40"
+      x="380"
+      y="39"
       isValid="true"
       isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Success]]></property>
+          name="label"><![CDATA[Evaluate Command Output]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
@@ -113,7 +113,7 @@
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Success]]></property>
+          name="itemName"><![CDATA[Evaluate Command Output]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -131,7 +131,7 @@
       name="Failure"
       type="placeholder"
       x="220"
-      y="200"
+      y="210"
       isValid="true"
       isLocked="False"
       inConnections="2"
@@ -161,8 +161,150 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="300198d1-9f26-3b74-6512-ab525a7a709b"
+      name="Send Notification"
+      type="placeholder"
+      x="540"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Notification]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Notification]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="375ba507-cfdc-e6d7-5fca-a28e297fd58a"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="680"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="5fae30bc-fc4d-5481-4a56-a69a5382d2c0"
+      label=""
+      size="4"
+      type=""
+      srcParentID="300198d1-9f26-3b74-6512-ab525a7a709b"
+      srcParentName="Send Notification"
+      srcParentType="placeholder"
+      trgParentID="375ba507-cfdc-e6d7-5fca-a28e297fd58a"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="630"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="580"
+          y="59" />
+        <point
+          x="680"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="32877fc1-32e9-35d2-bf48-9c577191b412"
+      label=""
+      size="4"
+      type=""
+      srcParentID="ec0a56aa-a8ea-dc3c-8912-c2ef6c12a4a1"
+      srcParentName="Evaluate Command Output"
+      srcParentType="placeholder"
+      trgParentID="300198d1-9f26-3b74-6512-ab525a7a709b"
+      trgParentName="Send Notification"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="480"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="420"
+          y="59" />
+        <point
+          x="540"
+          y="59" />
+      </line>
+    </connection>
     <connection
       id="f0e7479e-f75a-6a74-5f92-bc004e252995"
       label="True"
@@ -172,12 +314,12 @@
       srcParentName="Send SSH command"
       srcParentType="clssshcommand"
       trgParentID="ec0a56aa-a8ea-dc3c-8912-c2ef6c12a4a1"
-      trgParentName="Success"
+      trgParentName="Evaluate Command Output"
       trgParentType="placeholder"
       router="junction"
       color="00ff00"
-      lblx="310"
-      lbly="60"
+      lblx="320"
+      lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
       trgPortName="westPort">
@@ -196,14 +338,8 @@
           x="260"
           y="59" />
         <point
-          x="310"
+          x="380"
           y="59" />
-        <point
-          x="310"
-          y="60" />
-        <point
-          x="360"
-          y="60" />
       </line>
     </connection>
     <connection
@@ -220,7 +356,7 @@
       router="junction"
       color="ff0000"
       lblx="240"
-      lbly="140"
+      lbly="145"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="southPort"
       trgPortName="northPort">
@@ -240,7 +376,7 @@
           y="79" />
         <point
           x="240"
-          y="200" />
+          y="210" />
       </line>
     </connection>
     <connection
