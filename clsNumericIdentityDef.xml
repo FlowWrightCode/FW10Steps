@@ -31,7 +31,7 @@
         <property
           name="itemDescription"><![CDATA[clsInputCSV]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\Richa\RRS-SalesRecords-Oct2024 1.csv]]></property>
         <property
           name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
         <property
@@ -74,7 +74,7 @@
         <property
           name="itemDescription"><![CDATA[clsOutputCSV]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-RRS-SalesRecords-Aug2025.csv]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\Richa\RRS-SalesRecords op.csv]]></property>
         <property
           name="variableOrGlobal"><![CDATA[variable.vOPath]]></property>
         <property
