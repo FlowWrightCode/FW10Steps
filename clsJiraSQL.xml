@@ -1,0 +1,18 @@
+<item categoryName="Jira" id="ec3c1726-e24b-3d3c-99b9-f09e3b874339" name="clsjirasql" label="Execute Jira JSQL and get Json result" namespace="FlowWright.Workflow.ClsJiraSQL" DLL="FlowWright.Workflow.dll" stepDefinitionType="Process" inConnections="2" outConnections="2" displayName="Execute JSQL">
+  <properties>
+    <property id="64277db8-2c20-404c-83f7-6c2345027e42" name="jiraUrl" label="Jira Url" category="" dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" dataType="string" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="0" />
+    <property id="5f2ccc8c-92af-4b01-9004-128c7a0bbf0b" name="jiraUsername" label="Jira Username" category="" dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" dataType="string" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="1" />
+    <property id="57e9c95e-dec3-4718-829e-3171a9392480" name="jiraToken" label="Jira API Token" category="" dataTypeID="9dcdaa0c-e986-3bb5-9b85-ca779ed6622e" dataType="multilineTextBox" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="2" />
+    <property id="f50b6986-3a39-4a4e-8bae-9968be5a1cb4" name="jiraProject" label="Project name" category="" dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" dataType="string" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="3" />
+    <property id="bdbb4553-41f6-4a4e-8b54-8a5c5306b555" name="jiraJSQL" label="Jira JSQL" category="" dataTypeID="9dcdaa0c-e986-3bb5-9b85-ca779ed6622e" dataType="multilineTextBox" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="4" />
+    <property id="b3aa7ab0-fb99-4429-91cf-661ad61e344b" name="varGlobalToStoreValue" label="Variable/Global to store the json" category="" dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" dataType="string" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="5" />
+  </properties>
+  <returns>
+    <return id="b26ea56d-bf59-4049-99f5-c237d282ace8" value="False" label="False" />
+    <return id="3e5ea375-8344-49bd-a91d-49afb9193a1a" value="True" label="True" />
+  </returns>
+  <propertyTypes>
+    <propertyType dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" name="string" description="Get textbox" namespace="FlowWright.DataTypes.ClsTextBox" DLL="FlowWright.DataTypes.dll" />
+    <propertyType dataTypeID="9dcdaa0c-e986-3bb5-9b85-ca779ed6622e" name="multilineTextBox" description="Get multiline textbox" namespace="FlowWright.DataTypes.ClsMultilineBox" DLL="FlowWright.DataTypes.dll" />
+  </propertyTypes>
+</item>
