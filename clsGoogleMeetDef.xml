@@ -9,14 +9,17 @@
       id="03d348d8-4617-4101-b3e5-43c6eee1059b"
       name="start"
       type="start"
-      x="40"
+      x="-60"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,17 +54,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="877e7c00-2a8e-e2dd-9fd8-5978caf81be2"
       name="Create Google Meet Event"
       type="clsgooglemeet"
-      x="280"
+      x="240"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +71,8 @@
           name="label"><![CDATA[Create Google Meet Event]]></property>
         <property
           name="type"><![CDATA[clsgooglemeet]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -105,6 +109,140 @@
           name="instState"><![CDATA[Meetings Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="b6f205b1-85e8-9c39-b668-cabd054953ee"
+      name="Collect Meeting Info"
+      type="placeholder"
+      x="80"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Collect Meeting Info]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Collect Meeting Info]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="0acc947b-55fa-9b5b-e41b-d5b5b27600fa"
+      name="Send Meeting Invite"
+      type="placeholder"
+      x="400"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Meeting Invite]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Meeting Invite]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="0d9caefe-473a-cea7-8b17-8c6353abd670"
+      name="Update CRM"
+      type="placeholder"
+      x="540"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Update CRM]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Update CRM]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="93d3c734-3763-782c-168b-9b388feee15a"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="670"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -112,19 +250,169 @@
   </figures>
   <connections>
     <connection
+      id="5360e982-26f7-1052-1300-a148faacf30c"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0d9caefe-473a-cea7-8b17-8c6353abd670"
+      srcParentName="Update CRM"
+      srcParentType="placeholder"
+      trgParentID="93d3c734-3763-782c-168b-9b388feee15a"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="625"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="580"
+          y="59" />
+        <point
+          x="670"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="1f73e97c-e583-f841-1a9d-b2f4ed5a06cc"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0acc947b-55fa-9b5b-e41b-d5b5b27600fa"
+      srcParentName="Send Meeting Invite"
+      srcParentType="placeholder"
+      trgParentID="0d9caefe-473a-cea7-8b17-8c6353abd670"
+      trgParentName="Update CRM"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="490"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="440"
+          y="59" />
+        <point
+          x="540"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="b2cae27e-ee02-500e-bddc-13d65e0ade3f"
+      label=""
+      size="4"
+      type=""
+      srcParentID="877e7c00-2a8e-e2dd-9fd8-5978caf81be2"
+      srcParentName="Create Google Meet Event"
+      srcParentType="clsgooglemeet"
+      trgParentID="0acc947b-55fa-9b5b-e41b-d5b5b27600fa"
+      trgParentName="Send Meeting Invite"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="340"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="59" />
+        <point
+          x="400"
+          y="59" />
+      </line>
+    </connection>
+    <connection
       id="5fb9cd60-2105-f5ee-9968-9bb7d3fa29ab"
       label=""
       size="4"
       type=""
-      srcParentID="03d348d8-4617-4101-b3e5-43c6eee1059b"
-      srcParentType="start"
+      srcParentID="b6f205b1-85e8-9c39-b668-cabd054953ee"
+      srcParentName="Collect Meeting Info"
+      srcParentType="placeholder"
       trgParentID="877e7c00-2a8e-e2dd-9fd8-5978caf81be2"
+      trgParentName="Create Google Meet Event"
       trgParentType="clsgooglemeet"
       router="junction"
       color="3c78d8"
       lblx="180"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="120"
+          y="59" />
+        <point
+          x="240"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="f398846a-84d9-c70e-2f6d-a85ff5325659"
+      label=""
+      size="4"
+      type=""
+      srcParentID="03d348d8-4617-4101-b3e5-43c6eee1059b"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="b6f205b1-85e8-9c39-b668-cabd054953ee"
+      trgParentName="Collect Meeting Info"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="30"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -137,10 +425,10 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="-20"
           y="59" />
         <point
-          x="280"
+          x="80"
           y="59" />
       </line>
     </connection>
