@@ -9,8 +9,8 @@
       id="7a6cbe72-d0bf-4b31-96e3-0a46cac2935d"
       name="start"
       type="start"
-      x="40"
-      y="39"
+      x="70"
+      y="40"
       isValid="true"
       isLocked="False">
       <properties>
@@ -33,7 +33,7 @@
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
-          name="useSingleIteration"><![CDATA[]]></property>
+          name="useSingleIteration"><![CDATA[0]]></property>
         <property
           name="businessObjects"><![CDATA[]]></property>
         <property
@@ -41,14 +41,26 @@
         <property
           name="documentation"><![CDATA[]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="8b6c8600-d57a-4cb8-a5ab-9e125085c03a"
       name="Execute JSQL"
       type="clsjirasql"
-      x="250"
+      x="190"
       y="39"
       isValid="true"
       isLocked="False"
@@ -74,7 +86,7 @@
         <property
           name="jiraUsername"><![CDATA[dwijay@FlowWright.com]]></property>
         <property
-          name="jiraToken"><![CDATA[kAlZBtVAxAcY-VeSMBz074y6APXZXszDegOyzYYWwBFxm9HiXObFMyLqU15WTBUnHIElcL7DkTz2lP5kqpbSxDRuRkHD300]]></property>
+          name="jiraToken"><![CDATA[ATATT3xFfGF0BA1xt0mqL_5FGng_VhA-Ptmy0-aACmvF9hHnbYw_kAlZBtVAxAcY-VeSMBz074y6APXZXszDegOyzYYWwBFxm9HiXObFMyLqU15WTBUnHIElcL7DkTz2lP5kqpbSxDRuRkHD300EMlc81DWSNazj63DGftyBVY6IdLntU_6ZG4s=9823A0DA]]></property>
         <property
           name="jiraProject"><![CDATA[CSR]]></property>
         <property
@@ -91,22 +103,160 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="5855c2c0-4aed-21bc-f8b9-ecabd63d19ef"
+      name="Parse JSON"
+      type="placeholder"
+      x="320"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Parse JSON]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Parse JSON]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="01034e50-5a4e-87e2-ea16-05da6c51304e"
+      name="Generate Report"
+      type="placeholder"
+      x="450"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Report]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Report]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6c69a492-a069-11da-29ce-f8dbc7a73948"
+      name="Send Email"
+      type="placeholder"
+      x="580"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Email]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Email]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="586bb89a-965e-1024-54a6-4c54698dc7a6"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="700"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="7c17c0d8-77eb-40ab-9336-50a7fc050b25"
+      id="1bd9eca7-21ab-3dd9-32e2-79d2e4823b29"
       label=""
-      size="3"
+      size="4"
       type=""
-      srcParentID="7a6cbe72-d0bf-4b31-96e3-0a46cac2935d"
-      srcParentType="start"
-      trgParentID="8b6c8600-d57a-4cb8-a5ab-9e125085c03a"
-      trgParentType="clsjirasql"
+      srcParentID="6c69a492-a069-11da-29ce-f8dbc7a73948"
+      srcParentName="Send Email"
+      srcParentType="placeholder"
+      trgParentID="586bb89a-965e-1024-54a6-4c54698dc7a6"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
       router="junction"
-      color="129ce4"
-      lblx="165"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      color="3c78d8"
+      lblx="660"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -121,10 +271,170 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="620"
+          y="60" />
+        <point
+          x="700"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="940fd206-1e02-489d-0f7d-3e27c38f5ca7"
+      label=""
+      size="4"
+      type=""
+      srcParentID="01034e50-5a4e-87e2-ea16-05da6c51304e"
+      srcParentName="Generate Report"
+      srcParentType="placeholder"
+      trgParentID="6c69a492-a069-11da-29ce-f8dbc7a73948"
+      trgParentName="Send Email"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="535"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="490"
           y="59" />
         <point
-          x="250"
+          x="535"
+          y="59" />
+        <point
+          x="535"
+          y="60" />
+        <point
+          x="580"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="b81dc505-027b-308a-9dbc-fde168f31c29"
+      label=""
+      size="4"
+      type=""
+      srcParentID="5855c2c0-4aed-21bc-f8b9-ecabd63d19ef"
+      srcParentName="Parse JSON"
+      srcParentType="placeholder"
+      trgParentID="01034e50-5a4e-87e2-ea16-05da6c51304e"
+      trgParentName="Generate Report"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="405"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="360"
+          y="59" />
+        <point
+          x="450"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="05a32d7c-67ce-2962-55f9-b8cedc08c433"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8b6c8600-d57a-4cb8-a5ab-9e125085c03a"
+      srcParentName="Execute JSQL"
+      srcParentType="clsjirasql"
+      trgParentID="5855c2c0-4aed-21bc-f8b9-ecabd63d19ef"
+      trgParentName="Parse JSON"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="275"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="230"
+          y="59" />
+        <point
+          x="320"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="7c17c0d8-77eb-40ab-9336-50a7fc050b25"
+      label=""
+      size="3"
+      type=""
+      srcParentID="7a6cbe72-d0bf-4b31-96e3-0a46cac2935d"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="8b6c8600-d57a-4cb8-a5ab-9e125085c03a"
+      trgParentName="Execute JSQL"
+      trgParentType="clsjirasql"
+      router="junction"
+      color="129ce4"
+      lblx="150"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="110"
+          y="60" />
+        <point
+          x="150"
+          y="60" />
+        <point
+          x="150"
+          y="59" />
+        <point
+          x="190"
           y="59" />
       </line>
     </connection>
