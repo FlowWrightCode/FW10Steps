@@ -9,8 +9,8 @@
       id="90329a95-87f9-4b20-9108-8875c0417ebc"
       name="start"
       type="start"
-      x="40"
-      y="39"
+      x="-30"
+      y="40"
       isValid="true"
       isLocked="False">
       <properties>
@@ -60,7 +60,7 @@
       id="00993897-dcfc-d1a5-9817-d1982db3a3f5"
       name="Split PDF file by pages"
       type="pdfsplitpages"
-      x="280"
+      x="250"
       y="40"
       isValid="true"
       isLocked="False"
@@ -101,22 +101,304 @@
           name="pages"><![CDATA[1,3,5]]></property>
       </properties>
     </figure>
+    <figure
+      id="d0f10e70-b694-5fb8-e4ab-e7b49e7032c1"
+      name="Download Document"
+      type="placeholder"
+      x="100"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Download Document]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Download Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="17c2c4dd-2517-43d8-33aa-fe8c769acc42"
+      name="OCR Each Page"
+      type="placeholder"
+      x="400"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[OCR Each Page]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[OCR Each Page]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="480cc483-7e26-18d8-1b4a-256091bd1b73"
+      name="Classify Documents"
+      type="placeholder"
+      x="540"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Classify Documents]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Classify Documents]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="1be599f2-3e7e-8e91-070f-3036f19e792a"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="660"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
+      id="b0139671-72e3-a11e-fdf5-8fcf0f926062"
+      label=""
+      size="4"
+      type=""
+      srcParentID="480cc483-7e26-18d8-1b4a-256091bd1b73"
+      srcParentName="Classify Documents"
+      srcParentType="placeholder"
+      trgParentID="1be599f2-3e7e-8e91-070f-3036f19e792a"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="620"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="580"
+          y="60" />
+        <point
+          x="660"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="0ce4cdb0-266e-e727-7287-41fc114978ff"
+      label=""
+      size="4"
+      type=""
+      srcParentID="17c2c4dd-2517-43d8-33aa-fe8c769acc42"
+      srcParentName="OCR Each Page"
+      srcParentType="placeholder"
+      trgParentID="480cc483-7e26-18d8-1b4a-256091bd1b73"
+      trgParentName="Classify Documents"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="490"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="440"
+          y="60" />
+        <point
+          x="540"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="34d3ec1e-4186-dad7-fc74-8eabfbb78763"
+      label=""
+      size="4"
+      type=""
+      srcParentID="00993897-dcfc-d1a5-9817-d1982db3a3f5"
+      srcParentName="Split PDF file by pages"
+      srcParentType="pdfsplitpages"
+      trgParentID="17c2c4dd-2517-43d8-33aa-fe8c769acc42"
+      trgParentName="OCR Each Page"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="345"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="60" />
+        <point
+          x="400"
+          y="60" />
+      </line>
+    </connection>
+    <connection
       id="c91f497e-d6cd-0831-e7b1-e04de58c84bf"
+      label=""
+      size="4"
+      type=""
+      srcParentID="d0f10e70-b694-5fb8-e4ab-e7b49e7032c1"
+      srcParentName="Download Document"
+      srcParentType="placeholder"
+      trgParentID="00993897-dcfc-d1a5-9817-d1982db3a3f5"
+      trgParentName="Split PDF file by pages"
+      trgParentType="pdfsplitpages"
+      router="junction"
+      color="3c78d8"
+      lblx="195"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="140"
+          y="60" />
+        <point
+          x="250"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="d537dba0-b670-17ac-3c02-62e989f2ea3d"
       label=""
       size="4"
       type=""
       srcParentID="90329a95-87f9-4b20-9108-8875c0417ebc"
       srcParentName="start"
       srcParentType="start"
-      trgParentID="00993897-dcfc-d1a5-9817-d1982db3a3f5"
-      trgParentName="Split PDF file by pages"
-      trgParentType="pdfsplitpages"
+      trgParentID="d0f10e70-b694-5fb8-e4ab-e7b49e7032c1"
+      trgParentName="Download Document"
+      trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="180"
+      lblx="55"
       lbly="60"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -131,16 +413,10 @@
       </properties>
       <line>
         <point
-          x="80"
-          y="59" />
-        <point
-          x="180"
-          y="59" />
-        <point
-          x="180"
+          x="10"
           y="60" />
         <point
-          x="280"
+          x="100"
           y="60" />
       </line>
     </connection>
