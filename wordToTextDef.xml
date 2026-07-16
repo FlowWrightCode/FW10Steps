@@ -9,14 +9,17 @@
       id="8ce73d60-c727-4024-b085-75157d57ef42"
       name="start"
       type="start"
-      x="80"
+      x="-20"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,17 +54,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="4994f36f-f8b8-92f1-6ba4-5b2517301e9b"
       name="Convert Word to Text"
       type="wordtotext"
-      x="320"
+      x="230"
       y="160"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +71,8 @@
           name="label"><![CDATA[Convert Word to Text]]></property>
         <property
           name="type"><![CDATA[wordtotext]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -89,6 +93,140 @@
           name="instState"><![CDATA[Engine Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="65ae5045-70ca-dc17-2324-611db0d6cb46"
+      name="Download Word Document"
+      type="placeholder"
+      x="90"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Download Word Document]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Download Word Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="710e62b6-0ad5-17c3-8769-7e2731d4272e"
+      name="Read Text File"
+      type="placeholder"
+      x="360"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Read Text File]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Read Text File]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9c016106-85b0-37e9-f95e-6deb04639828"
+      name="AI Analysis"
+      type="placeholder"
+      x="480"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[AI Analysis]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[AI Analysis]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="bb2d3416-93a0-1b8d-10c1-5c99a26b7b93"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="590"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -96,19 +234,169 @@
   </figures>
   <connections>
     <connection
+      id="50790772-acdf-51aa-b4e9-bced30c88ab2"
+      label=""
+      size="4"
+      type=""
+      srcParentID="9c016106-85b0-37e9-f95e-6deb04639828"
+      srcParentName="AI Analysis"
+      srcParentType="placeholder"
+      trgParentID="bb2d3416-93a0-1b8d-10c1-5c99a26b7b93"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="555"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="520"
+          y="180" />
+        <point
+          x="590"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="9a7d55df-97d2-ae2c-885c-1cd9727b0664"
+      label=""
+      size="4"
+      type=""
+      srcParentID="710e62b6-0ad5-17c3-8769-7e2731d4272e"
+      srcParentName="Read Text File"
+      srcParentType="placeholder"
+      trgParentID="9c016106-85b0-37e9-f95e-6deb04639828"
+      trgParentName="AI Analysis"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="440"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="400"
+          y="180" />
+        <point
+          x="480"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="6b9a459a-2485-14eb-2135-2665e3ec1c1c"
+      label=""
+      size="4"
+      type=""
+      srcParentID="4994f36f-f8b8-92f1-6ba4-5b2517301e9b"
+      srcParentName="Convert Word to Text"
+      srcParentType="wordtotext"
+      trgParentID="710e62b6-0ad5-17c3-8769-7e2731d4272e"
+      trgParentName="Read Text File"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="315"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="180" />
+        <point
+          x="360"
+          y="180" />
+      </line>
+    </connection>
+    <connection
       id="67eaa51a-4a2b-cfe7-3347-79ce8eb39233"
       label=""
       size="4"
       type=""
-      srcParentID="8ce73d60-c727-4024-b085-75157d57ef42"
-      srcParentType="start"
+      srcParentID="65ae5045-70ca-dc17-2324-611db0d6cb46"
+      srcParentName="Download Word Document"
+      srcParentType="placeholder"
       trgParentID="4994f36f-f8b8-92f1-6ba4-5b2517301e9b"
+      trgParentName="Convert Word to Text"
       trgParentType="wordtotext"
       router="junction"
       color="3c78d8"
-      lblx="220"
+      lblx="180"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="130"
+          y="180" />
+        <point
+          x="230"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="6bf1287b-f3d1-3ffb-830e-d5a865021dea"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8ce73d60-c727-4024-b085-75157d57ef42"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="65ae5045-70ca-dc17-2324-611db0d6cb46"
+      trgParentName="Download Word Document"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="55"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -121,10 +409,10 @@
       </properties>
       <line>
         <point
-          x="120"
+          x="20"
           y="180" />
         <point
-          x="320"
+          x="90"
           y="180" />
       </line>
     </connection>
