@@ -9,14 +9,17 @@
       id="1933748d-4a85-43dc-96bd-a820b10af42b"
       name="start"
       type="start"
-      x="40"
+      x="10"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -30,7 +33,7 @@
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
-          name="useSingleIteration"><![CDATA[]]></property>
+          name="useSingleIteration"><![CDATA[0]]></property>
         <property
           name="businessObjects"><![CDATA[]]></property>
         <property
@@ -38,18 +41,29 @@
         <property
           name="documentation"><![CDATA[]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="bca6bcfa-6839-4507-6aeb-e906b4373459"
       name="Decrypt and store files"
       type="decryptfiles"
-      x="280"
+      x="300"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -57,6 +71,8 @@
           name="label"><![CDATA[Decrypt and store files]]></property>
         <property
           name="type"><![CDATA[decryptfiles]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -79,6 +95,140 @@
           name="instState"><![CDATA[File System Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="ceeddea8-1b1b-f7ca-30af-726d5f47679b"
+      name="Download Encryped Files"
+      type="placeholder"
+      x="140"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Download Encryped Files]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Download Encryped Files]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="f2698bec-dc26-5897-5274-0a0734d33e06"
+      name="Extract Document Text"
+      type="placeholder"
+      x="460"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Extract Document Text]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Extract Document Text]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="92e86546-b63a-f2e8-40dd-8394cf91682a"
+      name="Archive Documents"
+      type="placeholder"
+      x="600"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Archive Documents]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Archive Documents]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="5937a19b-6cdc-9c69-029c-8ddb6f063d2c"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="720"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -86,19 +236,95 @@
   </figures>
   <connections>
     <connection
-      id="13939676-802b-dbf7-be3d-aa947023a640"
+      id="1db1e721-17ee-9ce4-cbdf-7a40fa165e67"
       label=""
       size="4"
       type=""
-      srcParentID="1933748d-4a85-43dc-96bd-a820b10af42b"
-      srcParentType="start"
-      trgParentID="bca6bcfa-6839-4507-6aeb-e906b4373459"
-      trgParentType="decryptfiles"
+      srcParentID="92e86546-b63a-f2e8-40dd-8394cf91682a"
+      srcParentName="Archive Documents"
+      srcParentType="placeholder"
+      trgParentID="5937a19b-6cdc-9c69-029c-8ddb6f063d2c"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="180"
+      lblx="680"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="640"
+          y="59" />
+        <point
+          x="720"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="f5461f91-1233-de89-5d50-8e02dd81f700"
+      label=""
+      size="4"
+      type=""
+      srcParentID="f2698bec-dc26-5897-5274-0a0734d33e06"
+      srcParentName="Extract Document Text"
+      srcParentType="placeholder"
+      trgParentID="92e86546-b63a-f2e8-40dd-8394cf91682a"
+      trgParentName="Archive Documents"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="550"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="500"
+          y="59" />
+        <point
+          x="600"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="d031d1dd-b8bb-2c61-f932-898f5dfff35b"
+      label=""
+      size="4"
+      type=""
+      srcParentID="bca6bcfa-6839-4507-6aeb-e906b4373459"
+      srcParentName="Decrypt and store files"
+      srcParentType="decryptfiles"
+      trgParentID="f2698bec-dc26-5897-5274-0a0734d33e06"
+      trgParentName="Extract Document Text"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="400"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -111,10 +337,82 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="340"
           y="59" />
         <point
-          x="280"
+          x="460"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="13939676-802b-dbf7-be3d-aa947023a640"
+      label=""
+      size="4"
+      type=""
+      srcParentID="ceeddea8-1b1b-f7ca-30af-726d5f47679b"
+      srcParentName="Download Encryped Files"
+      srcParentType="placeholder"
+      trgParentID="bca6bcfa-6839-4507-6aeb-e906b4373459"
+      trgParentName="Decrypt and store files"
+      trgParentType="decryptfiles"
+      router="junction"
+      color="3c78d8"
+      lblx="240"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="180"
+          y="59" />
+        <point
+          x="300"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="083f03ff-f0d0-e15e-1a2e-b4be4ec8509a"
+      label=""
+      size="4"
+      type=""
+      srcParentID="1933748d-4a85-43dc-96bd-a820b10af42b"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="ceeddea8-1b1b-f7ca-30af-726d5f47679b"
+      trgParentName="Download Encryped Files"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="95"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="50"
+          y="59" />
+        <point
+          x="140"
           y="59" />
       </line>
     </connection>
