@@ -9,14 +9,17 @@
       id="5f10e2f1-b4fc-49c6-92ff-a010eb87844a"
       name="start"
       type="start"
-      x="40"
+      x="-80"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,17 +54,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="5e385307-a54d-cd28-eb89-f22ebf4d63ef"
       name="Create Webex Meeting"
       type="clswebexmeeting"
-      x="280"
+      x="220"
       y="160"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +71,8 @@
           name="label"><![CDATA[Create Webex Meeting]]></property>
         <property
           name="type"><![CDATA[clswebexmeeting]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -107,6 +111,140 @@
           name="instState"><![CDATA[Meetings Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9fb482b4-e337-938b-75ba-1857c19421ba"
+      name="Receive Meeting Request"
+      type="placeholder"
+      x="50"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Receive Meeting Request]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Receive Meeting Request]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="96c44378-d1b4-e86e-789f-c0dab6d6e574"
+      name="Store Meeting Details"
+      type="placeholder"
+      x="370"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Store Meeting Details]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Store Meeting Details]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="24845d02-95ed-078f-0bb4-8768b86256f7"
+      name="Send Email Invitation"
+      type="placeholder"
+      x="510"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Email Invitation]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Email Invitation]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="f0fa1401-cbab-c910-37e4-0205749d6358"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="640"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -114,19 +252,169 @@
   </figures>
   <connections>
     <connection
+      id="9a8d94b0-cc92-f863-cf8c-75962cad54e6"
+      label=""
+      size="4"
+      type=""
+      srcParentID="24845d02-95ed-078f-0bb4-8768b86256f7"
+      srcParentName="Send Email Invitation"
+      srcParentType="placeholder"
+      trgParentID="f0fa1401-cbab-c910-37e4-0205749d6358"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="595"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="550"
+          y="180" />
+        <point
+          x="640"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="6082e944-06b1-338d-3305-adf7325fc6ce"
+      label=""
+      size="4"
+      type=""
+      srcParentID="96c44378-d1b4-e86e-789f-c0dab6d6e574"
+      srcParentName="Store Meeting Details"
+      srcParentType="placeholder"
+      trgParentID="24845d02-95ed-078f-0bb4-8768b86256f7"
+      trgParentName="Send Email Invitation"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="460"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="410"
+          y="180" />
+        <point
+          x="510"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="05d2586d-6d39-2aa8-8069-0dd6ed0d3827"
+      label=""
+      size="4"
+      type=""
+      srcParentID="5e385307-a54d-cd28-eb89-f22ebf4d63ef"
+      srcParentName="Create Webex Meeting"
+      srcParentType="clswebexmeeting"
+      trgParentID="96c44378-d1b4-e86e-789f-c0dab6d6e574"
+      trgParentName="Store Meeting Details"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="315"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
+          y="180" />
+        <point
+          x="370"
+          y="180" />
+      </line>
+    </connection>
+    <connection
       id="44b799af-cbee-c6e4-9a74-2d8d20c9dc87"
       label=""
       size="4"
       type=""
-      srcParentID="5f10e2f1-b4fc-49c6-92ff-a010eb87844a"
-      srcParentType="start"
+      srcParentID="9fb482b4-e337-938b-75ba-1857c19421ba"
+      srcParentName="Receive Meeting Request"
+      srcParentType="placeholder"
       trgParentID="5e385307-a54d-cd28-eb89-f22ebf4d63ef"
+      trgParentName="Create Webex Meeting"
       trgParentType="clswebexmeeting"
       router="junction"
       color="3c78d8"
-      lblx="180"
+      lblx="155"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="90"
+          y="180" />
+        <point
+          x="220"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="f03c506e-a6b5-c4b5-e61d-9860efa14403"
+      label=""
+      size="4"
+      type=""
+      srcParentID="5f10e2f1-b4fc-49c6-92ff-a010eb87844a"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="9fb482b4-e337-938b-75ba-1857c19421ba"
+      trgParentName="Receive Meeting Request"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="5"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -139,10 +427,10 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="-40"
           y="180" />
         <point
-          x="280"
+          x="50"
           y="180" />
       </line>
     </connection>
