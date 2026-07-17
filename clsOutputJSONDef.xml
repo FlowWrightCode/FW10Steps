@@ -92,6 +92,7 @@
       x="400"
       y="40"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="0">
       <properties>
@@ -99,6 +100,8 @@
           name="label"><![CDATA[JSON Output file]]></property>
         <property
           name="type"><![CDATA[clsoutputjson]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -119,8 +122,6 @@
           name="instState"><![CDATA[Dataset ETL Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -131,14 +132,16 @@
       size="4"
       type=""
       srcParentID="3138b165-4a81-46f6-9a20-f71bf0de6575"
+      srcParentName="Transform number to string"
       srcParentType="clstransformformatnumbertostring"
       trgParentID="211d6bc0-34a0-9ba2-6930-c6c7397410f0"
+      trgParentName="JSON Output file"
       trgParentType="clsoutputjson"
       router="junction"
       color="3c78d8"
       lblx="320"
       lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -164,14 +167,16 @@
       size="4"
       type=""
       srcParentID="7976f999-7439-44fd-bb41-3a8d0a69c837"
+      srcParentName="Excel Input file"
       srcParentType="clsinputexcel"
       trgParentID="3138b165-4a81-46f6-9a20-f71bf0de6575"
+      trgParentName="Transform number to string"
       trgParentType="clstransformformatnumbertostring"
       router="junction"
       color="3c78d8"
       lblx="120"
       lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
