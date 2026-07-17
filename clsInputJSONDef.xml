@@ -88,6 +88,7 @@
       x="-10"
       y="40"
       isValid="true"
+      isLocked="False"
       inConnections="0"
       outConnections="2">
       <properties>
@@ -95,6 +96,8 @@
           name="label"><![CDATA[JSON Input file]]></property>
         <property
           name="type"><![CDATA[clsinputjson]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[0]]></property>
         <property
@@ -118,8 +121,6 @@
         <property
           name="instPercent"><![CDATA[100]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
-        <property
           name="variables"><![CDATA[vOPath:String]]></property>
       </properties>
     </figure>
@@ -131,14 +132,16 @@
       size="4"
       type=""
       srcParentID="d9360ace-2e0d-46c8-8bfc-fa3cff96e786"
+      srcParentName="JSON Input file"
       srcParentType="clsinputjson"
       trgParentID="ac6f5df1-1f76-422e-a0de-37d6c9279abc"
+      trgParentName="Transform number to string"
       trgParentType="clstransformformatnumbertostring"
       router="junction"
       color="3c78d8"
       lblx="115"
       lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -164,14 +167,16 @@
       size="4"
       type=""
       srcParentID="ac6f5df1-1f76-422e-a0de-37d6c9279abc"
+      srcParentName="Transform number to string"
       srcParentType="clstransformformatnumbertostring"
       trgParentID="24d14360-65e4-4813-ac8f-933b91b6592a"
+      trgParentName="JSON Output file"
       trgParentType="clsoutputjson"
       router="junction"
       color="3c78d8"
       lblx="320"
       lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
