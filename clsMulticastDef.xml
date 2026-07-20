@@ -12,6 +12,7 @@
       x="-80"
       y="80"
       isValid="true"
+      isLocked="False"
       inConnections="0"
       outConnections="2">
       <properties>
@@ -19,6 +20,8 @@
           name="label"><![CDATA[CSV Input file]]></property>
         <property
           name="type"><![CDATA[clsinputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[0]]></property>
         <property
@@ -42,8 +45,6 @@
         <property
           name="instPercent"><![CDATA[]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
-        <property
           name="variables"><![CDATA[vOPath:String|vOXlsPath:String]]></property>
       </properties>
     </figure>
@@ -54,6 +55,7 @@
       x="160"
       y="80"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="2">
       <properties>
@@ -61,6 +63,8 @@
           name="label"><![CDATA[Multicast Data]]></property>
         <property
           name="type"><![CDATA[clsmulticast]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -77,8 +81,6 @@
           name="instState"><![CDATA[Utils ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -88,6 +90,7 @@
       x="160"
       y="380"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="0">
       <properties>
@@ -95,6 +98,8 @@
           name="label"><![CDATA[CSV Output file]]></property>
         <property
           name="type"><![CDATA[clsoutputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -115,8 +120,6 @@
           name="instState"><![CDATA[Dataset ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -126,6 +129,7 @@
       x="410"
       y="380"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="0">
       <properties>
@@ -133,6 +137,8 @@
           name="label"><![CDATA[Excel Output file]]></property>
         <property
           name="type"><![CDATA[clsoutputexcel]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -153,8 +159,6 @@
           name="instState"><![CDATA[Dataset ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -164,6 +168,7 @@
       x="160"
       y="220"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="1">
       <properties>
@@ -171,6 +176,8 @@
           name="label"><![CDATA[Filter transform]]></property>
         <property
           name="type"><![CDATA[clsfiltertransform]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -189,8 +196,6 @@
           name="instState"><![CDATA[Text ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -200,6 +205,7 @@
       x="410"
       y="210"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="1">
       <properties>
@@ -207,6 +213,8 @@
           name="label"><![CDATA[Transform Create substring]]></property>
         <property
           name="type"><![CDATA[clstransformsubstring]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -225,8 +233,6 @@
           name="instState"><![CDATA[Text ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -237,14 +243,16 @@
       size="4"
       type=""
       srcParentID="4e5ee793-9f7d-1441-455c-782755e23161"
+      srcParentName="Transform Create substring"
       srcParentType="clstransformsubstring"
       trgParentID="8756e369-60f9-b40b-dde6-f696f5de71bc"
+      trgParentName="Excel Output file"
       trgParentType="clsoutputexcel"
       router="junction"
       color="3c78d8"
       lblx="430"
       lbly="315"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -272,14 +280,16 @@
       size="4"
       type=""
       srcParentID="362aa047-e03f-32dc-2179-87ca2020ef09"
+      srcParentName="Filter transform"
       srcParentType="clsfiltertransform"
       trgParentID="e8bf96a1-5d72-2a4f-81bd-c090edd6285a"
+      trgParentName="CSV Output file"
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
       lblx="180"
       lbly="320"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -307,14 +317,16 @@
       size="4"
       type=""
       srcParentID="d7bee1f1-34bf-f428-4ad6-1309d1247e96"
+      srcParentName="CSV Input file"
       srcParentType="clsinputcsv"
       trgParentID="3681d8ef-bd5a-c59e-81fd-ddadf0704563"
+      trgParentName="Multicast Data"
       trgParentType="clsmulticast"
       router="junction"
       color="3c78d8"
       lblx="60"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -340,14 +352,16 @@
       size="4"
       type=""
       srcParentID="3681d8ef-bd5a-c59e-81fd-ddadf0704563"
+      srcParentName="Multicast Data"
       srcParentType="clsmulticast"
       trgParentID="362aa047-e03f-32dc-2179-87ca2020ef09"
+      trgParentName="Filter transform"
       trgParentType="clsfiltertransform"
       router="junction"
       color="3c78d8"
       lblx="180"
       lbly="170"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -373,14 +387,16 @@
       size="4"
       type=""
       srcParentID="3681d8ef-bd5a-c59e-81fd-ddadf0704563"
+      srcParentName="Multicast Data"
       srcParentType="clsmulticast"
       trgParentID="4e5ee793-9f7d-1441-455c-782755e23161"
+      trgParentName="Transform Create substring"
       trgParentType="clstransformsubstring"
       router="junction"
       color="3c78d8"
       lblx="370"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
