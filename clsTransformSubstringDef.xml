@@ -12,6 +12,7 @@
       x="0"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="0"
       outConnections="2">
       <properties>
@@ -19,6 +20,8 @@
           name="label"><![CDATA[CSV Input file]]></property>
         <property
           name="type"><![CDATA[clsinputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[0]]></property>
         <property
@@ -42,8 +45,6 @@
         <property
           name="instPercent"><![CDATA[100]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
-        <property
           name="variables"><![CDATA[vOPath:String]]></property>
       </properties>
     </figure>
@@ -54,6 +55,7 @@
       x="430"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="0">
       <properties>
@@ -61,6 +63,8 @@
           name="label"><![CDATA[CSV Output file]]></property>
         <property
           name="type"><![CDATA[clsoutputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -81,8 +85,6 @@
           name="instState"><![CDATA[Text ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -92,6 +94,7 @@
       x="240"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="1">
       <properties>
@@ -99,6 +102,8 @@
           name="label"><![CDATA[Transform Create substring]]></property>
         <property
           name="type"><![CDATA[clstransformsubstring]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -108,7 +113,7 @@
         <property
           name="itemDescription"><![CDATA[clsTransformSubstring]]></property>
         <property
-          name="transforms"><![CDATA[Country~First~15~15Chars_Country]]></property>
+          name="transforms"><![CDATA[Country~1~15~15Chars_Country]]></property>
         <property
           name="LogMessage"><![CDATA[clsTransformSubstring - Variable.createdOn]]></property>
         <property
@@ -117,8 +122,6 @@
           name="instState"><![CDATA[Text ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -129,14 +132,16 @@
       size="4"
       type=""
       srcParentID="4b441978-6b9f-4429-2172-b62ed93a0719"
+      srcParentName="Transform Create substring"
       srcParentType="clstransformsubstring"
       trgParentID="56d60271-63be-f9e9-e4c5-70fbfdfa4fdb"
+      trgParentName="CSV Output file"
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
       lblx="355"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -162,14 +167,16 @@
       size="4"
       type=""
       srcParentID="0d36daed-360f-1f4b-e249-fa39467d9ac5"
+      srcParentName="CSV Input file"
       srcParentType="clsinputcsv"
       trgParentID="4b441978-6b9f-4429-2172-b62ed93a0719"
+      trgParentName="Transform Create substring"
       trgParentType="clstransformsubstring"
       router="junction"
       color="3c78d8"
       lblx="140"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
