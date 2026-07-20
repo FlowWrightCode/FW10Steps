@@ -12,6 +12,7 @@
       x="20"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="0"
       outConnections="2">
       <properties>
@@ -19,6 +20,8 @@
           name="label"><![CDATA[CSV Input file]]></property>
         <property
           name="type"><![CDATA[clsinputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[0]]></property>
         <property
@@ -42,8 +45,6 @@
         <property
           name="instPercent"><![CDATA[]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
-        <property
           name="variables"><![CDATA[vOPath:String]]></property>
       </properties>
     </figure>
@@ -54,6 +55,7 @@
       x="430"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="0">
       <properties>
@@ -61,6 +63,8 @@
           name="label"><![CDATA[CSV Output file]]></property>
         <property
           name="type"><![CDATA[clsoutputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -70,7 +74,7 @@
         <property
           name="itemDescription"><![CDATA[clsOutputCSV]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-RRS-SalesRecords-Oct2024.csv]]></property>
         <property
           name="variableOrGlobal"><![CDATA[variable.vOPath]]></property>
         <property
@@ -81,8 +85,6 @@
           name="instState"><![CDATA[Dataset ETL Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -92,6 +94,7 @@
       x="240"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="1">
       <properties>
@@ -99,6 +102,8 @@
           name="label"><![CDATA[Transform text replace with operator]]></property>
         <property
           name="type"><![CDATA[clstransformreplace]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -117,8 +122,6 @@
           name="instState"><![CDATA[Text ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -136,7 +139,7 @@
       color="3c78d8"
       lblx="355"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -169,7 +172,7 @@
       color="3c78d8"
       lblx="150"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
