@@ -12,6 +12,7 @@
       x="0"
       y="40"
       isValid="true"
+      isLocked="False"
       inConnections="0"
       outConnections="2">
       <properties>
@@ -19,6 +20,8 @@
           name="label"><![CDATA[CSV Input file]]></property>
         <property
           name="type"><![CDATA[clsinputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[0]]></property>
         <property
@@ -42,7 +45,7 @@
         <property
           name="instPercent"><![CDATA[100]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
+          name="variables"><![CDATA[vOPath:String]]></property>
       </properties>
     </figure>
     <figure
@@ -52,6 +55,7 @@
       x="400"
       y="40"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="0">
       <properties>
@@ -59,6 +63,8 @@
           name="label"><![CDATA[CSV Output file]]></property>
         <property
           name="type"><![CDATA[clsoutputcsv]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -79,8 +85,6 @@
           name="instState"><![CDATA[Dataset ETL Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -90,6 +94,7 @@
       x="210"
       y="40"
       isValid="true"
+      isLocked="False"
       inConnections="1"
       outConnections="1">
       <properties>
@@ -97,6 +102,8 @@
           name="label"><![CDATA[Transform date by extracting a part]]></property>
         <property
           name="type"><![CDATA[clstransformextractdatepart]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[1]]></property>
         <property
@@ -115,8 +122,6 @@
           name="instState"><![CDATA[Dataset ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -127,14 +132,16 @@
       size="4"
       type=""
       srcParentID="36401fc5-fcb9-0abe-9497-a11722149210"
+      srcParentName="Transform date by extracting a part"
       srcParentType="clstransformextractdatepart"
       trgParentID="ae19f5ba-0e5a-a4da-6f7b-cfc49677a694"
+      trgParentName="CSV Output file"
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
       lblx="325"
       lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -160,14 +167,16 @@
       size="4"
       type=""
       srcParentID="899d8984-9538-67b1-5c8e-7b208e8ab841"
+      srcParentName="CSV Input file"
       srcParentType="clsinputcsv"
       trgParentID="36401fc5-fcb9-0abe-9497-a11722149210"
+      trgParentName="Transform date by extracting a part"
       trgParentType="clstransformextractdatepart"
       router="junction"
       color="3c78d8"
       lblx="125"
       lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
