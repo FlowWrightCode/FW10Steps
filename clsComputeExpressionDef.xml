@@ -31,7 +31,7 @@
         <property
           name="itemDescription"><![CDATA[clsInputCSV]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\RRS-SalesRecords-Oct2024.csv]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\Richa\RRS-SalesRecords-Oct2024.csv]]></property>
         <property
           name="colSchema"><![CDATA[d8d52053-ca67-47f0-a3be-998d746844cd]]></property>
         <property
@@ -74,7 +74,7 @@
         <property
           name="itemDescription"><![CDATA[clsOutputCSV]]></property>
         <property
-          name="filePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\Output-RRS-SalesRecords-Oct2024.csv]]></property>
+          name="filePath"><![CDATA[C:\FlowWright\wwwroot\Richa\Output-RRS-SalesRecords-Oct2024.csv]]></property>
         <property
           name="variableOrGlobal"><![CDATA[variable.vOPath]]></property>
         <property
@@ -132,14 +132,16 @@
       size="4"
       type=""
       srcParentID="6d3ed809-8ecc-c878-8f64-d6c5660d26a6"
+      srcParentName="Evaluate column expressions"
       srcParentType="clscomputeexpression"
       trgParentID="ce42a216-c985-43cf-3768-6e3c35d3bcae"
+      trgParentName="CSV Output file"
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
       lblx="325"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -165,14 +167,16 @@
       size="4"
       type=""
       srcParentID="7dc0b092-b2d5-383b-aed6-ef58ac1c88eb"
+      srcParentName="CSV Input file"
       srcParentType="clsinputcsv"
       trgParentID="6d3ed809-8ecc-c878-8f64-d6c5660d26a6"
+      trgParentName="Evaluate column expressions"
       trgParentType="clscomputeexpression"
       router="junction"
       color="3c78d8"
       lblx="125"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
