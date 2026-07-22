@@ -9,7 +9,7 @@
       id="2a2f4e5a-852b-4c2f-b12f-3cd9c5ff46fc"
       name="start"
       type="start"
-      x="40"
+      x="-60"
       y="39"
       isValid="true"
       isLocked="False">
@@ -60,7 +60,7 @@
       id="e695b32b-be11-1886-bb8b-e9cd22cb4260"
       name="Create JSON objects in MongoDB"
       type="clsmongocreateobjects"
-      x="260"
+      x="360"
       y="39"
       isValid="true"
       isLocked="False"
@@ -101,22 +101,345 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="e2545d56-9c7f-e5f1-38b3-89d7a98c4f8e"
+      name="Collect Customer Information"
+      type="placeholder"
+      x="80"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Collect Customer Information]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Collect Customer Information]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="cbfc46bc-1c3c-5605-efd0-a70e81619d68"
+      name="Generate JSON"
+      type="placeholder"
+      x="230"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate JSON]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate JSON]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="b3808f26-3b66-d4ea-2818-fe5489f6bc4f"
+      name="Send Confirmation Mail"
+      type="placeholder"
+      x="510"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Confirmation Mail]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Confirmation Mail]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4bc74b09-0d85-948a-b841-014a15eaed3b"
+      name="Log Error"
+      type="placeholder"
+      x="360"
+      y="170"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="e6bd5fb0-1e3c-5988-29eb-09109a82b739"
+      name="Notify Administrator"
+      type="placeholder"
+      x="360"
+      y="280"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="bd65e9c4-7974-cbf8-d1c5-713d65922c93"
+      label=""
+      size="4"
+      type=""
+      srcParentID="4bc74b09-0d85-948a-b841-014a15eaed3b"
+      srcParentName="Log Error"
+      srcParentType="placeholder"
+      trgParentID="e6bd5fb0-1e3c-5988-29eb-09109a82b739"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="380"
+      lbly="245"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="210" />
+        <point
+          x="380"
+          y="280" />
+      </line>
+    </connection>
+    <connection
+      id="5d68c866-89db-2b73-bfd5-f17dc3e961d7"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="e695b32b-be11-1886-bb8b-e9cd22cb4260"
+      srcParentName="Create JSON objects in MongoDB"
+      srcParentType="clsmongocreateobjects"
+      trgParentID="4bc74b09-0d85-948a-b841-014a15eaed3b"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="380"
+      lbly="125"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="79" />
+        <point
+          x="380"
+          y="170" />
+      </line>
+    </connection>
+    <connection
+      id="3683b842-69e8-eb05-6883-7393d26d0818"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="e695b32b-be11-1886-bb8b-e9cd22cb4260"
+      srcParentName="Create JSON objects in MongoDB"
+      srcParentType="clsmongocreateobjects"
+      trgParentID="b3808f26-3b66-d4ea-2818-fe5489f6bc4f"
+      trgParentName="Send Confirmation Mail"
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="455"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="400"
+          y="59" />
+        <point
+          x="470"
+          y="59" />
+        <point
+          x="510"
+          y="59" />
+      </line>
+    </connection>
     <connection
       id="0c29b2a2-8ba1-4830-4150-680a9fb46e49"
       label=""
       size="5"
       type=""
-      srcParentID="2a2f4e5a-852b-4c2f-b12f-3cd9c5ff46fc"
-      srcParentType="start"
+      srcParentID="cbfc46bc-1c3c-5605-efd0-a70e81619d68"
+      srcParentName="Generate JSON"
+      srcParentType="placeholder"
       trgParentID="e695b32b-be11-1886-bb8b-e9cd22cb4260"
+      trgParentName="Create JSON objects in MongoDB"
       trgParentType="clsmongocreateobjects"
       router="junction"
       color="0000ff"
-      lblx="170"
+      lblx="315"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="59" />
+        <point
+          x="360"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="6a6fa292-79fb-2798-b954-60c9b8e1aedd"
+      label=""
+      size="5"
+      type=""
+      srcParentID="2a2f4e5a-852b-4c2f-b12f-3cd9c5ff46fc"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="e2545d56-9c7f-e5f1-38b3-89d7a98c4f8e"
+      trgParentName="Collect Customer Information"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="30"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -129,10 +452,47 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="-20"
           y="59" />
         <point
-          x="260"
+          x="80"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="ae3ae532-e014-83b5-5e41-38a83fcc2887"
+      label=""
+      size="5"
+      type=""
+      srcParentID="e2545d56-9c7f-e5f1-38b3-89d7a98c4f8e"
+      srcParentName="Collect Customer Information"
+      srcParentType="placeholder"
+      trgParentID="cbfc46bc-1c3c-5605-efd0-a70e81619d68"
+      trgParentName="Generate JSON"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="175"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="120"
+          y="59" />
+        <point
+          x="230"
           y="59" />
       </line>
     </connection>
