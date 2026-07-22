@@ -9,7 +9,7 @@
       id="ef725463-28d7-411a-8aa2-c49dd5fbcbe2"
       name="start"
       type="start"
-      x="10"
+      x="-60"
       y="39"
       isValid="true"
       isLocked="False">
@@ -60,7 +60,7 @@
       id="6bd7f3d7-ccf7-92bf-3c56-23378b37e77b"
       name="Get a list of objects using a JSON filter condition"
       type="clsmongogetobjects"
-      x="210"
+      x="240"
       y="39"
       isValid="true"
       isLocked="False"
@@ -105,7 +105,7 @@
       id="f0b4740a-90a6-4613-56ad-71b7b10479c1"
       name="Get all JSON objects"
       type="clsmongogetobjects"
-      x="640"
+      x="730"
       y="39"
       isValid="true"
       isLocked="False"
@@ -150,7 +150,7 @@
       id="1a1c2e38-716c-06ca-9e68-54744312bb0a"
       name="Delete JSON objects in MongoDB"
       type="clsmongodeleteobjects"
-      x="440"
+      x="420"
       y="39"
       isValid="true"
       isLocked="False"
@@ -189,24 +189,162 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="0d0e3699-8917-8e12-d160-51e820eef2e5"
+      name="Archive Customer Data"
+      type="placeholder"
+      x="60"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Archive Customer Data]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Archive Customer Data]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="860093cc-b9d1-14e2-db73-33e4a6c41cbd"
+      name="Write Audit Log"
+      type="placeholder"
+      x="570"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Write Audit Log]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Write Audit Log]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="e4317866-3396-a048-70ea-244b8c43c486"
+      name="Log Error"
+      type="placeholder"
+      x="420"
+      y="180"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="2f251be6-4570-fa3e-2c82-89c3a1366c4e"
+      name="Notify Administrator"
+      type="placeholder"
+      x="420"
+      y="300"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="8ac9a395-b938-d88a-e2e8-ca3ce8443510"
+      id="9e27c5bd-e150-a4c3-a597-2c6a7810f000"
       label=""
-      size="5"
+      size="4"
       type=""
-      srcParentID="ef725463-28d7-411a-8aa2-c49dd5fbcbe2"
-      srcParentType="start"
-      trgParentID="6bd7f3d7-ccf7-92bf-3c56-23378b37e77b"
-      trgParentType="clsmongogetobjects"
+      srcParentID="e4317866-3396-a048-70ea-244b8c43c486"
+      srcParentName="Log Error"
+      srcParentType="placeholder"
+      trgParentID="2f251be6-4570-fa3e-2c82-89c3a1366c4e"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
       router="junction"
-      color="0000ff"
-      lblx="130"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
-      srcPortName="eastPort"
-      trgPortName="westPort">
+      color="3c78d8"
+      lblx="440"
+      lbly="260"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
       <properties>
         <property
           name="label"><![CDATA[]]></property>
@@ -214,30 +352,71 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
-          x="50"
-          y="59" />
+          x="440"
+          y="220" />
         <point
-          x="210"
-          y="59" />
+          x="440"
+          y="300" />
       </line>
     </connection>
     <connection
-      id="a7755317-7f00-a36a-1188-521d8d2b32c9"
-      label=""
-      size="5"
+      id="db45e36d-dba1-e661-c5cd-5d349bc95793"
+      label="False"
+      size="4"
       type=""
       srcParentID="1a1c2e38-716c-06ca-9e68-54744312bb0a"
+      srcParentName="Delete JSON objects in MongoDB"
       srcParentType="clsmongodeleteobjects"
+      trgParentID="e4317866-3396-a048-70ea-244b8c43c486"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="440"
+      lbly="130"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="440"
+          y="79" />
+        <point
+          x="440"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="b1aa5bd7-ed1c-e85b-f036-32aa706c318b"
+      label=""
+      size="4"
+      type=""
+      srcParentID="860093cc-b9d1-14e2-db73-33e4a6c41cbd"
+      srcParentName="Write Audit Log"
+      srcParentType="placeholder"
       trgParentID="f0b4740a-90a6-4613-56ad-71b7b10479c1"
+      trgParentName="Get all JSON objects"
       trgParentType="clsmongogetobjects"
       router="junction"
-      color="0000ff"
-      lblx="560"
+      color="3c78d8"
+      lblx="670"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -252,10 +431,84 @@
       </properties>
       <line>
         <point
-          x="480"
+          x="610"
           y="59" />
         <point
-          x="640"
+          x="730"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="163425df-5558-9fcd-a9b2-bbd711071945"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="1a1c2e38-716c-06ca-9e68-54744312bb0a"
+      srcParentName="Delete JSON objects in MongoDB"
+      srcParentType="clsmongodeleteobjects"
+      trgParentID="860093cc-b9d1-14e2-db73-33e4a6c41cbd"
+      trgParentName="Write Audit Log"
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="515"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="460"
+          y="59" />
+        <point
+          x="570"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="8ac9a395-b938-d88a-e2e8-ca3ce8443510"
+      label=""
+      size="5"
+      type=""
+      srcParentID="0d0e3699-8917-8e12-d160-51e820eef2e5"
+      srcParentName="Archive Customer Data"
+      srcParentType="placeholder"
+      trgParentID="6bd7f3d7-ccf7-92bf-3c56-23378b37e77b"
+      trgParentName="Get a list of objects using a JSON filter condition"
+      trgParentType="clsmongogetobjects"
+      router="junction"
+      color="0000ff"
+      lblx="170"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="100"
+          y="59" />
+        <point
+          x="240"
           y="59" />
       </line>
     </connection>
@@ -265,14 +518,16 @@
       size="5"
       type=""
       srcParentID="6bd7f3d7-ccf7-92bf-3c56-23378b37e77b"
+      srcParentName="Get a list of objects using a JSON filter condition"
       srcParentType="clsmongogetobjects"
       trgParentID="1a1c2e38-716c-06ca-9e68-54744312bb0a"
+      trgParentName="Delete JSON objects in MongoDB"
       trgParentType="clsmongodeleteobjects"
       router="junction"
       color="0000ff"
-      lblx="345"
+      lblx="350"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -287,10 +542,45 @@
       </properties>
       <line>
         <point
-          x="250"
+          x="280"
           y="59" />
         <point
-          x="440"
+          x="420"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="6c8a9dc5-6591-1a9a-c98e-d2b793445023"
+      label=""
+      size="5"
+      type=""
+      srcParentID="ef725463-28d7-411a-8aa2-c49dd5fbcbe2"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="0d0e3699-8917-8e12-d160-51e820eef2e5"
+      trgParentName="Archive Customer Data"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="20"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="-20"
+          y="59" />
+        <point
+          x="60"
           y="59" />
       </line>
     </connection>
