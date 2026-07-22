@@ -9,7 +9,7 @@
       id="8b9353e9-b02e-0bf2-e506-4f340c06c0a2"
       name="CSV Input file"
       type="clsinputcsv"
-      x="-50"
+      x="10"
       y="100"
       isValid="true"
       isLocked="False"
@@ -52,7 +52,7 @@
       id="08d190a2-a183-4a23-27ba-29fe17585e9c"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="480"
+      x="440"
       y="100"
       isValid="true"
       isLocked="False"
@@ -132,14 +132,16 @@
       size="4"
       type=""
       srcParentID="adee1cfa-f74c-91bb-d548-d8a7231d8718"
+      srcParentName="Transform number to string"
       srcParentType="clstransformformatnumbertostring"
       trgParentID="08d190a2-a183-4a23-27ba-29fe17585e9c"
+      trgParentName="CSV Output file"
       trgParentType="clsoutputcsv"
       router="junction"
       color="0000ff"
-      lblx="370"
+      lblx="350"
       lbly="120"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -157,7 +159,7 @@
           x="260"
           y="120" />
         <point
-          x="480"
+          x="440"
           y="120" />
       </line>
     </connection>
@@ -167,14 +169,16 @@
       size="4"
       type=""
       srcParentID="8b9353e9-b02e-0bf2-e506-4f340c06c0a2"
+      srcParentName="CSV Input file"
       srcParentType="clsinputcsv"
       trgParentID="adee1cfa-f74c-91bb-d548-d8a7231d8718"
+      trgParentName="Transform number to string"
       trgParentType="clstransformformatnumbertostring"
       router="junction"
       color="0000ff"
-      lblx="105"
+      lblx="135"
       lbly="120"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -189,7 +193,7 @@
       </properties>
       <line>
         <point
-          x="-10"
+          x="50"
           y="120" />
         <point
           x="220"
