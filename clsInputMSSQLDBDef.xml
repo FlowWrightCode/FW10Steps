@@ -111,7 +111,7 @@
         <property
           name="connectionID"><![CDATA[7e793064-f3da-4d98-b958-78fa57499599]]></property>
         <property
-          name="tableName"><![CDATA[RRS_SalesRecords_CaseTransform]]></property>
+          name="tableName"><![CDATA[RRS-SalesRecords-CaseTransform]]></property>
         <property
           name="createTable"><![CDATA[yes]]></property>
         <property
@@ -134,14 +134,16 @@
       size="4"
       type=""
       srcParentID="714b345f-1ca0-66a2-dafa-beb045390cb7"
+      srcParentName="Transform text case"
       srcParentType="clstransformcase"
       trgParentID="9ee386c5-85f9-d24c-3cf7-60d30ff3254e"
+      trgParentName="MSSQL Output file"
       trgParentType="clsoutputmssqldb"
       router="junction"
       color="3c78d8"
       lblx="360"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -167,14 +169,16 @@
       size="4"
       type=""
       srcParentID="4c51250e-cc64-1090-9189-1ff66bf6e6a6"
+      srcParentName="MSSQL Input file"
       srcParentType="clsinputmssqldb"
       trgParentID="714b345f-1ca0-66a2-dafa-beb045390cb7"
+      trgParentName="Transform text case"
       trgParentType="clstransformcase"
       router="junction"
       color="3c78d8"
       lblx="160"
       lbly="100"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
