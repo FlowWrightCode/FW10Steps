@@ -9,8 +9,8 @@
       id="8486e855-f2b9-1892-7621-0845986b7739"
       name="CSV Input file"
       type="clsinputcsv"
-      x="100"
-      y="90"
+      x="20"
+      y="60"
       isValid="true"
       isLocked="False"
       inConnections="0"
@@ -54,8 +54,8 @@
       id="dfa1fcfd-2f8e-1ad1-a2b4-832d1a7150e7"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="-110"
-      y="290"
+      x="-190"
+      y="260"
       isValid="true"
       isLocked="False"
       inConnections="1"
@@ -93,8 +93,8 @@
       id="fcfd39a4-404a-20d3-c0d6-700566b5cdfd"
       name="Validate Data"
       type="clsvalidatedata"
-      x="100"
-      y="290"
+      x="20"
+      y="260"
       isValid="true"
       isLocked="False"
       inConnections="1"
@@ -134,8 +134,8 @@
       id="32334215-382f-3032-6368-bcae1fb9463d"
       name="CSV Error file"
       type="clserrorcsv"
-      x="330"
-      y="290"
+      x="250"
+      y="260"
       isValid="true"
       isLocked="False"
       inConnections="1"
@@ -177,14 +177,16 @@
       size="5"
       type=""
       srcParentID="8486e855-f2b9-1892-7621-0845986b7739"
+      srcParentName="CSV Input file"
       srcParentType="clsinputcsv"
       trgParentID="fcfd39a4-404a-20d3-c0d6-700566b5cdfd"
+      trgParentName="Validate Data"
       trgParentType="clsvalidatedata"
       router="junction"
       color="0000ff"
-      lblx="120"
-      lbly="210"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lblx="40"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -199,11 +201,11 @@
       </properties>
       <line>
         <point
-          x="120"
-          y="130" />
+          x="40"
+          y="100" />
         <point
-          x="120"
-          y="290" />
+          x="40"
+          y="260" />
       </line>
     </connection>
     <connection
@@ -212,14 +214,16 @@
       size="5"
       type=""
       srcParentID="fcfd39a4-404a-20d3-c0d6-700566b5cdfd"
+      srcParentName="Validate Data"
       srcParentType="clsvalidatedata"
       trgParentID="dfa1fcfd-2f8e-1ad1-a2b4-832d1a7150e7"
+      trgParentName="CSV Output file"
       trgParentType="clsoutputcsv"
       router="junction"
       color="129ce4"
-      lblx="15"
-      lbly="310"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      lblx="-65"
+      lbly="280"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="westPort"
       trgPortName="eastPort">
       <properties>
@@ -234,11 +238,11 @@
       </properties>
       <line>
         <point
-          x="100"
-          y="310" />
+          x="20"
+          y="280" />
         <point
-          x="-70"
-          y="310" />
+          x="-150"
+          y="280" />
       </line>
     </connection>
     <connection
@@ -247,14 +251,16 @@
       size="5"
       type=""
       srcParentID="fcfd39a4-404a-20d3-c0d6-700566b5cdfd"
+      srcParentName="Validate Data"
       srcParentType="clsvalidatedata"
       trgParentID="32334215-382f-3032-6368-bcae1fb9463d"
+      trgParentName="CSV Error file"
       trgParentType="clserrorcsv"
       router="junction"
       color="129ce4"
-      lblx="235"
-      lbly="310"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      lblx="155"
+      lbly="280"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -269,11 +275,11 @@
       </properties>
       <line>
         <point
-          x="140"
-          y="310" />
+          x="60"
+          y="280" />
         <point
-          x="330"
-          y="310" />
+          x="250"
+          y="280" />
       </line>
     </connection>
   </connections>
