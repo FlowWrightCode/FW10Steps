@@ -11,12 +11,15 @@
       type="start"
       x="50"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +54,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -62,6 +63,7 @@
       x="270"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +71,8 @@
           name="label"><![CDATA[Run ETL Validation Job]]></property>
         <property
           name="type"><![CDATA[clsexecuteetlvalidationjob]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -93,26 +97,242 @@
           name="instState"><![CDATA[ETL Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="830fe7db-5d8b-1283-30c0-bc211530493e"
+      name="Place Holder - All Rows Good"
+      type="placeholder"
+      x="490"
+      y="120"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder - All Rows Good]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder - All Rows Good]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c47b59d1-315d-4842-6f9d-d0e67bae6c80"
+      name="Place Holder - Good Bad Rows"
+      type="placeholder"
+      x="270"
+      y="330"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder - Good Bad Rows]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder - Good Bad Rows]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="822bebff-f78a-0fa9-9e4d-ff89a5d96803"
+      name="Place Holder - All Bad Rows"
+      type="placeholder"
+      x="270"
+      y="-50"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder - All Bad Rows]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder - All Bad Rows]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
+    <connection
+      id="edf078e1-1c65-82d7-640b-92e8a79726ce"
+      label="GoodBadRows"
+      size="5"
+      type=""
+      srcParentID="c7a55bef-97e9-eb49-efa0-d4add73545a0"
+      srcParentName="Run ETL Validation Job"
+      srcParentType="clsexecuteetlvalidationjob"
+      trgParentID="c47b59d1-315d-4842-6f9d-d0e67bae6c80"
+      trgParentName="Place Holder - Good Bad Rows"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="290"
+      lbly="245"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[GoodBadRows]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[GoodBadRows]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="160" />
+        <point
+          x="290"
+          y="330" />
+      </line>
+    </connection>
+    <connection
+      id="3d10781f-26ec-5e62-0f61-750fafa927e4"
+      label="AllRowsGood"
+      size="5"
+      type=""
+      srcParentID="c7a55bef-97e9-eb49-efa0-d4add73545a0"
+      srcParentName="Run ETL Validation Job"
+      srcParentType="clsexecuteetlvalidationjob"
+      trgParentID="830fe7db-5d8b-1283-30c0-bc211530493e"
+      trgParentName="Place Holder - All Rows Good"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="400"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[AllRowsGood]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[AllRowsGood]]></property>
+      </properties>
+      <line>
+        <point
+          x="310"
+          y="140" />
+        <point
+          x="490"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="695d9615-0e5c-1d08-2c14-cbaed6e7cef7"
+      label="AllBadRows"
+      size="5"
+      type=""
+      srcParentID="c7a55bef-97e9-eb49-efa0-d4add73545a0"
+      srcParentName="Run ETL Validation Job"
+      srcParentType="clsexecuteetlvalidationjob"
+      trgParentID="822bebff-f78a-0fa9-9e4d-ff89a5d96803"
+      trgParentName="Place Holder - All Bad Rows"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="290"
+      lbly="55"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[AllBadRows]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[AllBadRows]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="120" />
+        <point
+          x="290"
+          y="-10" />
+      </line>
+    </connection>
     <connection
       id="301e0ba9-9eca-cad9-777e-f0ea40d392f5"
       label=""
       size="5"
       type=""
       srcParentID="1aa22b46-da30-438c-a51b-ed2964c2bc8e"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="c7a55bef-97e9-eb49-efa0-d4add73545a0"
+      trgParentName="Run ETL Validation Job"
       trgParentType="clsexecuteetlvalidationjob"
       router="junction"
       color="0000ff"
       lblx="180"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
