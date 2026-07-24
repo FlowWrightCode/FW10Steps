@@ -9,14 +9,17 @@
       id="09f49a2a-33c3-455b-8386-288b4300fd8f"
       name="start"
       type="start"
-      x="58"
+      x="-10"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -30,7 +33,7 @@
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
-          name="useSingleIteration"><![CDATA[]]></property>
+          name="useSingleIteration"><![CDATA[0]]></property>
         <property
           name="businessObjects"><![CDATA[]]></property>
         <property
@@ -38,29 +41,42 @@
         <property
           name="documentation"><![CDATA[]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
         <property
-          name="isValid"><![CDATA[true]]></property>
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="145b643c-2e82-7729-d293-a65ffd97c6a6"
       name="PDF Flatten File"
       type="pdfflattenfile"
-      x="280"
+      x="370"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[PDF Flatten File]]></property>
         <property
           name="type"><![CDATA[pdfflattenfile]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="itemName"><![CDATA[PDF Flatten File]]></property>
         <property
           name="itemDescription"><![CDATA[pdfFlattenFile]]></property>
         <property
-          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\Tenants\c983affd-28a0-40ed-b786-8255d66e087b\TempFiles\PDF Files\FW-Fillable-PDF-RegForm-.pdf]]></property>
+          name="inputFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\FW-Fillable-PDF-RegForm-.pdf]]></property>
         <property
           name="outputFilePath"><![CDATA[variable.oFilePath]]></property>
         <property
@@ -73,6 +89,242 @@
           name="instState"><![CDATA[PDF Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9c6aa16a-591c-ba20-7658-68050b48b93e"
+      name="Generate PDF Form"
+      type="placeholder"
+      x="100"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate PDF Form]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate PDF Form]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="417401be-57f0-6672-3820-40e60f7fba38"
+      name="Populate Form Fields"
+      type="placeholder"
+      x="240"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Populate Form Fields]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Populate Form Fields]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="774d130c-0fae-5b0a-1ec6-9ebf9bcda876"
+      name="Archive Document"
+      type="placeholder"
+      x="520"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Archive Document]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Archive Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="03bb2c2c-3b32-8d9f-24ba-07dcb44b9e36"
+      name="Log Flatten Error"
+      type="placeholder"
+      x="370"
+      y="160"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Flatten Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Flatten Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="bc0e71d5-06f0-62f9-3be9-e31ad0a1875b"
+      name="Notify Administrator"
+      type="placeholder"
+      x="370"
+      y="280"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a8b261e0-e51e-41be-c555-32adfc8e3ad6"
+      name="Send Email"
+      type="placeholder"
+      x="630"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Email]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Email]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="1edc2e72-bb8a-966d-7544-8af583219ab3"
+      name="End"
+      type="placeholder"
+      x="740"
+      y="40"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[End]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[End]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -80,19 +332,261 @@
   </figures>
   <connections>
     <connection
+      id="246d4978-f224-bd3e-630c-08d825602c52"
+      label=""
+      size="4"
+      type=""
+      srcParentID="a8b261e0-e51e-41be-c555-32adfc8e3ad6"
+      srcParentName="Send Email"
+      srcParentType="placeholder"
+      trgParentID="1edc2e72-bb8a-966d-7544-8af583219ab3"
+      trgParentName="End"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="705"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="670"
+          y="59" />
+        <point
+          x="705"
+          y="59" />
+        <point
+          x="705"
+          y="60" />
+        <point
+          x="740"
+          y="60" />
+      </line>
+    </connection>
+    <connection
+      id="aaf71ded-efa7-3ab6-fcd6-343087726f29"
+      label=""
+      size="4"
+      type=""
+      srcParentID="774d130c-0fae-5b0a-1ec6-9ebf9bcda876"
+      srcParentName="Archive Document"
+      srcParentType="placeholder"
+      trgParentID="a8b261e0-e51e-41be-c555-32adfc8e3ad6"
+      trgParentName="Send Email"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="595"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="560"
+          y="60" />
+        <point
+          x="595"
+          y="60" />
+        <point
+          x="595"
+          y="59" />
+        <point
+          x="630"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="7b280965-dcf6-95ee-bef5-c1512b27aae6"
+      label=""
+      size="4"
+      type=""
+      srcParentID="03bb2c2c-3b32-8d9f-24ba-07dcb44b9e36"
+      srcParentName="Log Flatten Error"
+      srcParentType="placeholder"
+      trgParentID="bc0e71d5-06f0-62f9-3be9-e31ad0a1875b"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="390"
+      lbly="240"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="390"
+          y="200" />
+        <point
+          x="390"
+          y="280" />
+      </line>
+    </connection>
+    <connection
+      id="5069e211-8fc4-f6bb-4709-9db91765bd5c"
+      label=""
+      size="4"
+      type=""
+      srcParentID="145b643c-2e82-7729-d293-a65ffd97c6a6"
+      srcParentName="PDF Flatten File"
+      srcParentType="pdfflattenfile"
+      trgParentID="03bb2c2c-3b32-8d9f-24ba-07dcb44b9e36"
+      trgParentName="Log Flatten Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="390"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="390"
+          y="79" />
+        <point
+          x="390"
+          y="160" />
+      </line>
+    </connection>
+    <connection
+      id="922102a4-ec7c-4ce8-6c15-1a701f3f3c0c"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="145b643c-2e82-7729-d293-a65ffd97c6a6"
+      srcParentName="PDF Flatten File"
+      srcParentType="pdfflattenfile"
+      trgParentID="774d130c-0fae-5b0a-1ec6-9ebf9bcda876"
+      trgParentName="Archive Document"
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="465"
+      lbly="60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="410"
+          y="59" />
+        <point
+          x="465"
+          y="59" />
+        <point
+          x="465"
+          y="60" />
+        <point
+          x="520"
+          y="60" />
+      </line>
+    </connection>
+    <connection
       id="dabdc476-2fb9-843e-8acf-52682fac3b7c"
       label=""
       size="5"
       type=""
-      srcParentID="09f49a2a-33c3-455b-8386-288b4300fd8f"
-      srcParentType="start"
+      srcParentID="417401be-57f0-6672-3820-40e60f7fba38"
+      srcParentName="Populate Form Fields"
+      srcParentType="placeholder"
       trgParentID="145b643c-2e82-7729-d293-a65ffd97c6a6"
+      trgParentName="PDF Flatten File"
       trgParentType="pdfflattenfile"
       router="junction"
       color="0000ff"
-      lblx="189"
+      lblx="325"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=18;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="59" />
+        <point
+          x="370"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="b6837cbb-e41f-632c-d23b-fe2ca5a1b576"
+      label=""
+      size="5"
+      type=""
+      srcParentID="09f49a2a-33c3-455b-8386-288b4300fd8f"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="9c6aa16a-591c-ba20-7658-68050b48b93e"
+      trgParentName="Generate PDF Form"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="65"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -105,10 +599,47 @@
       </properties>
       <line>
         <point
-          x="98"
+          x="30"
           y="59" />
         <point
-          x="280"
+          x="100"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="964c6d8e-bd68-0482-54df-7ff8c2d3b6bb"
+      label=""
+      size="5"
+      type=""
+      srcParentID="9c6aa16a-591c-ba20-7658-68050b48b93e"
+      srcParentName="Generate PDF Form"
+      srcParentType="placeholder"
+      trgParentID="417401be-57f0-6672-3820-40e60f7fba38"
+      trgParentName="Populate Form Fields"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="190"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="140"
+          y="59" />
+        <point
+          x="240"
           y="59" />
       </line>
     </connection>
