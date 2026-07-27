@@ -9,7 +9,7 @@
       id="aa220644-92ee-406f-b422-7f60d5ce25a9"
       name="start"
       type="start"
-      x="150"
+      x="10"
       y="70"
       isValid="true"
       isLocked="False">
@@ -46,13 +46,21 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="b0dd6ece-4cc4-4632-9cd5-9264de31587d"
       name="Get Environment variable values"
       type="readenvironmentvariables"
-      x="390"
+      x="150"
       y="70"
       isValid="true"
       isLocked="False">
@@ -79,22 +87,342 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="515c2d53-7f58-c4ae-4885-210e9a9f9468"
+      name="Initialize Workflow Variables"
+      type="placeholder"
+      x="300"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Initialize Workflow Variables]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Initialize Workflow Variables]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="de29bb90-0875-63b0-0597-f29b25f5eaf2"
+      name="Execute Business Logic"
+      type="placeholder"
+      x="450"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Execute Business Logic]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Execute Business Logic]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="77024add-9aa2-7dd1-f793-9888123de22b"
+      name="Call REST API"
+      type="placeholder"
+      x="580"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Call REST API]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Call REST API]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9b5a9400-a210-b348-8846-26b4649f8754"
+      name="Send Notification"
+      type="placeholder"
+      x="700"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Notification]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Notification]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="435b97c0-8dcf-ebf0-1894-112f7edee2b3"
+      name="End"
+      type="placeholder"
+      x="830"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[End]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[End]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="2e0dd7bf-3759-1bf0-c6c1-aa22f3ae7512"
+      id="9c429cb2-dfe8-743a-e7e5-75294ab5d088"
       label=""
-      size="5"
+      size="4"
       type=""
-      srcParentID="aa220644-92ee-406f-b422-7f60d5ce25a9"
-      srcParentType="start"
-      trgParentID="b0dd6ece-4cc4-4632-9cd5-9264de31587d"
-      trgParentType="readenvironmentvariables"
+      srcParentID="9b5a9400-a210-b348-8846-26b4649f8754"
+      srcParentName="Send Notification"
+      srcParentType="placeholder"
+      trgParentID="435b97c0-8dcf-ebf0-1894-112f7edee2b3"
+      trgParentName="End"
+      trgParentType="placeholder"
       router="junction"
-      color="129ce4"
-      lblx="290"
+      color="3c78d8"
+      lblx="785"
       lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="740"
+          y="90" />
+        <point
+          x="830"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="caf2c4d7-99bb-8a34-a3fc-4abe5e99035c"
+      label=""
+      size="4"
+      type=""
+      srcParentID="77024add-9aa2-7dd1-f793-9888123de22b"
+      srcParentName="Call REST API"
+      srcParentType="placeholder"
+      trgParentID="9b5a9400-a210-b348-8846-26b4649f8754"
+      trgParentName="Send Notification"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="660"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="620"
+          y="90" />
+        <point
+          x="700"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="338879ee-0c82-af3c-c904-5d950fd68927"
+      label=""
+      size="4"
+      type=""
+      srcParentID="de29bb90-0875-63b0-0597-f29b25f5eaf2"
+      srcParentName="Execute Business Logic"
+      srcParentType="placeholder"
+      trgParentID="77024add-9aa2-7dd1-f793-9888123de22b"
+      trgParentName="Call REST API"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="535"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="490"
+          y="90" />
+        <point
+          x="580"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="1c6c46f1-d20f-1ffa-f225-aaf349193e39"
+      label=""
+      size="4"
+      type=""
+      srcParentID="515c2d53-7f58-c4ae-4885-210e9a9f9468"
+      srcParentName="Initialize Workflow Variables"
+      srcParentType="placeholder"
+      trgParentID="de29bb90-0875-63b0-0597-f29b25f5eaf2"
+      trgParentName="Execute Business Logic"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="395"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="340"
+          y="90" />
+        <point
+          x="450"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="cdc95908-5229-e8a2-34c8-7f8d4354039e"
+      label=""
+      size="4"
+      type=""
+      srcParentID="b0dd6ece-4cc4-4632-9cd5-9264de31587d"
+      srcParentName="Get Environment variable values"
+      srcParentType="readenvironmentvariables"
+      trgParentID="515c2d53-7f58-c4ae-4885-210e9a9f9468"
+      trgParentName="Initialize Workflow Variables"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="245"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -112,7 +440,44 @@
           x="190"
           y="90" />
         <point
-          x="390"
+          x="300"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="2e0dd7bf-3759-1bf0-c6c1-aa22f3ae7512"
+      label=""
+      size="5"
+      type=""
+      srcParentID="aa220644-92ee-406f-b422-7f60d5ce25a9"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="b0dd6ece-4cc4-4632-9cd5-9264de31587d"
+      trgParentName="Get Environment variable values"
+      trgParentType="readenvironmentvariables"
+      router="junction"
+      color="129ce4"
+      lblx="100"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="50"
+          y="90" />
+        <point
+          x="150"
           y="90" />
       </line>
     </connection>
