@@ -91,7 +91,7 @@
       id="6f45c806-eee2-435e-80e5-456d1d5515fe"
       name="Get Environment variable values"
       type="readenvironmentvariables"
-      x="480"
+      x="430"
       y="70"
       isValid="true"
       isLocked="False">
@@ -126,14 +126,16 @@
       size="5"
       type=""
       srcParentID="4866d46a-a6e0-5053-dafb-582ac19d9ace"
+      srcParentName="Set Environment variable values"
       srcParentType="setenvironmentvariables"
       trgParentID="6f45c806-eee2-435e-80e5-456d1d5515fe"
+      trgParentName="Get Environment variable values"
       trgParentType="readenvironmentvariables"
       router="junction"
       color="129ce4"
-      lblx="390"
+      lblx="365"
       lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -151,7 +153,7 @@
           x="300"
           y="90" />
         <point
-          x="480"
+          x="430"
           y="90" />
       </line>
     </connection>
@@ -161,14 +163,16 @@
       size="5"
       type=""
       srcParentID="21ebc897-c04e-414f-a565-83370e159a8e"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="4866d46a-a6e0-5053-dafb-582ac19d9ace"
+      trgParentName="Set Environment variable values"
       trgParentType="setenvironmentvariables"
       router="junction"
       color="129ce4"
       lblx="190"
       lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
