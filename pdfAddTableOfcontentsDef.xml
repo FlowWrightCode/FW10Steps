@@ -9,8 +9,8 @@
       id="59263c06-cb0c-4e90-9bc1-d19db31d37ae"
       name="start"
       type="start"
-      x="58"
-      y="39"
+      x="50"
+      y="-10"
       isValid="true"
       isLocked="False">
       <properties>
@@ -48,8 +48,8 @@
       id="85dac434-b0a7-7dfa-c496-fd548ec4cd6b"
       name="PDF Add Table Of Contents"
       type="pdfaddtableofcontents"
-      x="280"
-      y="39"
+      x="350"
+      y="-10"
       isValid="true"
       isLocked="False">
       <properties>
@@ -81,22 +81,450 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="681d8e3d-57ff-1b21-8b95-6a5c91a47947"
+      name="Generate Technical Manual"
+      type="placeholder"
+      x="180"
+      y="-10"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Technical Manual]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Technical Manual]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="88663315-6ffe-ffc1-c0f4-e2ddb7e9d1bd"
+      name="Validate PDF"
+      type="placeholder"
+      x="500"
+      y="-10"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Validate PDF]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Validate PDF]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9067e30e-8580-6bee-6d50-6cfd41f3dc09"
+      name="Publish Document"
+      type="placeholder"
+      x="630"
+      y="-10"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Publish Document]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Publish Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d5818671-cc46-cc77-e608-4318ed0fd450"
+      name="End"
+      type="placeholder"
+      x="750"
+      y="-10"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[End]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[End]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="88b08fbb-5363-96ff-602a-5b8eadef5a37"
+      name="Log TOC Error"
+      type="placeholder"
+      x="350"
+      y="140"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log TOC Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log TOC Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="fa198a69-80b6-2375-18fe-e560fe95e695"
+      name="Notify Administrator"
+      type="placeholder"
+      x="350"
+      y="260"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="a72116c3-0e81-c7a2-19c7-b2d3622b241d"
+      label=""
+      size="4"
+      type=""
+      srcParentID="88b08fbb-5363-96ff-602a-5b8eadef5a37"
+      srcParentName="Log TOC Error"
+      srcParentType="placeholder"
+      trgParentID="fa198a69-80b6-2375-18fe-e560fe95e695"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="370"
+      lbly="220"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="370"
+          y="180" />
+        <point
+          x="370"
+          y="260" />
+      </line>
+    </connection>
+    <connection
+      id="fedd28d5-2ba0-3d38-7e61-7ae670d8a13c"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="85dac434-b0a7-7dfa-c496-fd548ec4cd6b"
+      srcParentName="PDF Add Table Of Contents"
+      srcParentType="pdfaddtableofcontents"
+      trgParentID="88b08fbb-5363-96ff-602a-5b8eadef5a37"
+      trgParentName="Log TOC Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="370"
+      lbly="85"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="370"
+          y="30" />
+        <point
+          x="370"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="31462d6a-f94f-dd04-ddd1-1113b21806b4"
+      label=""
+      size="4"
+      type=""
+      srcParentID="9067e30e-8580-6bee-6d50-6cfd41f3dc09"
+      srcParentName="Publish Document"
+      srcParentType="placeholder"
+      trgParentID="d5818671-cc46-cc77-e608-4318ed0fd450"
+      trgParentName="End"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="710"
+      lbly="10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="670"
+          y="10" />
+        <point
+          x="750"
+          y="10" />
+      </line>
+    </connection>
+    <connection
+      id="72db6113-7ba2-df67-6a58-a73545aaf058"
+      label=""
+      size="4"
+      type=""
+      srcParentID="88663315-6ffe-ffc1-c0f4-e2ddb7e9d1bd"
+      srcParentName="Validate PDF"
+      srcParentType="placeholder"
+      trgParentID="9067e30e-8580-6bee-6d50-6cfd41f3dc09"
+      trgParentName="Publish Document"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="585"
+      lbly="10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="540"
+          y="10" />
+        <point
+          x="630"
+          y="10" />
+      </line>
+    </connection>
+    <connection
+      id="39c70e3a-8ba9-de46-0d49-c8a9d710cc45"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="85dac434-b0a7-7dfa-c496-fd548ec4cd6b"
+      srcParentName="PDF Add Table Of Contents"
+      srcParentType="pdfaddtableofcontents"
+      trgParentID="88663315-6ffe-ffc1-c0f4-e2ddb7e9d1bd"
+      trgParentName="Validate PDF"
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="445"
+      lbly="10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="390"
+          y="10" />
+        <point
+          x="500"
+          y="10" />
+      </line>
+    </connection>
     <connection
       id="c509b14e-db1c-d91e-20bb-41d9007965a5"
       label=""
       size="5"
       type=""
-      srcParentID="59263c06-cb0c-4e90-9bc1-d19db31d37ae"
-      srcParentType="start"
+      srcParentID="681d8e3d-57ff-1b21-8b95-6a5c91a47947"
+      srcParentName="Generate Technical Manual"
+      srcParentType="placeholder"
       trgParentID="85dac434-b0a7-7dfa-c496-fd548ec4cd6b"
+      trgParentName="PDF Add Table Of Contents"
       trgParentType="pdfaddtableofcontents"
       router="junction"
       color="0000ff"
-      lblx="189"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=18;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;"
+      lblx="285"
+      lbly="10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="220"
+          y="10" />
+        <point
+          x="350"
+          y="10" />
+      </line>
+    </connection>
+    <connection
+      id="35a81bae-d37e-3272-a50f-4c0fb01208f2"
+      label=""
+      size="5"
+      type=""
+      srcParentID="59263c06-cb0c-4e90-9bc1-d19db31d37ae"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="681d8e3d-57ff-1b21-8b95-6a5c91a47947"
+      trgParentName="Generate Technical Manual"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="135"
+      lbly="10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -109,11 +537,11 @@
       </properties>
       <line>
         <point
-          x="98"
-          y="59" />
+          x="90"
+          y="10" />
         <point
-          x="280"
-          y="59" />
+          x="180"
+          y="10" />
       </line>
     </connection>
   </connections>
