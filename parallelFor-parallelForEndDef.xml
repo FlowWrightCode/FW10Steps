@@ -10,7 +10,7 @@
       name="start"
       type="start"
       x="78"
-      y="10"
+      y="-100"
       isValid="true"
       isLocked="False">
       <properties>
@@ -40,6 +40,22 @@
           name="logMessage"><![CDATA[]]></property>
         <property
           name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
@@ -47,7 +63,7 @@
       name="Parallel For"
       type="parallelfor"
       x="78"
-      y="151"
+      y="120"
       isValid="true"
       isLocked="False">
       <properties>
@@ -82,7 +98,7 @@
       name="Parallel For End"
       type="parallelforend"
       x="78"
-      y="531"
+      y="620"
       isValid="true"
       isLocked="False">
       <properties>
@@ -113,7 +129,7 @@
       name="Decision"
       type="decision"
       x="170"
-      y="281"
+      y="230"
       isValid="true"
       isLocked="False">
       <properties>
@@ -143,27 +159,33 @@
     </figure>
     <figure
       id="b36af8bb-b1dc-344c-d6d6-25c8b2c035ed"
-      name="Place Holder"
+      name="Customer A - Generate Invoice"
       type="placeholder"
       x="-10"
-      y="281"
+      y="180"
       isValid="true"
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Place Holder]]></property>
+          name="label"><![CDATA[Customer A - Generate Invoice]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[Place Holder]]></property>
+          name="itemName"><![CDATA[Customer A - Generate Invoice]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
           name="documentation"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
@@ -191,23 +213,202 @@
           name="documentation"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="7c24a2e2-1225-3547-f2c4-1fb0086ba1bb"
+      name="Retrieve Customer IDs"
+      type="placeholder"
+      x="78"
+      y="20"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Retrieve Customer IDs]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Retrieve Customer IDs]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="249cdf2f-8ff0-35c2-5434-1994ea3881fb"
+      name="Generate Summary Report"
+      type="placeholder"
+      x="78"
+      y="490"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Summary Report]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Summary Report]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="2e1bc241-0841-908a-a77c-f8ab25599b76"
+      name="Customer B - Generate Invoice"
+      type="placeholder"
+      x="-10"
+      y="300"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Customer B - Generate Invoice]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Customer B - Generate Invoice]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="f3b337c2-7023-95b7-e844-e9a51e8702d6"
+      label=""
+      size="4"
+      type=""
+      srcParentID="2e1bc241-0841-908a-a77c-f8ab25599b76"
+      srcParentName="Customer B - Generate Invoice"
+      srcParentType="placeholder"
+      trgParentID="dc9e0f57-babe-2269-7c21-fc63aca7668f"
+      trgParentName="Synchronize"
+      trgParentType="synchronize"
+      router="junction"
+      color="3c78d8"
+      lblx="10"
+      lbly="410"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="10"
+          y="340" />
+        <point
+          x="10"
+          y="411" />
+        <point
+          x="78"
+          y="411" />
+      </line>
+    </connection>
+    <connection
+      id="8397f018-2c17-8b10-4ee8-bac8eace8795"
+      label=""
+      size="4"
+      type=""
+      srcParentID="b36af8bb-b1dc-344c-d6d6-25c8b2c035ed"
+      srcParentName="Customer A - Generate Invoice"
+      srcParentType="placeholder"
+      trgParentID="2e1bc241-0841-908a-a77c-f8ab25599b76"
+      trgParentName="Customer B - Generate Invoice"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="10"
+      lbly="260"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="10"
+          y="220" />
+        <point
+          x="10"
+          y="300" />
+      </line>
+    </connection>
     <connection
       id="52b381cd-3710-d072-69f4-f546ddf02d1c"
       label=""
       size="3"
       type=""
-      srcParentID="b5e66cd6-15d3-4822-965f-de741ba93217"
-      srcParentName="start"
-      srcParentType="start"
+      srcParentID="7c24a2e2-1225-3547-f2c4-1fb0086ba1bb"
+      srcParentName="Retrieve Customer IDs"
+      srcParentType="placeholder"
       trgParentID="bfc26a13-73eb-bd57-95d0-b2ce655b1753"
       trgParentName="Parallel For"
       trgParentType="parallelfor"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="98"
-      lbly="101"
+      lbly="90"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
@@ -218,14 +419,16 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
           x="98"
-          y="50" />
+          y="60" />
         <point
           x="98"
-          y="151" />
+          y="120" />
       </line>
     </connection>
     <connection
@@ -242,7 +445,7 @@
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="190"
-      lbly="190"
+      lbly="149"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="northPort">
@@ -257,13 +460,13 @@
       <line>
         <point
           x="118"
-          y="171" />
+          y="140" />
         <point
           x="190"
-          y="171" />
+          y="140" />
         <point
           x="190"
-          y="281" />
+          y="230" />
       </line>
     </connection>
     <connection
@@ -275,12 +478,12 @@
       srcParentName="Parallel For"
       srcParentType="parallelfor"
       trgParentID="b36af8bb-b1dc-344c-d6d6-25c8b2c035ed"
-      trgParentName="Place Holder"
+      trgParentName="Customer A - Generate Invoice"
       trgParentType="placeholder"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
-      lblx="10"
-      lbly="192"
+      lblx="24"
+      lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="westPort"
       trgPortName="northPort">
@@ -295,51 +498,13 @@
       <line>
         <point
           x="78"
-          y="171" />
+          y="140" />
         <point
           x="10"
-          y="171" />
+          y="140" />
         <point
           x="10"
-          y="281" />
-      </line>
-    </connection>
-    <connection
-      id="930f5aa1-6968-1cfa-0e32-2fd0a6420f65"
-      label=""
-      size="3"
-      type=""
-      srcParentID="b36af8bb-b1dc-344c-d6d6-25c8b2c035ed"
-      srcParentName="Place Holder"
-      srcParentType="placeholder"
-      trgParentID="dc9e0f57-babe-2269-7c21-fc63aca7668f"
-      trgParentName="Synchronize"
-      trgParentType="synchronize"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="0000ff"
-      lblx="10"
-      lbly="400"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
-      srcPortName="southPort"
-      trgPortName="westPort">
-      <properties>
-        <property
-          name="label"><![CDATA[]]></property>
-        <property
-          name="type"><![CDATA[]]></property>
-        <property
-          name="linkPriority"><![CDATA[0]]></property>
-      </properties>
-      <line>
-        <point
-          x="10"
-          y="321" />
-        <point
-          x="10"
-          y="411" />
-        <point
-          x="78"
-          y="411" />
+          y="180" />
       </line>
     </connection>
     <connection
@@ -356,8 +521,8 @@
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="190"
-      lbly="402"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      lbly="377"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2;exitX=0;exitY=1;exitDx=0;exitDy=0;"
       srcPortName="southPort"
       trgPortName="eastPort">
       <properties>
@@ -367,11 +532,13 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
           x="190"
-          y="321" />
+          y="270" />
         <point
           x="190"
           y="411" />
@@ -385,16 +552,88 @@
       label=""
       size="3"
       type=""
-      srcParentID="dc9e0f57-babe-2269-7c21-fc63aca7668f"
-      srcParentName="Synchronize"
-      srcParentType="synchronize"
+      srcParentID="249cdf2f-8ff0-35c2-5434-1994ea3881fb"
+      srcParentName="Generate Summary Report"
+      srcParentType="placeholder"
       trgParentID="ccab4b7b-77a9-1cc2-c71c-510d70b1a2b5"
       trgParentName="Parallel For End"
       trgParentType="parallelforend"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="98"
-      lbly="481"
+      lbly="575"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="530" />
+        <point
+          x="98"
+          y="620" />
+      </line>
+    </connection>
+    <connection
+      id="aa75a7a9-532e-20b2-2a60-29336ee5a163"
+      label=""
+      size="3"
+      type=""
+      srcParentID="b5e66cd6-15d3-4822-965f-de741ba93217"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="7c24a2e2-1225-3547-f2c4-1fb0086ba1bb"
+      trgParentName="Retrieve Customer IDs"
+      trgParentType="placeholder"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="98"
+      lbly="-20"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="98"
+          y="-60" />
+        <point
+          x="98"
+          y="20" />
+      </line>
+    </connection>
+    <connection
+      id="42997dcf-127f-1db3-d516-5ae12c5a2a2f"
+      label=""
+      size="3"
+      type=""
+      srcParentID="dc9e0f57-babe-2269-7c21-fc63aca7668f"
+      srcParentName="Synchronize"
+      srcParentType="synchronize"
+      trgParentID="249cdf2f-8ff0-35c2-5434-1994ea3881fb"
+      trgParentName="Generate Summary Report"
+      trgParentType="placeholder"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="98"
+      lbly="461"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
@@ -412,7 +651,7 @@
           y="431" />
         <point
           x="98"
-          y="531" />
+          y="490" />
       </line>
     </connection>
   </connections>
