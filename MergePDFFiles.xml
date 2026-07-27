@@ -1,0 +1,15 @@
+<item categoryName="PDF" id="2c060f1c-6607-3d21-9574-56af17450355" name="mergepdffiles" label="Merges multiple PDF files into 1 PDF file" namespace="FlowWright.Workflow.MergePDFFiles" DLL="FlowWright.Workflow.dll" stepDefinitionType="Process" inConnections="2" outConnections="2" displayName="Merge PDF Files">
+  <properties>
+    <property id="072e1997-3713-459b-9c59-2c84362086a3" name="filePathList" label="File path list" category="" dataTypeID="8d07641c-3327-32c5-aee9-6e9f46650f78" dataType="FileList" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="0" />
+    <property id="3da86661-ae03-4587-b5b2-4b58e7f1b106" name="outputFilePath" label="Output file path" category="" dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" dataType="string" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="1" />
+    <property id="48d43abe-2fcf-4881-a00d-bd7b0e06d52c" name="pdfVirtualPath" label="PDF Virtual File Path" category="" dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" dataType="string" required="true" hidden="false" readOnly="false" defaultValue="" tagValue="" stepInputIndex="2" />
+  </properties>
+  <returns>
+    <return id="711230bb-be3f-4cba-a808-2a589157e580" value="False" label="False" />
+    <return id="b82851f3-4a1a-4d2a-abe5-2716aa80315d" value="True" label="True" />
+  </returns>
+  <propertyTypes>
+    <propertyType dataTypeID="8d07641c-3327-32c5-aee9-6e9f46650f78" name="FileList" description="Map file list" namespace="FlowWright.DataTypes.FileList" DLL="FlowWright.DataTypes.dll" />
+    <propertyType dataTypeID="6626891f-3829-3f79-9e6a-2824dbfe8476" name="string" description="Get textbox" namespace="FlowWright.DataTypes.ClsTextBox" DLL="FlowWright.DataTypes.dll" />
+  </propertyTypes>
+</item>
