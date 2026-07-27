@@ -60,7 +60,7 @@
       id="d98856fd-4168-90ee-2de8-57a3837b9095"
       name="PDF WaterMarks"
       type="pdfwatermarks"
-      x="250"
+      x="360"
       y="39"
       isValid="true"
       isLocked="False">
@@ -99,22 +99,450 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="f5941c40-4649-c90a-16cd-3473bd5a9cbc"
+      name="Generate Project Report"
+      type="placeholder"
+      x="200"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Project Report]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Project Report]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="fec14c82-4c1b-8070-0323-687a3cb3cb34"
+      name="Stored Watermarked PDF"
+      type="placeholder"
+      x="520"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Stored Watermarked PDF]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Stored Watermarked PDF]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d5f9fa1a-b72a-5ea7-115c-17113fd46317"
+      name="Send Email"
+      type="placeholder"
+      x="660"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Send Email]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Send Email]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="481560fc-76cf-64a5-9495-15ba4e3efc06"
+      name="End"
+      type="placeholder"
+      x="780"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[End]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[End]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="0a2c83b4-73b7-a22f-2236-a3db0125b3e6"
+      name="Log Watermark Error"
+      type="placeholder"
+      x="360"
+      y="180"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Watermark Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Watermark Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="b424f33b-4eb0-6414-1846-dd0d6b1a4b12"
+      name="Notify Administrator"
+      type="placeholder"
+      x="360"
+      y="310"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="9363fbdb-57bf-dce9-b45e-ef341c77c1c9"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0a2c83b4-73b7-a22f-2236-a3db0125b3e6"
+      srcParentName="Log Watermark Error"
+      srcParentType="placeholder"
+      trgParentID="b424f33b-4eb0-6414-1846-dd0d6b1a4b12"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="380"
+      lbly="265"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="220" />
+        <point
+          x="380"
+          y="310" />
+      </line>
+    </connection>
+    <connection
+      id="01a71cc6-fe7b-bc1f-4c74-19125b0fc3c9"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="d98856fd-4168-90ee-2de8-57a3837b9095"
+      srcParentName="PDF WaterMarks"
+      srcParentType="pdfwatermarks"
+      trgParentID="0a2c83b4-73b7-a22f-2236-a3db0125b3e6"
+      trgParentName="Log Watermark Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="380"
+      lbly="130"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="79" />
+        <point
+          x="380"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="7acf7428-1a54-b526-5bfd-5a743eb9f96c"
+      label=""
+      size="4"
+      type=""
+      srcParentID="d5f9fa1a-b72a-5ea7-115c-17113fd46317"
+      srcParentName="Send Email"
+      srcParentType="placeholder"
+      trgParentID="481560fc-76cf-64a5-9495-15ba4e3efc06"
+      trgParentName="End"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="740"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="700"
+          y="59" />
+        <point
+          x="780"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="66a26740-547d-339c-0974-589a7e7eef44"
+      label=""
+      size="4"
+      type=""
+      srcParentID="fec14c82-4c1b-8070-0323-687a3cb3cb34"
+      srcParentName="Stored Watermarked PDF"
+      srcParentType="placeholder"
+      trgParentID="d5f9fa1a-b72a-5ea7-115c-17113fd46317"
+      trgParentName="Send Email"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="610"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="560"
+          y="59" />
+        <point
+          x="660"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="015b9898-35e0-a92c-74d4-5f1d4761d17b"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="d98856fd-4168-90ee-2de8-57a3837b9095"
+      srcParentName="PDF WaterMarks"
+      srcParentType="pdfwatermarks"
+      trgParentID="fec14c82-4c1b-8070-0323-687a3cb3cb34"
+      trgParentName="Stored Watermarked PDF"
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="460"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="400"
+          y="59" />
+        <point
+          x="520"
+          y="59" />
+      </line>
+    </connection>
     <connection
       id="160bd5de-954d-2531-f2da-6439f36fb289"
       label=""
       size="5"
       type=""
-      srcParentID="54993495-ca99-4dbc-b029-8f502a452553"
-      srcParentType="start"
+      srcParentID="f5941c40-4649-c90a-16cd-3473bd5a9cbc"
+      srcParentName="Generate Project Report"
+      srcParentType="placeholder"
       trgParentID="d98856fd-4168-90ee-2de8-57a3837b9095"
+      trgParentName="PDF WaterMarks"
       trgParentType="pdfwatermarks"
       router="junction"
       color="0000ff"
-      lblx="174"
+      lblx="300"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=18;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="59" />
+        <point
+          x="360"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="b90fba41-48e6-5c6c-9a12-8e302fb527c2"
+      label=""
+      size="5"
+      type=""
+      srcParentID="54993495-ca99-4dbc-b029-8f502a452553"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="f5941c40-4649-c90a-16cd-3473bd5a9cbc"
+      trgParentName="Generate Project Report"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="149"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -130,7 +558,7 @@
           x="98"
           y="59" />
         <point
-          x="250"
+          x="200"
           y="59" />
       </line>
     </connection>
