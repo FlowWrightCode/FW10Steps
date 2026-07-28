@@ -156,7 +156,7 @@
         <property
           name="message"><![CDATA[This test message is inserted to this form instance on Variable.createdOn]]></property>
         <property
-          name="itemID"><![CDATA[3d56f7b0-9d7d-4c6f-822e-efec0010a85a	]]></property>
+          name="itemID"><![CDATA[3d56f7b0-9d7d-4c6f-822e-efec0010a85a]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
@@ -251,14 +251,16 @@
       size="4"
       type=""
       srcParentID="2533fdf0-e388-e0c7-90d5-ebd2b7342758"
+      srcParentName="Add message to Form definition"
       srcParentType="clsloghistoryitem"
       trgParentID="8be1d02c-f34d-374b-b652-604e6665d542"
+      trgParentName="Add message to Form Instance"
       trgParentType="clsloghistoryitem"
       router="junction"
       color="3c78d8"
       lblx="400"
       lbly="340"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="westPort"
       trgPortName="eastPort">
       <properties>
@@ -284,14 +286,16 @@
       size="4"
       type=""
       srcParentID="63cb2860-43ed-17b4-ecf5-5a0d9e1d79d5"
+      srcParentName="Add message to Process Instance"
       srcParentType="clsloghistoryitem"
       trgParentID="2533fdf0-e388-e0c7-90d5-ebd2b7342758"
+      trgParentName="Add message to Form definition"
       trgParentType="clsloghistoryitem"
       router="junction"
       color="3c78d8"
       lblx="510"
       lbly="235"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -317,14 +321,16 @@
       size="4"
       type=""
       srcParentID="b3f1c394-ada1-697a-816c-bafa7d49aa05"
+      srcParentName="Add message to Process Definition"
       srcParentType="clsloghistoryitem"
       trgParentID="63cb2860-43ed-17b4-ecf5-5a0d9e1d79d5"
+      trgParentName="Add message to Process Instance"
       trgParentType="clsloghistoryitem"
       router="junction"
       color="3c78d8"
       lblx="400"
       lbly="130"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -350,14 +356,16 @@
       size="4"
       type=""
       srcParentID="5a293b2b-e300-9e0b-eecd-53ec44ef25f2"
+      srcParentName="Add message to User"
       srcParentType="clsloghistoryitem"
       trgParentID="b3f1c394-ada1-697a-816c-bafa7d49aa05"
+      trgParentName="Add message to Process Definition"
       trgParentType="clsloghistoryitem"
       router="junction"
       color="3c78d8"
       lblx="185"
       lbly="130"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -383,14 +391,16 @@
       size="4"
       type=""
       srcParentID="01756383-5a7f-4255-9abe-1866a0e54c23"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="5a293b2b-e300-9e0b-eecd-53ec44ef25f2"
+      trgParentName="Add message to User"
       trgParentType="clsloghistoryitem"
       router="junction"
       color="3c78d8"
       lblx="-5"
       lbly="130"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
