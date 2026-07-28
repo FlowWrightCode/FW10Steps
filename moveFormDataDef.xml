@@ -9,7 +9,7 @@
       id="5d43c15e-ca52-4ce8-93b7-2141b028c818"
       name="start"
       type="start"
-      x="-40"
+      x="-110"
       y="120"
       isValid="true"
       isLocked="False">
@@ -60,7 +60,7 @@
       id="f9da9051-efc3-f869-f6ce-629ff500c115"
       name="Move Data - Route Form 1 to Route Form 2"
       type="moveformdata"
-      x="480"
+      x="330"
       y="120"
       isValid="true"
       isLocked="False">
@@ -99,7 +99,7 @@
       id="8d23db82-1477-2103-9312-2a702d8fcc08"
       name="Route Form 1"
       type="routeform"
-      x="130"
+      x="40"
       y="120"
       isValid="true"
       isLocked="False">
@@ -174,7 +174,7 @@
       id="ae182afc-696f-7e5a-1041-fc44b9d24eae"
       name="Route Form 2"
       type="routeform"
-      x="280"
+      x="190"
       y="120"
       isValid="true"
       isLocked="False">
@@ -260,7 +260,7 @@
       trgParentType="moveformdata"
       router="junction"
       color="0000ff"
-      lblx="400"
+      lblx="280"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -277,10 +277,10 @@
       </properties>
       <line>
         <point
-          x="320"
+          x="230"
           y="140" />
         <point
-          x="480"
+          x="330"
           y="140" />
       </line>
     </connection>
@@ -297,7 +297,7 @@
       trgParentType="routeform"
       router="junction"
       color="0000ff"
-      lblx="65"
+      lblx="-15"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -312,10 +312,10 @@
       </properties>
       <line>
         <point
-          x="0"
+          x="-70"
           y="140" />
         <point
-          x="130"
+          x="40"
           y="140" />
       </line>
     </connection>
@@ -332,7 +332,7 @@
       trgParentType="routeform"
       router="junction"
       color="0000ff"
-      lblx="225"
+      lblx="135"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -349,10 +349,10 @@
       </properties>
       <line>
         <point
-          x="170"
+          x="80"
           y="140" />
         <point
-          x="280"
+          x="190"
           y="140" />
       </line>
     </connection>
