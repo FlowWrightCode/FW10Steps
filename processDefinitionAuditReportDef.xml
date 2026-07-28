@@ -9,7 +9,7 @@
       id="8362bd3e-ee58-472c-b6e9-992902a7db4f"
       name="start"
       type="start"
-      x="-80"
+      x="-150"
       y="70"
       isValid="true"
       isLocked="False">
@@ -60,7 +60,7 @@
       id="5fc7f989-c4c5-288b-f377-30f53b205741"
       name="Generate Definition Audit report"
       type="processdefinitionauditreport"
-      x="300"
+      x="140"
       y="70"
       isValid="true"
       isLocked="False">
@@ -91,23 +91,230 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="9bd262cb-038d-00f9-bc36-a888821ddbd3"
+      name="Publish Process Definition"
+      type="placeholder"
+      x="-20"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Publish Process Definition]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Publish Process Definition]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8f8c8beb-bf9a-ecf6-930a-88df4f002895"
+      name="Archive Audit Report"
+      type="placeholder"
+      x="310"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Archive Audit Report]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Archive Audit Report]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8dfbf063-9a95-9fcc-6164-16a91cefeff0"
+      name="Email Process Owner"
+      type="placeholder"
+      x="450"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Email Process Owner]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Email Process Owner]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="e2dcb86f-b489-2cda-f78e-e2229aac5d57"
+      name="End"
+      type="placeholder"
+      x="580"
+      y="70"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[End]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[End]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c81995ce-4a96-0168-e762-c75ab7bed465"
+      name="Log Report Generation Error"
+      type="placeholder"
+      x="140"
+      y="220"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Report Generation Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Report Generation Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="59a6f815-ba99-69cb-76cf-d982b1f79cc6"
+      name="Notify Administrator"
+      type="placeholder"
+      x="140"
+      y="340"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="654a57df-d73a-db82-a700-624814fede69"
+      id="83fcccc0-4c49-2bac-fcad-470bfb40b855"
       label=""
-      size="5"
+      size="4"
       type=""
-      srcParentID="8362bd3e-ee58-472c-b6e9-992902a7db4f"
-      srcParentType="start"
-      trgParentID="5fc7f989-c4c5-288b-f377-30f53b205741"
-      trgParentType="processdefinitionauditreport"
+      srcParentID="c81995ce-4a96-0168-e762-c75ab7bed465"
+      srcParentName="Log Report Generation Error"
+      srcParentType="placeholder"
+      trgParentID="59a6f815-ba99-69cb-76cf-d982b1f79cc6"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
       router="junction"
-      color="0000ff"
-      lblx="125"
-      lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
-      srcPortName="eastPort">
+      color="3c78d8"
+      lblx="160"
+      lbly="300"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="southPort"
+      trgPortName="northPort">
       <properties>
         <property
           name="label"><![CDATA[]]></property>
@@ -120,10 +327,232 @@
       </properties>
       <line>
         <point
-          x="-40"
+          x="160"
+          y="260" />
+        <point
+          x="160"
+          y="340" />
+      </line>
+    </connection>
+    <connection
+      id="25d95873-71e8-ea20-76ac-c3da86b11b1c"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="5fc7f989-c4c5-288b-f377-30f53b205741"
+      srcParentName="Generate Definition Audit report"
+      srcParentType="processdefinitionauditreport"
+      trgParentID="c81995ce-4a96-0168-e762-c75ab7bed465"
+      trgParentName="Log Report Generation Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="160"
+      lbly="165"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="160"
+          y="110" />
+        <point
+          x="160"
+          y="220" />
+      </line>
+    </connection>
+    <connection
+      id="b0d60e4d-8684-1a54-71f6-940a80618122"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8dfbf063-9a95-9fcc-6164-16a91cefeff0"
+      srcParentName="Email Process Owner"
+      srcParentType="placeholder"
+      trgParentID="e2dcb86f-b489-2cda-f78e-e2229aac5d57"
+      trgParentName="End"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="535"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="490"
           y="90" />
         <point
-          x="290"
+          x="580"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="e5a0df8c-c507-dcbf-c2ef-71e6dd5c831e"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8f8c8beb-bf9a-ecf6-930a-88df4f002895"
+      srcParentName="Archive Audit Report"
+      srcParentType="placeholder"
+      trgParentID="8dfbf063-9a95-9fcc-6164-16a91cefeff0"
+      trgParentName="Email Process Owner"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="400"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="350"
+          y="90" />
+        <point
+          x="450"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="01eab87d-108b-d6ed-9626-aa68787fec9c"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="5fc7f989-c4c5-288b-f377-30f53b205741"
+      srcParentName="Generate Definition Audit report"
+      srcParentType="processdefinitionauditreport"
+      trgParentID="8f8c8beb-bf9a-ecf6-930a-88df4f002895"
+      trgParentName="Archive Audit Report"
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="245"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="180"
+          y="90" />
+        <point
+          x="310"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="654a57df-d73a-db82-a700-624814fede69"
+      label=""
+      size="5"
+      type=""
+      srcParentID="9bd262cb-038d-00f9-bc36-a888821ddbd3"
+      srcParentName="Publish Process Definition"
+      srcParentType="placeholder"
+      trgParentID="5fc7f989-c4c5-288b-f377-30f53b205741"
+      trgParentName="Generate Definition Audit report"
+      trgParentType="processdefinitionauditreport"
+      router="junction"
+      color="0000ff"
+      lblx="80"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="20"
+          y="90" />
+        <point
+          x="140"
+          y="90" />
+      </line>
+    </connection>
+    <connection
+      id="5b4e71b3-b317-4769-9318-b976b8d81824"
+      label=""
+      size="5"
+      type=""
+      srcParentID="8362bd3e-ee58-472c-b6e9-992902a7db4f"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="9bd262cb-038d-00f9-bc36-a888821ddbd3"
+      trgParentName="Publish Process Definition"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="-65"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="-110"
+          y="90" />
+        <point
+          x="-20"
           y="90" />
       </line>
     </connection>
