@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="b5312a0a-4ed1-44ab-8f6d-108e2fb4b3f1">
+  defID="b5312a0a-4ed1-44ab-8f6d-108e2fb4b3f1"
+  defName="clsDynamicStepBuilderDef">
   <figures>
     <figure
       id="d7bff10e-c9d3-453d-8c4f-d476f3d1666a"
       name="start"
       type="start"
-      x="-390"
+      x="-560"
       y="151"
       isValid="true"
       isLocked="False">
@@ -41,7 +42,7 @@
         <property
           name="documentation"><![CDATA[]]></property>
         <property
-          name="priority"><![CDATA[]]></property>
+          name="priority"><![CDATA[Medium]]></property>
         <property
           name="errorDef"><![CDATA[]]></property>
         <property
@@ -62,7 +63,7 @@
       id="ea8c1bfc-506f-58ed-3912-3c481c524fee"
       name="Dynamic Steps"
       type="clsdynamicstepbuilder"
-      x="-30"
+      x="10"
       y="151"
       isValid="true"
       isLocked="False">
@@ -97,7 +98,7 @@
       id="93b5be1e-a526-a6ba-51ac-56704a445bae"
       name="Updates any # of globals"
       type="updateglobals"
-      x="-220"
+      x="-150"
       y="151"
       isValid="true"
       isLocked="False">
@@ -130,21 +131,21 @@
     </figure>
     <figure
       id="8925a47a-e586-07aa-cae5-6ec46a9720f9"
-      name="placeholder"
+      name="Execute Generated Steps"
       type="placeholder"
       x="160"
-      y="290"
+      y="151"
       isValid="true"
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[placeholder]]></property>
+          name="label"><![CDATA[Execute Generated Steps]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[placeholder]]></property>
+          name="itemName"><![CDATA[Execute Generated Steps]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -161,21 +162,21 @@
     </figure>
     <figure
       id="42f47558-1c20-592c-bf3c-a3fa193dd55c"
-      name="placeholder"
+      name="Log Dynamic Build Error"
       type="placeholder"
-      x="-30"
+      x="10"
       y="290"
       isValid="true"
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[placeholder]]></property>
+          name="label"><![CDATA[Log Dynamic Build Error]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[placeholder]]></property>
+          name="itemName"><![CDATA[Log Dynamic Build Error]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -190,55 +191,194 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="29b8725e-74eb-e9e8-cadc-8343b1c29a76"
+      name="Evaluate Business Rules"
+      type="placeholder"
+      x="-440"
+      y="151"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Evaluate Business Rules]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Evaluate Business Rules]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="79ad4c73-51a1-e9dd-c37f-d0ca1ebb7041"
+      name="Build Runtime Step Definition"
+      type="placeholder"
+      x="-300"
+      y="151"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Build Runtime Step Definition]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Build Runtime Step Definition]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="dfd93b86-1f74-aae2-4970-13d03492d9d1"
+      name="Continue Workflow"
+      type="placeholder"
+      x="310"
+      y="151"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="38cdec7f-8bc2-f056-6bb8-022d4c2900c8"
+      name="End"
+      type="placeholder"
+      x="440"
+      y="151"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[End]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[End]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c68a1bb0-537b-2e7e-7ecf-1b896c1e4f11"
+      name="Notify Administrator"
+      type="placeholder"
+      x="10"
+      y="400"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="e37291bc-28b9-958a-ca47-f34d0154af57"
+      id="31422cf0-d688-776e-a7e4-4f0c4755f580"
       label=""
-      size="3"
+      size="4"
       type=""
-      srcParentID="d7bff10e-c9d3-453d-8c4f-d476f3d1666a"
-      srcParentType="start"
-      trgParentID="93b5be1e-a526-a6ba-51ac-56704a445bae"
-      trgParentType="updateglobals"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="0000ff"
-      lblx="-285"
-      lbly="171"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
-      srcPortName="eastPort"
-      trgPortName="westPort">
-      <properties>
-        <property
-          name="label"><![CDATA[]]></property>
-        <property
-          name="type"><![CDATA[]]></property>
-        <property
-          name="linkPriority"><![CDATA[0]]></property>
-      </properties>
-      <line>
-        <point
-          x="-350"
-          y="171" />
-        <point
-          x="-220"
-          y="171" />
-      </line>
-    </connection>
-    <connection
-      id="35df35a9-3110-9bb3-5cf6-b0275cf27d6a"
-      label=""
-      size="3"
-      type=""
-      srcParentID="ea8c1bfc-506f-58ed-3912-3c481c524fee"
-      srcParentType="clsdynamicstepbuilder"
-      trgParentID="42f47558-1c20-592c-bf3c-a3fa193dd55c"
+      srcParentID="42f47558-1c20-592c-bf3c-a3fa193dd55c"
+      srcParentName="Log Dynamic Build Error"
+      srcParentType="placeholder"
+      trgParentID="c68a1bb0-537b-2e7e-7ecf-1b896c1e4f11"
+      trgParentName="Notify Administrator"
       trgParentType="placeholder"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="0000ff"
-      lblx="-10"
-      lbly="241"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      router="junction"
+      color="3c78d8"
+      lblx="30"
+      lbly="365"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -253,29 +393,31 @@
       </properties>
       <line>
         <point
-          x="-10"
-          y="191" />
+          x="30"
+          y="330" />
         <point
-          x="-10"
-          y="290" />
+          x="30"
+          y="400" />
       </line>
     </connection>
     <connection
-      id="42aa03bc-945f-7e47-aa54-3ac7c8eac313"
+      id="5fc8d2a0-af14-e56b-d9bd-e47735eca65f"
       label=""
-      size="3"
+      size="4"
       type=""
-      srcParentID="ea8c1bfc-506f-58ed-3912-3c481c524fee"
-      srcParentType="clsdynamicstepbuilder"
-      trgParentID="8925a47a-e586-07aa-cae5-6ec46a9720f9"
+      srcParentID="dfd93b86-1f74-aae2-4970-13d03492d9d1"
+      srcParentName="Continue Workflow"
+      srcParentType="placeholder"
+      trgParentID="38cdec7f-8bc2-f056-6bb8-022d4c2900c8"
+      trgParentName="End"
       trgParentType="placeholder"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="0000ff"
-      lblx="155"
+      router="junction"
+      color="3c78d8"
+      lblx="395"
       lbly="171"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
-      trgPortName="northPort">
+      trgPortName="westPort">
       <properties>
         <property
           name="label"><![CDATA[]]></property>
@@ -288,14 +430,159 @@
       </properties>
       <line>
         <point
-          x="10"
+          x="350"
           y="171" />
         <point
-          x="180"
+          x="440"
+          y="171" />
+      </line>
+    </connection>
+    <connection
+      id="05457cdd-8ac3-d6f6-6047-b1a21c9cce24"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8925a47a-e586-07aa-cae5-6ec46a9720f9"
+      srcParentName="Execute Generated Steps"
+      srcParentType="placeholder"
+      trgParentID="dfd93b86-1f74-aae2-4970-13d03492d9d1"
+      trgParentName="Continue Workflow"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="255"
+      lbly="171"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="200"
           y="171" />
         <point
-          x="180"
+          x="310"
+          y="171" />
+      </line>
+    </connection>
+    <connection
+      id="e37291bc-28b9-958a-ca47-f34d0154af57"
+      label=""
+      size="3"
+      type=""
+      srcParentID="79ad4c73-51a1-e9dd-c37f-d0ca1ebb7041"
+      srcParentName="Build Runtime Step Definition"
+      srcParentType="placeholder"
+      trgParentID="93b5be1e-a526-a6ba-51ac-56704a445bae"
+      trgParentName="Updates any # of globals"
+      trgParentType="updateglobals"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="-205"
+      lbly="171"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="-260"
+          y="171" />
+        <point
+          x="-150"
+          y="171" />
+      </line>
+    </connection>
+    <connection
+      id="35df35a9-3110-9bb3-5cf6-b0275cf27d6a"
+      label="False"
+      size="3"
+      type=""
+      srcParentID="ea8c1bfc-506f-58ed-3912-3c481c524fee"
+      srcParentName="Dynamic Steps"
+      srcParentType="clsdynamicstepbuilder"
+      trgParentID="42f47558-1c20-592c-bf3c-a3fa193dd55c"
+      trgParentName="Log Dynamic Build Error"
+      trgParentType="placeholder"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="ff0000"
+      lblx="30"
+      lbly="240"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="30"
+          y="191" />
+        <point
+          x="30"
           y="290" />
+      </line>
+    </connection>
+    <connection
+      id="42aa03bc-945f-7e47-aa54-3ac7c8eac313"
+      label="True"
+      size="3"
+      type=""
+      srcParentID="ea8c1bfc-506f-58ed-3912-3c481c524fee"
+      srcParentName="Dynamic Steps"
+      srcParentType="clsdynamicstepbuilder"
+      trgParentID="8925a47a-e586-07aa-cae5-6ec46a9720f9"
+      trgParentName="Execute Generated Steps"
+      trgParentType="placeholder"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="00ff00"
+      lblx="105"
+      lbly="171"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="50"
+          y="171" />
+        <point
+          x="160"
+          y="171" />
       </line>
     </connection>
     <connection
@@ -304,14 +591,16 @@
       size="3"
       type=""
       srcParentID="93b5be1e-a526-a6ba-51ac-56704a445bae"
+      srcParentName="Updates any # of globals"
       srcParentType="updateglobals"
       trgParentID="ea8c1bfc-506f-58ed-3912-3c481c524fee"
+      trgParentName="Dynamic Steps"
       trgParentType="clsdynamicstepbuilder"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
-      lblx="-105"
+      lblx="-50"
       lbly="171"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -324,10 +613,82 @@
       </properties>
       <line>
         <point
-          x="-180"
+          x="-110"
           y="171" />
         <point
-          x="-30"
+          x="10"
+          y="171" />
+      </line>
+    </connection>
+    <connection
+      id="92721860-65de-0171-ecbb-44fe20ec2319"
+      label=""
+      size="3"
+      type=""
+      srcParentID="d7bff10e-c9d3-453d-8c4f-d476f3d1666a"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="29b8725e-74eb-e9e8-cadc-8343b1c29a76"
+      trgParentName="Evaluate Business Rules"
+      trgParentType="placeholder"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="-480"
+      lbly="171"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="-520"
+          y="171" />
+        <point
+          x="-440"
+          y="171" />
+      </line>
+    </connection>
+    <connection
+      id="c31714e8-f98b-4ca5-476e-8743a9494622"
+      label=""
+      size="3"
+      type=""
+      srcParentID="29b8725e-74eb-e9e8-cadc-8343b1c29a76"
+      srcParentName="Evaluate Business Rules"
+      srcParentType="placeholder"
+      trgParentID="79ad4c73-51a1-e9dd-c37f-d0ca1ebb7041"
+      trgParentName="Build Runtime Step Definition"
+      trgParentType="placeholder"
+      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      color="0000ff"
+      lblx="-349"
+      lbly="171"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="-400"
+          y="171" />
+        <point
+          x="-300"
           y="171" />
       </line>
     </connection>
