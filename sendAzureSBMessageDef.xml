@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="6bc786cb-734d-49b9-be6d-f91e1adba7f6">
+  defID="6bc786cb-734d-49b9-be6d-f91e1adba7f6"
+  defName="sendAzureSBMessageDef">
   <figures>
     <figure
       id="0fa40fe5-eb86-4bcb-9958-2b51bc608c86"
@@ -81,8 +82,150 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="08abec42-b900-f4d0-d8f0-93a10a06ed3b"
+      name="Continue Processing.."
+      type="placeholder"
+      x="410"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Processing..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Processing..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="5d03c444-3002-57ff-90e3-6c49aaae6a64"
+      name="Handle Failure"
+      type="placeholder"
+      x="250"
+      y="190"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Handle Failure]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Handle Failure]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="a360d780-5664-ed0b-ccb0-8bc69ec09522"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="c48dbdc4-43e6-6ae7-7c1c-1d27fff9c412"
+      srcParentName="Send Msg to Service Bus"
+      srcParentType="sendazuresbmessage"
+      trgParentID="08abec42-b900-f4d0-d8f0-93a10a06ed3b"
+      trgParentName="Continue Processing.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="350"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="59" />
+        <point
+          x="410"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="b7e37560-991e-16b0-7d8c-9e3101332c28"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="c48dbdc4-43e6-6ae7-7c1c-1d27fff9c412"
+      srcParentName="Send Msg to Service Bus"
+      srcParentType="sendazuresbmessage"
+      trgParentID="5d03c444-3002-57ff-90e3-6c49aaae6a64"
+      trgParentName="Handle Failure"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="270"
+      lbly="135"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="79" />
+        <point
+          x="270"
+          y="190" />
+      </line>
+    </connection>
     <connection
       id="a50cc7fb-c4b4-dfba-3c29-62f650a46ea3"
       label=""
