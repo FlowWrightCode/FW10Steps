@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="fbbf66a4-909d-4cfe-88e1-640fcdec1a4b">
+  defID="fbbf66a4-909d-4cfe-88e1-640fcdec1a4b"
+  defName="clsGenerateDBNameDef">
   <figures>
     <figure
       id="b18176f7-51b0-4d45-8e7f-d275a57b30e8"
@@ -48,8 +49,8 @@
       id="abaae07f-b965-01f0-c23d-9aa54380bd9a"
       name="Generate DB name"
       type="clsgeneratedbname"
-      x="280"
-      y="40"
+      x="190"
+      y="39"
       isValid="true"
       isLocked="False">
       <properties>
@@ -79,22 +80,237 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="4c47ef4b-6e2c-e523-e33b-10fecdb70708"
+      name="Use DB Name"
+      type="placeholder"
+      x="320"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Use DB Name]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Use DB Name]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="0d395ccc-058e-6f58-34e1-b8059ac4c4ec"
+      name="Tenant / Database Operation"
+      type="placeholder"
+      x="450"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Tenant / Database Operation]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Tenant / Database Operation]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="760c12a3-25ff-6d39-9669-8880791cb074"
+      name="Continue.."
+      type="placeholder"
+      x="580"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="f781e273-07f1-a179-778b-b82bc1d916dd"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0d395ccc-058e-6f58-34e1-b8059ac4c4ec"
+      srcParentName="Tenant / Database Operation"
+      srcParentType="placeholder"
+      trgParentID="760c12a3-25ff-6d39-9669-8880791cb074"
+      trgParentName="Continue.."
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="535"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="490"
+          y="59" />
+        <point
+          x="580"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="cfba3c00-cefb-ac74-414b-2b59273fcd38"
+      label=""
+      size="4"
+      type=""
+      srcParentID="4c47ef4b-6e2c-e523-e33b-10fecdb70708"
+      srcParentName="Use DB Name"
+      srcParentType="placeholder"
+      trgParentID="0d395ccc-058e-6f58-34e1-b8059ac4c4ec"
+      trgParentName="Tenant / Database Operation"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="405"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="360"
+          y="59" />
+        <point
+          x="450"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="72d1298a-2ea1-b1c8-ad7d-058fe41a83c1"
+      label=""
+      size="4"
+      type=""
+      srcParentID="abaae07f-b965-01f0-c23d-9aa54380bd9a"
+      srcParentName="Generate DB name"
+      srcParentType="clsgeneratedbname"
+      trgParentID="4c47ef4b-6e2c-e523-e33b-10fecdb70708"
+      trgParentName="Use DB Name"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="275"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="230"
+          y="59" />
+        <point
+          x="320"
+          y="59" />
+      </line>
+    </connection>
     <connection
       id="5b39f0cf-5e8d-0022-5cb3-f0be647e5d47"
       label=""
       size="5"
       type=""
       srcParentID="b18176f7-51b0-4d45-8e7f-d275a57b30e8"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="abaae07f-b965-01f0-c23d-9aa54380bd9a"
+      trgParentName="Generate DB name"
       trgParentType="clsgeneratedbname"
       router="junction"
       color="0000ff"
-      lblx="189"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lblx="144"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -110,14 +326,8 @@
           x="98"
           y="59" />
         <point
-          x="189"
+          x="190"
           y="59" />
-        <point
-          x="189"
-          y="60" />
-        <point
-          x="280"
-          y="60" />
       </line>
     </connection>
   </connections>
