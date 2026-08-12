@@ -3,14 +3,15 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="5f062f78-ea61-49bc-8e09-7ac197dde685">
+  defID="5f062f78-ea61-49bc-8e09-7ac197dde685"
+  defName="sendAzureEventHubMessageDef">
   <figures>
     <figure
       id="f58bb12e-76d9-42d4-afa5-d506c2354a25"
       name="start"
       type="start"
-      x="40"
-      y="39"
+      x="20"
+      y="30"
       isValid="true"
       isLocked="False">
       <properties>
@@ -60,8 +61,8 @@
       id="a6e36bdd-1859-c03c-217a-bb0b98c6765f"
       name="Send Msg to EventHub"
       type="sendazureeventhubmessage"
-      x="270"
-      y="39"
+      x="200"
+      y="30"
       isValid="true"
       isLocked="False">
       <properties>
@@ -93,22 +94,166 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="acad7b24-a614-2989-b91e-6daab44e9ba9"
+      name="Continue.."
+      type="placeholder"
+      x="340"
+      y="30"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="812f109e-5a88-779a-5c40-64fd852ed7be"
+      name="Handle Error"
+      type="placeholder"
+      x="200"
+      y="150"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Handle Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Handle Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="358d6749-362c-868d-edc9-e8d0ac72734c"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="a6e36bdd-1859-c03c-217a-bb0b98c6765f"
+      srcParentName="Send Msg to EventHub"
+      srcParentType="sendazureeventhubmessage"
+      trgParentID="812f109e-5a88-779a-5c40-64fd852ed7be"
+      trgParentName="Handle Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="220"
+      lbly="110"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="220"
+          y="70" />
+        <point
+          x="220"
+          y="150" />
+      </line>
+    </connection>
+    <connection
+      id="a6b20fd6-d68d-ac5c-9cfb-cc2760296773"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="a6e36bdd-1859-c03c-217a-bb0b98c6765f"
+      srcParentName="Send Msg to EventHub"
+      srcParentType="sendazureeventhubmessage"
+      trgParentID="acad7b24-a614-2989-b91e-6daab44e9ba9"
+      trgParentName="Continue.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="290"
+      lbly="50"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="50" />
+        <point
+          x="340"
+          y="50" />
+      </line>
+    </connection>
     <connection
       id="b58dac03-449f-b47a-a189-bf2230e8f701"
       label=""
       size="5"
       type=""
       srcParentID="f58bb12e-76d9-42d4-afa5-d506c2354a25"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="a6e36bdd-1859-c03c-217a-bb0b98c6765f"
+      trgParentName="Send Msg to EventHub"
       trgParentType="sendazureeventhubmessage"
       router="junction"
       color="0000ff"
-      lblx="175"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      lblx="130"
+      lbly="50"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -121,11 +266,11 @@
       </properties>
       <line>
         <point
-          x="80"
-          y="59" />
+          x="60"
+          y="50" />
         <point
-          x="270"
-          y="59" />
+          x="200"
+          y="50" />
       </line>
     </connection>
   </connections>
