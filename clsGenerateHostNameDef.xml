@@ -3,20 +3,24 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="3b32ee90-f8e0-401a-a143-a5aeb9ca1d10">
+  defID="3b32ee90-f8e0-401a-a143-a5aeb9ca1d10"
+  defName="clsGenerateHostNameDef">
   <figures>
     <figure
       id="80c67d63-040d-48de-97b2-3b1829212581"
       name="start"
       type="start"
-      x="40"
-      y="39"
-      isValid="true">
+      x="10"
+      y="0"
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,17 +55,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="2cd67ae6-e51c-fd80-b5c2-84b8608a2f11"
       name="Generate tenant name"
       type="clsgeneratehostname"
-      x="280"
-      y="39"
+      x="150"
+      y="0"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +72,8 @@
           name="label"><![CDATA[Generate tenant name]]></property>
         <property
           name="type"><![CDATA[clsgeneratehostname]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -91,6 +96,106 @@
           name="instState"><![CDATA[Tenant Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="2ca944e0-318a-afb6-7ede-1e3029f0b959"
+      name="Use Tenant Name"
+      type="placeholder"
+      x="300"
+      y="0"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Use Tenant Name]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Use Tenant Name]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="b8637af6-2247-0ede-67d2-697be9daf3fe"
+      name="Create / Configure Tenant"
+      type="placeholder"
+      x="440"
+      y="0"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Create / Configure Tenant]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Create / Configure Tenant]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="e4e80c2f-7d1a-ba22-21f8-780f711e9aff"
+      name="Continue.."
+      type="placeholder"
+      x="580"
+      y="0"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
       </properties>
@@ -98,19 +203,132 @@
   </figures>
   <connections>
     <connection
+      id="a963a18b-9517-e030-3173-3b49b71abcf3"
+      label=""
+      size="4"
+      type=""
+      srcParentID="b8637af6-2247-0ede-67d2-697be9daf3fe"
+      srcParentName="Create / Configure Tenant"
+      srcParentType="placeholder"
+      trgParentID="e4e80c2f-7d1a-ba22-21f8-780f711e9aff"
+      trgParentName="Continue.."
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="530"
+      lbly="20"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="480"
+          y="20" />
+        <point
+          x="580"
+          y="20" />
+      </line>
+    </connection>
+    <connection
+      id="50137a21-7609-4fcb-f28b-01e54c7e1a85"
+      label=""
+      size="4"
+      type=""
+      srcParentID="2ca944e0-318a-afb6-7ede-1e3029f0b959"
+      srcParentName="Use Tenant Name"
+      srcParentType="placeholder"
+      trgParentID="b8637af6-2247-0ede-67d2-697be9daf3fe"
+      trgParentName="Create / Configure Tenant"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="390"
+      lbly="20"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="340"
+          y="20" />
+        <point
+          x="440"
+          y="20" />
+      </line>
+    </connection>
+    <connection
+      id="8f7dbc05-2618-aa29-376d-10c7062e91d2"
+      label=""
+      size="4"
+      type=""
+      srcParentID="2cd67ae6-e51c-fd80-b5c2-84b8608a2f11"
+      srcParentName="Generate tenant name"
+      srcParentType="clsgeneratehostname"
+      trgParentID="2ca944e0-318a-afb6-7ede-1e3029f0b959"
+      trgParentName="Use Tenant Name"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="245"
+      lbly="20"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="190"
+          y="20" />
+        <point
+          x="300"
+          y="20" />
+      </line>
+    </connection>
+    <connection
       id="c10d029f-b41d-2597-d3ae-278e39307dab"
       label=""
       size="4"
       type=""
       srcParentID="80c67d63-040d-48de-97b2-3b1829212581"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="2cd67ae6-e51c-fd80-b5c2-84b8608a2f11"
+      trgParentName="Generate tenant name"
       trgParentType="clsgeneratehostname"
       router="junction"
       color="3c78d8"
-      lblx="180"
-      lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      lblx="100"
+      lbly="20"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -123,11 +341,11 @@
       </properties>
       <line>
         <point
-          x="80"
-          y="59" />
+          x="50"
+          y="20" />
         <point
-          x="280"
-          y="59" />
+          x="150"
+          y="20" />
       </line>
     </connection>
   </connections>
