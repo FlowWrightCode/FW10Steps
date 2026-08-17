@@ -1,0 +1,274 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="5d4302fc-cad2-4519-ab7b-1c37c411da5b"
+  defName="sendMessagesToProcessDef">
+  <figures>
+    <figure
+      id="988b2d4c-f5ff-45ce-9c13-5e0a6c385037"
+      name="start"
+      type="start"
+      x="90"
+      y="100"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Low]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="1e36d46d-ab83-40de-b96c-534d2abefabe"
+      name="Send message to process"
+      type="sendmessagestoprocess"
+      x="390"
+      y="100"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Send message to process]]></property>
+        <property
+          name="type"><![CDATA[sendmessagestoprocess]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Send message to process]]></property>
+        <property
+          name="itemDescription"><![CDATA[sendMessagesToProcess]]></property>
+        <property
+          name="waitMessage"><![CDATA[Approve]]></property>
+        <property
+          name="instanceID"><![CDATA[83118f9c-892c-4bd6-a822-2af8f469e470]]></property>
+        <property
+          name="LogMessage"><![CDATA[sendMessagesToProcess - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[sendMessagesToProcess - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Engine Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="89d823d9-9174-02f2-498e-7126a95ab255"
+      name="Perform Business Operation"
+      type="placeholder"
+      x="230"
+      y="100"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Perform Business Operation]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Perform Business Operation]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="2951e656-2b98-9059-9208-e6c32608688b"
+      name="Continue Process.."
+      type="placeholder"
+      x="550"
+      y="100"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="7340f775-225b-2f7c-52f3-85e5f3003596"
+      label=""
+      size="4"
+      type=""
+      srcParentID="1e36d46d-ab83-40de-b96c-534d2abefabe"
+      srcParentName="Send message to process"
+      srcParentType="sendmessagestoprocess"
+      trgParentID="2951e656-2b98-9059-9208-e6c32608688b"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="490"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+      </properties>
+      <line>
+        <point
+          x="430"
+          y="120" />
+        <point
+          x="550"
+          y="120" />
+      </line>
+    </connection>
+    <connection
+      id="54bf4e56-876f-4916-9d5a-f5c974baf910"
+      label=""
+      size="5"
+      type=""
+      srcParentID="89d823d9-9174-02f2-498e-7126a95ab255"
+      srcParentName="Perform Business Operation"
+      srcParentType="placeholder"
+      trgParentID="1e36d46d-ab83-40de-b96c-534d2abefabe"
+      trgParentName="Send message to process"
+      trgParentType="sendmessagestoprocess"
+      router="junction"
+      color="3c78d8"
+      lblx="330"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="120" />
+        <point
+          x="390"
+          y="120" />
+      </line>
+    </connection>
+    <connection
+      id="2769e348-9168-36fa-d5e2-345e00209a49"
+      label=""
+      size="5"
+      type=""
+      srcParentID="988b2d4c-f5ff-45ce-9c13-5e0a6c385037"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="89d823d9-9174-02f2-498e-7126a95ab255"
+      trgParentName="Perform Business Operation"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="180"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="130"
+          y="120" />
+        <point
+          x="230"
+          y="120" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
