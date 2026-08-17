@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="90e0ce21-a763-4535-8c78-63dbcacad34b">
+  defID="90e0ce21-a763-4535-8c78-63dbcacad34b"
+  defName="clsRemoveTenantDef">
   <figures>
     <figure
       id="caabfd19-02fa-4bb6-ab0e-ba4c385379e9"
@@ -60,7 +61,7 @@
       id="b4cd27d1-7d70-2bf2-a93d-8084a0383dd6"
       name="Remove Tenant"
       type="clsremovetenant"
-      x="280"
+      x="250"
       y="100"
       isValid="true"
       isLocked="False">
@@ -89,20 +90,167 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="3c77c4ab-ba8f-9a06-a71a-1534891ef4ac"
+      name="Continue Processing.."
+      type="placeholder"
+      x="400"
+      y="100"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Processing..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Processing..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="3310c016-d476-f1a6-a09d-4aa61d7a8ad7"
+      name="Handle Error"
+      type="placeholder"
+      x="250"
+      y="240"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Handle Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Handle Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="945ec3c2-e8a0-6bb5-cd12-a661964aeea4"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="b4cd27d1-7d70-2bf2-a93d-8084a0383dd6"
+      srcParentName="Remove Tenant"
+      srcParentType="clsremovetenant"
+      trgParentID="3310c016-d476-f1a6-a09d-4aa61d7a8ad7"
+      trgParentName="Handle Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="270"
+      lbly="190"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="140" />
+        <point
+          x="270"
+          y="240" />
+      </line>
+    </connection>
+    <connection
+      id="4e26ce1f-6191-147e-5d9c-6a020c5f20b5"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="b4cd27d1-7d70-2bf2-a93d-8084a0383dd6"
+      srcParentName="Remove Tenant"
+      srcParentType="clsremovetenant"
+      trgParentID="3c77c4ab-ba8f-9a06-a71a-1534891ef4ac"
+      trgParentName="Continue Processing.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="345"
+      lbly="120"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="120" />
+        <point
+          x="370"
+          y="120" />
+        <point
+          x="400"
+          y="120" />
+      </line>
+    </connection>
     <connection
       id="26ed25dc-8a78-74f0-0aa4-035e6116491e"
       label=""
       size="5"
       type=""
       srcParentID="caabfd19-02fa-4bb6-ab0e-ba4c385379e9"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="b4cd27d1-7d70-2bf2-a93d-8084a0383dd6"
+      trgParentName="Remove Tenant"
       trgParentType="clsremovetenant"
       router="junction"
       color="0000ff"
-      lblx="200"
+      lblx="185"
       lbly="120"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -120,7 +268,7 @@
           x="120"
           y="120" />
         <point
-          x="280"
+          x="250"
           y="120" />
       </line>
     </connection>
