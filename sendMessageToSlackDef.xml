@@ -3,20 +3,24 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="9a7078a0-947d-4904-8058-3ff455e4a801">
+  defID="9a7078a0-947d-4904-8058-3ff455e4a801"
+  defName="sendMessageToSlackDef">
   <figures>
     <figure
       id="ea51fa11-deee-451a-ad15-9e0a81f9597e"
       name="start"
       type="start"
-      x="80"
+      x="70"
       y="160"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,17 +55,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="56e405ef-608b-d4eb-b93e-413b795ba12c"
       name="Send Msg"
       type="sendmessagetoslack"
-      x="320"
+      x="340"
       y="160"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +72,8 @@
           name="label"><![CDATA[Send Msg]]></property>
         <property
           name="type"><![CDATA[sendmessagetoslack]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -89,26 +94,170 @@
           name="instState"><![CDATA[Slack Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="fee280e0-c551-ba5d-9649-de131f993a00"
+      name="Process Request"
+      type="placeholder"
+      x="200"
+      y="160"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Process Request]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Process Request]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6cdbb681-68f4-8d5d-e1a8-98ea7295ac37"
+      name="Continue Workflow.."
+      type="placeholder"
+      x="480"
+      y="160"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
     <connection
+      id="841943dd-d15f-a1d0-3c62-4e97a41889b6"
+      label=""
+      size="4"
+      type=""
+      srcParentID="56e405ef-608b-d4eb-b93e-413b795ba12c"
+      srcParentName="Send Msg"
+      srcParentType="sendmessagetoslack"
+      trgParentID="6cdbb681-68f4-8d5d-e1a8-98ea7295ac37"
+      trgParentName="Continue Workflow.."
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="430"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="180" />
+        <point
+          x="480"
+          y="180" />
+      </line>
+    </connection>
+    <connection
       id="87adbac0-6e9b-b509-77b5-65123bd64ca7"
       label=""
       size="5"
       type=""
-      srcParentID="ea51fa11-deee-451a-ad15-9e0a81f9597e"
-      srcParentType="start"
+      srcParentID="fee280e0-c551-ba5d-9649-de131f993a00"
+      srcParentName="Process Request"
+      srcParentType="placeholder"
       trgParentID="56e405ef-608b-d4eb-b93e-413b795ba12c"
+      trgParentName="Send Msg"
       trgParentType="sendmessagetoslack"
       router="junction"
       color="0000ff"
-      lblx="220"
+      lblx="290"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="180" />
+        <point
+          x="340"
+          y="180" />
+      </line>
+    </connection>
+    <connection
+      id="68027db3-4628-d88c-0914-fc5c86b81c54"
+      label=""
+      size="5"
+      type=""
+      srcParentID="ea51fa11-deee-451a-ad15-9e0a81f9597e"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="fee280e0-c551-ba5d-9649-de131f993a00"
+      trgParentName="Process Request"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="155"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -121,10 +270,10 @@
       </properties>
       <line>
         <point
-          x="120"
+          x="110"
           y="180" />
         <point
-          x="320"
+          x="200"
           y="180" />
       </line>
     </connection>
