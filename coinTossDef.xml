@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="401c8b35-531b-48ac-80b3-7c7fddd1d132">
+  defID="401c8b35-531b-48ac-80b3-7c7fddd1d132"
+  defName="coinTossDef">
   <figures>
     <figure
       id="1f4fde71-905b-46fa-835a-d83e8ec26786"
@@ -147,8 +148,10 @@
       size="3"
       type=""
       srcParentID="1f4fde71-905b-46fa-835a-d83e8ec26786"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="91ace145-6dcc-f95a-c942-4c3535351dae"
+      trgParentName="coinToss"
       trgParentType="cointoss"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
@@ -180,8 +183,10 @@
       size="3"
       type=""
       srcParentID="91ace145-6dcc-f95a-c942-4c3535351dae"
+      srcParentName="coinToss"
       srcParentType="cointoss"
       trgParentID="a024357b-ebc5-55b7-01ea-59bcbfade743"
+      trgParentName="setWFState - Tails"
       trgParentType="setwfstate"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
@@ -218,8 +223,10 @@
       size="3"
       type=""
       srcParentID="91ace145-6dcc-f95a-c942-4c3535351dae"
+      srcParentName="coinToss"
       srcParentType="cointoss"
       trgParentID="f9c744c1-ac67-0f48-6fd6-990ec15f848a"
+      trgParentName="setWFState - Heads"
       trgParentType="setwfstate"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
