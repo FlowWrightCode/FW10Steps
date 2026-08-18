@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="ec695bed-b3f8-49c2-9e96-10a61f5993b2">
+  defID="ec695bed-b3f8-49c2-9e96-10a61f5993b2"
+  defName="startDef">
   <figures>
     <figure
       id="3eead952-33eb-60d5-4789-cf2848aaa4a5"
@@ -25,9 +26,9 @@
         <property
           name="itemDescription"><![CDATA[Contains]]></property>
         <property
-          name="stringText"><![CDATA[@gmail.com]]></property>
+          name="stringText"><![CDATA[Apple]]></property>
         <property
-          name="listOfStrings"><![CDATA[test@gmail.com]]></property>
+          name="listOfStrings"><![CDATA[Bat&#xA;Cat&#xA;Rat&#xA;Apple&#xA;Egg]]></property>
         <property
           name="LogMessage"><![CDATA[Contains - Variable.createdOn]]></property>
         <property
@@ -58,7 +59,7 @@
         <property
           name="itemDescription"><![CDATA[task]]></property>
         <property
-          name="routeTo"><![CDATA[Variable.initiatorID]]></property>
+          name="routeTo"><![CDATA[b8e4a0ed-3ef9-4d04-8ab1-4ee647bdc5af;]]></property>
         <property
           name="routeToRoles"><![CDATA[]]></property>
         <property
@@ -122,9 +123,9 @@
         <property
           name="instPercent"><![CDATA[100]]></property>
         <property
-          name="useFullDuration"><![CDATA[]]></property>
+          name="useFullDuration"><![CDATA[no]]></property>
         <property
-          name="commentRequired"><![CDATA[]]></property>
+          name="commentRequired"><![CDATA[no]]></property>
       </properties>
     </figure>
     <figure
