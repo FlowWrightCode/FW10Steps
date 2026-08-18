@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="241fa507-348b-4b24-a7f0-1859133ae358">
+  defID="241fa507-348b-4b24-a7f0-1859133ae358"
+  defName="wordToPDFDef">
   <figures>
     <figure
       id="e91a458d-5a83-64b1-0cd1-17f503e8d4fc"
@@ -48,7 +49,7 @@
       id="8f036058-5544-e970-b1fe-a045b2510ce0"
       name="Convert to PDF"
       type="wordtopdf"
-      x="240"
+      x="330"
       y="120"
       isValid="true"
       isLocked="False">
@@ -64,7 +65,7 @@
         <property
           name="itemDescription"><![CDATA[wordToPDF]]></property>
         <property
-          name="wordFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\LFS-643-HowToGeneratePDF.docx]]></property>
+          name="wordFilePath"><![CDATA[C:\FlowWright\wwwroot\TempFiles\ETL Steps.docx]]></property>
         <property
           name="pdfVarGlobal"><![CDATA[Variable.oFilePath]]></property>
         <property
@@ -77,22 +78,237 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="89f2df95-ffdf-b146-40cf-535b7aa8ee85"
+      name="Generate Word Document"
+      type="placeholder"
+      x="190"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Generate Word Document]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Generate Word Document]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c0299e24-8149-96a2-e4fe-d404010717e5"
+      name="Process / Distribute PDF"
+      type="placeholder"
+      x="480"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Process / Distribute PDF]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Process / Distribute PDF]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="604d0afe-8b45-34fd-1158-dcaa93f947d8"
+      name="Stop"
+      type="placeholder"
+      x="630"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Stop]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Stop]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="6d14c756-637b-0025-915a-4fd220624888"
+      label=""
+      size="4"
+      type=""
+      srcParentID="c0299e24-8149-96a2-e4fe-d404010717e5"
+      srcParentName="Process / Distribute PDF"
+      srcParentType="placeholder"
+      trgParentID="604d0afe-8b45-34fd-1158-dcaa93f947d8"
+      trgParentName="Stop"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="575"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="520"
+          y="140" />
+        <point
+          x="630"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="1ca9cefd-c8fe-9598-cd7a-54dcd5cadcca"
+      label=""
+      size="4"
+      type=""
+      srcParentID="8f036058-5544-e970-b1fe-a045b2510ce0"
+      srcParentName="Convert to PDF"
+      srcParentType="wordtopdf"
+      trgParentID="c0299e24-8149-96a2-e4fe-d404010717e5"
+      trgParentName="Process / Distribute PDF"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="425"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="370"
+          y="140" />
+        <point
+          x="480"
+          y="140" />
+      </line>
+    </connection>
     <connection
       id="1ba78a38-4246-cafb-ba35-acfaec40ff24"
       label=""
       size="5"
       type=""
-      srcParentID="e91a458d-5a83-64b1-0cd1-17f503e8d4fc"
-      srcParentType="start"
+      srcParentID="89f2df95-ffdf-b146-40cf-535b7aa8ee85"
+      srcParentName="Generate Word Document"
+      srcParentType="placeholder"
       trgParentID="8f036058-5544-e970-b1fe-a045b2510ce0"
+      trgParentName="Convert to PDF"
       trgParentType="wordtopdf"
       router="junction"
       color="3c78d8"
-      lblx="165"
+      lblx="280"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="230"
+          y="140" />
+        <point
+          x="330"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="f1e1cf4c-9e9e-e64c-11b4-10a67717e6c3"
+      label=""
+      size="5"
+      type=""
+      srcParentID="e91a458d-5a83-64b1-0cd1-17f503e8d4fc"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="89f2df95-ffdf-b146-40cf-535b7aa8ee85"
+      trgParentName="Generate Word Document"
+      trgParentType="placeholder"
+      router="junction"
+      color="3c78d8"
+      lblx="140"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -110,7 +326,7 @@
           x="90"
           y="140" />
         <point
-          x="240"
+          x="190"
           y="140" />
       </line>
     </connection>
