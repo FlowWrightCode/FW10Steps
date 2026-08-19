@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="b5f48ed7-a7c6-470d-9bf7-3db5945ad361">
+  defID="b5f48ed7-a7c6-470d-9bf7-3db5945ad361"
+  defName="TwilioSendGridDef">
   <figures>
     <figure
       id="223c8124-257d-429f-b109-90fed86a7a97"
@@ -25,11 +26,11 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[10510:Number|15:Boolean|test:String|testcase:String|Master910:String]]></property>
+          name="variables"><![CDATA[]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
-          name="globals"><![CDATA[16:Boolean|MasterGlobal:String]]></property>
+          name="globals"><![CDATA[]]></property>
         <property
           name="requiredGlobals"><![CDATA[]]></property>
         <property
@@ -62,23 +63,23 @@
         <property
           name="itemDescription"><![CDATA[twilioSendGrid]]></property>
         <property
-          name="replyTo"><![CDATA[]]></property>
+          name="replyTo"><![CDATA[email-me@test.com]]></property>
         <property
-          name="fromEmail"><![CDATA[]]></property>
+          name="fromEmail"><![CDATA[support@flowwright.com]]></property>
         <property
-          name="emailTo"><![CDATA[35635c17-06b5-455b-a1e6-51507c1e971f;08e1cc08-c091-4b36-8221-ae76604b84b7;3b3e5286-93ce-4efb-9b00-b8603c409614;13021912-49f0-4f3a-8f42-4a34c60e0e7e;]]></property>
+          name="emailTo"><![CDATA[35635c17-06b5-455b-a1e6-51507c1e971f;]]></property>
         <property
-          name="emailAddresses"><![CDATA[]]></property>
+          name="emailAddresses"><![CDATA[user1@test.com;user2@test.com]]></property>
         <property
           name="subject"><![CDATA[Twilio Send Grid - Message Subject]]></property>
         <property
-          name="body"><![CDATA[twiliosendgrid_Admin_MT]]></property>
+          name="body"><![CDATA[<span style="font-size: 18pt;">Message from Twiliosendgrid_Admin_MT</span>]]></property>
         <property
           name="cc"><![CDATA[offshoresupport@flowwright.com]]></property>
         <property
           name="bcc"><![CDATA[]]></property>
         <property
-          name="fileList"><![CDATA[]]></property>
+          name="fileList"><![CDATA[c:\FlowWright\wwwroot\tempfiles\monthly-updates.pdf]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
@@ -101,14 +102,16 @@
       size="5"
       type=""
       srcParentID="223c8124-257d-429f-b109-90fed86a7a97"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="2e0d099e-4fb1-4080-b69f-66c0bc7950de"
+      trgParentName="Twilio Send Grid"
       trgParentType="twiliosendgrid"
       router="junction"
       color="3c78d8"
       lblx="184"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
