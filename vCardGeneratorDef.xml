@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="48adfbae-65fc-4196-acd3-4ac89b0678e1">
+  defID="48adfbae-65fc-4196-acd3-4ac89b0678e1"
+  defName="vCardGeneratorDef">
   <figures>
     <figure
       id="aad783e4-5e3a-462f-bcd5-7e7ff4e5e6f6"
@@ -113,14 +114,16 @@
       size="3"
       type=""
       srcParentID="aad783e4-5e3a-462f-bcd5-7e7ff4e5e6f6"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="1a09952b-2290-064c-e931-22b35b61544d"
+      trgParentName="Create vCard"
       trgParentType="vcardgenerator"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="174"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
