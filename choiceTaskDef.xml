@@ -295,8 +295,8 @@
       id="a4a28564-99e9-5528-98b7-7933a96fe610"
       name="Timeout Process.."
       type="placeholder"
-      x="410"
-      y="-110"
+      x="420"
+      y="-180"
       isValid="true"
       inConnections="2"
       outConnections="2">
@@ -359,8 +359,85 @@
           name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
+    <figure
+      id="2bd556e4-98b4-3c82-91b7-918606973104"
+      name="Evaluate Process.."
+      type="placeholder"
+      x="510"
+      y="-90"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Evaluate Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Evaluate Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="f66247a9-d0fe-d1c1-73dc-f4e06ccc7ab4"
+      label="Evaluate"
+      size="4"
+      type=""
+      srcParentID="e0f5c108-4696-b938-704b-fdf980199922"
+      srcParentName="Choice Task"
+      srcParentType="choicetask"
+      trgParentID="2bd556e4-98b4-3c82-91b7-918606973104"
+      trgParentName="Evaluate Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="401"
+      lbly="-5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[Evaluate]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[eval:]]></property>
+      </properties>
+      <line>
+        <point
+          x="270"
+          y="39" />
+        <point
+          x="270"
+          y="-5" />
+        <point
+          x="530"
+          y="-5" />
+        <point
+          x="530"
+          y="-50" />
+      </line>
+    </connection>
     <connection
       id="23876e7d-f0ba-d949-007f-38191380932b"
       label="error"
@@ -417,8 +494,8 @@
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="361"
-      lbly="-15"
+      lblx="366"
+      lbly="-50"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northEastPort"
       trgPortName="southPort">
@@ -438,13 +515,13 @@
           y="39" />
         <point
           x="290"
-          y="-15" />
+          y="-50" />
         <point
-          x="430"
-          y="-15" />
+          x="440"
+          y="-50" />
         <point
-          x="430"
-          y="-70" />
+          x="440"
+          y="-140" />
       </line>
     </connection>
     <connection
