@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="3baaa275-bdcc-4920-bf91-7e52e4d2e35a">
+  defID="3baaa275-bdcc-4920-bf91-7e52e4d2e35a"
+  defName="updateVariableDef">
   <figures>
     <figure
       id="e14790a2-d063-461a-99d0-04fab1e6b651"
