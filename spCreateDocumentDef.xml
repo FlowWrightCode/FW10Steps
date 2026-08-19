@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="4b81dfd2-c996-468f-b597-dafff0a9a6ac">
+  defID="4b81dfd2-c996-468f-b597-dafff0a9a6ac"
+  defName="spCreateDocumentDef">
   <figures>
     <figure
       id="44bb04a7-4e7a-4846-b689-28bb09a52ddb"
@@ -91,14 +92,16 @@
       size="5"
       type=""
       srcParentID="44bb04a7-4e7a-4846-b689-28bb09a52ddb"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="878f5cfa-121d-f996-e8cb-06b8a5975a07"
+      trgParentName="Create Document"
       trgParentType="spcreatedocument"
       router="junction"
       color="4a86e8"
       lblx="210"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -108,6 +111,8 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
