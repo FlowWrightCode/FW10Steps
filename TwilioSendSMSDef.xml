@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="db278d3a-5229-449d-bcf9-5183b2126940">
+  defID="db278d3a-5229-449d-bcf9-5183b2126940"
+  defName="TwilioSendSMSDef">
   <figures>
     <figure
       id="9409c36f-315a-4732-af53-5fc2da2c6fa1"
@@ -11,12 +12,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +55,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -62,6 +64,7 @@
       x="260"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +72,8 @@
           name="label"><![CDATA[Send Text Msg]]></property>
         <property
           name="type"><![CDATA[twiliosendsms]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -89,8 +94,6 @@
           name="instState"><![CDATA[Twilio Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -101,14 +104,16 @@
       size="4"
       type=""
       srcParentID="9409c36f-315a-4732-af53-5fc2da2c6fa1"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="13f1ae71-10e7-90fa-b253-3c5f74999ca7"
+      trgParentName="Send Text Msg"
       trgParentType="twiliosendsms"
       router="junction"
       color="3c78d8"
       lblx="170"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
