@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="7ff2c13f-6eb4-4413-a7d3-862289c96e33">
+  defID="7ff2c13f-6eb4-4413-a7d3-862289c96e33"
+  defName="waitForDateTimeDef">
   <figures>
     <figure
       id="733bd323-7331-4785-bc11-19e44070974d"
@@ -68,9 +69,9 @@
         <property
           name="itemDescription"><![CDATA[waitForDateTime]]></property>
         <property
-          name="timeZone"><![CDATA[Eastern Standard Time]]></property>
+          name="timeZone"><![CDATA[Arab Standard Time]]></property>
         <property
-          name="waitDateTime"><![CDATA[2025-03-31 10:00:00]]></property>
+          name="waitDateTime"><![CDATA[2026-05-28 21:15]]></property>
         <property
           name="LogMessage"><![CDATA[waitForDateTime - Variable.createdOn]]></property>
         <property
@@ -118,14 +119,16 @@
       size="5"
       type=""
       srcParentID="44ded3d8-a72f-4451-74b2-21d813fd782c"
+      srcParentName="Wait to Date and Time"
       srcParentType="waitfordatetime"
       trgParentID="03c17812-1d0c-bfbd-b3f3-ce76c1d38df5"
+      trgParentName="Place Holder"
       trgParentType="placeholder"
       router="junction"
       color="3c78d8"
       lblx="330"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -151,14 +154,16 @@
       size="5"
       type=""
       srcParentID="733bd323-7331-4785-bc11-19e44070974d"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="44ded3d8-a72f-4451-74b2-21d813fd782c"
+      trgParentName="Wait to Date and Time"
       trgParentType="waitfordatetime"
       router="junction"
       color="3c78d8"
       lblx="164"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
