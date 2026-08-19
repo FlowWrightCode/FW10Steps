@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="1e471ce4-5d7b-40fa-b0c0-b650ec7ac205">
+  defID="1e471ce4-5d7b-40fa-b0c0-b650ec7ac205"
+  defName="updateDBFieldValueDef">
   <figures>
     <figure
       id="adee0f1b-0377-4395-97d1-6e28e41ca9cc"
@@ -11,12 +12,15 @@
       type="start"
       x="80"
       y="120"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +55,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -62,6 +64,7 @@
       x="320"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +72,8 @@
           name="label"><![CDATA[Update record value]]></property>
         <property
           name="type"><![CDATA[updatedbfieldvalue]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -99,8 +104,6 @@
           name="instState"><![CDATA[Database Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -111,14 +114,16 @@
       size="4"
       type=""
       srcParentID="adee0f1b-0377-4395-97d1-6e28e41ca9cc"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="8115c828-9a3a-2745-0826-f320aa55b49c"
+      trgParentName="Update record value"
       trgParentType="updatedbfieldvalue"
       router="junction"
       color="3c78d8"
       lblx="220"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
