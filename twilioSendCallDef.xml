@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="975afa6f-1cd7-4fa3-a401-685079991691">
+  defID="975afa6f-1cd7-4fa3-a401-685079991691"
+  defName="twilioSendCallDef">
   <figures>
     <figure
       id="478af7f7-6f5b-4906-9913-0c6fe23eb949"
@@ -11,12 +12,15 @@
       type="start"
       x="40"
       y="39"
-      isValid="true">
+      isValid="true"
+      isLocked="False">
       <properties>
         <property
           name="label"><![CDATA[start]]></property>
         <property
           name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="itemName"><![CDATA[start]]></property>
         <property
@@ -51,8 +55,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -62,6 +64,7 @@
       x="250"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -69,6 +72,8 @@
           name="label"><![CDATA[Send Voice Call]]></property>
         <property
           name="type"><![CDATA[twiliosendcall]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -80,7 +85,7 @@
         <property
           name="toNumber"><![CDATA[+80123456789]]></property>
         <property
-          name="message"><![CDATA[Hello! We're calling from the FlowWright support desk. ]]></property>
+          name="message"><![CDATA[Hello! We're calling from the FlowWright support desk.]]></property>
         <property
           name="LogMessage"><![CDATA[twilioSendCall - Variable.createdOn]]></property>
         <property
@@ -89,8 +94,6 @@
           name="instState"><![CDATA[Twilio Step]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -101,14 +104,16 @@
       size="4"
       type=""
       srcParentID="478af7f7-6f5b-4906-9913-0c6fe23eb949"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="38b363a5-0819-22ca-6d89-c09f7c3a88c2"
+      trgParentName="Send Voice Call"
       trgParentType="twiliosendcall"
       router="junction"
       color="3c78d8"
       lblx="165"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
