@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="739ff2e0-ac9c-4f2f-aadd-fb462c4cd2c2">
+  defID="739ff2e0-ac9c-4f2f-aadd-fb462c4cd2c2"
+  defName="userSelectionTaskDef">
   <figures>
     <figure
       id="064acb08-d615-46e1-89d6-6875ce08f41b"
@@ -66,7 +67,7 @@
         <property
           name="routeToRoles"><![CDATA[]]></property>
         <property
-          name="configureUsers"><![CDATA[[{"id":"userItem_1","type":"Users","selectedData":[],"label":"User Task","variableOrGlobal":"Variable.Users"},{"id":"userItem_2","type":"Roles","selectedData":["4dc668f5-801e-491b-932a-19c7a7aa221d","c4d7bb15-ef55-4081-b1a0-c605d3ba48b1","a45712cb-a0ae-419b-91ab-d48783f7ae1c"],"label":"App Roles Task","variableOrGlobal":"Variable.Roles"}]]]></property>
+          name="configureUsers"><![CDATA[[{"id":"userItem_1","type":"Users","selectedData":[],"label":"User Task","variableOrGlobal":"Variable.Users"},{"id":"userItem_2","type":"Roles","selectedData":["4dc668f5-801e-491b-932a-19c7a7aa221d","c4d7bb15-ef55-4081-b1a0-c605d3ba48b1"],"label":"App Roles Task","variableOrGlobal":"Variable.Roles"}]]]></property>
         <property
           name="taskDesc"><![CDATA[UserSelectionTask]]></property>
         <property
@@ -320,6 +321,7 @@
       x="30"
       y="410"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -327,6 +329,8 @@
           name="label"><![CDATA[Place Holder]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -343,30 +347,31 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="c722a939-ca46-d331-2ea2-569989805b92"
-      name="Place Holder"
+      name="Place Holder_8307"
       type="placeholder"
       x="420"
       y="410"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Place Holder]]></property>
+          name="label"><![CDATA[Place Holder_8307]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Place Holder]]></property>
+          name="itemName"><![CDATA[Place Holder_8307]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -377,8 +382,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -389,14 +392,16 @@
       size="4"
       type=""
       srcParentID="adca838f-4d75-1b31-a5a8-f67d4301740c"
+      srcParentName="Roles_Task"
       srcParentType="task"
       trgParentID="c722a939-ca46-d331-2ea2-569989805b92"
+      trgParentName="Place Holder_8307"
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
       lblx="440"
       lbly="360"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -424,14 +429,16 @@
       size="4"
       type=""
       srcParentID="e38ffe02-43d0-0e32-b958-c93c583fca3e"
+      srcParentName="User_Task"
       srcParentType="task"
       trgParentID="158382fd-e56b-791c-b2a7-3201a2e67489"
+      trgParentName="Place Holder"
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
       lblx="50"
       lbly="360"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -459,14 +466,16 @@
       size="3"
       type=""
       srcParentID="064acb08-d615-46e1-89d6-6875ce08f41b"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="8ad27de7-5308-7f36-0275-e01a38f1c634"
+      trgParentName="User Selection Task"
       trgParentType="userselectiontask"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="240"
       lbly="125"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -492,14 +501,16 @@
       size="3"
       type=""
       srcParentID="8ad27de7-5308-7f36-0275-e01a38f1c634"
+      srcParentName="User Selection Task"
       srcParentType="userselectiontask"
       trgParentID="e38ffe02-43d0-0e32-b958-c93c583fca3e"
+      trgParentName="User_Task"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="100"
       lbly="200"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="westPort"
       trgPortName="northPort">
       <properties>
@@ -528,14 +539,16 @@
       size="3"
       type=""
       srcParentID="8ad27de7-5308-7f36-0275-e01a38f1c634"
+      srcParentName="User Selection Task"
       srcParentType="userselectiontask"
       trgParentID="adca838f-4d75-1b31-a5a8-f67d4301740c"
+      trgParentName="Roles_Task"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
       lblx="385"
       lbly="200"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
