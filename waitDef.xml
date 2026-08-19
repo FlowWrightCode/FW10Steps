@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="ff60f23d-09bc-414d-9c1f-e5baa8f8a546">
+  defID="ff60f23d-09bc-414d-9c1f-e5baa8f8a546"
+  defName="waitDef">
   <figures>
     <figure
       id="fccb0c5d-ddcc-4a37-bcd2-6c4f722a95e4"
@@ -74,7 +75,7 @@
         <property
           name="waitNum"><![CDATA[5]]></property>
         <property
-          name="waitType"><![CDATA[minutes]]></property>
+          name="waitType"><![CDATA[seconds]]></property>
         <property
           name="includeWeekends"><![CDATA[1]]></property>
         <property
@@ -94,6 +95,7 @@
       x="400"
       y="120"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -101,6 +103,8 @@
           name="label"><![CDATA[Place Holder]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -117,8 +121,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -129,14 +131,16 @@
       size="5"
       type=""
       srcParentID="2e28ec90-137e-b0ad-43b6-202ba5d065f4"
+      srcParentName="Wait"
       srcParentType="wait"
       trgParentID="1d5f8505-ef2c-9d6d-cb85-e2f5fc42e124"
+      trgParentName="Place Holder"
       trgParentType="placeholder"
       router="junction"
       color="4a86e8"
       lblx="345"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -162,14 +166,16 @@
       size="5"
       type=""
       srcParentID="fccb0c5d-ddcc-4a37-bcd2-6c4f722a95e4"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="2e28ec90-137e-b0ad-43b6-202ba5d065f4"
+      trgParentName="Wait"
       trgParentType="wait"
       router="junction"
       color="3c78d8"
       lblx="175"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
