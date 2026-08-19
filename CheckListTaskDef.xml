@@ -156,7 +156,7 @@
       id="a259c456-67a7-3dce-4170-4355a1292ef5"
       name="Completed Process.."
       type="placeholder"
-      x="450"
+      x="500"
       y="39"
       isValid="true"
       inConnections="2"
@@ -190,7 +190,7 @@
       id="59dcf5bc-e059-0fad-78db-a076298224a3"
       name="Closed Process.."
       type="placeholder"
-      x="170"
+      x="150"
       y="-90"
       isValid="true"
       inConnections="2"
@@ -224,8 +224,8 @@
       id="a69593f0-d73f-2495-8dc2-c24ee3dc8eea"
       name="Rejected Process.."
       type="placeholder"
-      x="170"
-      y="160"
+      x="150"
+      y="190"
       isValid="true"
       inConnections="2"
       outConnections="2">
@@ -258,8 +258,8 @@
       id="b5b9c6d5-6476-1710-dfe5-08178d5d47ed"
       name="Error Process.."
       type="placeholder"
-      x="450"
-      y="160"
+      x="500"
+      y="190"
       isValid="true"
       inConnections="2"
       outConnections="2">
@@ -292,8 +292,8 @@
       id="7de67b83-3876-0063-9a73-26e196328f72"
       name="Timeout Process.."
       type="placeholder"
-      x="450"
-      y="-90"
+      x="410"
+      y="-140"
       isValid="true"
       inConnections="2"
       outConnections="2">
@@ -322,11 +322,88 @@
           name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
+    <figure
+      id="4e672c1f-c695-493a-652e-205082a5093b"
+      name="Evaluate Process.."
+      type="placeholder"
+      x="500"
+      y="-80"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Evaluate Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Evaluate Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
+      id="7e164e64-358c-c823-0433-e74eda97334f"
+      label="Evaluate"
+      size="4"
+      type=""
+      srcParentID="e09a6da4-afaf-77b3-603a-7d62a98c25ba"
+      srcParentName="Check List Task"
+      srcParentType="checklisttask"
+      trgParentID="4e672c1f-c695-493a-652e-205082a5093b"
+      trgParentName="Evaluate Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="421"
+      lbly="0"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[Evaluate]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[eval:1==1]]></property>
+      </properties>
+      <line>
+        <point
+          x="320"
+          y="39" />
+        <point
+          x="320"
+          y="0" />
+        <point
+          x="520"
+          y="0" />
+        <point
+          x="520"
+          y="-40" />
+      </line>
+    </connection>
+    <connection
       id="dc8bac0f-155b-4b04-1614-b306fa282836"
-      label=""
+      label="timeout"
       size="4"
       type=""
       srcParentID="e09a6da4-afaf-77b3-603a-7d62a98c25ba"
@@ -336,21 +413,21 @@
       trgParentName="Timeout Process.."
       trgParentType="placeholder"
       router="junction"
-      color="0000ff"
-      lblx="396"
-      lbly="-5"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4"
+      color="129ce4"
+      lblx="376"
+      lbly="-30"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
       trgPortName="southPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[timeout]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[]]></property>
+          name="link"><![CDATA[timeout]]></property>
       </properties>
       <line>
         <point
@@ -358,13 +435,13 @@
           y="39" />
         <point
           x="320"
-          y="-5" />
+          y="-30" />
         <point
-          x="470"
-          y="-5" />
+          x="430"
+          y="-30" />
         <point
-          x="470"
-          y="-50" />
+          x="430"
+          y="-100" />
       </line>
     </connection>
     <connection
@@ -380,8 +457,8 @@
       trgParentType="placeholder"
       router="junction"
       color="ff0000"
-      lblx="396"
-      lbly="120"
+      lblx="421"
+      lbly="135"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="southPort"
       trgPortName="northPort">
@@ -401,13 +478,13 @@
           y="79" />
         <point
           x="320"
-          y="120" />
+          y="135" />
         <point
-          x="470"
-          y="120" />
+          x="520"
+          y="135" />
         <point
-          x="470"
-          y="160" />
+          x="520"
+          y="190" />
       </line>
     </connection>
     <connection
@@ -423,8 +500,8 @@
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="255"
-      lbly="120"
+      lblx="245"
+      lbly="135"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="southPort"
       trgPortName="northPort">
@@ -444,13 +521,13 @@
           y="79" />
         <point
           x="320"
-          y="120" />
+          y="135" />
         <point
-          x="190"
-          y="120" />
+          x="170"
+          y="135" />
         <point
-          x="190"
-          y="160" />
+          x="170"
+          y="190" />
       </line>
     </connection>
     <connection
@@ -466,7 +543,7 @@
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="255"
+      lblx="245"
       lbly="-5"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
@@ -489,10 +566,10 @@
           x="320"
           y="-5" />
         <point
-          x="190"
+          x="170"
           y="-5" />
         <point
-          x="190"
+          x="170"
           y="-50" />
       </line>
     </connection>
@@ -509,7 +586,7 @@
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="395"
+      lblx="420"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
@@ -529,7 +606,7 @@
           x="340"
           y="59" />
         <point
-          x="450"
+          x="500"
           y="59" />
       </line>
     </connection>
