@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="bfddf0f4-871d-4980-a202-165a9e826fe7">
+  defID="bfddf0f4-871d-4980-a202-165a9e826fe7"
+  defName="synchronizeDef">
   <figures>
     <figure
       id="bea0b744-a022-4933-8044-52f2a25811f5"
@@ -356,14 +357,16 @@
       size="3"
       type=""
       srcParentID="bea0b744-a022-4933-8044-52f2a25811f5"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="f1d2a503-03b5-da99-57a4-3df7c17f176b"
+      trgParentName="Manager 1 Approval"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="129ce4"
       lblx="-61"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="westPort"
       trgPortName="northPort">
       <properties>
@@ -392,14 +395,16 @@
       size="3"
       type=""
       srcParentID="bea0b744-a022-4933-8044-52f2a25811f5"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="6188b8fe-e7cd-bc09-db01-fd5c6bd16126"
+      trgParentName="Manager 2 Approval"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="129ce4"
       lblx="206"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="northPort">
       <properties>
@@ -428,14 +433,16 @@
       size="3"
       type=""
       srcParentID="f1d2a503-03b5-da99-57a4-3df7c17f176b"
+      srcParentName="Manager 1 Approval"
       srcParentType="task"
       trgParentID="e4d9a7d0-064e-5f0d-be86-dbd908eb50e1"
+      trgParentName="synchronize"
       trgParentType="synchronize"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="129ce4"
       lblx="-70"
       lbly="334"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="westPort">
       <properties>
@@ -466,14 +473,16 @@
       size="3"
       type=""
       srcParentID="6188b8fe-e7cd-bc09-db01-fd5c6bd16126"
+      srcParentName="Manager 2 Approval"
       srcParentType="task"
       trgParentID="e4d9a7d0-064e-5f0d-be86-dbd908eb50e1"
+      trgParentName="synchronize"
       trgParentType="synchronize"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="129ce4"
       lblx="220"
       lbly="331"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="eastPort">
       <properties>
@@ -504,14 +513,16 @@
       size="3"
       type=""
       srcParentID="e4d9a7d0-064e-5f0d-be86-dbd908eb50e1"
+      srcParentName="synchronize"
       srcParentType="synchronize"
       trgParentID="0fd6669e-8237-1006-b858-77d291f6020b"
+      trgParentName="Manager 3 Approval"
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="129ce4"
       lblx="78"
       lbly="400"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
