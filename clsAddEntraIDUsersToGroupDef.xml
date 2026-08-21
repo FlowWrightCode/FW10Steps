@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="738d2a78-1dfd-4e47-ac1c-29b6c4aba773">
+  defID="738d2a78-1dfd-4e47-ac1c-29b6c4aba773"
+  defName="clsAddEntraIDUsersToGroupDef">
   <figures>
     <figure
       id="ffc9f47d-2d72-48f6-bf99-cf2f909fee3f"
@@ -104,6 +105,7 @@
       x="170"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -111,6 +113,8 @@
           name="label"><![CDATA[Create User Accounts]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -127,8 +131,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -138,6 +140,7 @@
       x="510"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -145,6 +148,8 @@
           name="label"><![CDATA[Continue Workflow..]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -161,15 +166,111 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="a2cb94c7-b5bd-04cc-7f14-382a2a7788c2"
+      name="Log Error"
+      type="placeholder"
+      x="340"
+      y="190"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="bfdba82d-136b-5983-dba6-3f1a4a4cb5bd"
+      name="Place Holder"
+      type="placeholder"
+      x="340"
+      y="-80"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
     <connection
+      id="1e280067-a72b-62bd-a591-5159b85ecb06"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="0cd1683d-f40a-44bc-4c2a-fc393e51b4f1"
+      srcParentName="Add Users To Group"
+      srcParentType="clsaddentraiduserstogroup"
+      trgParentID="a2cb94c7-b5bd-04cc-7f14-382a2a7788c2"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="360"
+      lbly="135"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="360"
+          y="79" />
+        <point
+          x="360"
+          y="190" />
+      </line>
+    </connection>
+    <connection
       id="01764a98-49d3-f458-2900-369ddda2943c"
-      label=""
+      label="Added"
       size="4"
       type=""
       srcParentID="0cd1683d-f40a-44bc-4c2a-fc393e51b4f1"
@@ -179,21 +280,21 @@
       trgParentName="Continue Workflow.."
       trgParentType="placeholder"
       router="junction"
-      color="3c78d8"
+      color="129ce4"
       lblx="445"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[Added]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[]]></property>
+          name="link"><![CDATA[Added]]></property>
       </properties>
       <line>
         <point
