@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="de7fc7e0-5ace-4ab4-891e-f30b08f24ea4">
+  defID="de7fc7e0-5ace-4ab4-891e-f30b08f24ea4"
+  defName="clsGetADGroupMembersDef">
   <figures>
     <figure
       id="a5bdf08c-aeb7-4b3c-ab31-2ed7ee7d550d"
@@ -106,6 +107,7 @@
       x="370"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -113,6 +115,8 @@
           name="label"><![CDATA[Process Members]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -129,8 +133,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -140,6 +142,7 @@
       x="530"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -148,11 +151,79 @@
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
           name="itemName"><![CDATA[Continue Workflow..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4bab1a44-2a51-2bab-92eb-a5a033ed3be8"
+      name="Log Error"
+      type="placeholder"
+      x="200"
+      y="190"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="2b5ab9d4-0877-78c0-9d02-9626accfb387"
+      name="Notify Administrator"
+      type="placeholder"
+      x="200"
+      y="-90"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -170,6 +241,80 @@
   </figures>
   <connections>
     <connection
+      id="af721fb5-433d-cca3-6fd7-9111503bc3e3"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="9407d30f-037a-57da-1c81-9fa2db75eb5f"
+      srcParentName="Get AD Group Members"
+      srcParentType="clsgetadgroupmembers"
+      trgParentID="2b5ab9d4-0877-78c0-9d02-9626accfb387"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="220"
+      lbly="-6"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="220"
+          y="39" />
+        <point
+          x="220"
+          y="-50" />
+      </line>
+    </connection>
+    <connection
+      id="fc26d32f-7ade-ecb3-3529-9cee6b408ad3"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="9407d30f-037a-57da-1c81-9fa2db75eb5f"
+      srcParentName="Get AD Group Members"
+      srcParentType="clsgetadgroupmembers"
+      trgParentID="4bab1a44-2a51-2bab-92eb-a5a033ed3be8"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="220"
+      lbly="135"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="220"
+          y="79" />
+        <point
+          x="220"
+          y="190" />
+      </line>
+    </connection>
+    <connection
       id="4178bd71-c13f-dfa8-c81d-02ee489f3e46"
       label=""
       size="4"
@@ -184,7 +329,7 @@
       color="3c78d8"
       lblx="470"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -208,7 +353,7 @@
     </connection>
     <connection
       id="723356e8-7e16-ac63-4629-7bd1dcf41726"
-      label=""
+      label="True"
       size="4"
       type=""
       srcParentID="9407d30f-037a-57da-1c81-9fa2db75eb5f"
@@ -218,21 +363,21 @@
       trgParentName="Process Members"
       trgParentType="placeholder"
       router="junction"
-      color="3c78d8"
+      color="00ff00"
       lblx="305"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[True]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[]]></property>
+          name="link"><![CDATA[True]]></property>
       </properties>
       <line>
         <point
@@ -258,7 +403,7 @@
       color="3c78d8"
       lblx="140"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
