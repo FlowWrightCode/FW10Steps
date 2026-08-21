@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="fbd0e43d-24a9-4c5b-be25-17589a53783a">
+  defID="fbd0e43d-24a9-4c5b-be25-17589a53783a"
+  defName="clsUnlockEntraIDUserDef">
   <figures>
     <figure
       id="e4c0777f-43da-44d6-acda-8957c704c7ac"
@@ -124,9 +125,10 @@
       id="a7ce5630-b747-503e-ade1-7887f7df221b"
       name="Notify User.."
       type="placeholder"
-      x="510"
+      x="560"
       y="39"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -135,11 +137,79 @@
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
           name="itemName"><![CDATA[Notify User..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="9d6cede9-5f81-812e-019e-3904da563981"
+      name="Place Holder"
+      type="placeholder"
+      x="360"
+      y="180"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="3b3a84fb-b8a0-7157-d520-eb5a9dc94ee7"
+      name="Notify Administrator"
+      type="placeholder"
+      x="360"
+      y="-90"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -157,8 +227,82 @@
   </figures>
   <connections>
     <connection
+      id="bcfca16b-f271-5fa6-402b-ce4559037afc"
+      label="NotUnlocked"
+      size="4"
+      type=""
+      srcParentID="31543958-dd61-bfc9-a9d7-cb9670759b89"
+      srcParentName="Unlock User"
+      srcParentType="clsunlockentraiduser"
+      trgParentID="3b3a84fb-b8a0-7157-d520-eb5a9dc94ee7"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="380"
+      lbly="-6"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[NotUnlocked]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[NotUnlocked]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="39" />
+        <point
+          x="380"
+          y="-50" />
+      </line>
+    </connection>
+    <connection
+      id="3e8b8178-5e74-33ef-f48a-8d1beaf96672"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="31543958-dd61-bfc9-a9d7-cb9670759b89"
+      srcParentName="Unlock User"
+      srcParentType="clsunlockentraiduser"
+      trgParentID="9d6cede9-5f81-812e-019e-3904da563981"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="380"
+      lbly="130"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="79" />
+        <point
+          x="380"
+          y="180" />
+      </line>
+    </connection>
+    <connection
       id="2e367832-0e3c-09b9-d3a9-387b43a825d4"
-      label=""
+      label="Unlocked"
       size="4"
       type=""
       srcParentID="31543958-dd61-bfc9-a9d7-cb9670759b89"
@@ -168,28 +312,28 @@
       trgParentName="Notify User.."
       trgParentType="placeholder"
       router="junction"
-      color="3c78d8"
-      lblx="455"
+      color="129ce4"
+      lblx="480"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[Unlocked]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[]]></property>
+          name="link"><![CDATA[Unlocked]]></property>
       </properties>
       <line>
         <point
           x="400"
           y="59" />
         <point
-          x="510"
+          x="560"
           y="59" />
       </line>
     </connection>
