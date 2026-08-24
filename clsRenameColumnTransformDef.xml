@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="c4f9d7b1-6451-4582-b149-61056130f60b">
+  defID="c4f9d7b1-6451-4582-b149-61056130f60b"
+  defName="clsRenameColumnTransformDef">
   <figures>
     <figure
       id="2edc61c5-23b5-e91d-abf8-f531825ec93a"
@@ -52,7 +53,7 @@
       id="deff54fd-c9d1-d510-e0c7-3f67b910b7b5"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="400"
+      x="390"
       y="120"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="320"
+      lblx="315"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="240"
           y="140" />
         <point
-          x="400"
+          x="390"
           y="140" />
       </line>
     </connection>
