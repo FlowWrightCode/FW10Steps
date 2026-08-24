@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="b7127b96-20f8-468c-88c1-bddbda1a43ac">
+  defID="b7127b96-20f8-468c-88c1-bddbda1a43ac"
+  defName="clsPivotTransformDef">
   <figures>
     <figure
       id="44a707fb-dd57-4298-bde9-f2d93cfff4ae"
       name="CSV Input file"
       type="clsinputcsv"
-      x="-150"
+      x="-120"
       y="70"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="9f28b288-4c3c-4d17-94bb-f9899498c97a"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="290"
+      x="270"
       y="70"
       isValid="true"
       isLocked="False"
@@ -147,7 +148,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="200"
+      lblx="190"
       lbly="90"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -167,7 +168,7 @@
           x="110"
           y="90" />
         <point
-          x="290"
+          x="270"
           y="90" />
       </line>
     </connection>
@@ -184,7 +185,7 @@
       trgParentType="clspivottransform"
       router="junction"
       color="3c78d8"
-      lblx="-20"
+      lblx="-5"
       lbly="90"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -201,7 +202,7 @@
       </properties>
       <line>
         <point
-          x="-110"
+          x="-80"
           y="90" />
         <point
           x="70"
