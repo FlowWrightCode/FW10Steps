@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="2e1914c7-fe94-41ed-a36f-c1483273788f">
+  defID="2e1914c7-fe94-41ed-a36f-c1483273788f"
+  defName="DMSApproveDocumentDef">
   <figures>
     <figure
       id="b79d0620-9dbb-4560-b8d3-a988a9a5412c"
