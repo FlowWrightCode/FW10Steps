@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="de6af32b-ef0c-437d-bbc5-48a17cb1dda7">
+  defID="de6af32b-ef0c-437d-bbc5-48a17cb1dda7"
+  defName="loopEachStepDef">
   <figures>
     <figure
       id="e9a8018a-6020-42d8-8d37-4c54730c58e6"
@@ -101,7 +102,7 @@
       id="8174cae2-17bf-95be-2ce1-af7d20208b82"
       name="Complete Place Holder"
       type="placeholder"
-      x="140"
+      x="-30"
       y="230"
       isValid="true"
       isLocked="False"
@@ -167,8 +168,82 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="b965db2d-55a1-5c32-238b-4ecf21e276af"
+      name="Log Error"
+      type="placeholder"
+      x="390"
+      y="170"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="10ffb8d5-9b7f-5ca0-d8e6-5ab2ec22fa80"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="d29960ca-3c92-fe1b-2b4b-256564364105"
+      srcParentName="Loop Each"
+      srcParentType="loopeachstep"
+      trgParentID="b965db2d-55a1-5c32-238b-4ecf21e276af"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="230"
+      lbly="190"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southEastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="180"
+          y="79" />
+        <point
+          x="180"
+          y="190" />
+        <point
+          x="390"
+          y="190" />
+      </line>
+    </connection>
     <connection
       id="0fdf34c1-e498-d55f-1d87-91ffbe59657b"
       label=""
@@ -298,10 +373,10 @@
       router="junction"
       color="129ce4"
       lblx="160"
-      lbly="155"
+      lbly="240"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="southPort"
-      trgPortName="northPort">
+      trgPortName="eastPort">
       <properties>
         <property
           name="label"><![CDATA[loopCompleted]]></property>
@@ -318,7 +393,10 @@
           y="79" />
         <point
           x="160"
-          y="230" />
+          y="250" />
+        <point
+          x="10"
+          y="250" />
       </line>
     </connection>
   </connections>
