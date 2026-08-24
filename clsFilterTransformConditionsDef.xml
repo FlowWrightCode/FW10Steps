@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="beea9da6-a16c-4589-a3ea-86f2de2fb72a">
+  defID="beea9da6-a16c-4589-a3ea-86f2de2fb72a"
+  defName="clsFilterTransformConditionsDef">
   <figures>
     <figure
       id="39de1d0a-1491-43db-6905-94bdbffcd745"
       name="CSV Input file"
       type="clsinputcsv"
-      x="-40"
+      x="-20"
       y="120"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="3c275d42-7442-034b-38f6-e5fcc013eb4b"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="400"
+      x="340"
       y="120"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="305"
+      lblx="275"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="210"
           y="140" />
         <point
-          x="400"
+          x="340"
           y="140" />
       </line>
     </connection>
@@ -174,7 +175,7 @@
       trgParentType="clsfiltertransformconditions"
       router="junction"
       color="3c78d8"
-      lblx="85"
+      lblx="95"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -189,7 +190,7 @@
       </properties>
       <line>
         <point
-          x="0"
+          x="20"
           y="140" />
         <point
           x="170"
