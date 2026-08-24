@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="bd0d48ff-8c98-488a-a139-2801ffaf9bf9">
+  defID="bd0d48ff-8c98-488a-a139-2801ffaf9bf9"
+  defName="clsValidateDataDef">
   <figures>
     <figure
       id="d9d16fd2-3b93-0f1d-5cc0-e184763eb563"
       name="CSV Input file"
       type="clsinputcsv"
-      x="-180"
+      x="-160"
       y="80"
       isValid="true"
       isLocked="False"
@@ -58,7 +59,7 @@
       id="614a65b3-e5e5-ba9d-a13b-d6e8803c0888"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="300"
+      x="270"
       y="80"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       name="CSV Error file"
       type="clserrorcsv"
       x="60"
-      y="300"
+      y="280"
       isValid="true"
       isLocked="False"
       inConnections="1"
@@ -188,7 +189,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="129ce4"
-      lblx="200"
+      lblx="185"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;entryPerimeter=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="eastPort"
@@ -208,7 +209,7 @@
           x="100"
           y="100" />
         <point
-          x="300"
+          x="270"
           y="100" />
       </line>
     </connection>
@@ -226,7 +227,7 @@
       router="junction"
       color="ff0000"
       lblx="80"
-      lbly="210"
+      lbly="200"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="southPort"
       trgPortName="northPort">
@@ -246,7 +247,7 @@
           y="120" />
         <point
           x="80"
-          y="300" />
+          y="280" />
       </line>
     </connection>
     <connection
@@ -262,7 +263,7 @@
       trgParentType="clsvalidatedata"
       router="junction"
       color="0000ff"
-      lblx="-40"
+      lblx="-30"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -279,7 +280,7 @@
       </properties>
       <line>
         <point
-          x="-140"
+          x="-120"
           y="100" />
         <point
           x="60"
