@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="9e761b94-4b4b-4366-a072-5de3338b4817">
+  defID="9e761b94-4b4b-4366-a072-5de3338b4817"
+  defName="clsMarkRecordsToDeleteTransformDef">
   <figures>
     <figure
       id="7b1b1064-aaa5-c759-0e08-49153496f0b1"
@@ -89,7 +90,7 @@
       id="9c342a41-1594-6c83-a9ea-4988b42c0c1b"
       name="Mark records to delete"
       type="clsmarkrecordstodeletetransform"
-      x="320"
+      x="280"
       y="40"
       isValid="true"
       isLocked="False"
@@ -124,7 +125,7 @@
       id="25ee7c0c-84b1-5c2a-5b29-33ac9c9b89e2"
       name="MSSQL Output file"
       type="clsoutputmssqldb"
-      x="510"
+      x="460"
       y="40"
       isValid="true"
       isLocked="False"
@@ -180,7 +181,7 @@
       trgParentType="clsoutputmssqldb"
       router="junction"
       color="3c78d8"
-      lblx="435"
+      lblx="390"
       lbly="60"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -195,10 +196,10 @@
       </properties>
       <line>
         <point
-          x="360"
+          x="320"
           y="60" />
         <point
-          x="510"
+          x="460"
           y="60" />
       </line>
     </connection>
@@ -215,7 +216,7 @@
       trgParentType="clsmarkrecordstodeletetransform"
       router="junction"
       color="3c78d8"
-      lblx="245"
+      lblx="225"
       lbly="60"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -233,7 +234,7 @@
           x="170"
           y="60" />
         <point
-          x="320"
+          x="280"
           y="60" />
       </line>
     </connection>
