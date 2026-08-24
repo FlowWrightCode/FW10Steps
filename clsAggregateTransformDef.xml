@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="f1962648-c226-47df-9ef9-af001fab82c6">
+  defID="f1962648-c226-47df-9ef9-af001fab82c6"
+  defName="clsAggregateTransformDef">
   <figures>
     <figure
       id="ef58abb5-750b-9743-df92-c89b8542157c"
@@ -52,7 +53,7 @@
       id="1789a3cb-7bb2-9cab-d969-95697059340f"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="420"
+      x="360"
       y="120"
       isValid="true"
       isLocked="False"
@@ -91,7 +92,7 @@
       id="de158f3d-d746-a52b-014e-ad26bdea2bee"
       name="Aggregate transform"
       type="clsaggregatetransform"
-      x="230"
+      x="190"
       y="120"
       isValid="true"
       isLocked="False"
@@ -143,7 +144,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="345"
+      lblx="295"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -158,10 +159,10 @@
       </properties>
       <line>
         <point
-          x="270"
+          x="230"
           y="140" />
         <point
-          x="420"
+          x="360"
           y="140" />
       </line>
     </connection>
@@ -178,7 +179,7 @@
       trgParentType="clsaggregatetransform"
       router="junction"
       color="3c78d8"
-      lblx="135"
+      lblx="115"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -196,7 +197,7 @@
           x="40"
           y="140" />
         <point
-          x="230"
+          x="190"
           y="140" />
       </line>
     </connection>
