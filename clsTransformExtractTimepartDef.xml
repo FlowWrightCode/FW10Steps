@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="322d25e0-97b3-4d85-beef-a50994e8ce82">
+  defID="322d25e0-97b3-4d85-beef-a50994e8ce82"
+  defName="clsTransformExtractTimepartDef">
   <figures>
     <figure
       id="86b79648-c038-55de-22ae-4fe6bb605779"
       name="CSV Input file"
       type="clsinputcsv"
-      x="0"
+      x="60"
       y="80"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="f1e1607c-efcf-f72e-1aff-eec4e1ce11ea"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="480"
+      x="410"
       y="80"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="0000ff"
-      lblx="380"
+      lblx="345"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -159,7 +160,7 @@
           x="280"
           y="100" />
         <point
-          x="480"
+          x="410"
           y="100" />
       </line>
     </connection>
@@ -176,7 +177,7 @@
       trgParentType="clstransformextracttimepart"
       router="junction"
       color="0000ff"
-      lblx="140"
+      lblx="170"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -193,7 +194,7 @@
       </properties>
       <line>
         <point
-          x="40"
+          x="100"
           y="100" />
         <point
           x="240"
