@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="037897aa-96ab-488c-9698-61e8b7b3fb37">
+  defID="037897aa-96ab-488c-9698-61e8b7b3fb37"
+  defName="clsMulticastDef">
   <figures>
     <figure
       id="d7bee1f1-34bf-f428-4ad6-1309d1247e96"
@@ -162,43 +163,6 @@
       </properties>
     </figure>
     <figure
-      id="362aa047-e03f-32dc-2179-87ca2020ef09"
-      name="Filter transform"
-      type="clsfiltertransform"
-      x="160"
-      y="220"
-      isValid="true"
-      isLocked="False"
-      inConnections="1"
-      outConnections="1">
-      <properties>
-        <property
-          name="label"><![CDATA[Filter transform]]></property>
-        <property
-          name="type"><![CDATA[clsfiltertransform]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
-        <property
-          name="inConnections"><![CDATA[1]]></property>
-        <property
-          name="outConnections"><![CDATA[1]]></property>
-        <property
-          name="itemName"><![CDATA[Filter transform]]></property>
-        <property
-          name="itemDescription"><![CDATA[clsFilterTransform]]></property>
-        <property
-          name="filterCondition"><![CDATA[Region="Asia"]]></property>
-        <property
-          name="LogMessage"><![CDATA[clsFilterTransform - Variable.createdOn]]></property>
-        <property
-          name="documentation"><![CDATA[clsFilterTransform - Variable.initiatorName]]></property>
-        <property
-          name="instState"><![CDATA[Text ETL Steps]]></property>
-        <property
-          name="instPercent"><![CDATA[100]]></property>
-      </properties>
-    </figure>
-    <figure
       id="4e5ee793-9f7d-1441-455c-782755e23161"
       name="Transform Create substring"
       type="clstransformsubstring"
@@ -233,6 +197,42 @@
           name="instState"><![CDATA[Text ETL Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="56678531-d136-7b8b-529f-1ddb881f558c"
+      name="Filter with expressions"
+      type="clsfiltertransformexpressions"
+      x="160"
+      y="220"
+      isValid="true"
+      inConnections="1"
+      outConnections="1">
+      <properties>
+        <property
+          name="label"><![CDATA[Filter with expressions]]></property>
+        <property
+          name="type"><![CDATA[clsfiltertransformexpressions]]></property>
+        <property
+          name="inConnections"><![CDATA[1]]></property>
+        <property
+          name="outConnections"><![CDATA[1]]></property>
+        <property
+          name="itemName"><![CDATA[Filter with expressions]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="expression"><![CDATA[units_sold > 900]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -279,9 +279,9 @@
       label=""
       size="4"
       type=""
-      srcParentID="362aa047-e03f-32dc-2179-87ca2020ef09"
-      srcParentName="Filter transform"
-      srcParentType="clsfiltertransform"
+      srcParentID="56678531-d136-7b8b-529f-1ddb881f558c"
+      srcParentName="Filter with expressions"
+      srcParentType="clsfiltertransformexpressions"
       trgParentID="e8bf96a1-5d72-2a4f-81bd-c090edd6285a"
       trgParentName="CSV Output file"
       trgParentType="clsoutputcsv"
@@ -354,9 +354,9 @@
       srcParentID="3681d8ef-bd5a-c59e-81fd-ddadf0704563"
       srcParentName="Multicast Data"
       srcParentType="clsmulticast"
-      trgParentID="362aa047-e03f-32dc-2179-87ca2020ef09"
-      trgParentName="Filter transform"
-      trgParentType="clsfiltertransform"
+      trgParentID="56678531-d136-7b8b-529f-1ddb881f558c"
+      trgParentName="Filter with expressions"
+      trgParentType="clsfiltertransformexpressions"
       router="junction"
       color="3c78d8"
       lblx="180"
