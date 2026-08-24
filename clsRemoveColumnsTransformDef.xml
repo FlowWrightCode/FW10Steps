@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="1cc389ea-484b-4765-afae-9e14e0200adb">
+  defID="1cc389ea-484b-4765-afae-9e14e0200adb"
+  defName="clsRemoveColumnsTransformDef">
   <figures>
     <figure
       id="18d33b78-efbe-5091-d3dd-e44df745d157"
       name="CSV Input file"
       type="clsinputcsv"
-      x="0"
+      x="20"
       y="120"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="e3c2b928-15d8-e1e8-49ec-4ecac2898f0f"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="440"
+      x="420"
       y="120"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="350"
+      lblx="340"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="260"
           y="140" />
         <point
-          x="440"
+          x="420"
           y="140" />
       </line>
     </connection>
@@ -174,7 +175,7 @@
       trgParentType="clsremovecolumnstransform"
       router="junction"
       color="3c78d8"
-      lblx="130"
+      lblx="140"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -189,7 +190,7 @@
       </properties>
       <line>
         <point
-          x="40"
+          x="60"
           y="140" />
         <point
           x="220"
