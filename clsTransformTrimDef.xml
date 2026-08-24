@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="f87c7a5e-f786-4c5a-baeb-7411575a88a0">
+  defID="f87c7a5e-f786-4c5a-baeb-7411575a88a0"
+  defName="clsTransformTrimDef">
   <figures>
     <figure
       id="247046f2-e28f-ebf6-661e-1eb449d1199d"
       name="CSV Input file"
       type="clsinputcsv"
-      x="0"
+      x="40"
       y="120"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="9aaa9880-d45b-ef2d-adb0-5a399526cb93"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="400"
+      x="360"
       y="120"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="325"
+      lblx="305"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="250"
           y="140" />
         <point
-          x="400"
+          x="360"
           y="140" />
       </line>
     </connection>
@@ -174,7 +175,7 @@
       trgParentType="clstransformtrim"
       router="junction"
       color="3c78d8"
-      lblx="125"
+      lblx="145"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -189,7 +190,7 @@
       </properties>
       <line>
         <point
-          x="40"
+          x="80"
           y="140" />
         <point
           x="210"
