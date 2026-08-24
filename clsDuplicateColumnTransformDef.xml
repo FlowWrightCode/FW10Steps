@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="a8e476d8-b5dd-4af0-9afe-4272a3f87187">
+  defID="a8e476d8-b5dd-4af0-9afe-4272a3f87187"
+  defName="clsDuplicateColumnTransformDef">
   <figures>
     <figure
       id="66ed7227-0d9b-b80a-b7a9-d954eff05f1b"
       name="CSV Input file"
       type="clsinputcsv"
-      x="40"
+      x="60"
       y="120"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="7c40162a-ef40-e1e6-c153-908aaf382874"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="420"
+      x="400"
       y="120"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="350"
+      lblx="340"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="280"
           y="140" />
         <point
-          x="420"
+          x="400"
           y="140" />
       </line>
     </connection>
@@ -174,7 +175,7 @@
       trgParentType="clsduplicatecolumntransform"
       router="junction"
       color="3c78d8"
-      lblx="160"
+      lblx="170"
       lbly="140"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
@@ -189,7 +190,7 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="100"
           y="140" />
         <point
           x="240"
