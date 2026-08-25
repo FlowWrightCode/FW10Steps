@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="53ef72d6-6e12-456f-81dd-9af89da3a708">
+  defID="53ef72d6-6e12-456f-81dd-9af89da3a708"
+  defName="clsComputeExpressionDef">
   <figures>
     <figure
       id="7dc0b092-b2d5-383b-aed6-ef58ac1c88eb"
       name="CSV Input file"
       type="clsinputcsv"
-      x="0"
+      x="20"
       y="80"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="ce42a216-c985-43cf-3768-6e3c35d3bcae"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="400"
+      x="390"
       y="80"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="325"
+      lblx="320"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="250"
           y="100" />
         <point
-          x="400"
+          x="390"
           y="100" />
       </line>
     </connection>
@@ -174,7 +175,7 @@
       trgParentType="clscomputeexpression"
       router="junction"
       color="3c78d8"
-      lblx="125"
+      lblx="135"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -189,7 +190,7 @@
       </properties>
       <line>
         <point
-          x="40"
+          x="60"
           y="100" />
         <point
           x="210"
