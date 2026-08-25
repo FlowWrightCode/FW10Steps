@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="ec5fc967-2b8d-41e8-9193-4daecfd57bd6">
+  defID="ec5fc967-2b8d-41e8-9193-4daecfd57bd6"
+  defName="evalKeywordDBDecisionTableDef">
   <figures>
     <figure
       id="713db35f-4a58-4c84-988f-1a70249126bd"
@@ -102,6 +103,7 @@
       x="20"
       y="70"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -109,6 +111,8 @@
           name="label"><![CDATA[Receive Support Request]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -125,8 +129,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -136,6 +138,7 @@
       x="360"
       y="70"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -143,6 +146,8 @@
           name="label"><![CDATA[Assign Support Team]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -159,30 +164,31 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="bb8216ac-27a2-f2ba-a3e2-96ec40f2d091"
-      name="Apply Default Category"
+      name="Log Error"
       type="placeholder"
       x="190"
-      y="220"
+      y="240"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Apply Default Category]]></property>
+          name="label"><![CDATA[Log Error]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Apply Default Category]]></property>
+          name="itemName"><![CDATA[Log Error]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -193,8 +199,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -204,6 +208,7 @@
       x="500"
       y="70"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -211,6 +216,8 @@
           name="label"><![CDATA[Create Work Item]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -227,8 +234,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -238,6 +243,7 @@
       x="620"
       y="70"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -245,6 +251,8 @@
           name="label"><![CDATA[End]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -261,30 +269,31 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="2eb5d745-b9de-636b-7856-f129a4ff75f0"
-      name="Notify Supervisor"
+      name="Apply Default Category"
       type="placeholder"
       x="190"
-      y="330"
+      y="-90"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Notify Supervisor]]></property>
+          name="label"><![CDATA[Apply Default Category]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Notify Supervisor]]></property>
+          name="itemName"><![CDATA[Apply Default Category]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -295,47 +304,45 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
     <connection
-      id="ee9b19de-17f6-7713-3a6a-eb4fa437180e"
-      label=""
+      id="22df2f78-6d14-baa5-944f-3413cc7ffc8b"
+      label="NoMatch"
       size="4"
       type=""
-      srcParentID="bb8216ac-27a2-f2ba-a3e2-96ec40f2d091"
-      srcParentName="Apply Default Category"
-      srcParentType="placeholder"
+      srcParentID="c0bf143c-52de-4e23-12e6-c8de14364dd2"
+      srcParentName="Eval sentence with db value"
+      srcParentType="evalkeyworddbdecisiontable"
       trgParentID="2eb5d745-b9de-636b-7856-f129a4ff75f0"
-      trgParentName="Notify Supervisor"
+      trgParentName="Apply Default Category"
       trgParentType="placeholder"
       router="junction"
-      color="3c78d8"
+      color="129ce4"
       lblx="210"
-      lbly="295"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
-      srcPortName="southPort"
-      trgPortName="northPort">
+      lbly="10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[NoMatch]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[]]></property>
+          name="link"><![CDATA[NoMatch]]></property>
       </properties>
       <line>
         <point
           x="210"
-          y="260" />
+          y="70" />
         <point
           x="210"
-          y="330" />
+          y="-50" />
       </line>
     </connection>
     <connection
@@ -353,7 +360,7 @@
       color="3c78d8"
       lblx="580"
       lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -390,7 +397,7 @@
       color="3c78d8"
       lblx="450"
       lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -414,31 +421,31 @@
     </connection>
     <connection
       id="9c7fc7d8-7973-eaed-444f-4a8dd799df24"
-      label="NoMatch"
+      label="error"
       size="4"
       type=""
       srcParentID="c0bf143c-52de-4e23-12e6-c8de14364dd2"
       srcParentName="Eval sentence with db value"
       srcParentType="evalkeyworddbdecisiontable"
       trgParentID="bb8216ac-27a2-f2ba-a3e2-96ec40f2d091"
-      trgParentName="Apply Default Category"
+      trgParentName="Log Error"
       trgParentType="placeholder"
       router="junction"
-      color="129ce4"
+      color="ff0000"
       lblx="210"
-      lbly="165"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      lbly="175"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
         <property
-          name="label"><![CDATA[NoMatch]]></property>
+          name="label"><![CDATA[error]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[NoMatch]]></property>
+          name="link"><![CDATA[error]]></property>
       </properties>
       <line>
         <point
@@ -446,7 +453,7 @@
           y="110" />
         <point
           x="210"
-          y="220" />
+          y="240" />
       </line>
     </connection>
     <connection
@@ -464,7 +471,7 @@
       color="129ce4"
       lblx="295"
       lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -498,10 +505,10 @@
       trgParentName="Eval sentence with db value"
       trgParentType="evalkeyworddbdecisiontable"
       router="junction"
-      color="0000ff"
+      color="129ce4"
       lblx="125"
       lbly="90"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -548,6 +555,8 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
