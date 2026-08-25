@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="b70dd32b-68cd-4022-9485-48de7a14c3b9">
+  defID="b70dd32b-68cd-4022-9485-48de7a14c3b9"
+  defName="clsExecuteETLValidationJobDef">
   <figures>
     <figure
       id="1aa22b46-da30-438c-a51b-ed2964c2bc8e"
@@ -138,8 +139,8 @@
       id="c47b59d1-315d-4842-6f9d-d0e67bae6c80"
       name="Place Holder - Good Bad Rows"
       type="placeholder"
-      x="270"
-      y="330"
+      x="490"
+      y="320"
       isValid="true"
       isLocked="False"
       inConnections="2"
@@ -204,8 +205,82 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="5c88fa70-72a8-b361-dba2-a3ecb44da9bd"
+      name="Place Holder"
+      type="placeholder"
+      x="140"
+      y="350"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="e88f4cf1-8b5f-6572-1964-68758d46896a"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="c7a55bef-97e9-eb49-efa0-d4add73545a0"
+      srcParentName="Run ETL Validation Job"
+      srcParentType="clsexecuteetlvalidationjob"
+      trgParentID="5c88fa70-72a8-b361-dba2-a3ecb44da9bd"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="290"
+      lbly="320"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="eastPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="160" />
+        <point
+          x="290"
+          y="370" />
+        <point
+          x="180"
+          y="370" />
+      </line>
+    </connection>
     <connection
       id="edf078e1-1c65-82d7-640b-92e8a79726ce"
       label="GoodBadRows"
@@ -219,9 +294,9 @@
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="290"
-      lbly="245"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      lblx="400"
+      lbly="240"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5;exitX=0;exitY=1;exitDx=0;exitDy=0;"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -240,7 +315,13 @@
           y="160" />
         <point
           x="290"
-          y="330" />
+          y="240" />
+        <point
+          x="510"
+          y="240" />
+        <point
+          x="510"
+          y="320" />
       </line>
     </connection>
     <connection
