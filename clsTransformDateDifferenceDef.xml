@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="1da98681-4bfc-49e5-a3ff-a069cd2ab7d0">
+  defID="1da98681-4bfc-49e5-a3ff-a069cd2ab7d0"
+  defName="clsTransformDateDifferenceDef">
   <figures>
     <figure
       id="5e85885c-f2c7-bf9d-479a-13975619972b"
       name="CSV Input file"
       type="clsinputcsv"
-      x="30"
+      x="60"
       y="80"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="dd36eaa3-8376-1488-7349-545200fde444"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="440"
+      x="420"
       y="80"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="365"
+      lblx="355"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="290"
           y="100" />
         <point
-          x="440"
+          x="420"
           y="100" />
       </line>
     </connection>
@@ -174,7 +175,7 @@
       trgParentType="clstransformdatedifference"
       router="junction"
       color="3c78d8"
-      lblx="160"
+      lblx="175"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -189,7 +190,7 @@
       </properties>
       <line>
         <point
-          x="70"
+          x="100"
           y="100" />
         <point
           x="250"
