@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="efe1f120-03f2-450b-be01-0b26a1fb5d1d">
+  defID="efe1f120-03f2-450b-be01-0b26a1fb5d1d"
+  defName="redactPDFDef">
   <figures>
     <figure
       id="5af6e23c-87be-4601-84fc-c4601d69196e"
       name="start"
       type="start"
-      x="-10"
+      x="-30"
       y="-20"
       isValid="true"
       isLocked="False">
@@ -88,6 +89,7 @@
       x="120"
       y="-20"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -95,6 +97,8 @@
           name="label"><![CDATA[Generate Customer Report]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -111,17 +115,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="e9c571da-3fd1-b3ff-35af-ac79a8ad136f"
       name="Store Redacted PDF"
       type="placeholder"
-      x="370"
+      x="390"
       y="-20"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -129,6 +132,8 @@
           name="label"><![CDATA[Store Redacted PDF]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -145,17 +150,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="ab9da0e5-77d3-dbe1-1fbf-20062c6a3c49"
       name="Email Customer"
       type="placeholder"
-      x="500"
+      x="520"
       y="-20"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -163,6 +167,8 @@
           name="label"><![CDATA[Email Customer]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -179,17 +185,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="4b6aa766-2973-8c96-eace-aa9580c62d39"
       name="End"
       type="placeholder"
-      x="610"
+      x="640"
       y="-20"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -197,6 +202,8 @@
           name="label"><![CDATA[End]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -213,30 +220,31 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="a62f54d2-57b1-9578-667e-aef3e216568e"
-      name="Log Redaction Error"
+      name="Log Error"
       type="placeholder"
       x="240"
-      y="100"
+      y="160"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Log Redaction Error]]></property>
+          name="label"><![CDATA[Log Error]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Log Redaction Error]]></property>
+          name="itemName"><![CDATA[Log Error]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -247,8 +255,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -256,8 +262,9 @@
       name="Notify Administrator"
       type="placeholder"
       x="240"
-      y="210"
+      y="-160"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -265,6 +272,8 @@
           name="label"><![CDATA[Notify Administrator]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -281,67 +290,28 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
     <connection
-      id="d3765f33-2da1-63dc-da03-740ba797b36d"
-      label=""
-      size="4"
-      type=""
-      srcParentID="a62f54d2-57b1-9578-667e-aef3e216568e"
-      srcParentName="Log Redaction Error"
-      srcParentType="placeholder"
-      trgParentID="c001ec9a-5bf7-8f64-fdcf-c04e77c24756"
-      trgParentName="Notify Administrator"
-      trgParentType="placeholder"
-      router="junction"
-      color="3c78d8"
-      lblx="260"
-      lbly="175"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
-      srcPortName="southPort"
-      trgPortName="northPort">
-      <properties>
-        <property
-          name="label"><![CDATA[]]></property>
-        <property
-          name="type"><![CDATA[]]></property>
-        <property
-          name="linkPriority"><![CDATA[0]]></property>
-        <property
-          name="link"><![CDATA[]]></property>
-      </properties>
-      <line>
-        <point
-          x="260"
-          y="140" />
-        <point
-          x="260"
-          y="210" />
-      </line>
-    </connection>
-    <connection
-      id="8c9739c9-00bd-7698-a8c4-4253a3bc98fe"
+      id="0b4bad03-8d0c-f7a6-0cbf-ea7b7bd1a624"
       label="False"
       size="4"
       type=""
       srcParentID="7ef51bff-1656-b501-41cf-046b547f5233"
       srcParentName="Redact PDF"
       srcParentType="redactpdf"
-      trgParentID="a62f54d2-57b1-9578-667e-aef3e216568e"
-      trgParentName="Log Redaction Error"
+      trgParentID="c001ec9a-5bf7-8f64-fdcf-c04e77c24756"
+      trgParentName="Notify Administrator"
       trgParentType="placeholder"
       router="junction"
       color="ff0000"
       lblx="260"
-      lbly="60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
-      srcPortName="southPort"
-      trgPortName="northPort">
+      lbly="-70"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
       <properties>
         <property
           name="label"><![CDATA[False]]></property>
@@ -355,10 +325,47 @@
       <line>
         <point
           x="260"
+          y="-20" />
+        <point
+          x="260"
+          y="-120" />
+      </line>
+    </connection>
+    <connection
+      id="8c9739c9-00bd-7698-a8c4-4253a3bc98fe"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="7ef51bff-1656-b501-41cf-046b547f5233"
+      srcParentName="Redact PDF"
+      srcParentType="redactpdf"
+      trgParentID="a62f54d2-57b1-9578-667e-aef3e216568e"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="260"
+      lbly="90"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
           y="20" />
         <point
           x="260"
-          y="100" />
+          y="160" />
       </line>
     </connection>
     <connection
@@ -374,9 +381,9 @@
       trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="575"
+      lblx="600"
       lbly="0"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -391,10 +398,10 @@
       </properties>
       <line>
         <point
-          x="540"
+          x="560"
           y="0" />
         <point
-          x="610"
+          x="640"
           y="0" />
       </line>
     </connection>
@@ -411,9 +418,9 @@
       trgParentType="placeholder"
       router="junction"
       color="3c78d8"
-      lblx="455"
+      lblx="475"
       lbly="0"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -428,10 +435,10 @@
       </properties>
       <line>
         <point
-          x="410"
+          x="430"
           y="0" />
         <point
-          x="500"
+          x="520"
           y="0" />
       </line>
     </connection>
@@ -448,9 +455,9 @@
       trgParentType="placeholder"
       router="junction"
       color="00ff00"
-      lblx="325"
+      lblx="335"
       lbly="0"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -468,7 +475,7 @@
           x="280"
           y="0" />
         <point
-          x="370"
+          x="390"
           y="0" />
       </line>
     </connection>
@@ -522,7 +529,7 @@
       trgParentType="placeholder"
       router="junction"
       color="0000ff"
-      lblx="75"
+      lblx="65"
       lbly="0"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=225;fontStyle=2"
       srcPortName="eastPort"
@@ -537,7 +544,7 @@
       </properties>
       <line>
         <point
-          x="30"
+          x="10"
           y="0" />
         <point
           x="120"
