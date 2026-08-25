@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="fa0151d3-a84d-4abf-9598-3981324f8c61">
+  defID="fa0151d3-a84d-4abf-9598-3981324f8c61"
+  defName="persistProcessInstanceDef">
   <figures>
     <figure
       id="9b39d475-8ce8-4b38-a969-9ebd317e47d3"
       name="start"
       type="start"
-      x="-110"
+      x="-220"
       y="39"
       isValid="true"
       isLocked="False">
@@ -60,7 +61,7 @@
       id="911e04de-c684-d3b9-a7bf-bce2edfcecb8"
       name="Persist Process Execution"
       type="persistprocessinstance"
-      x="390"
+      x="220"
       y="39"
       isValid="true"
       isLocked="False">
@@ -89,7 +90,7 @@
       id="8314d1ef-a848-8de4-21c4-f20a506c77e0"
       name="Sub-Workflow"
       type="subworkflow"
-      x="200"
+      x="60"
       y="39"
       isValid="true"
       isLocked="False">
@@ -105,7 +106,7 @@
         <property
           name="itemDescription"><![CDATA[subWorkflow]]></property>
         <property
-          name="definitionID"><![CDATA[26192142-121b-44ea-8d0c-65bf9703d718]]></property>
+          name="definitionID"><![CDATA[21e8b7e1-0e09-465a-84f8-85c3196876b9]]></property>
         <property
           name="passVariablesToChild"><![CDATA[yes]]></property>
         <property
@@ -131,7 +132,7 @@
         <property
           name="documentation"><![CDATA[subWorkflow - Variable.initiatorName]]></property>
         <property
-          name="sub-def-name"><![CDATA[Add2NosDef]]></property>
+          name="sub-def-name"><![CDATA[boolean]]></property>
         <property
           name="instState"><![CDATA[Engine Steps]]></property>
         <property
@@ -142,7 +143,7 @@
       id="ac78cf58-ba6c-e75b-a91b-c67ff00386a0"
       name="Update Variables"
       type="updatevariable"
-      x="40"
+      x="-80"
       y="39"
       isValid="true"
       isLocked="False">
@@ -179,8 +180,8 @@
       id="773fb14d-9842-667a-e6db-2d5beab9f132"
       name="Get XML Value"
       type="getxmlnode"
-      x="200"
-      y="180"
+      x="560"
+      y="39"
       isValid="true"
       isLocked="False">
       <properties>
@@ -221,7 +222,7 @@
       name="Execute SQL Statement"
       type="executesql"
       x="390"
-      y="180"
+      y="39"
       isValid="true"
       isLocked="False">
       <properties>
@@ -236,21 +237,21 @@
         <property
           name="itemDescription"><![CDATA[executeSQL]]></property>
         <property
-          name="connectionString"><![CDATA[ed787bdb-f334-41cb-ac05-da29918f267c]]></property>
+          name="connectionString"><![CDATA[ac13e5c3-9496-47bb-aaf2-ebeb2aade14f]]></property>
         <property
           name="changeDatabase"><![CDATA[]]></property>
         <property
-          name="sqlStatement"><![CDATA[select instanceXML from deInstances where instanceID = 'Variable.instanceID']]></property>
+          name="sqlStatement"><![CDATA[select instanceXML from deInstances where instanceID=?]]></property>
         <property
           name="variableName"><![CDATA[variable.varSQLResult]]></property>
         <property
           name="resultFormat"><![CDATA[XML]]></property>
         <property
-          name="singleResult"><![CDATA[yes]]></property>
+          name="singleResult"><![CDATA[no]]></property>
         <property
           name="commandTimeOut"><![CDATA[60]]></property>
         <property
-          name="params"><![CDATA[]]></property>
+          name="params"><![CDATA[InstanceID~6d672384-19a7-4402-8985-ef68d117a88f]]></property>
         <property
           name="LogMessage"><![CDATA[executeSQL - Variable.createdOn]]></property>
         <property
@@ -259,10 +260,83 @@
           name="instState"><![CDATA[Database Steps]]></property>
         <property
           name="instPercent"><![CDATA[100]]></property>
+        <property
+          name="useTransaction"><![CDATA[no]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="83c033d5-5669-e088-5f7b-cf6e4fdc1257"
+      name="Log Error"
+      type="placeholder"
+      x="220"
+      y="190"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
+    <connection
+      id="3daef0db-588a-a058-5e85-da0a1b76c8f0"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="911e04de-c684-d3b9-a7bf-bce2edfcecb8"
+      srcParentName="Persist Process Execution"
+      srcParentType="persistprocessinstance"
+      trgParentID="83c033d5-5669-e088-5f7b-cf6e4fdc1257"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="240"
+      lbly="135"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="79" />
+        <point
+          x="240"
+          y="190" />
+      </line>
+    </connection>
     <connection
       id="f30118ce-adbf-8ea4-f202-0490cb05f5fc"
       label=""
@@ -276,11 +350,11 @@
       trgParentType="getxmlnode"
       router="junction"
       color="0000ff"
-      lblx="315"
-      lbly="200"
+      lblx="495"
+      lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
-      srcPortName="westPort"
-      trgPortName="eastPort">
+      srcPortName="eastPort"
+      trgPortName="westPort">
       <properties>
         <property
           name="label"><![CDATA[]]></property>
@@ -291,11 +365,11 @@
       </properties>
       <line>
         <point
-          x="390"
-          y="200" />
+          x="430"
+          y="59" />
         <point
-          x="240"
-          y="200" />
+          x="560"
+          y="59" />
       </line>
     </connection>
     <connection
@@ -311,42 +385,7 @@
       trgParentType="executesql"
       router="junction"
       color="0000ff"
-      lblx="410"
-      lbly="130"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
-      srcPortName="southPort"
-      trgPortName="northPort">
-      <properties>
-        <property
-          name="label"><![CDATA[]]></property>
-        <property
-          name="type"><![CDATA[]]></property>
-        <property
-          name="linkPriority"><![CDATA[0]]></property>
-      </properties>
-      <line>
-        <point
-          x="410"
-          y="79" />
-        <point
-          x="410"
-          y="180" />
-      </line>
-    </connection>
-    <connection
-      id="c1e0333c-37e9-26a6-72bf-099394052c6c"
-      label=""
-      size="5"
-      type=""
-      srcParentID="8314d1ef-a848-8de4-21c4-f20a506c77e0"
-      srcParentName="Sub-Workflow"
-      srcParentType="subworkflow"
-      trgParentID="911e04de-c684-d3b9-a7bf-bce2edfcecb8"
-      trgParentName="Persist Process Execution"
-      trgParentType="persistprocessinstance"
-      router="junction"
-      color="0000ff"
-      lblx="315"
+      lblx="325"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -363,10 +402,47 @@
       </properties>
       <line>
         <point
-          x="240"
+          x="260"
           y="59" />
         <point
           x="390"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="c1e0333c-37e9-26a6-72bf-099394052c6c"
+      label=""
+      size="5"
+      type=""
+      srcParentID="8314d1ef-a848-8de4-21c4-f20a506c77e0"
+      srcParentName="Sub-Workflow"
+      srcParentType="subworkflow"
+      trgParentID="911e04de-c684-d3b9-a7bf-bce2edfcecb8"
+      trgParentName="Persist Process Execution"
+      trgParentType="persistprocessinstance"
+      router="junction"
+      color="0000ff"
+      lblx="160"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="100"
+          y="59" />
+        <point
+          x="220"
           y="59" />
       </line>
     </connection>
@@ -383,7 +459,7 @@
       trgParentType="subworkflow"
       router="junction"
       color="0000ff"
-      lblx="140"
+      lblx="10"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -400,10 +476,10 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="-40"
           y="59" />
         <point
-          x="200"
+          x="60"
           y="59" />
       </line>
     </connection>
@@ -420,7 +496,7 @@
       trgParentType="updatevariable"
       router="junction"
       color="0000ff"
-      lblx="-15"
+      lblx="-130"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -437,10 +513,10 @@
       </properties>
       <line>
         <point
-          x="-70"
+          x="-180"
           y="59" />
         <point
-          x="40"
+          x="-80"
           y="59" />
       </line>
     </connection>
