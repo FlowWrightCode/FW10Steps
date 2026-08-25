@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="f970db2a-83d6-42f1-ab9b-855086c111f7">
+  defID="f970db2a-83d6-42f1-ab9b-855086c111f7"
+  defName="clsTransformDateWorkingDaysDef">
   <figures>
     <figure
       id="f695990f-6b98-8425-81ef-bd955579ef6d"
       name="CSV Input file"
       type="clsinputcsv"
-      x="-60"
+      x="-20"
       y="80"
       isValid="true"
       isLocked="False"
@@ -52,7 +53,7 @@
       id="ba594d68-4dfc-22ab-029f-b1a6dfdbf7cc"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="420"
+      x="370"
       y="80"
       isValid="true"
       isLocked="False"
@@ -139,7 +140,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="320"
+      lblx="295"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -157,7 +158,7 @@
           x="220"
           y="100" />
         <point
-          x="420"
+          x="370"
           y="100" />
       </line>
     </connection>
@@ -174,7 +175,7 @@
       trgParentType="clstransformdateworkingdays"
       router="junction"
       color="3c78d8"
-      lblx="80"
+      lblx="100"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -189,7 +190,7 @@
       </properties>
       <line>
         <point
-          x="-20"
+          x="20"
           y="100" />
         <point
           x="180"
