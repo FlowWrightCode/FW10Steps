@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="ed5cfec4-e5a6-4ad2-be3f-05fc9d073950">
+  defID="ed5cfec4-e5a6-4ad2-be3f-05fc9d073950"
+  defName="clsComputeExpressionSetValueDef">
   <figures>
     <figure
       id="99c1b56a-0508-0e69-8f41-85c2baf745c5"
@@ -48,7 +49,7 @@
       id="8ef68dda-8bdf-618b-5358-a786f74a7a9e"
       name="Evaluate expressions and set values"
       type="clscomputeexpressionsetvalue"
-      x="290"
+      x="250"
       y="80"
       isValid="true"
       isLocked="False"
@@ -85,7 +86,7 @@
       id="f674e4c4-7e0c-770c-6dc5-f21b60a59966"
       name="CSV Input file"
       type="clsinputcsv"
-      x="-140"
+      x="-100"
       y="80"
       isValid="true"
       isLocked="False"
@@ -128,7 +129,7 @@
       id="5a2f759d-3bbf-e7f5-e513-919ac9d2e079"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="490"
+      x="430"
       y="80"
       isValid="true"
       isLocked="False"
@@ -178,7 +179,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="3c78d8"
-      lblx="410"
+      lblx="360"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -193,10 +194,10 @@
       </properties>
       <line>
         <point
-          x="330"
+          x="290"
           y="100" />
         <point
-          x="490"
+          x="430"
           y="100" />
       </line>
     </connection>
@@ -213,7 +214,7 @@
       trgParentType="clscomputeexpressionsetvalue"
       router="junction"
       color="3c78d8"
-      lblx="205"
+      lblx="185"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -231,7 +232,7 @@
           x="120"
           y="100" />
         <point
-          x="290"
+          x="250"
           y="100" />
       </line>
     </connection>
@@ -248,7 +249,7 @@
       trgParentType="clsgroupbytransform"
       router="junction"
       color="3c78d8"
-      lblx="-10"
+      lblx="10"
       lbly="100"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
@@ -263,7 +264,7 @@
       </properties>
       <line>
         <point
-          x="-100"
+          x="-60"
           y="100" />
         <point
           x="80"
