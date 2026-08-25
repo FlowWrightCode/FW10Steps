@@ -3,14 +3,15 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="d4ced0c2-a9bd-4ee4-82c5-3bc37d10b4ff">
+  defID="d4ced0c2-a9bd-4ee4-82c5-3bc37d10b4ff"
+  defName="clsErrorCSVDef">
   <figures>
     <figure
       id="8486e855-f2b9-1892-7621-0845986b7739"
       name="CSV Input file"
       type="clsinputcsv"
       x="20"
-      y="60"
+      y="90"
       isValid="true"
       isLocked="False"
       inConnections="0"
@@ -54,7 +55,7 @@
       id="dfa1fcfd-2f8e-1ad1-a2b4-832d1a7150e7"
       name="CSV Output file"
       type="clsoutputcsv"
-      x="-190"
+      x="-170"
       y="260"
       isValid="true"
       isLocked="False"
@@ -134,7 +135,7 @@
       id="32334215-382f-3032-6368-bcae1fb9463d"
       name="CSV Error file"
       type="clserrorcsv"
-      x="250"
+      x="220"
       y="260"
       isValid="true"
       isLocked="False"
@@ -185,7 +186,7 @@
       router="junction"
       color="0000ff"
       lblx="40"
-      lbly="180"
+      lbly="195"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="southPort"
       trgPortName="northPort">
@@ -202,7 +203,7 @@
       <line>
         <point
           x="40"
-          y="100" />
+          y="130" />
         <point
           x="40"
           y="260" />
@@ -221,7 +222,7 @@
       trgParentType="clsoutputcsv"
       router="junction"
       color="129ce4"
-      lblx="-65"
+      lblx="-55"
       lbly="280"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="westPort"
@@ -241,7 +242,7 @@
           x="20"
           y="280" />
         <point
-          x="-150"
+          x="-130"
           y="280" />
       </line>
     </connection>
@@ -258,7 +259,7 @@
       trgParentType="clserrorcsv"
       router="junction"
       color="129ce4"
-      lblx="155"
+      lblx="140"
       lbly="280"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryDx=0;entryDy=0;strokeWidth=5;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
       srcPortName="eastPort"
@@ -278,7 +279,7 @@
           x="60"
           y="280" />
         <point
-          x="250"
+          x="220"
           y="280" />
       </line>
     </connection>
