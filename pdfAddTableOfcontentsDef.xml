@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="e664892d-aee4-4e48-ad12-287e4768e3e8">
+  defID="e664892d-aee4-4e48-ad12-287e4768e3e8"
+  defName="pdfAddTableOfcontentsDef">
   <figures>
     <figure
       id="59263c06-cb0c-4e90-9bc1-d19db31d37ae"
@@ -88,6 +89,7 @@
       x="180"
       y="-10"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -95,6 +97,8 @@
           name="label"><![CDATA[Generate Technical Manual]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -111,8 +115,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -122,6 +124,7 @@
       x="500"
       y="-10"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -129,6 +132,8 @@
           name="label"><![CDATA[Validate PDF]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -145,8 +150,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -156,6 +159,7 @@
       x="630"
       y="-10"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -163,6 +167,8 @@
           name="label"><![CDATA[Publish Document]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -179,8 +185,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -190,6 +194,7 @@
       x="750"
       y="-10"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -197,6 +202,8 @@
           name="label"><![CDATA[End]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -213,8 +220,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -222,8 +227,9 @@
       name="Log TOC Error"
       type="placeholder"
       x="350"
-      y="140"
+      y="170"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -231,6 +237,8 @@
           name="label"><![CDATA[Log TOC Error]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -247,8 +255,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -256,8 +262,9 @@
       name="Notify Administrator"
       type="placeholder"
       x="350"
-      y="260"
+      y="-150"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -265,6 +272,8 @@
           name="label"><![CDATA[Notify Administrator]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -281,67 +290,28 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
     <connection
-      id="a72116c3-0e81-c7a2-19c7-b2d3622b241d"
-      label=""
-      size="4"
-      type=""
-      srcParentID="88b08fbb-5363-96ff-602a-5b8eadef5a37"
-      srcParentName="Log TOC Error"
-      srcParentType="placeholder"
-      trgParentID="fa198a69-80b6-2375-18fe-e560fe95e695"
-      trgParentName="Notify Administrator"
-      trgParentType="placeholder"
-      router="junction"
-      color="3c78d8"
-      lblx="370"
-      lbly="220"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4"
-      srcPortName="southPort"
-      trgPortName="northPort">
-      <properties>
-        <property
-          name="label"><![CDATA[]]></property>
-        <property
-          name="type"><![CDATA[]]></property>
-        <property
-          name="linkPriority"><![CDATA[0]]></property>
-        <property
-          name="link"><![CDATA[]]></property>
-      </properties>
-      <line>
-        <point
-          x="370"
-          y="180" />
-        <point
-          x="370"
-          y="260" />
-      </line>
-    </connection>
-    <connection
-      id="fedd28d5-2ba0-3d38-7e61-7ae670d8a13c"
+      id="bb6de5ac-6b74-8759-f6a7-a664f939f7a0"
       label="False"
       size="4"
       type=""
       srcParentID="85dac434-b0a7-7dfa-c496-fd548ec4cd6b"
       srcParentName="PDF Add Table Of Contents"
       srcParentType="pdfaddtableofcontents"
-      trgParentID="88b08fbb-5363-96ff-602a-5b8eadef5a37"
-      trgParentName="Log TOC Error"
+      trgParentID="fa198a69-80b6-2375-18fe-e560fe95e695"
+      trgParentName="Notify Administrator"
       trgParentType="placeholder"
       router="junction"
       color="ff0000"
       lblx="370"
-      lbly="85"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
-      srcPortName="southPort"
-      trgPortName="northPort">
+      lbly="-60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
       <properties>
         <property
           name="label"><![CDATA[False]]></property>
@@ -355,10 +325,47 @@
       <line>
         <point
           x="370"
+          y="-10" />
+        <point
+          x="370"
+          y="-110" />
+      </line>
+    </connection>
+    <connection
+      id="fedd28d5-2ba0-3d38-7e61-7ae670d8a13c"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="85dac434-b0a7-7dfa-c496-fd548ec4cd6b"
+      srcParentName="PDF Add Table Of Contents"
+      srcParentType="pdfaddtableofcontents"
+      trgParentID="88b08fbb-5363-96ff-602a-5b8eadef5a37"
+      trgParentName="Log TOC Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="370"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="370"
           y="30" />
         <point
           x="370"
-          y="140" />
+          y="170" />
       </line>
     </connection>
     <connection
@@ -376,7 +383,7 @@
       color="3c78d8"
       lblx="710"
       lbly="10"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -413,7 +420,7 @@
       color="3c78d8"
       lblx="585"
       lbly="10"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -450,7 +457,7 @@
       color="00ff00"
       lblx="445"
       lbly="10"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
