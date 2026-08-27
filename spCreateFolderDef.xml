@@ -3,8 +3,46 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="1fd009d8-360c-44ab-8010-b87037d173e0">
+  defID="1fd009d8-360c-44ab-8010-b87037d173e0"
+  defName="spCreateFolderDef">
   <figures>
+    <figure
+      id="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
+      name="Create Folder"
+      type="spcreatefolder"
+      x="280"
+      y="120"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Create Folder]]></property>
+        <property
+          name="type"><![CDATA[spcreatefolder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Create Folder]]></property>
+        <property
+          name="itemDescription"><![CDATA[spCreateFolder]]></property>
+        <property
+          name="BaseURL"><![CDATA[https://cdevc.sharepoint.com]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[29457c34-207a-410c-a568-51d244ad3d42]]></property>
+        <property
+          name="destinationFilePath"><![CDATA[/Shared Documents/Revision History]]></property>
+        <property
+          name="resultJson"><![CDATA[variable.varResult]]></property>
+        <property
+          name="LogMessage"><![CDATA[spCreateFolder - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[spCreateFolder - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[SharePoint Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
     <figure
       id="56985594-5de2-45fd-9a80-25b9ae053dfe"
       name="start"
@@ -57,58 +95,236 @@
       </properties>
     </figure>
     <figure
-      id="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
-      name="Create Folder"
-      type="spcreatefolder"
-      x="280"
+      id="830c9b89-8edc-6b8c-6e80-4271cfda9953"
+      name="Continue Process.."
+      type="placeholder"
+      x="440"
       y="120"
       isValid="true"
-      isLocked="False">
+      inConnections="2"
+      outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Create Folder]]></property>
+          name="label"><![CDATA[Continue Process..]]></property>
         <property
-          name="type"><![CDATA[spcreatefolder]]></property>
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="ac7033d3-cb78-adb8-abca-508c8fa7f822"
+      name="Log Error"
+      type="placeholder"
+      x="280"
+      y="270"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
         <property
-          name="itemName"><![CDATA[Create Folder]]></property>
+          name="label"><![CDATA[Log Error]]></property>
         <property
-          name="itemDescription"><![CDATA[spCreateFolder]]></property>
+          name="type"><![CDATA[placeholder]]></property>
         <property
-          name="BaseURL"><![CDATA[https://cdevc.sharepoint.com]]></property>
+          name="inConnections"><![CDATA[2]]></property>
         <property
-          name="selOAuthProvider"><![CDATA[29457c34-207a-410c-a568-51d244ad3d42]]></property>
+          name="outConnections"><![CDATA[2]]></property>
         <property
-          name="destinationFilePath"><![CDATA[/Shared Documents/Revision History]]></property>
+          name="itemName"><![CDATA[Log Error]]></property>
         <property
-          name="resultJson"><![CDATA[variable.varResult]]></property>
+          name="itemDescription"><![CDATA[]]></property>
         <property
-          name="LogMessage"><![CDATA[spCreateFolder - Variable.createdOn]]></property>
+          name="LogMessage"><![CDATA[]]></property>
         <property
-          name="documentation"><![CDATA[spCreateFolder - Variable.initiatorName]]></property>
+          name="documentation"><![CDATA[]]></property>
         <property
-          name="instState"><![CDATA[SharePoint Step]]></property>
+          name="instState"><![CDATA[]]></property>
         <property
-          name="instPercent"><![CDATA[100]]></property>
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="b7303ad1-6a78-15bd-2538-d83fe9e7faa0"
+      name="Notify Administrator"
+      type="placeholder"
+      x="280"
+      y="-10"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
   <connections>
+    <connection
+      id="445a83e0-2e98-d1cb-893c-e2c22bfcb619"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
+      srcParentName="Create Folder"
+      srcParentType="spcreatefolder"
+      trgParentID="b7303ad1-6a78-15bd-2538-d83fe9e7faa0"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="300"
+      lbly="75"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="300"
+          y="120" />
+        <point
+          x="300"
+          y="30" />
+      </line>
+    </connection>
+    <connection
+      id="ac11f995-7f46-23bb-1dce-13287b124a75"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
+      srcParentName="Create Folder"
+      srcParentType="spcreatefolder"
+      trgParentID="ac7033d3-cb78-adb8-abca-508c8fa7f822"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="300"
+      lbly="215"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="300"
+          y="160" />
+        <point
+          x="300"
+          y="270" />
+      </line>
+    </connection>
+    <connection
+      id="750269e0-3ca5-9359-e51b-02d8b6752324"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
+      srcParentName="Create Folder"
+      srcParentType="spcreatefolder"
+      trgParentID="830c9b89-8edc-6b8c-6e80-4271cfda9953"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="380"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="320"
+          y="140" />
+        <point
+          x="440"
+          y="140" />
+      </line>
+    </connection>
     <connection
       id="85ca5d2f-4841-8a9a-46fa-e00727307814"
       label=""
       size="5"
       type=""
       srcParentID="56985594-5de2-45fd-9a80-25b9ae053dfe"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="585f0908-c9e3-905d-4fcf-dae61fc55f1b"
+      trgParentName="Create Folder"
       trgParentType="spcreatefolder"
       router="junction"
       color="4a86e8"
       lblx="200"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
