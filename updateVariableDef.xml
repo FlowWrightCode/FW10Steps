@@ -99,9 +99,9 @@
         <property
           name="priority"><![CDATA[Medium]]></property>
         <property
-          name="daysToComplete"><![CDATA[1]]></property>
+          name="daysToComplete"><![CDATA[10]]></property>
         <property
-          name="expireType"><![CDATA[hours]]></property>
+          name="expireType"><![CDATA[minutes]]></property>
         <property
           name="includeWeekends"><![CDATA[0]]></property>
         <property
@@ -200,7 +200,7 @@
       name="Update Variables Rejected"
       type="updatevariable"
       x="240"
-      y="320"
+      y="-30"
       isValid="true"
       isLocked="False"
       inConnections="2"
@@ -238,8 +238,239 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="c9530fc1-f05f-61ab-e762-157791937602"
+      name="Log Error"
+      type="placeholder"
+      x="380"
+      y="250"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="6bec9310-4c8d-33c5-7073-4302c1fb4535"
+      name="Timeout Process.."
+      type="placeholder"
+      x="120"
+      y="290"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Timeout Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Timeout Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="f93ed880-5f0e-00f8-7305-5b5055028d68"
+      name="Closed Process.."
+      type="placeholder"
+      x="440"
+      y="0"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Closed Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Closed Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="4be35dae-a771-0964-7778-8c139691b7c2"
+      label="closed"
+      size="4"
+      type=""
+      srcParentID="5384eebc-e617-f6e5-38e6-2d800089a59b"
+      srcParentName="Manager 1 Approval"
+      srcParentType="task"
+      trgParentID="f93ed880-5f0e-00f8-7305-5b5055028d68"
+      trgParentName="Closed Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="370"
+      lbly="80"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northEastPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[closed]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[closed]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="120" />
+        <point
+          x="280"
+          y="80" />
+        <point
+          x="460"
+          y="80" />
+        <point
+          x="460"
+          y="40" />
+      </line>
+    </connection>
+    <connection
+      id="4c38f8d2-494f-810b-30f1-29804738e9f8"
+      label="timeout"
+      size="4"
+      type=""
+      srcParentID="5384eebc-e617-f6e5-38e6-2d800089a59b"
+      srcParentName="Manager 1 Approval"
+      srcParentType="task"
+      trgParentID="6bec9310-4c8d-33c5-7073-4302c1fb4535"
+      trgParentName="Timeout Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="190"
+      lbly="225"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southWestPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[timeout]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[timeout]]></property>
+      </properties>
+      <line>
+        <point
+          x="240"
+          y="160" />
+        <point
+          x="240"
+          y="225" />
+        <point
+          x="140"
+          y="225" />
+        <point
+          x="140"
+          y="290" />
+      </line>
+    </connection>
+    <connection
+      id="05ad431a-23bf-91fa-e6ea-bc6e0a9e5df5"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="5384eebc-e617-f6e5-38e6-2d800089a59b"
+      srcParentName="Manager 1 Approval"
+      srcParentType="task"
+      trgParentID="c9530fc1-f05f-61ab-e762-157791937602"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="340"
+      lbly="205"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southEastPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="160" />
+        <point
+          x="280"
+          y="205" />
+        <point
+          x="400"
+          y="205" />
+        <point
+          x="400"
+          y="250" />
+      </line>
+    </connection>
     <connection
       id="b3f21c98-5ffb-ff2f-5033-05d73b8603ea"
       label="completed"
@@ -291,10 +522,10 @@
       router="junction"
       color="129ce4"
       lblx="260"
-      lbly="240"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
-      srcPortName="southPort"
-      trgPortName="northPort">
+      lbly="65"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5;exitX=0.25;exitY=0;exitDx=0;exitDy=0;"
+      srcPortName="northPort"
+      trgPortName="southPort">
       <properties>
         <property
           name="label"><![CDATA[rejected]]></property>
@@ -308,10 +539,10 @@
       <line>
         <point
           x="260"
-          y="160" />
+          y="120" />
         <point
           x="260"
-          y="320" />
+          y="10" />
       </line>
     </connection>
     <connection
