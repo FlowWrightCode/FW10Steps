@@ -92,7 +92,7 @@
       id="20d1bc15-4748-ecfd-4bba-3d4b131a4785"
       name="Continue Process.."
       type="placeholder"
-      x="440"
+      x="490"
       y="39"
       isValid="true"
       isLocked="False"
@@ -158,11 +158,83 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="b0b2e4da-d1a8-3acd-0d19-94950d235a1e"
+      name="Notify Administrator"
+      type="placeholder"
+      x="280"
+      y="-100"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="a01a4bc0-d17b-12c1-a678-9ee252e014f7"
+      id="11c7ed62-e808-c492-9736-dc1daeb1b033"
       label="False"
+      size="4"
+      type=""
+      srcParentID="564bb0fe-a183-4344-ff11-5be9c95896e3"
+      srcParentName="Update variables from SQL"
+      srcParentType="updatevariableswithsql"
+      trgParentID="b0b2e4da-d1a8-3acd-0d19-94950d235a1e"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="300"
+      lbly="-11"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="300"
+          y="39" />
+        <point
+          x="300"
+          y="-60" />
+      </line>
+    </connection>
+    <connection
+      id="a01a4bc0-d17b-12c1-a678-9ee252e014f7"
+      label="error"
       size="4"
       type=""
       srcParentID="564bb0fe-a183-4344-ff11-5be9c95896e3"
@@ -180,13 +252,13 @@
       trgPortName="northPort">
       <properties>
         <property
-          name="label"><![CDATA[False]]></property>
+          name="label"><![CDATA[error]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[False]]></property>
+          name="link"><![CDATA[error]]></property>
       </properties>
       <line>
         <point
@@ -210,7 +282,7 @@
       trgParentType="placeholder"
       router="junction"
       color="00ff00"
-      lblx="380"
+      lblx="405"
       lbly="59"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
@@ -230,7 +302,7 @@
           x="320"
           y="59" />
         <point
-          x="440"
+          x="490"
           y="59" />
       </line>
     </connection>
