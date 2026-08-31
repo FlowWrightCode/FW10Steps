@@ -229,7 +229,7 @@
         <property
           name="priority"><![CDATA[Medium]]></property>
         <property
-          name="daysToComplete"><![CDATA[10]]></property>
+          name="daysToComplete"><![CDATA[5]]></property>
         <property
           name="expireType"><![CDATA[minutes]]></property>
         <property
@@ -308,7 +308,7 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="condition"><![CDATA[1==2]]></property>
+          name="condition"><![CDATA[1==1]]></property>
         <property
           name="LogMessage"><![CDATA[]]></property>
         <property
@@ -319,11 +319,82 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="93c6b669-fb2d-e6f6-5d80-1d8a73c7cdd4"
+      name="Place Holder"
+      type="placeholder"
+      x="200"
+      y="510"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
+      id="697a3ad0-45c8-1d2d-7ccd-72f48bc7988b"
+      label="completed"
+      size="4"
+      type=""
+      srcParentID="4f27cef5-d1d0-8c8f-5dfc-7a5d96e32ada"
+      srcParentName="Manager 1 Approval"
+      srcParentType="task"
+      trgParentID="93c6b669-fb2d-e6f6-5d80-1d8a73c7cdd4"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="220"
+      lbly="455"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[completed]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[completed]]></property>
+      </properties>
+      <line>
+        <point
+          x="220"
+          y="400" />
+        <point
+          x="220"
+          y="510" />
+      </line>
+    </connection>
+    <connection
       id="b5121439-3833-a97a-b572-1cbbc4af9a7a"
-      label=""
+      label="rejected"
       size="4"
       type=""
       srcParentID="4f27cef5-d1d0-8c8f-5dfc-7a5d96e32ada"
@@ -333,21 +404,21 @@
       trgParentName="Stop"
       trgParentType="stop"
       router="junction"
-      color="3c78d8"
+      color="129ce4"
       lblx="495"
       lbly="380"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#3c78d8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
       srcPortName="eastPort"
       trgPortName="southPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[rejected]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[]]></property>
+          name="link"><![CDATA[rejected]]></property>
       </properties>
       <line>
         <point
