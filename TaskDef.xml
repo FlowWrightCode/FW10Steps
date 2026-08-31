@@ -51,7 +51,7 @@
     </figure>
     <figure
       id="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      name="Sample Task "
+      name="Sample Task"
       type="task"
       x="250"
       y="39"
@@ -65,7 +65,7 @@
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[Sample Task ]]></property>
+          name="itemName"><![CDATA[Sample Task]]></property>
         <property
           name="itemDescription"><![CDATA[Task]]></property>
         <property
@@ -144,10 +144,80 @@
     </figure>
     <figure
       id="94b09236-10a1-3360-eaa2-3311c86b0aff"
-      name="Timeout Process.."
+      name="Completed Process"
       type="placeholder"
       x="420"
       y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Completed Process]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Completed Process]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4fc4589b-ba86-289f-d0cb-a2db8eab3aaf"
+      name="Closed Process.."
+      type="placeholder"
+      x="40"
+      y="-100"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Closed Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Closed Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="5d67af83-126f-306f-8796-13b4bd9bcc72"
+      name="Timeout Process.."
+      type="placeholder"
+      x="120"
+      y="190"
       isValid="true"
       isLocked="False"
       inConnections="2"
@@ -178,80 +248,13 @@
       </properties>
     </figure>
     <figure
-      id="4fc4589b-ba86-289f-d0cb-a2db8eab3aaf"
-      name="Closed Process.."
-      type="placeholder"
-      x="120"
-      y="-90"
-      isValid="true"
-      inConnections="2"
-      outConnections="2">
-      <properties>
-        <property
-          name="label"><![CDATA[Closed Process..]]></property>
-        <property
-          name="type"><![CDATA[placeholder]]></property>
-        <property
-          name="inConnections"><![CDATA[2]]></property>
-        <property
-          name="outConnections"><![CDATA[2]]></property>
-        <property
-          name="itemName"><![CDATA[Closed Process..]]></property>
-        <property
-          name="itemDescription"><![CDATA[]]></property>
-        <property
-          name="LogMessage"><![CDATA[]]></property>
-        <property
-          name="documentation"><![CDATA[]]></property>
-        <property
-          name="instState"><![CDATA[]]></property>
-        <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
-      </properties>
-    </figure>
-    <figure
-      id="5d67af83-126f-306f-8796-13b4bd9bcc72"
-      name="Completed Process.."
-      type="placeholder"
-      x="120"
-      y="190"
-      isValid="true"
-      inConnections="2"
-      outConnections="2">
-      <properties>
-        <property
-          name="label"><![CDATA[Completed Process..]]></property>
-        <property
-          name="type"><![CDATA[placeholder]]></property>
-        <property
-          name="inConnections"><![CDATA[2]]></property>
-        <property
-          name="outConnections"><![CDATA[2]]></property>
-        <property
-          name="itemName"><![CDATA[Completed Process..]]></property>
-        <property
-          name="itemDescription"><![CDATA[]]></property>
-        <property
-          name="LogMessage"><![CDATA[]]></property>
-        <property
-          name="documentation"><![CDATA[]]></property>
-        <property
-          name="instState"><![CDATA[]]></property>
-        <property
-          name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
-      </properties>
-    </figure>
-    <figure
       id="342713d5-4df3-3632-b340-3530e2bcb4d7"
       name="Reject Process.."
       type="placeholder"
       x="400"
-      y="-130"
+      y="-140"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -259,6 +262,8 @@
           name="label"><![CDATA[Reject Process..]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -275,17 +280,16 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
       id="722b6a61-e23c-9cf3-bc1d-7c72ca2b0bc5"
       name="Error Process.."
       type="placeholder"
-      x="420"
-      y="190"
+      x="410"
+      y="210"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -293,6 +297,8 @@
           name="label"><![CDATA[Error Process..]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -309,8 +315,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
     <figure
@@ -320,6 +324,7 @@
       x="570"
       y="-90"
       isValid="true"
+      isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
@@ -327,6 +332,8 @@
           name="label"><![CDATA[Evaluate Process..]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
         <property
           name="inConnections"><![CDATA[2]]></property>
         <property
@@ -343,8 +350,6 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
-        <property
-          name="isValid"><![CDATA[true]]></property>
       </properties>
     </figure>
   </figures>
@@ -355,7 +360,7 @@
       size="4"
       type=""
       srcParentID="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      srcParentName="Sample Task "
+      srcParentName="Sample Task"
       srcParentType="task"
       trgParentID="26b2d231-d145-8d2c-8729-eac12584efac"
       trgParentName="Evaluate Process.."
@@ -364,7 +369,7 @@
       color="129ce4"
       lblx="431"
       lbly="-5"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
       trgPortName="southPort">
       <properties>
@@ -398,17 +403,17 @@
       size="4"
       type=""
       srcParentID="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      srcParentName="Sample Task "
+      srcParentName="Sample Task"
       srcParentType="task"
       trgParentID="722b6a61-e23c-9cf3-bc1d-7c72ca2b0bc5"
       trgParentName="Error Process.."
       trgParentType="placeholder"
       router="junction"
       color="ff0000"
-      lblx="366"
-      lbly="135"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
-      srcPortName="southEastPort"
+      lblx="315"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
       trgPortName="northPort">
       <properties>
         <property
@@ -422,17 +427,17 @@
       </properties>
       <line>
         <point
-          x="290"
+          x="270"
           y="79" />
         <point
-          x="290"
-          y="135" />
+          x="270"
+          y="180" />
         <point
-          x="440"
-          y="135" />
+          x="430"
+          y="180" />
         <point
-          x="440"
-          y="190" />
+          x="430"
+          y="210" />
       </line>
     </connection>
     <connection
@@ -441,17 +446,17 @@
       size="4"
       type=""
       srcParentID="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      srcParentName="Sample Task "
+      srcParentName="Sample Task"
       srcParentType="task"
       trgParentID="342713d5-4df3-3632-b340-3530e2bcb4d7"
       trgParentName="Reject Process.."
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="356"
-      lbly="-25"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
-      srcPortName="northEastPort"
+      lblx="316"
+      lbly="-60"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
       trgPortName="southPort">
       <properties>
         <property
@@ -465,46 +470,46 @@
       </properties>
       <line>
         <point
-          x="290"
+          x="270"
           y="39" />
         <point
-          x="290"
-          y="-25" />
+          x="270"
+          y="-60" />
         <point
           x="420"
-          y="-25" />
+          y="-60" />
         <point
           x="420"
-          y="-90" />
+          y="-100" />
       </line>
     </connection>
     <connection
       id="e3a9e678-c485-fac5-a77c-bdd337e73671"
-      label="completed"
+      label="timeout"
       size="4"
       type=""
       srcParentID="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      srcParentName="Sample Task "
+      srcParentName="Sample Task"
       srcParentType="task"
       trgParentID="5d67af83-126f-306f-8796-13b4bd9bcc72"
-      trgParentName="Completed Process.."
+      trgParentName="Timeout Process.."
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
       lblx="205"
       lbly="135"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
         <property
-          name="label"><![CDATA[completed]]></property>
+          name="label"><![CDATA[timeout]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[completed]]></property>
+          name="link"><![CDATA[timeout]]></property>
       </properties>
       <line>
         <point
@@ -527,16 +532,16 @@
       size="4"
       type=""
       srcParentID="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      srcParentName="Sample Task "
+      srcParentName="Sample Task"
       srcParentType="task"
       trgParentID="4fc4589b-ba86-289f-d0cb-a2db8eab3aaf"
       trgParentName="Closed Process.."
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="205"
-      lbly="-5"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      lblx="144"
+      lbly="10"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
       trgPortName="southPort">
       <properties>
@@ -555,42 +560,42 @@
           y="39" />
         <point
           x="270"
-          y="-5" />
+          y="10" />
         <point
-          x="140"
-          y="-5" />
+          x="60"
+          y="10" />
         <point
-          x="140"
-          y="-50" />
+          x="60"
+          y="-60" />
       </line>
     </connection>
     <connection
       id="8202d1ff-5c59-af9f-486d-df5571244ff3"
-      label="timeout"
+      label="completed"
       size="4"
       type=""
       srcParentID="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      srcParentName="Sample Task "
+      srcParentName="Sample Task"
       srcParentType="task"
       trgParentID="94b09236-10a1-3360-eaa2-3311c86b0aff"
-      trgParentName="Timeout Process.."
+      trgParentName="Completed Process"
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
       lblx="355"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=187.5"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
         <property
-          name="label"><![CDATA[timeout]]></property>
+          name="label"><![CDATA[completed]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
         <property
-          name="link"><![CDATA[timeout]]></property>
+          name="link"><![CDATA[completed]]></property>
       </properties>
       <line>
         <point
@@ -610,7 +615,7 @@
       srcParentName="start"
       srcParentType="start"
       trgParentID="f2fa3b88-2509-3d9a-329b-a76d02262890"
-      trgParentName="Sample Task "
+      trgParentName="Sample Task"
       trgParentType="task"
       router="junction"
       color="3c78d8"
