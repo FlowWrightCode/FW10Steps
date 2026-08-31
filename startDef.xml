@@ -133,7 +133,7 @@
       name="Abort instance"
       type="abortinstance"
       x="240"
-      y="240"
+      y="-110"
       isValid="true"
       isLocked="False">
       <properties>
@@ -218,8 +218,79 @@
           name="defaultProcessUser"><![CDATA[35635c17-06b5-455b-a1e6-51507c1e971f;]]></property>
       </properties>
     </figure>
+    <figure
+      id="9c192d31-4526-ca1a-02cd-aa89da6f39c0"
+      name="Log Error"
+      type="placeholder"
+      x="240"
+      y="220"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="6fcea7c4-4c89-0606-7264-bcf5669cbb45"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="3eead952-33eb-60d5-4789-cf2848aaa4a5"
+      srcParentName="Contains"
+      srcParentType="contains"
+      trgParentID="9c192d31-4526-ca1a-02cd-aa89da6f39c0"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="260"
+      lbly="150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
+          y="79" />
+        <point
+          x="260"
+          y="220" />
+      </line>
+    </connection>
     <connection
       id="04ae3906-61dc-5d60-fb21-63e11f34bb29"
       label="False"
@@ -234,10 +305,10 @@
       router="junction"
       color="ff0000"
       lblx="260"
-      lbly="160"
+      lbly="-16"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
-      srcPortName="southPort"
-      trgPortName="northPort">
+      srcPortName="northPort"
+      trgPortName="southPort">
       <properties>
         <property
           name="label"><![CDATA[False]]></property>
@@ -251,10 +322,10 @@
       <line>
         <point
           x="260"
-          y="79" />
+          y="39" />
         <point
           x="260"
-          y="240" />
+          y="-70" />
       </line>
     </connection>
     <connection
@@ -319,6 +390,8 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
