@@ -59,7 +59,7 @@
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Sample Task ]]></property>
+          name="label"><![CDATA[Sample Task]]></property>
         <property
           name="type"><![CDATA[task]]></property>
         <property
@@ -81,7 +81,7 @@
         <property
           name="showURL"><![CDATA[]]></property>
         <property
-          name="emailAddresses"><![CDATA[support@flowwright.com]]></property>
+          name="emailAddresses"><![CDATA[]]></property>
         <property
           name="priority"><![CDATA[Normal]]></property>
         <property
@@ -369,7 +369,7 @@
       color="129ce4"
       lblx="431"
       lbly="-5"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
       trgPortName="southPort">
       <properties>
@@ -412,7 +412,7 @@
       color="ff0000"
       lblx="315"
       lbly="180"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="southPort"
       trgPortName="northPort">
       <properties>
@@ -455,7 +455,7 @@
       color="129ce4"
       lblx="316"
       lbly="-60"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
       trgPortName="southPort">
       <properties>
@@ -541,7 +541,7 @@
       color="129ce4"
       lblx="144"
       lbly="10"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="northPort"
       trgPortName="southPort">
       <properties>
