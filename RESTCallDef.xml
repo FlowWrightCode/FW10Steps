@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="4f27b86e-a7cb-497f-8220-588c04b262e2">
+  defID="4f27b86e-a7cb-497f-8220-588c04b262e2"
+  defName="RESTCallDef">
   <figures>
     <figure
       id="18344ba8-5f05-4f12-a3a2-e7f6c0d3f880"
@@ -25,7 +26,7 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="variables"><![CDATA[srcFilePath:String|data:String]]></property>
+          name="variables"><![CDATA[srcFilePath:String|JSONTaken:String]]></property>
         <property
           name="requiredVars"><![CDATA[]]></property>
         <property
@@ -44,43 +45,43 @@
     </figure>
     <figure
       id="052fccd7-a8ee-7e91-3723-f725d9914a67"
-      name="Rest Call"
+      name="Get Token-Sugar CRM"
       type="restcall"
-      x="300"
+      x="260"
       y="39"
       isValid="true"
       isLocked="False">
       <properties>
         <property
-          name="label"><![CDATA[Rest Call]]></property>
+          name="label"><![CDATA[Get Token-Sugar CRM]]></property>
         <property
           name="type"><![CDATA[restcall]]></property>
         <property
           name="isValid"><![CDATA[true]]></property>
         <property
-          name="itemName"><![CDATA[Rest Call]]></property>
+          name="itemName"><![CDATA[Get Token-Sugar CRM]]></property>
         <property
           name="itemDescription"><![CDATA[restCall]]></property>
         <property
-          name="restURL"><![CDATA[https://dummyjson.com/c/7d4b-4b54-4555-b0e8]]></property>
+          name="restURL"><![CDATA[https://txxmjw9655.trial.sugarcrm.eu/rest/v10/oauth2/token]]></property>
         <property
           name="method"><![CDATA[POST]]></property>
         <property
-          name="userName"><![CDATA[]]></property>
+          name="userName"><![CDATA[testUser]]></property>
         <property
-          name="password"><![CDATA[]]></property>
+          name="password"><![CDATA[testUser]]></property>
         <property
-          name="payLoadType"><![CDATA[JSON]]></property>
+          name="payLoadType"><![CDATA[FormURL]]></property>
         <property
-          name="requestBody"><![CDATA[]]></property>
+          name="requestBody"><![CDATA[grant_type=password&&#xA;client_id=xxxx&&#xA;client_secret=xxxx&]]></property>
         <property
           name="responseType"><![CDATA[JSON]]></property>
         <property
           name="sourceFilePath"><![CDATA[variable.srcFilePath]]></property>
         <property
-          name="headers"><![CDATA[connect.sid~s%3AyVRTDHfUbqyR2To-Zkv_k2reM5LruNCO.waNhjdtlQD+T4ozvQLpdO+utMEaSABFkIldSkhBZEKw]]></property>
+          name="headers"><![CDATA[connect.type~application/x-www-form-urlencoded]]></property>
         <property
-          name="varToStoreResult"><![CDATA[variable.data]]></property>
+          name="varToStoreResult"><![CDATA[variable.JSONTaken]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
@@ -93,22 +94,237 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="4b8c37f6-c322-9d54-a021-4f718a76c015"
+      name="Continue Process.."
+      type="placeholder"
+      x="460"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="15828f1a-172e-e8f5-e2de-7658882e3312"
+      name="Log Error"
+      type="placeholder"
+      x="260"
+      y="210"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="52becfe1-7a89-4f84-87d4-66e7507ae52e"
+      name="Notify Administrator"
+      type="placeholder"
+      x="260"
+      y="-110"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="94016ead-fe7c-06af-1f03-a882e8768f04"
+      id="c7385915-47dd-9a7b-77b7-0ffcdacdaa65"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="052fccd7-a8ee-7e91-3723-f725d9914a67"
+      srcParentName="Get Token-Sugar CRM"
+      srcParentType="restcall"
+      trgParentID="52becfe1-7a89-4f84-87d4-66e7507ae52e"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="280"
+      lbly="-16"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="39" />
+        <point
+          x="280"
+          y="-70" />
+      </line>
+    </connection>
+    <connection
+      id="054e95b2-e1d5-2e4d-7f32-52f68f6980e3"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="052fccd7-a8ee-7e91-3723-f725d9914a67"
+      srcParentName="Get Token-Sugar CRM"
+      srcParentType="restcall"
+      trgParentID="15828f1a-172e-e8f5-e2de-7658882e3312"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="280"
+      lbly="145"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="79" />
+        <point
+          x="280"
+          y="210" />
+      </line>
+    </connection>
+    <connection
+      id="82f2bb64-5632-fda7-a1c4-eeb3d18fd70a"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="052fccd7-a8ee-7e91-3723-f725d9914a67"
+      srcParentName="Get Token-Sugar CRM"
+      srcParentType="restcall"
+      trgParentID="4b8c37f6-c322-9d54-a021-4f718a76c015"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="380"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="300"
+          y="59" />
+        <point
+          x="460"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="70ad89b1-22bb-34d9-bdc2-35dd1726c375"
       label=""
-      size="3"
+      size="4"
       type=""
       srcParentID="18344ba8-5f05-4f12-a3a2-e7f6c0d3f880"
+      srcParentName="start"
       srcParentType="start"
       trgParentID="052fccd7-a8ee-7e91-3723-f725d9914a67"
+      trgParentName="Get Token-Sugar CRM"
       trgParentType="restcall"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
+      router="junction"
       color="0000ff"
-      lblx="199"
+      lblx="179"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -118,13 +334,15 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
           x="98"
           y="59" />
         <point
-          x="300"
+          x="260"
           y="59" />
       </line>
     </connection>
