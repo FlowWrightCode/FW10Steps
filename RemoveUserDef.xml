@@ -1,0 +1,415 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="8c24be1a-d39c-4687-859d-745266626a1f"
+  defName="removeUserDef">
+  <figures>
+    <figure
+      id="0f99d011-0269-4ef0-81a9-3e418f135200"
+      name="start"
+      type="start"
+      x="120"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varUserID:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[0]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="22814df8-f80b-3d4f-6d79-84ae48149e6b"
+      name="Get workflows User ID"
+      type="getworkflowuserid"
+      x="280"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Get workflows User ID]]></property>
+        <property
+          name="type"><![CDATA[getworkflowuserid]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Get workflows User ID]]></property>
+        <property
+          name="itemDescription"><![CDATA[getWorkflowUserID]]></property>
+        <property
+          name="userName"><![CDATA[Alpha-TestUser-6]]></property>
+        <property
+          name="varGlobalForID"><![CDATA[variable.varUserID]]></property>
+        <property
+          name="LogMessage"><![CDATA[getWorkflowUserID - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[getWorkflowUserID - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[User Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="fdb582e7-5892-25ce-c8ca-5640f3fd894d"
+      name="Remove User"
+      type="removeuser"
+      x="440"
+      y="80"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Remove User]]></property>
+        <property
+          name="type"><![CDATA[removeuser]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Remove User]]></property>
+        <property
+          name="itemDescription"><![CDATA[removeUser]]></property>
+        <property
+          name="workflowUserID"><![CDATA[Variable.varUserID]]></property>
+        <property
+          name="LogMessage"><![CDATA[removeUser - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[removeUser - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[User Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8a53a68f-9edc-d7c7-6516-b370a185ec11"
+      name="Continue Process.."
+      type="placeholder"
+      x="610"
+      y="80"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="ac3b79d1-e2a7-0388-e447-b96c1ee06015"
+      name="Log Error"
+      type="placeholder"
+      x="440"
+      y="240"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="4c6c9790-8c30-d9e8-c08b-ec25fc14788a"
+      name="Notify Administrator"
+      type="placeholder"
+      x="440"
+      y="-60"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="c75add93-c01c-f3be-2189-86740368c789"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="fdb582e7-5892-25ce-c8ca-5640f3fd894d"
+      srcParentName="Remove User"
+      srcParentType="removeuser"
+      trgParentID="4c6c9790-8c30-d9e8-c08b-ec25fc14788a"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="460"
+      lbly="30"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="460"
+          y="80" />
+        <point
+          x="460"
+          y="-20" />
+      </line>
+    </connection>
+    <connection
+      id="6c91a3c8-e765-d8fb-192e-94e29c6c406a"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="fdb582e7-5892-25ce-c8ca-5640f3fd894d"
+      srcParentName="Remove User"
+      srcParentType="removeuser"
+      trgParentID="ac3b79d1-e2a7-0388-e447-b96c1ee06015"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="460"
+      lbly="180"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="460"
+          y="120" />
+        <point
+          x="460"
+          y="240" />
+      </line>
+    </connection>
+    <connection
+      id="3d249b42-2b67-0845-fe40-785749e96844"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="fdb582e7-5892-25ce-c8ca-5640f3fd894d"
+      srcParentName="Remove User"
+      srcParentType="removeuser"
+      trgParentID="8a53a68f-9edc-d7c7-6516-b370a185ec11"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="545"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="480"
+          y="100" />
+        <point
+          x="610"
+          y="100" />
+      </line>
+    </connection>
+    <connection
+      id="19b438ae-8e48-4195-8b50-8e5827b4c6cb"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="22814df8-f80b-3d4f-6d79-84ae48149e6b"
+      srcParentName="Get workflows User ID"
+      srcParentType="getworkflowuserid"
+      trgParentID="fdb582e7-5892-25ce-c8ca-5640f3fd894d"
+      trgParentName="Remove User"
+      trgParentType="removeuser"
+      router="junction"
+      color="00ff00"
+      lblx="380"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="320"
+          y="100" />
+        <point
+          x="440"
+          y="100" />
+      </line>
+    </connection>
+    <connection
+      id="0a12e128-f840-fb5d-a573-f9c960d611b8"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0f99d011-0269-4ef0-81a9-3e418f135200"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="22814df8-f80b-3d4f-6d79-84ae48149e6b"
+      trgParentName="Get workflows User ID"
+      trgParentType="getworkflowuserid"
+      router="junction"
+      color="0000ff"
+      lblx="220"
+      lbly="100"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="160"
+          y="100" />
+        <point
+          x="280"
+          y="100" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
