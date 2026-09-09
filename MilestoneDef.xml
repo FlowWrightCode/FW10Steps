@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="fcd53131-9c44-41ae-85b8-d2c007eeae25">
+  defID="fcd53131-9c44-41ae-85b8-d2c007eeae25"
+  defName="MilestoneDef">
   <figures>
     <figure
       id="e55857a7-ea05-491c-b7c2-6fa4dd650e41"
@@ -62,13 +63,13 @@
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
-          name="routeTo"><![CDATA[Variable.initiatorID]]></property>
+          name="routeTo"><![CDATA[dd46ecf0-729a-446c-aa14-ac05c683ffaa;]]></property>
         <property
           name="routeToRoles"><![CDATA[]]></property>
         <property
-          name="taskDesc"><![CDATA[Milestone Task]]></property>
+          name="taskDesc"><![CDATA[Milestone Task - Variable.createdOn]]></property>
         <property
-          name="taskBody"><![CDATA[Milestone Task]]></property>
+          name="taskBody"><![CDATA[Milestone Task&#xA;&#xA;Created On: Variable.createdOn&#xA;]]></property>
         <property
           name="routedItem"><![CDATA[]]></property>
         <property
@@ -80,11 +81,11 @@
         <property
           name="daysToComplete"><![CDATA[1]]></property>
         <property
-          name="expireType"><![CDATA[days]]></property>
+          name="expireType"><![CDATA[hours]]></property>
         <property
           name="includeWeekends"><![CDATA[0]]></property>
         <property
-          name="taskReminder"><![CDATA[]]></property>
+          name="taskReminder"><![CDATA[<taskReminders><reminder  reminderin="10" remindertype="minutes" subject="Milestone Task - Reminder Subject" body="Milestone Task - Message Body. &#10;&#10;Created On:&#10;Variable.createdOn"></reminder></taskReminders>]]></property>
         <property
           name="waitForAll"><![CDATA[no]]></property>
         <property
@@ -94,9 +95,9 @@
         <property
           name="fromEmail"><![CDATA[]]></property>
         <property
-          name="emailSubject"><![CDATA[]]></property>
+          name="emailSubject"><![CDATA[Milestone Task - Email Subject.]]></property>
         <property
-          name="emailBody"><![CDATA[]]></property>
+          name="emailBody"><![CDATA[<p><span style="font-size: 14pt;">Milestone Task - Email Content</span></p><p><span style="font-size: 14pt;">Created On:&nbsp;Variable.createdOn</span></p><p><br></p>]]></property>
         <property
           name="sendExpireEmail"><![CDATA[yes]]></property>
         <property
@@ -114,7 +115,7 @@
         <property
           name="taskRoutingRules"><![CDATA[0]]></property>
         <property
-          name="useFullDuration"><![CDATA[no]]></property>
+          name="useFullDuration"><![CDATA[yes]]></property>
         <property
           name="sendSeparateEmails"><![CDATA[no]]></property>
         <property
@@ -129,6 +130,8 @@
           name="instState"><![CDATA[]]></property>
         <property
           name="instPercent"><![CDATA[]]></property>
+        <property
+          name="emailBody_TemplateID"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
@@ -151,7 +154,7 @@
         <property
           name="itemDescription"><![CDATA[Milestone]]></property>
         <property
-          name="waitDateTime"><![CDATA[04/30/2025 2:30 PM]]></property>
+          name="waitDateTime"><![CDATA[2026-03-23 22:30]]></property>
         <property
           name="logMessage"><![CDATA[]]></property>
         <property
@@ -166,12 +169,226 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="239a5c86-9ea5-7351-3dc3-ef9657fe7847"
+      name="Place Holder"
+      type="placeholder"
+      x="560"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="41145465-b1f3-6446-0516-7bc61c22c451"
+      name="Log Error"
+      type="placeholder"
+      x="240"
+      y="200"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="f99b65c2-0348-ada9-df94-43f392350648"
+      name="Notify Administrator"
+      type="placeholder"
+      x="240"
+      y="-110"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="adbbcbf4-4212-74c1-a0e9-c281cb6ea92e"
+      id="503ddcd8-c3dc-8a0a-31c7-766920f6be50"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="41a11908-6ad9-cc78-116c-7f16b909cbfc"
+      srcParentName="Milestone Step"
+      srcParentType="milestone"
+      trgParentID="f99b65c2-0348-ada9-df94-43f392350648"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="260"
+      lbly="-16"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
+          y="39" />
+        <point
+          x="260"
+          y="-70" />
+      </line>
+    </connection>
+    <connection
+      id="92f5241a-b769-907f-a0e5-b23479035095"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="41a11908-6ad9-cc78-116c-7f16b909cbfc"
+      srcParentName="Milestone Step"
+      srcParentType="milestone"
+      trgParentID="41145465-b1f3-6446-0516-7bc61c22c451"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="260"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
+          y="79" />
+        <point
+          x="260"
+          y="200" />
+      </line>
+    </connection>
+    <connection
+      id="840f4e45-e344-69dd-4f76-6a25680a44d6"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="41a11908-6ad9-cc78-116c-7f16b909cbfc"
+      srcParentName="Milestone Step"
+      srcParentType="milestone"
+      trgParentID="1ee2ea72-88f3-8aef-421e-ff92f5285c6c"
+      trgParentName="Milestone Task"
+      trgParentType="task"
+      router="junction"
+      color="00ff00"
+      lblx="340"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="59" />
+        <point
+          x="400"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="1ecfa02a-a56c-6801-a7c2-19fec9a32a0e"
       label=""
-      size="3"
+      size="4"
       type=""
       srcParentID="e55857a7-ea05-491c-b7c2-6fa4dd650e41"
       srcParentName="start"
@@ -179,11 +396,11 @@
       trgParentID="41a11908-6ad9-cc78-116c-7f16b909cbfc"
       trgParentName="Milestone Step"
       trgParentType="milestone"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="4a86e8"
+      router="junction"
+      color="0000ff"
       lblx="169"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;;exitDx=0;exitDy=0;;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -193,6 +410,8 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
@@ -204,37 +423,39 @@
       </line>
     </connection>
     <connection
-      id="88743b1a-4e77-2c26-61a9-cd5ccd12963f"
-      label=""
-      size="3"
+      id="1b1acccf-1d13-911e-15ce-ac0a83e36951"
+      label="timeout"
+      size="4"
       type=""
-      srcParentID="41a11908-6ad9-cc78-116c-7f16b909cbfc"
-      srcParentName="Milestone Step"
-      srcParentType="milestone"
-      trgParentID="1ee2ea72-88f3-8aef-421e-ff92f5285c6c"
-      trgParentName="Milestone Task"
-      trgParentType="task"
-      router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
-      color="4a86e8"
-      lblx="340"
+      srcParentID="1ee2ea72-88f3-8aef-421e-ff92f5285c6c"
+      srcParentName="Milestone Task"
+      srcParentType="task"
+      trgParentID="239a5c86-9ea5-7351-3dc3-ef9657fe7847"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="500"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#4a86e8;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=3;jumpStyle=arc;jumpSize=6;whiteSpace=wrap;labelWidth=175;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
         <property
-          name="label"><![CDATA[]]></property>
+          name="label"><![CDATA[timeout]]></property>
         <property
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[timeout]]></property>
       </properties>
       <line>
         <point
-          x="280"
+          x="440"
           y="59" />
         <point
-          x="400"
+          x="560"
           y="59" />
       </line>
     </connection>
