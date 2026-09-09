@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="0b989772-7d72-47b8-b138-cf45f6b8d377">
+  defID="0b989772-7d72-47b8-b138-cf45f6b8d377"
+  defName="oneDriveRenameFileDef">
   <figures>
     <figure
       id="ccb73b28-4c56-4ae0-8d51-cc5039b9ce5e"
       name="start"
       type="start"
-      x="40"
+      x="-30"
       y="39"
       isValid="true"
       isLocked="False">
@@ -93,24 +94,238 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="bb3bdc84-e71d-2fcf-89e6-5a12d6fae55f"
+      name="Pre-Process"
+      type="placeholder"
+      x="130"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Pre-Process]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Pre-Process]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="838b42d1-7bd5-8a05-1569-6e0eb6e258c8"
+      name="Continue Process.."
+      type="placeholder"
+      x="440"
+      y="39"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c8fc7acd-32a1-92c6-dcea-5506db8e9f89"
+      name="Log Error"
+      type="placeholder"
+      x="270"
+      y="200"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="381ffa96-74bd-2eec-af24-1db179e816ee"
+      name="Notify Administrator"
+      type="placeholder"
+      x="270"
+      y="-120"
+      isValid="true"
+      isLocked="False"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="339ec1bc-5318-62e6-a7cc-4334264c4fe9"
-      label=""
-      size="5"
+      id="19b9f2f2-6696-7531-c542-4db8e294cbf7"
+      label="False"
+      size="4"
       type=""
-      srcParentID="ccb73b28-4c56-4ae0-8d51-cc5039b9ce5e"
-      srcParentName="start"
-      srcParentType="start"
-      trgParentID="609a02d8-baf8-b59f-7726-51a2ae645e60"
-      trgParentName="Rename File"
-      trgParentType="onedriverenamefile"
+      srcParentID="609a02d8-baf8-b59f-7726-51a2ae645e60"
+      srcParentName="Rename File"
+      srcParentType="onedriverenamefile"
+      trgParentID="381ffa96-74bd-2eec-af24-1db179e816ee"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
       router="junction"
-      color="0000ff"
-      lblx="175"
+      color="ff0000"
+      lblx="290"
+      lbly="-21"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="39" />
+        <point
+          x="290"
+          y="-80" />
+      </line>
+    </connection>
+    <connection
+      id="fc4e9700-e648-9bbb-ae6c-720e47486027"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="609a02d8-baf8-b59f-7726-51a2ae645e60"
+      srcParentName="Rename File"
+      srcParentType="onedriverenamefile"
+      trgParentID="c8fc7acd-32a1-92c6-dcea-5506db8e9f89"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="290"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="290"
+          y="79" />
+        <point
+          x="290"
+          y="200" />
+      </line>
+    </connection>
+    <connection
+      id="1cf87539-f53c-a138-308f-951b3d962b2f"
+      label=""
+      size="4"
+      type=""
+      srcParentID="609a02d8-baf8-b59f-7726-51a2ae645e60"
+      srcParentName="Rename File"
+      srcParentType="onedriverenamefile"
+      trgParentID="838b42d1-7bd5-8a05-1569-6e0eb6e258c8"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="129ce4"
+      lblx="375"
       lbly="59"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -120,13 +335,89 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
-          x="80"
+          x="310"
+          y="59" />
+        <point
+          x="440"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="96d00bb5-74a7-c742-9f39-5c33ebad51bd"
+      label=""
+      size="4"
+      type=""
+      srcParentID="bb3bdc84-e71d-2fcf-89e6-5a12d6fae55f"
+      srcParentName="Pre-Process"
+      srcParentType="placeholder"
+      trgParentID="609a02d8-baf8-b59f-7726-51a2ae645e60"
+      trgParentName="Rename File"
+      trgParentType="onedriverenamefile"
+      router="junction"
+      color="129ce4"
+      lblx="220"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="170"
           y="59" />
         <point
           x="270"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="970fd476-5228-0ee7-6198-a34a80267915"
+      label=""
+      size="4"
+      type=""
+      srcParentID="ccb73b28-4c56-4ae0-8d51-cc5039b9ce5e"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="bb3bdc84-e71d-2fcf-89e6-5a12d6fae55f"
+      trgParentName="Pre-Process"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="70"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitDx=0;exitDy=0;entryDx=0;entryDy=0;strokeWidth=4;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="10"
+          y="59" />
+        <point
+          x="130"
           y="59" />
       </line>
     </connection>
