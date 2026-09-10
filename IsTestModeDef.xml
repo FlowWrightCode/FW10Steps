@@ -3,14 +3,15 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="1f21a8ea-1a7c-422b-8fff-73cc47cef714">
+  defID="1f21a8ea-1a7c-422b-8fff-73cc47cef714"
+  defName="IsTestModeDef">
   <figures>
     <figure
       id="e90f77b1-de0d-4e88-ba28-86630dc4740f"
       name="start"
       type="start"
-      x="80"
-      y="120"
+      x="-100"
+      y="240"
       isValid="true"
       isLocked="False">
       <properties>
@@ -40,14 +41,30 @@
           name="logMessage"><![CDATA[]]></property>
         <property
           name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[Medium]]></property>
+        <property
+          name="errorDef"><![CDATA[]]></property>
+        <property
+          name="sub-def-name"><![CDATA[]]></property>
+        <property
+          name="abortDef"><![CDATA[]]></property>
+        <property
+          name="completeDef"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
     <figure
       id="5cea71dc-12dc-7884-f76a-a5778ab502f2"
       name="Regular Task"
       type="task"
-      x="-20"
-      y="400"
+      x="270"
+      y="240"
       isValid="true"
       isLocked="False">
       <properties>
@@ -166,8 +183,8 @@
       id="a232af5b-cf4c-a9bc-ce9d-38e915a6e765"
       name="Abort Instance"
       type="abortinstance"
-      x="180"
-      y="400"
+      x="80"
+      y="100"
       isValid="true"
       isLocked="False">
       <properties>
@@ -197,17 +214,17 @@
     </figure>
     <figure
       id="d0ee6a6f-c0c2-faba-564d-489232df4646"
-      name="Place Holder"
+      name="Continue Process.."
       type="placeholder"
-      x="-20"
-      y="550"
+      x="430"
+      y="240"
       isValid="true"
       isLocked="False"
       inConnections="2"
       outConnections="2">
       <properties>
         <property
-          name="label"><![CDATA[Place Holder]]></property>
+          name="label"><![CDATA[Continue Process..]]></property>
         <property
           name="type"><![CDATA[placeholder]]></property>
         <property
@@ -217,7 +234,7 @@
         <property
           name="outConnections"><![CDATA[2]]></property>
         <property
-          name="itemName"><![CDATA[Place Holder]]></property>
+          name="itemName"><![CDATA[Continue Process..]]></property>
         <property
           name="itemDescription"><![CDATA[]]></property>
         <property
@@ -230,8 +247,79 @@
           name="instPercent"><![CDATA[]]></property>
       </properties>
     </figure>
+    <figure
+      id="c613fe07-ef18-101f-ace7-4db9cb891c00"
+      name="Log Error"
+      type="placeholder"
+      x="80"
+      y="400"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
+    <connection
+      id="24b80bd4-32e1-4af7-8324-3faf5d076693"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="5828b221-d779-9aa3-ab1a-2ae8210398d6"
+      srcParentName="isTestMode"
+      srcParentType="istestmode"
+      trgParentID="c613fe07-ef18-101f-ace7-4db9cb891c00"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="100"
+      lbly="340"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="100"
+          y="280" />
+        <point
+          x="100"
+          y="400" />
+      </line>
+    </connection>
     <connection
       id="f791aadc-bf90-ab1e-aac0-16eda611639e"
       label="timeout"
@@ -241,15 +329,15 @@
       srcParentName="Regular Task"
       srcParentType="task"
       trgParentID="d0ee6a6f-c0c2-faba-564d-489232df4646"
-      trgParentName="Place Holder"
+      trgParentName="Continue Process.."
       trgParentType="placeholder"
       router="junction"
       color="129ce4"
-      lblx="0"
-      lbly="495"
+      lblx="370"
+      lbly="260"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#129ce4;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
-      srcPortName="southPort"
-      trgPortName="northPort">
+      srcPortName="eastPort"
+      trgPortName="westPort">
       <properties>
         <property
           name="label"><![CDATA[timeout]]></property>
@@ -262,11 +350,11 @@
       </properties>
       <line>
         <point
-          x="0"
-          y="440" />
+          x="310"
+          y="260" />
         <point
-          x="0"
-          y="550" />
+          x="430"
+          y="260" />
       </line>
     </connection>
     <connection
@@ -282,11 +370,11 @@
       trgParentType="istestmode"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="0000ff"
-      lblx="100"
-      lbly="200"
+      lblx="10"
+      lbly="260"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
-      srcPortName="southPort"
-      trgPortName="northPort">
+      srcPortName="eastPort"
+      trgPortName="westPort">
       <properties>
         <property
           name="label"><![CDATA[]]></property>
@@ -297,11 +385,11 @@
       </properties>
       <line>
         <point
-          x="100"
-          y="160" />
+          x="-60"
+          y="260" />
         <point
-          x="100"
-          y="240" />
+          x="80"
+          y="260" />
       </line>
     </connection>
     <connection
@@ -317,11 +405,11 @@
       trgParentType="task"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="00ff00"
-      lblx="0"
-      lbly="290"
+      lblx="195"
+      lbly="260"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
-      srcPortName="westPort"
-      trgPortName="northPort">
+      srcPortName="eastPort"
+      trgPortName="westPort">
       <properties>
         <property
           name="label"><![CDATA[True]]></property>
@@ -334,14 +422,11 @@
       </properties>
       <line>
         <point
-          x="80"
+          x="120"
           y="260" />
         <point
-          x="0"
+          x="270"
           y="260" />
-        <point
-          x="0"
-          y="400" />
       </line>
     </connection>
     <connection
@@ -357,11 +442,11 @@
       trgParentType="abortinstance"
       router="draw2d.layout.connection.InteractiveManhattanConnectionRouter"
       color="ff0000"
-      lblx="200"
-      lbly="290"
+      lblx="100"
+      lbly="190"
       style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=150;fontStyle=2;resizable=0"
-      srcPortName="eastPort"
-      trgPortName="northPort">
+      srcPortName="northPort"
+      trgPortName="southPort">
       <properties>
         <property
           name="label"><![CDATA[False]]></property>
@@ -374,14 +459,11 @@
       </properties>
       <line>
         <point
-          x="120"
-          y="260" />
+          x="100"
+          y="240" />
         <point
-          x="200"
-          y="260" />
-        <point
-          x="200"
-          y="400" />
+          x="100"
+          y="140" />
       </line>
     </connection>
   </connections>
