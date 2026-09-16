@@ -1,0 +1,406 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="eb927bec-1012-43af-a585-3d114a7a26ae"
+  defName="getCPUMemoryUtilizationDef">
+  <figures>
+    <figure
+      id="901c642b-a05a-479b-9cd5-75d4a9dd3c75"
+      name="start"
+      type="start"
+      x="40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[varCPU:String|varMemory:String]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c798c223-8d06-d9a6-e060-6633f6292a92"
+      name="Server Resources"
+      type="getcpumemoryutilization"
+      x="400"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Server Resources]]></property>
+        <property
+          name="type"><![CDATA[getcpumemoryutilization]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Server Resources]]></property>
+        <property
+          name="itemDescription"><![CDATA[getCPUMemoryUtilization]]></property>
+        <property
+          name="varGlobalToStoreCPU"><![CDATA[variable.varCPU]]></property>
+        <property
+          name="varGlobalToStoreMemory"><![CDATA[variable.varMemory]]></property>
+        <property
+          name="LogMessage"><![CDATA[getCPUMemoryUtilization - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[getCPUMemoryUtilization - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[Windows Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="b58a0463-8c08-8487-5e75-48ff70238634"
+      name="Pre Process"
+      type="placeholder"
+      x="220"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Pre Process]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Pre Process]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="3da72328-be55-24b4-205c-b01ee2b964a2"
+      name="Continue Process.."
+      type="placeholder"
+      x="580"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="c120ccd9-4663-4e0d-a28a-f0a9a06e8dc5"
+      name="Log Error"
+      type="placeholder"
+      x="400"
+      y="210"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8c8f4ebb-fbac-49b5-a74a-771065351197"
+      name="Notify Administrator"
+      type="placeholder"
+      x="400"
+      y="-110"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="dfb8a702-a9af-a9b2-10a1-e1847ed60572"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="c798c223-8d06-d9a6-e060-6633f6292a92"
+      srcParentName="Server Resources"
+      srcParentType="getcpumemoryutilization"
+      trgParentID="8c8f4ebb-fbac-49b5-a74a-771065351197"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="420"
+      lbly="-16"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="420"
+          y="39" />
+        <point
+          x="420"
+          y="-70" />
+      </line>
+    </connection>
+    <connection
+      id="077fc284-668f-3bd3-b11f-4b599a243a5d"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="c798c223-8d06-d9a6-e060-6633f6292a92"
+      srcParentName="Server Resources"
+      srcParentType="getcpumemoryutilization"
+      trgParentID="c120ccd9-4663-4e0d-a28a-f0a9a06e8dc5"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="420"
+      lbly="145"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="420"
+          y="79" />
+        <point
+          x="420"
+          y="210" />
+      </line>
+    </connection>
+    <connection
+      id="62a9378a-58f4-83ff-46a6-15087014ec86"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="c798c223-8d06-d9a6-e060-6633f6292a92"
+      srcParentName="Server Resources"
+      srcParentType="getcpumemoryutilization"
+      trgParentID="3da72328-be55-24b4-205c-b01ee2b964a2"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="510"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="440"
+          y="59" />
+        <point
+          x="580"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="589561cd-ed69-0b44-03e8-3369dfc4c745"
+      label=""
+      size="4"
+      type=""
+      srcParentID="b58a0463-8c08-8487-5e75-48ff70238634"
+      srcParentName="Pre Process"
+      srcParentType="placeholder"
+      trgParentID="c798c223-8d06-d9a6-e060-6633f6292a92"
+      trgParentName="Server Resources"
+      trgParentType="getcpumemoryutilization"
+      router="junction"
+      color="0000ff"
+      lblx="330"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="260"
+          y="59" />
+        <point
+          x="400"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="720f9e6e-48fe-49de-b39d-859812f69e1b"
+      label=""
+      size="4"
+      type=""
+      srcParentID="901c642b-a05a-479b-9cd5-75d4a9dd3c75"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="b58a0463-8c08-8487-5e75-48ff70238634"
+      trgParentName="Pre Process"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="150"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="59" />
+        <point
+          x="220"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
