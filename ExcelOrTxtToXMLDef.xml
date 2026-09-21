@@ -3,13 +3,14 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="575ecde7-b087-4230-ad45-b6a5836ccd19">
+  defID="575ecde7-b087-4230-ad45-b6a5836ccd19"
+  defName="ExcelOrTxtToXMLDef">
   <figures>
     <figure
       id="0ad1b342-53cd-4701-a3e8-0dcf013b8a7d"
       name="start"
       type="start"
-      x="80"
+      x="40"
       y="120"
       isValid="true"
       isLocked="False">
@@ -60,7 +61,7 @@
       id="dd0368b9-b061-76ba-36a8-93b00c4f1b86"
       name="Writes Excel or Text to XML file"
       type="excelortxttoxml"
-      x="310"
+      x="400"
       y="120"
       isValid="true"
       isLocked="False">
@@ -91,22 +92,271 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="2a063a73-fa6d-3720-3ec2-b636c9f2cc79"
+      name="Pre Process"
+      type="placeholder"
+      x="230"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Pre Process]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Pre Process]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="b6b376a4-1385-56be-ea55-76e45e81a514"
+      name="Continue Process.."
+      type="placeholder"
+      x="580"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="60512776-f722-49b6-3b31-38001792eb19"
+      name="Log Error"
+      type="placeholder"
+      x="400"
+      y="280"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="92bcf4ef-b261-dbd2-fe59-f4d08dd3ee9e"
+      name="Notify Administrator"
+      type="placeholder"
+      x="400"
+      y="-20"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="c4c51b18-66e7-1b2c-18e2-2d88213f1d9b"
-      label=""
-      size="5"
+      id="1af2f774-f59a-814a-8f0a-bb1e9bf68225"
+      label="False"
+      size="4"
       type=""
-      srcParentID="0ad1b342-53cd-4701-a3e8-0dcf013b8a7d"
-      srcParentType="start"
+      srcParentID="dd0368b9-b061-76ba-36a8-93b00c4f1b86"
+      srcParentName="Writes Excel or Text to XML file"
+      srcParentType="excelortxttoxml"
+      trgParentID="92bcf4ef-b261-dbd2-fe59-f4d08dd3ee9e"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="420"
+      lbly="70"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="420"
+          y="120" />
+        <point
+          x="420"
+          y="20" />
+      </line>
+    </connection>
+    <connection
+      id="166e8b30-fa69-7ab0-12c4-ab1d0539ee54"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="dd0368b9-b061-76ba-36a8-93b00c4f1b86"
+      srcParentName="Writes Excel or Text to XML file"
+      srcParentType="excelortxttoxml"
+      trgParentID="60512776-f722-49b6-3b31-38001792eb19"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="420"
+      lbly="220"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="420"
+          y="160" />
+        <point
+          x="420"
+          y="280" />
+      </line>
+    </connection>
+    <connection
+      id="0ccda6bd-6ca0-7548-c57c-148837f1bba3"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="dd0368b9-b061-76ba-36a8-93b00c4f1b86"
+      srcParentName="Writes Excel or Text to XML file"
+      srcParentType="excelortxttoxml"
+      trgParentID="b6b376a4-1385-56be-ea55-76e45e81a514"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="510"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="440"
+          y="140" />
+        <point
+          x="580"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="3db7eb9b-4776-609d-548d-f9087137b9aa"
+      label=""
+      size="4"
+      type=""
+      srcParentID="2a063a73-fa6d-3720-3ec2-b636c9f2cc79"
+      srcParentName="Pre Process"
+      srcParentType="placeholder"
       trgParentID="dd0368b9-b061-76ba-36a8-93b00c4f1b86"
+      trgParentName="Writes Excel or Text to XML file"
       trgParentType="excelortxttoxml"
       router="junction"
       color="0000ff"
-      lblx="215"
+      lblx="335"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=5;whiteSpace=wrap;labelWidth=150;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -116,13 +366,52 @@
           name="type"><![CDATA[]]></property>
         <property
           name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
       </properties>
       <line>
         <point
-          x="120"
+          x="270"
           y="140" />
         <point
-          x="310"
+          x="400"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="74378a03-ce2f-7339-923a-808346ea0b77"
+      label=""
+      size="4"
+      type=""
+      srcParentID="0ad1b342-53cd-4701-a3e8-0dcf013b8a7d"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="2a063a73-fa6d-3720-3ec2-b636c9f2cc79"
+      trgParentName="Pre Process"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="155"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="80"
+          y="140" />
+        <point
+          x="230"
           y="140" />
       </line>
     </connection>
