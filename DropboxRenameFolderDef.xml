@@ -1,0 +1,408 @@
+<reveDiagram
+  desc="Powered by FlowWright"
+  testMode="false"
+  testModeUserID=""
+  schemaVersion="v2"
+  defID="6d87d7cf-badc-46ee-bf3c-8da623f7597a"
+  defName="DropBoxRenameFolderDef">
+  <figures>
+    <figure
+      id="6f37d59c-e88a-4cd5-8627-898e61696d20"
+      name="start"
+      type="start"
+      x="-40"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[start]]></property>
+        <property
+          name="type"><![CDATA[start]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[start]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="variables"><![CDATA[]]></property>
+        <property
+          name="requiredVars"><![CDATA[]]></property>
+        <property
+          name="globals"><![CDATA[]]></property>
+        <property
+          name="requiredGlobals"><![CDATA[]]></property>
+        <property
+          name="useSingleIteration"><![CDATA[]]></property>
+        <property
+          name="businessObjects"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="priority"><![CDATA[]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="8f5dfe80-461f-5900-d87e-1778ae88110c"
+      name="Rename Folder"
+      type="dropboxrenamefolder"
+      x="340"
+      y="39"
+      isValid="true"
+      isLocked="False">
+      <properties>
+        <property
+          name="label"><![CDATA[Rename Folder]]></property>
+        <property
+          name="type"><![CDATA[dropboxrenamefolder]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+        <property
+          name="itemName"><![CDATA[Rename Folder]]></property>
+        <property
+          name="itemDescription"><![CDATA[DropBoxRenameFolder]]></property>
+        <property
+          name="selOAuthProvider"><![CDATA[82ae0685-94cf-48ed-af4d-70a22e50747e]]></property>
+        <property
+          name="folderPath"><![CDATA[/FlowWright10/Documents/TestFolder]]></property>
+        <property
+          name="renamedTo"><![CDATA[ArchiveFolder]]></property>
+        <property
+          name="LogMessage"><![CDATA[DropBoxRenameFolder - Variable.createdOn]]></property>
+        <property
+          name="documentation"><![CDATA[DropBoxRenameFolder - Variable.initiatorName]]></property>
+        <property
+          name="instState"><![CDATA[DropBox Step]]></property>
+        <property
+          name="instPercent"><![CDATA[100]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="d52693b6-8bf9-eba6-1c48-e4d3d8cbec12"
+      name="Pre Process"
+      type="placeholder"
+      x="160"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Pre Process]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Pre Process]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="57eae364-4872-1326-4d88-dda8e0478fcf"
+      name="Place Holder"
+      type="placeholder"
+      x="520"
+      y="39"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Place Holder]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Place Holder]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="7613a417-30e2-372e-84ae-3fa295148660"
+      name="Log Error"
+      type="placeholder"
+      x="340"
+      y="200"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="fb9aa797-c93a-8c64-a7a6-ec2616309063"
+      name="Notify Administrator"
+      type="placeholder"
+      x="340"
+      y="-90"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+  </figures>
+  <connections>
+    <connection
+      id="52c09140-745f-627d-1a09-e23f9295b036"
+      label="False"
+      size="4"
+      type=""
+      srcParentID="8f5dfe80-461f-5900-d87e-1778ae88110c"
+      srcParentName="Rename Folder"
+      srcParentType="dropboxrenamefolder"
+      trgParentID="fb9aa797-c93a-8c64-a7a6-ec2616309063"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="360"
+      lbly="-6"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="360"
+          y="39" />
+        <point
+          x="360"
+          y="-50" />
+      </line>
+    </connection>
+    <connection
+      id="1768d44f-75ba-16b5-767f-0f5a2b430c8e"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="8f5dfe80-461f-5900-d87e-1778ae88110c"
+      srcParentName="Rename Folder"
+      srcParentType="dropboxrenamefolder"
+      trgParentID="7613a417-30e2-372e-84ae-3fa295148660"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="360"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="360"
+          y="79" />
+        <point
+          x="360"
+          y="200" />
+      </line>
+    </connection>
+    <connection
+      id="d48a8980-19dd-d94f-d9ec-0d066c88820b"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="8f5dfe80-461f-5900-d87e-1778ae88110c"
+      srcParentName="Rename Folder"
+      srcParentType="dropboxrenamefolder"
+      trgParentID="57eae364-4872-1326-4d88-dda8e0478fcf"
+      trgParentName="Place Holder"
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="450"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="380"
+          y="59" />
+        <point
+          x="520"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="192f2b7a-ef4c-b4e1-0f97-37068452f557"
+      label=""
+      size="4"
+      type=""
+      srcParentID="d52693b6-8bf9-eba6-1c48-e4d3d8cbec12"
+      srcParentName="Pre Process"
+      srcParentType="placeholder"
+      trgParentID="8f5dfe80-461f-5900-d87e-1778ae88110c"
+      trgParentName="Rename Folder"
+      trgParentType="dropboxrenamefolder"
+      router="junction"
+      color="0000ff"
+      lblx="270"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="200"
+          y="59" />
+        <point
+          x="340"
+          y="59" />
+      </line>
+    </connection>
+    <connection
+      id="d9e765ed-a3b9-85e1-d04f-ef746b50b057"
+      label=""
+      size="4"
+      type=""
+      srcParentID="6f37d59c-e88a-4cd5-8627-898e61696d20"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="d52693b6-8bf9-eba6-1c48-e4d3d8cbec12"
+      trgParentName="Pre Process"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="80"
+      lbly="59"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="0"
+          y="59" />
+        <point
+          x="160"
+          y="59" />
+      </line>
+    </connection>
+  </connections>
+  <comments></comments>
+</reveDiagram>
