@@ -3,7 +3,8 @@
   testMode="false"
   testModeUserID=""
   schemaVersion="v2"
-  defID="4c3cdc75-dbaa-4d3b-9bd7-57827cad4fd4">
+  defID="4c3cdc75-dbaa-4d3b-9bd7-57827cad4fd4"
+  defName="BoxDeleteFolderDef">
   <figures>
     <figure
       id="5d38ccd8-c9bc-43b5-b8b9-c6a8d2ab8662"
@@ -60,7 +61,7 @@
       id="e09c021d-e801-c6f3-a55f-8a6ec1beee1e"
       name="Delete Folder"
       type="boxdeletefolder"
-      x="290"
+      x="380"
       y="120"
       isValid="true"
       isLocked="False">
@@ -91,22 +92,308 @@
           name="instPercent"><![CDATA[100]]></property>
       </properties>
     </figure>
+    <figure
+      id="7995fed3-b7d6-e2fb-9734-dd29c0830ed6"
+      name="Pre Process"
+      type="placeholder"
+      x="240"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Pre Process]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Pre Process]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="51ab8b83-3c94-a5f3-7180-edff30c668d2"
+      name="Continue Process.."
+      type="placeholder"
+      x="540"
+      y="120"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Continue Process..]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Continue Process..]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="60292e9f-d681-40d3-95b8-baa142ddb56c"
+      name="Log Error"
+      type="placeholder"
+      x="380"
+      y="260"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Log Error]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Log Error]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
+    <figure
+      id="403b1479-c334-912b-7d7c-94495f1f699c"
+      name="Notify Administrator"
+      type="placeholder"
+      x="380"
+      y="0"
+      isValid="true"
+      inConnections="2"
+      outConnections="2">
+      <properties>
+        <property
+          name="label"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="type"><![CDATA[placeholder]]></property>
+        <property
+          name="inConnections"><![CDATA[2]]></property>
+        <property
+          name="outConnections"><![CDATA[2]]></property>
+        <property
+          name="itemName"><![CDATA[Notify Administrator]]></property>
+        <property
+          name="itemDescription"><![CDATA[]]></property>
+        <property
+          name="LogMessage"><![CDATA[]]></property>
+        <property
+          name="documentation"><![CDATA[]]></property>
+        <property
+          name="instState"><![CDATA[]]></property>
+        <property
+          name="instPercent"><![CDATA[]]></property>
+        <property
+          name="isValid"><![CDATA[true]]></property>
+      </properties>
+    </figure>
   </figures>
   <connections>
     <connection
-      id="b0e29e5f-3975-ecdc-009e-c3aa79269312"
-      label=""
-      size="3"
+      id="78f2ed32-f99c-2cfa-05ed-8740ceac4199"
+      label="False"
+      size="4"
       type=""
-      srcParentID="5d38ccd8-c9bc-43b5-b8b9-c6a8d2ab8662"
-      srcParentType="start"
+      srcParentID="e09c021d-e801-c6f3-a55f-8a6ec1beee1e"
+      srcParentName="Delete Folder"
+      srcParentType="boxdeletefolder"
+      trgParentID="403b1479-c334-912b-7d7c-94495f1f699c"
+      trgParentName="Notify Administrator"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="400"
+      lbly="80"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="northPort"
+      trgPortName="southPort">
+      <properties>
+        <property
+          name="label"><![CDATA[False]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[False]]></property>
+      </properties>
+      <line>
+        <point
+          x="400"
+          y="120" />
+        <point
+          x="400"
+          y="40" />
+      </line>
+    </connection>
+    <connection
+      id="9d3f3bca-5fe3-e86e-ef2f-0ffb09fb1e37"
+      label="error"
+      size="4"
+      type=""
+      srcParentID="e09c021d-e801-c6f3-a55f-8a6ec1beee1e"
+      srcParentName="Delete Folder"
+      srcParentType="boxdeletefolder"
+      trgParentID="60292e9f-d681-40d3-95b8-baa142ddb56c"
+      trgParentName="Log Error"
+      trgParentType="placeholder"
+      router="junction"
+      color="ff0000"
+      lblx="400"
+      lbly="210"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#ff0000;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="southPort"
+      trgPortName="northPort">
+      <properties>
+        <property
+          name="label"><![CDATA[error]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[error]]></property>
+      </properties>
+      <line>
+        <point
+          x="400"
+          y="160" />
+        <point
+          x="400"
+          y="260" />
+      </line>
+    </connection>
+    <connection
+      id="b5b87886-dba8-dd96-b98e-040f75545acd"
+      label="True"
+      size="4"
+      type=""
+      srcParentID="e09c021d-e801-c6f3-a55f-8a6ec1beee1e"
+      srcParentName="Delete Folder"
+      srcParentType="boxdeletefolder"
+      trgParentID="51ab8b83-3c94-a5f3-7180-edff30c668d2"
+      trgParentName="Continue Process.."
+      trgParentType="placeholder"
+      router="junction"
+      color="00ff00"
+      lblx="480"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#00ff00;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4;fontStyle=2;whiteSpace=wrap;resizable=0;labelWidth=150"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[True]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[True]]></property>
+      </properties>
+      <line>
+        <point
+          x="420"
+          y="140" />
+        <point
+          x="540"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="2650b76e-cb3c-afdf-7513-e9c52fe23373"
+      label=""
+      size="4"
+      type=""
+      srcParentID="7995fed3-b7d6-e2fb-9734-dd29c0830ed6"
+      srcParentName="Pre Process"
+      srcParentType="placeholder"
       trgParentID="e09c021d-e801-c6f3-a55f-8a6ec1beee1e"
+      trgParentName="Delete Folder"
       trgParentType="boxdeletefolder"
       router="junction"
       color="0000ff"
-      lblx="205"
+      lblx="330"
       lbly="140"
-      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=15;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;html=1;jettySize=auto;orthogonalLoop=1;strokeWidth=3;whiteSpace=wrap;labelWidth=187.5;fontStyle=2"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
+      srcPortName="eastPort"
+      trgPortName="westPort">
+      <properties>
+        <property
+          name="label"><![CDATA[]]></property>
+        <property
+          name="type"><![CDATA[]]></property>
+        <property
+          name="linkPriority"><![CDATA[0]]></property>
+        <property
+          name="link"><![CDATA[]]></property>
+      </properties>
+      <line>
+        <point
+          x="280"
+          y="140" />
+        <point
+          x="380"
+          y="140" />
+      </line>
+    </connection>
+    <connection
+      id="ddec5a55-e891-699a-a5a4-319a4376bebc"
+      label=""
+      size="4"
+      type=""
+      srcParentID="5d38ccd8-c9bc-43b5-b8b9-c6a8d2ab8662"
+      srcParentName="start"
+      srcParentType="start"
+      trgParentID="7995fed3-b7d6-e2fb-9734-dd29c0830ed6"
+      trgParentName="Pre Process"
+      trgParentType="placeholder"
+      router="junction"
+      color="0000ff"
+      lblx="180"
+      lbly="140"
+      style="shape=connector;labelBackgroundColor=#ffffff;endArrow=classic;fontSize=12;fontFamily=Helvetica;align=center;verticalAlign=middle;rounded=1;strokeColor=#0000ff;fontColor=#000000;edgeStyle=orthogonalEdgeStyle;jumpStyle=arc;jumpSize=6;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;strokeWidth=4"
       srcPortName="eastPort"
       trgPortName="westPort">
       <properties>
@@ -124,7 +411,7 @@
           x="120"
           y="140" />
         <point
-          x="290"
+          x="240"
           y="140" />
       </line>
     </connection>
